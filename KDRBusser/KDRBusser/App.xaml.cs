@@ -10,10 +10,26 @@ namespace KDRBusser
     public partial class App : Application
     {
         public App()
+
         {
             InitializeComponent();
+            Boolean isloggedin = false;
 
-            MainPage = new KDRBusser.MainPage();
+            // here i should run check, if FCMUser is logged in.
+            if (isloggedin)
+            {
+                //Start activity screen
+                MainPage = new KDRBusser.ActiveUser();
+            }
+            else
+            {
+                // start loging screen.
+                MainPage = new KDRBusser.FCmLogin();
+                
+            }
+           
+
+           
         }
 
         protected override void OnStart()

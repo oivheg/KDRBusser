@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:KDRBusser"
-             x:Class="KDRBusser.MainPage">
+             x:Class="KDRBusser.FCmLogin">
 
-	<Label Text="Welcome to Xamarin Forms!" 
+    <Label Text="Login To APP, using Firebase login options" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-    
-
+    <Button x:Name="btnLogin" Text="Logg in"/>
+    <Button x:Name="btncreateUser" Text="Create User"/>
 </ContentPage>

@@ -6,6 +6,11 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Firebase.Messaging;
+using Firebase.Iid;
+using Android.Util;
+using Xamarin.Forms;
+using Plugin.Toasts;
 
 namespace KDRBusser.Droid
 {
@@ -20,6 +25,9 @@ namespace KDRBusser.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            DependencyService.Register<ToastNotification>(); // Register your dependency
+            ToastNotification.Init(this);
             LoadApplication(new App());
         }
     }
