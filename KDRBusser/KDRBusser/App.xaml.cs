@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Xamarin.Forms;
 
 namespace KDRBusser
@@ -13,6 +9,8 @@ namespace KDRBusser
 
         {
             InitializeComponent();
+         
+
             Boolean isloggedin = false;
 
             // here i should run check, if FCMUser is logged in.

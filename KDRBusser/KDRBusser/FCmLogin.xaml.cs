@@ -12,43 +12,38 @@ namespace KDRBusser
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FCmLogin : ContentPage
     {
+        
+        Entry Email, Password;
+
+       
         public FCmLogin()
         {
             InitializeComponent();
             this.Title = "Sample Weather App";
             btnLogin.Clicked += BtnLogin_Clicked;
             btncreateUser.Clicked += BtncreateUser_clicked;
+            
         }
 
         private void BtncreateUser_clicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Email = emailEntry;
+            Password = passwordEntry;
+            DependencyService.Get<IFCMLoginService>().Createuser(Email.Text, Password.Text);
         }
 
         private void BtnLogin_Clicked(object sender, EventArgs e)
         {
-           fcm
+            DependencyService.Get<IFCMLoginService>().LogInnUser(Email.Text, Password.Text);
         }
 
-        private async Task CreateUserAsync()
+        private void CreateUser()
         {
-            switch (Device.RuntimePlatform)
-            {
-                case Device.iOS:
-                    // to ios stuff
-                    break;
-                case Device.Android:
-                    //android stuff:
-                   
-                    break;
-                case Device.Windows:
-                    //windows stuff
-                    break;
-            }
+            
 
         }
 
-        
+
 
 
     }

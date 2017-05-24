@@ -44,7 +44,7 @@
     <Compile Include="FCmLogin.xaml.cs">
       <DependentUpon>FCmLogin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FCMLoginInterface.cs" />
+    <Compile Include="IFCMLoginService.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

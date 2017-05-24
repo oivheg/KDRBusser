@@ -5414,15 +5414,6 @@ namespace KDRBusser.Droid
 			// aapt resource value: 0x7f080010
 			public const int common_signin_button_text_long = 2131230736;
 			
-			// aapt resource value: 0x7f080052
-			public const int firebase_database_url = 2131230802;
-			
-			// aapt resource value: 0x7f080051
-			public const int gcm_defaultSenderId = 2131230801;
-			
-			// aapt resource value: 0x7f080053
-			public const int google_storage_bucket = 2131230803;
-			
 			// aapt resource value: 0x7f080011
 			public const int mr_button_content_description = 2131230737;
 			
