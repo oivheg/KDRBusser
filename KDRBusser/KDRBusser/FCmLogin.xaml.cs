@@ -22,6 +22,8 @@ namespace KDRBusser
             this.Title = "Sample Weather App";
             btnLogin.Clicked += BtnLogin_Clicked;
             btncreateUser.Clicked += BtncreateUser_clicked;
+             
+            
             
         }
 
@@ -34,6 +36,8 @@ namespace KDRBusser
 
         private void BtnLogin_Clicked(object sender, EventArgs e)
         {
+            Email = emailEntry;
+            Password = passwordEntry;
             DependencyService.Get<IFCMLoginService>().LogInnUser(Email.Text, Password.Text);
         }
 

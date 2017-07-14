@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "123456789",
-    "firebase_url": "https://YOUR-PROJECT-URL.firebaseio.com",
-    "project_id": "YOUR-PROJECT-ID",
-    "storage_bucket": "YOUR-PROJECT-URL.appspot.com"
+    "project_number": "810661396254",
+    "firebase_url": "https://resturantbusser.firebaseio.com",
+    "project_id": "resturantbusser",
+    "storage_bucket": "resturantbusser.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "YOUR-APP-ID",
+        "mobilesdk_app_id": "1:810661396254:android:9235f981421343ec",
         "android_client_info": {
-          "package_name": "com.xamarin.firebase.authquickstart"
+          "package_name": "com.example.oivhe.resturantbusser"
         }
       },
       "oauth_client": [
         {
-          "client_id": "YOUR-CLIENT-ID",
+          "client_id": "810661396254-d05a62hlbilehtl9ld5neonh64n40sq8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.xamarin.firebase.authquickstart",
-            "certificate_hash": "YOUR-CERT-HASH"
+            "package_name": "com.example.oivhe.resturantbusser",
+            "certificate_hash": "261bcac46bd5a4169a844224ab1b859cd2e5a35a"
           }
         },
         {
-          "client_id": "YOUR-CLIENT-ID",
+          "client_id": "810661396254-mp3dic844ga8c28rgd37t0mbakathmiu.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "YOUR-API-KEY"
+          "current_key": "AIzaSyDUyU3GQ3blnCmXjwisywkcRIaqjo32KNk"
         }
       ],
       "services": {
@@ -37,14 +37,19 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810661396254-mp3dic844ga8c28rgd37t0mbakathmiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
         }
       }
-    },
+    }
   ],
   "configuration_version": "1"
 }

@@ -8,8 +8,8 @@ namespace KDRBusser
         public App()
 
         {
-            InitializeComponent();
-         
+            //InitializeComponent();
+           
 
             Boolean isloggedin = false;
 
@@ -29,6 +29,8 @@ namespace KDRBusser
 
            
         }
+
+        
 
         protected override void OnStart()
         {

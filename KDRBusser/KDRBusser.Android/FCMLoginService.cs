@@ -14,24 +14,33 @@ using Xamarin.Forms;
 using Android.Gms.Tasks;
 using KDRBusser.Droid;
 using Firebase.Auth;
+using Firebase;
+using Android.Support.V7.App;
 
 [assembly: Dependency(typeof(FCMLoginService))]
 namespace KDRBusser.Droid
 {
-    class FCMLoginService : IFCMLoginService
+    class FCMLoginService : AppCompatActivity, IFCMLoginService
     {
 
+        // [START declare_auth]
+        //FirebaseAuth mAuth;
+        
+        // [END declare_auth]
 
         public void Createuser(String email, String password)
         {
-            CreateUserAsync( email,  password);
+            CreateUserAsync(email, password);
         }
 
-  
+        
+        
+            
         public async void CreateUserAsync(String email, String password)
         {
             try
             {
+
                 await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
                 ToastedUserAsync("FCM User Created");
             }
@@ -40,7 +49,7 @@ namespace KDRBusser.Droid
                 // Sign-up failed, display a message to the user
                 // If sign in succeeds, the AuthState event handler will
                 //  be notified and logic to handle the signed in user can happen there
-                ToastedUserAsync("Create user failed"+ ex);
+                ToastedUserAsync("Create user failed" + ex);
             }
 
         }
@@ -49,6 +58,7 @@ namespace KDRBusser.Droid
 
         public void LogInnUser(String email, String password)
         {
+
             LogInUserAsync(email, password);
         }
 
@@ -56,10 +66,13 @@ namespace KDRBusser.Droid
         {
             try
             {
+                Firebase.FirebaseApp.InitializeApp(this);
+
                 await FirebaseAuth.Instance.SignInWithEmailAndPasswordAsync(email, password);
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex);
                 // Sign-in failed, display a message to the user
                 // If sign in succeeds, the AuthState event handler will
                 //  be notified and logic to handle the signed in user can happen there
@@ -67,7 +80,7 @@ namespace KDRBusser.Droid
             }
         }
 
-        public  void ToastUser(String title)
+        public void ToastUser(String title)
         {
             ToastedUserAsync(title);
         }
@@ -86,8 +99,12 @@ namespace KDRBusser.Droid
 
         }
 
+        
         public void Init()
         {
+            var firebaseapp = FirebaseApp.InitializeApp(this);
+
+
             throw new NotImplementedException();
         }
     }
