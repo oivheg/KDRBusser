@@ -23,10 +23,10 @@ namespace KDRBusser.Droid
     class FCMLoginService : AppCompatActivity, IFCMLoginService
     {
 
-        // [START declare_auth]
+        //[START declare_auth]
         //FirebaseAuth mAuth;
 
-        // [END declare_auth]
+        //[END declare_auth]
 
         public void Createuser(String email, String password)
         {
@@ -35,6 +35,8 @@ namespace KDRBusser.Droid
 
         public async void CreateUserAsync(String email, String password)
         {
+
+          
             try
             {
                 await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
@@ -51,7 +53,6 @@ namespace KDRBusser.Droid
         }
         public void LogInnUser(String email, String password)
         {
-
             LogInUserAsync(email, password);
         }
 
@@ -59,7 +60,7 @@ namespace KDRBusser.Droid
         {
             try
             {
-                Firebase.FirebaseApp.InitializeApp(this);
+                //FirebaseApp.InitializeApp(this);
 
                 await FirebaseAuth.Instance.SignInWithEmailAndPasswordAsync(email, password);
                 ToastedUserAsync("Sign In Success ");
@@ -96,7 +97,9 @@ namespace KDRBusser.Droid
 
         public void Init()
         {
-            var firebaseapp = FirebaseApp.InitializeApp(this);
+
+            // this is where the FIREBASE system is initialized. every firebase related initilasion shoudl start here, at lest for now.
+            //var firebaseapp = FirebaseApp.InitializeApp(this);
 
             throw new NotImplementedException();
         }

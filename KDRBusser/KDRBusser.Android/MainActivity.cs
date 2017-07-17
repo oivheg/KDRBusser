@@ -26,11 +26,12 @@ namespace KDRBusser.Droid
            
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-            FirebaseApp.InitializeApp(this);
+            //FirebaseApp.InitializeApp(this);
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            DependencyService.Register<FirebaseApp>();
+            //DependencyService.Register<FirebaseApp>();
+            
             DependencyService.Register<ToastNotification>(); // Register your dependency
             ToastNotification.Init(this);
             LoadApplication(new App());
