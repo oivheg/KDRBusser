@@ -36,6 +36,7 @@ namespace KDRBusser.Droid
         public async void CreateUserAsync(String email, String password)
         {
 
+            
           
             try
             {
@@ -51,6 +52,8 @@ namespace KDRBusser.Droid
             }
 
         }
+        
+
         public void LogInnUser(String email, String password)
         {
             LogInUserAsync(email, password);

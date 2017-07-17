@@ -41,11 +41,7 @@ namespace KDRBusser
             DependencyService.Get<IFCMLoginService>().LogInnUser(Email.Text, Password.Text);
         }
 
-        private void CreateUser()
-        {
-            
-
-        }
+      
 
 
 
