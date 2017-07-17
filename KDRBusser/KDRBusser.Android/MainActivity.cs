@@ -30,7 +30,7 @@ namespace KDRBusser.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            //DependencyService.Register<FirebaseApp>();
+            DependencyService.Register<FirebaseApp>();
             
             DependencyService.Register<ToastNotification>(); // Register your dependency
             ToastNotification.Init(this);
