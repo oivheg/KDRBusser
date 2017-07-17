@@ -25,7 +25,7 @@ namespace KDRBusser.Droid
 
         // [START declare_auth]
         //FirebaseAuth mAuth;
-        
+
         // [END declare_auth]
 
         public void Createuser(String email, String password)
@@ -33,14 +33,10 @@ namespace KDRBusser.Droid
             CreateUserAsync(email, password);
         }
 
-        
-        
-            
         public async void CreateUserAsync(String email, String password)
         {
             try
             {
-
                 await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
                 ToastedUserAsync("FCM User Created");
             }
@@ -53,9 +49,6 @@ namespace KDRBusser.Droid
             }
 
         }
-
-
-
         public void LogInnUser(String email, String password)
         {
 
@@ -99,11 +92,10 @@ namespace KDRBusser.Droid
 
         }
 
-        
+
         public void Init()
         {
             var firebaseapp = FirebaseApp.InitializeApp(this);
-
 
             throw new NotImplementedException();
         }

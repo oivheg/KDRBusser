@@ -9,8 +9,8 @@ namespace KDRBusser
 
         {
             //InitializeComponent();
-           
 
+            
             Boolean isloggedin = false;
 
             // here i should run check, if FCMUser is logged in.
