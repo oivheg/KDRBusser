@@ -55,6 +55,7 @@ namespace KDRBusser.Droid
         public void LogInnUser(String email, String password)
         {
             LogInUserAsync(email, password);
+            
         }
 
         public async void LogInUserAsync(String email, string password)
@@ -96,13 +97,16 @@ namespace KDRBusser.Droid
         }
 
 
-        public void Init()
+        public Boolean Init()
         {
 
             // this is where the FIREBASE system is initialized. every firebase related initilasion shoudl start here, at lest for now.
             //var firebaseapp = FirebaseApp.InitializeApp(this);
 
-            throw new NotImplementedException();
+            var user = FirebaseAuth.Instance.CurrentUser;
+            var signedIn = user != null;
+
+            return signedIn;
         }
     }
 }

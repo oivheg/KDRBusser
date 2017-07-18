@@ -8,7 +8,7 @@ namespace KDRBusser
 {
     public interface IFCMLoginService 
     {
-        void Init();
+        Boolean Init();
         void Createuser(String email, String password);
          void ToastUser(String title);
         void  LogInnUser(String email, String password);

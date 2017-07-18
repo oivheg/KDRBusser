@@ -11,19 +11,21 @@ namespace KDRBusser
             //InitializeComponent();
 
             
-            Boolean isloggedin = false;
+              Boolean isloggedin = false;
 
+
+             isloggedin = DependencyService.Get<IFCMLoginService>().Init();
 
             // here i should run check, if FCMUser is logged in.
             if (isloggedin)
             {
                 //Start activity screen
-                MainPage = new KDRBusser.ActiveUser();
+                MainPage = new ActiveUser();
             }
             else
             {
                 // start loging screen.
-                MainPage = new KDRBusser.FCmLogin();
+                MainPage = new FCmLogin();
                 
             }
            
@@ -31,6 +33,10 @@ namespace KDRBusser
            
         }
 
+        public void setIsLoggedIn()
+        {
+
+        }
         
 
         protected override void OnStart()
