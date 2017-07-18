@@ -66,6 +66,7 @@ namespace KDRBusser.Droid
 
                 await FirebaseAuth.Instance.SignInWithEmailAndPasswordAsync(email, password);
                 ToastedUserAsync("Sign In Success ");
+                
             }
             catch (Exception ex)
             {
