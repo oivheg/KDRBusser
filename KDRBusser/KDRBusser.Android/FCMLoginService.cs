@@ -97,7 +97,7 @@ namespace KDRBusser.Droid
         }
 
 
-        public Boolean Init()
+        public Boolean IsLoggedIn()
         {
 
             // this is where the FIREBASE system is initialized. every firebase related initilasion shoudl start here, at lest for now.
