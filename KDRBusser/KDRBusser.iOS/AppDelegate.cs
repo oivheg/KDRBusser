@@ -24,7 +24,7 @@ namespace KDRBusser.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
+            Forms.Init();
             DependencyService.Register<ToastNotification>(); // Register your dependency
             ToastNotification.Init();
             LoadApplication(new App());

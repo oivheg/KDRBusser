@@ -35,9 +35,7 @@ namespace KDRBusser.Droid
 
         public async void CreateUserAsync(String email, String password)
         {
-
             
-          
             try
             {
                 await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
