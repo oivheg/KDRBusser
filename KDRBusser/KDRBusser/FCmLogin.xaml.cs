@@ -22,9 +22,7 @@ namespace KDRBusser
             this.Title = "Sample Weather App";
             btnLogin.Clicked += BtnLogin_Clicked;
             btncreateUser.Clicked += BtncreateUser_clicked;
-             
-            
-            
+  
         }
 
         private void BtncreateUser_clicked(object sender, EventArgs e)
