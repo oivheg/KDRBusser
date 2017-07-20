@@ -5,19 +5,25 @@ namespace KDRBusser
 {
     public partial class App : Application
     {
+        public static bool IsUserLoggedIn { get; set; }
+        public static string FCmToken { get; set; }
+     
         public App()
 
         {
             //InitializeComponent();
-
+            IsUserLoggedIn = false;
+            IsUserLoggedIn = DependencyService.Get<IFCMLoginService>().IsLoggedIn();
+            ChangeActivity();
             
-              Boolean isloggedin = false;
 
+        }
 
-             isloggedin = DependencyService.Get<IFCMLoginService>().IsLoggedIn();
+        public void ChangeActivity()
+        {
 
             // here i should run check, if FCMUser is logged in.
-            if (isloggedin)
+            if (IsUserLoggedIn)
             {
                 //Start activity screen
                 MainPage = new ActiveUser();
@@ -25,19 +31,12 @@ namespace KDRBusser
             else
             {
                 // start loging screen.
+
                 MainPage = new FCmLogin();
-                
+
             }
-           
-
-           
         }
 
-        public void setIsLoggedIn()
-        {
-
-        }
-        
 
         protected override void OnStart()
         {
