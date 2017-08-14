@@ -1,17 +1,9 @@
-﻿using System;
-
+﻿
 using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
-using Firebase.Messaging;
-using Firebase.Iid;
-using Android.Util;
 using Xamarin.Forms;
 using Plugin.Toasts;
-using Android.Gms.Common;
 using Firebase;
 
 namespace KDRBusser.Droid
@@ -26,7 +18,7 @@ namespace KDRBusser.Droid
 
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-            //FirebaseApp.InitializeApp(this);
+           // FirebaseApp.InitializeApp(this);
             base.OnCreate(bundle);
 
             Forms.Init(this, bundle);

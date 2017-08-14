@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Plugin.Toasts;
 using Xamarin.Forms;
-using Android.Gms.Tasks;
 using KDRBusser.Droid;
 using Firebase.Auth;
 using Firebase;
@@ -105,7 +94,7 @@ namespace KDRBusser.Droid
         {
 
             // this is where the FIREBASE system is initialized. every firebase related initilasion shoudl start here, at lest for now.
-            //var firebaseapp = FirebaseApp.InitializeApp(this);
+            var firebaseapp = FirebaseApp.InitializeApp(this);
 
             var user = FirebaseAuth.Instance.CurrentUser;
             var signedIn = user != null;
