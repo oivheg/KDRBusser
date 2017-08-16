@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using System;
 using System.Net.Http;
+using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -57,22 +58,38 @@ namespace KDRBusser
                     logout = "?logout=True";
                     user.Active = false;
                 }
+
+                // TEst CODE TKN is added manualy.
+
+                user.Appid = "ddT9UEWD6nc:APA91bERselu5IieP5AWVl0UWVdEUIc3Ienpcx7z6i-pZtjSh5FXYJ8o12NBMw4sH9KB1-Ds3v4xIdFqRuvbYPXmk92byGsng-Zm4Y1eIO-hx0EhWnzm130Vu0g2zP8xaIJxBIy_1Ima";
                 string json = JsonConvert.SerializeObject(user);
 
                 // set button to active , change color etc
+                
+              
 
 
                 //send POST request to REST API
+                // old json code, created 415 error
+                //var content = new StringContent(json);
 
-                var content = new StringContent(json);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
                 var request = new HttpRequestMessage();
+                
                String url = "http://91.189.171.231/restbusser/api/UserAPI/";
+                //Test adress on local computer 
+                url = "http://10.0.0.159:51080/api/UserAPI/";
                
              
                 var client = new HttpClient();
-                HttpResponseMessage resposne;
-                resposne = await client.PostAsync(url + "UserisActive" + logout, content);
                 
+                HttpResponseMessage resposne;
+                resposne = await client.PostAsync(url + "UserisActive/", content);
+                
+                    
+
+
             }
             else
             {
