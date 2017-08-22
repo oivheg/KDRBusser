@@ -20,9 +20,9 @@ namespace KDRBusser.Classes
 
         }
 
-        public User(int _UserId, String _UserName,String _Appid, bool _Active)
+        public User( String _UserName,String _Appid, bool _Active)
         {
-            UserId = _UserId;
+            UserId = 0;
             UserName = _UserName;
             Appid = _Appid;
             Active = _Active;

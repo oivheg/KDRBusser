@@ -1,4 +1,5 @@
 ﻿using KDRBusser.Classes;
+using KDRBusser.Communication;
 using Newtonsoft.Json;
 using System;
 using System.Net.Http;
@@ -15,11 +16,12 @@ namespace KDRBusser
         {
             InitializeComponent();
             btnActiveUser.Clicked += BtnActiveUser_clicked;
-
+            // button logout. clicked += BtnLogout_Clicked
+            BtnLogout.Clicked += BtnLogout_Clicked;
 
         }
 
-         bool isActive = false;
+        bool isActive = false;
         private void BtnActiveUser_clicked(object sender, EventArgs e)
         {
 
@@ -39,18 +41,29 @@ namespace KDRBusser
                 CommunicateDbAsync(mUser, true, true, false);
                 isActive = true;
             }
-            
+
         }
-        String mUser, tkn;
-        int muserId = 22;
+
+        private void BtnLogout_Clicked(object sender, EventArgs e)
+        {
+            // here ode for loging user out should rund.
+            // this wil also run firebase logout command on each Platfrom. probably use the exsisitng itnerface wiht logout method etc. 
+
+            //IFCMLoginService.Logout (): 
+
+        }
+
+        String mUser = "FromFCMLogin", tkn = "Fromm FCM APPID";
+        
         public async void CommunicateDbAsync(String _user, bool _isActive, bool update, bool rmvAppId)
         {
 
+            tkn = DependencyService.Get<IFCMLoginService>().GetToken();
             User user = new User();
             if (update)
             {
                 String logout = "";
-                user = new User(muserId, _user, tkn, _isActive);
+                user = new User( _user, tkn, _isActive);
 
 
                 if (rmvAppId)
@@ -62,42 +75,45 @@ namespace KDRBusser
                 // TEst CODE TKN is added manualy.
 
                 user.Appid = "ddT9UEWD6nc:APA91bERselu5IieP5AWVl0UWVdEUIc3Ienpcx7z6i-pZtjSh5FXYJ8o12NBMw4sH9KB1-Ds3v4xIdFqRuvbYPXmk92byGsng-Zm4Y1eIO-hx0EhWnzm130Vu0g2zP8xaIJxBIy_1Ima";
-                string json = JsonConvert.SerializeObject(user);
-
-                // set button to active , change color etc
-                
-              
-
 
                 //send POST request to REST API
                 // old json code, created 415 error
                 //var content = new StringContent(json);
 
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-                var request = new HttpRequestMessage();
-                
-               String url = "http://91.189.171.231/restbusser/api/UserAPI/";
-                //Test adress on local computer 
-                url = "http://10.0.0.159:51080/api/UserAPI/";
-               
-             
-                var client = new HttpClient();
-                
-                HttpResponseMessage resposne;
-                resposne = await client.PostAsync(url + "UserisActive/", content);
-                
-                    
-
-
+                // This is Method from this class, THe prorper way is to use the RestApiCommunication Class, 
+                //await HttpRequestHandler(user, "UserisActive/");
+                await RestApiCommunication.get(user, "UserisActive/");
             }
             else
             {
                 user.Appid = tkn;
                 //send request to REST API
                 // with "FindUser" as adress string 
+                await RestApiCommunication.post(user, "FindUser/");
 
             }
+        }
+
+        //Local method, RestApiCommunication class, replaces this.
+
+            //DEPRECATED
+        private static async System.Threading.Tasks.Task HttpRequestHandler(User user, String _Command)
+        {
+            string json = JsonConvert.SerializeObject(user);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            var request = new HttpRequestMessage();
+            String url = "http://91.189.171.231/restbusserv/api/UserAPI/";
+            //Test adress on local computer 
+            url = "http://10.0.0.159:51080/api/UserAPI/";
+            var client = new HttpClient();
+            HttpResponseMessage resposne;
+
+            //post
+            resposne = await client.PostAsync(url + _Command, content);
+
+            //Get
+
+            //resposne = await client.GetAsync(url + _Command);
         }
     }
 }

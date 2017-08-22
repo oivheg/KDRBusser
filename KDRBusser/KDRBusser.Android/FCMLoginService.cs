@@ -5,12 +5,14 @@ using KDRBusser.Droid;
 using Firebase.Auth;
 using Firebase;
 using Android.Support.V7.App;
+using Firebase.Iid;
 
 [assembly: Dependency(typeof(FCMLoginService))]
 namespace KDRBusser.Droid
 {
     class FCMLoginService : AppCompatActivity, IFCMLoginService
     {
+        
 
         //[START declare_auth]
         //FirebaseAuth mAuth;
@@ -57,7 +59,7 @@ namespace KDRBusser.Droid
                 ToastedUserAsync("Sign In Success ");
 
                 App.IsUserLoggedIn = true;
-                App.Current.MainPage = new ActiveUser();
+                Xamarin.Forms.Application.Current.MainPage = new ActiveUser();
 
             }
             catch (Exception ex)
@@ -100,6 +102,15 @@ namespace KDRBusser.Droid
             var signedIn = user != null;
 
             return signedIn;
+        }
+
+        public string GetToken()
+        {
+
+            String tkn = FirebaseInstanceId.Instance.Token;
+            var refreshedToken = FirebaseInstanceId.Instance.Token;
+          
+            return refreshedToken;
         }
     }
 }

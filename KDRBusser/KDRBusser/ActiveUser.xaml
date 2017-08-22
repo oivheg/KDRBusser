@@ -6,5 +6,10 @@
     <Label Text="User is Logged in" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-    <Button x:Name="btnActiveUser" Text="Logg in to work" VerticalOptions="Center" HorizontalOptions="Center"></Button>
+   
+    <RelativeLayout>
+        <Button x:Name="BtnLogout" Text="LogOut" VerticalOptions="Start" HorizontalOptions="End"></Button>
+        <Button x:Name="btnActiveUser" Text="Logg in to work" VerticalOptions="Center" HorizontalOptions="Center"></Button>
+
+    </RelativeLayout>
 </ContentPage>
