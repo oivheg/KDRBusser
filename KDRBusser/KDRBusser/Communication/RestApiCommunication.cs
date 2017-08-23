@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace KDRBusser.Communication
 {
-    class RestApiCommunication
+   public class RestApiCommunication
     {
         private static String Base_URL = "http://91.189.171.231/restbusserv/api/UserAPI/";
        private static HttpResponseMessage resposne;
 
-        public static async Task get(User user , String _Command)
+        public static async Task get(Object user , String _Command)
         {
 
             var client = new HttpClient();
@@ -24,7 +24,7 @@ namespace KDRBusser.Communication
             resposne = await client.PostAsync(Base_URL + _Command, content);
         }
 
-        public static async Task post(User user, String _Command)
+        public static async Task post(Object user, String _Command)
         {
             var request = new HttpRequestMessage();
             string json = JsonConvert.SerializeObject(user);

@@ -2,9 +2,13 @@
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Android.Gms.Common;
 using Xamarin.Forms;
 using Plugin.Toasts;
 using Firebase;
+using Firebase.Messaging;
+using Firebase.Iid;
+using Android.Util;
 
 namespace KDRBusser.Droid
 {

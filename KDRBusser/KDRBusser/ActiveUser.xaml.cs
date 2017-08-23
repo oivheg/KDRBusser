@@ -48,8 +48,8 @@ namespace KDRBusser
         {
             // here ode for loging user out should rund.
             // this wil also run firebase logout command on each Platfrom. probably use the exsisitng itnerface wiht logout method etc. 
-
-            //IFCMLoginService.Logout (): 
+            CommunicateDbAsync(mUser, false, true, true);
+            DependencyService.Get<IFCMLoginService>().LogOut();
 
         }
 
@@ -74,7 +74,7 @@ namespace KDRBusser
 
                 // TEst CODE TKN is added manualy.
 
-                user.Appid = "ddT9UEWD6nc:APA91bERselu5IieP5AWVl0UWVdEUIc3Ienpcx7z6i-pZtjSh5FXYJ8o12NBMw4sH9KB1-Ds3v4xIdFqRuvbYPXmk92byGsng-Zm4Y1eIO-hx0EhWnzm130Vu0g2zP8xaIJxBIy_1Ima";
+                //user.Appid = "ddT9UEWD6nc:APA91bERselu5IieP5AWVl0UWVdEUIc3Ienpcx7z6i-pZtjSh5FXYJ8o12NBMw4sH9KB1-Ds3v4xIdFqRuvbYPXmk92byGsng-Zm4Y1eIO-hx0EhWnzm130Vu0g2zP8xaIJxBIy_1Ima";
 
                 //send POST request to REST API
                 // old json code, created 415 error
@@ -82,7 +82,7 @@ namespace KDRBusser
 
                 // This is Method from this class, THe prorper way is to use the RestApiCommunication Class, 
                 //await HttpRequestHandler(user, "UserisActive/");
-                await RestApiCommunication.get(user, "UserisActive/");
+                await RestApiCommunication.get(user, "UserisActive/"+logout);
             }
             else
             {

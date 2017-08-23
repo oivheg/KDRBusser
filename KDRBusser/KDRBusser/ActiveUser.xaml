@@ -7,9 +7,9 @@
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
    
-    <RelativeLayout>
+    <StackLayout>
         <Button x:Name="BtnLogout" Text="LogOut" VerticalOptions="Start" HorizontalOptions="End"></Button>
         <Button x:Name="btnActiveUser" Text="Logg in to work" VerticalOptions="Center" HorizontalOptions="Center"></Button>
 
-    </RelativeLayout>
+    </StackLayout>
 </ContentPage>

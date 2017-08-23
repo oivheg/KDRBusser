@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KDRBusser.Classes
 {
-    class User
+   public class User
     {
         public int UserId { get; set; }
         public String UserName { get; set; }

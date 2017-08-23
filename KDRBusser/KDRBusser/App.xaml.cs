@@ -11,12 +11,14 @@ namespace KDRBusser
 
         {
             //InitializeComponent();
+            DependencyService.Get<IFCMLoginService>().Init();
             IsUserLoggedIn = false;
             IsUserLoggedIn = DependencyService.Get<IFCMLoginService>().IsLoggedIn();
             ChangeActivity();
             
 
         }
+       
 
         public void ChangeActivity()
         {
