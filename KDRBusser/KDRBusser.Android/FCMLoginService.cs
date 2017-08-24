@@ -6,6 +6,7 @@ using Android.Support.V7.App;
 using Firebase.Iid;
 using Firebase.Auth;
 using Android.OS;
+using Firebase;
 
 [assembly: Dependency(typeof(FCMLoginService))]
 namespace KDRBusser.Droid
@@ -19,6 +20,7 @@ namespace KDRBusser.Droid
 
         public void Init()
         {
+        
             mAuth = FirebaseAuth.Instance;
             mAuth.AuthState += AuthStateChanged;
         }
@@ -121,7 +123,7 @@ namespace KDRBusser.Droid
         {
             var user = e.Auth.CurrentUser;
             if (user != null)
-            {
+            { FirebaseApp.InitializeApp(this);
                 // User is signed in
                 //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
 

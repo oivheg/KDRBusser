@@ -82,14 +82,14 @@ namespace KDRBusser
 
                 // This is Method from this class, THe prorper way is to use the RestApiCommunication Class, 
                 //await HttpRequestHandler(user, "UserisActive/");
-                await RestApiCommunication.get(user, "UserisActive/"+logout);
+                await RestApiCommunication.Post(user, "UserisActive/"+logout);
             }
             else
             {
                 user.Appid = tkn;
                 //send request to REST API
                 // with "FindUser" as adress string 
-                await RestApiCommunication.post(user, "FindUser/");
+                await RestApiCommunication.Post(user, "FindUser/");
 
             }
         }

@@ -10,7 +10,8 @@ namespace KDRBusser
         public App()
 
         {
-            //InitializeComponent();
+            InitializeComponent();
+           
             DependencyService.Get<IFCMLoginService>().Init();
             IsUserLoggedIn = false;
             IsUserLoggedIn = DependencyService.Get<IFCMLoginService>().IsLoggedIn();

@@ -14,14 +14,19 @@ using Plugin.Toasts;
 using Xamarin.Forms;
 using KDRBusser.Communication;
 using KDRBusser.Classes;
+using System.Threading.Tasks;
 
 namespace KDRBusser.Droid
 {
-    [Service]
+    [Service (Enabled = true)]
     [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
     class MyFirebaseMessagingService : FirebaseMessagingService
     {
-        const string TAG = "MyFirebaseMsgService";
+        const string TAG = "MyFirebaseMessagingService";
+
+
+        
+
         public override void OnMessageReceived(RemoteMessage message)
         {
             //ToastUser("From: " + message.From);
@@ -34,7 +39,7 @@ namespace KDRBusser.Droid
                 {
                     name = message.Data["title"];
                     ToastUser("inform user of dinner is ready");
-                    InformmasterAsync();
+                    Task.Run(async () =>  await  InformmasterAsync());
                 }
                 else if (message.Data.ContainsKey("Action")){
                     switch (message.Data["Action"])
@@ -79,11 +84,14 @@ namespace KDRBusser.Droid
             notificationManager.Notify(0, notificationBuilder.Build());
         }
 
-        public async System.Threading.Tasks.Task InformmasterAsync()
+        public  async Task InformmasterAsync()
         {
-            User user = new User();
-            user.Appid = DependencyService.Get<IFCMLoginService>().GetToken();
-            await RestApiCommunication.post(user, "Msgreceived?");
+            User user = new User
+            {
+                Appid = DependencyService.Get<IFCMLoginService>().GetToken()
+            };
+            await RestApiCommunication.Post(user, "Msgreceived");
+          
         }
         public void ToastUser(String title)
         {

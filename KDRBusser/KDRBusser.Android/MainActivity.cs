@@ -22,13 +22,14 @@ namespace KDRBusser.Droid
 
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-           // FirebaseApp.InitializeApp(this);
+            FirebaseApp.InitializeApp(this);
             base.OnCreate(bundle);
 
-            Forms.Init(this, bundle);
+           
             DependencyService.Register<FirebaseApp>(); // this probalby the reason it FCM 
             DependencyService.Register<ToastNotification>(); // Register your dependency
             ToastNotification.Init(this);
+             Forms.Init(this, bundle);
             LoadApplication(new App());
         }
     }
