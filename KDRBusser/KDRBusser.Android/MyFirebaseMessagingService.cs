@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Firebase.Messaging;
-using Plugin.Toasts;
-using Xamarin.Forms;
-using KDRBusser.Communication;
 using KDRBusser.Classes;
+using KDRBusser.Communication;
+using Plugin.Toasts;
+using System;
 using System.Threading.Tasks;
+using System.Timers;
+using Xamarin.Forms;
 
 namespace KDRBusser.Droid
 {
@@ -24,8 +18,8 @@ namespace KDRBusser.Droid
     {
         const string TAG = "MyFirebaseMessagingService";
 
-
-        
+        private int count = 1;
+        static Timer timer;
 
         public override void OnMessageReceived(RemoteMessage message)
         {
@@ -39,13 +33,15 @@ namespace KDRBusser.Droid
                 {
                     name = message.Data["title"];
                     ToastUser("inform user of dinner is ready");
+                    Vibration();
                     Task.Run(async () =>  await  InformmasterAsync());
                 }
                 else if (message.Data.ContainsKey("Action")){
                     switch (message.Data["Action"])
                     {
                         case "cancelVibration":
-                            ToastUser("should cancel vibrations");
+                            ToastUser("Vibrations Canceled");
+                            timer.Stop();
                             break;
 
                         case "recieved":
@@ -66,6 +62,37 @@ namespace KDRBusser.Droid
           
             //SendNotification(message.GetNotification().Body);
         }
+
+      
+            void Vibration()
+            {
+
+                timer = new Timer();
+                timer.Interval = 1000;
+                timer.Elapsed += Timer_Elapsed;
+                timer.Start();
+            }
+
+            private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+            {
+                if (count < 10)
+                {
+                count++;
+             
+            }
+            else
+            {
+                count = 1;
+                Vibrator vibrator = (Vibrator)this.ApplicationContext.GetSystemService(Context.VibratorService);
+                long[] vibPatterns = { 200, 250, 350, 250, 350, 1000, 500, 350, 500, 350, 1000 };
+                vibrator.Vibrate(vibPatterns, -1);
+            }
+        }
+
+            //Vibrator vibrator = (Vibrator)this.ApplicationContext.GetSystemService(Context.VibratorService);
+            //long[] vibPatterns = { 200, 500, 350, 500, 350, 1000, 500, 350, 500, 350, 1000 };
+            //vibrator.Vibrate(vibPatterns, -1);
+   
 
         void SendNotification(string messageBody)
         {

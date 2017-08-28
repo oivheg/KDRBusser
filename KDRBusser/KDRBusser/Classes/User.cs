@@ -12,6 +12,7 @@ namespace KDRBusser.Classes
         public String UserName { get; set; }
         public String Appid { get; set; }
         public bool Active { get; set; }
+        public String Email { get; set; }
 
 
         public User()

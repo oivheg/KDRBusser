@@ -21,27 +21,44 @@ namespace KDRBusser
 
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            CommunicateDbAsync(mUser, false, false, false);
+        }
         bool isActive = false;
         private void BtnActiveUser_clicked(object sender, EventArgs e)
         {
-
             //Here we send code to onw server, so that master knows that user is logged in etc
-
             if (isActive)
             {
-                btnActiveUser.BackgroundColor = (Color.ForestGreen);
-                btnActiveUser.Text = "At Home";
-                isActive = false;
-                CommunicateDbAsync(mUser, false, true, false);
+                CommunicateDbAsync(mUser, true, true, false);
+
             }
             else
             {
-                btnActiveUser.BackgroundColor = (Color.Yellow);
-                btnActiveUser.Text = "At Work";
-                CommunicateDbAsync(mUser, true, true, false);
-                isActive = true;
+                CommunicateDbAsync(mUser, false, true, false);
             }
+            IsUserActive();
 
+        }
+
+        private void IsUserActive()
+        {
+            if (isActive)
+            {
+                 btnActiveUser.BackgroundColor = (Color.Yellow);
+                btnActiveUser.Text = "At Work";
+            
+                isActive = false;
+            }
+            else
+            {
+                btnActiveUser.BackgroundColor = (Color.ForestGreen);
+                btnActiveUser.Text = "At Home";
+                isActive = true;
+                
+            }
         }
 
         private void BtnLogout_Clicked(object sender, EventArgs e)
@@ -86,11 +103,18 @@ namespace KDRBusser
             }
             else
             {
-                user.Appid = tkn;
+
                 //send request to REST API
                 // with "FindUser" as adress string 
-                await RestApiCommunication.Post(user, "FindUser/");
 
+                String AppToken = tkn;
+                String parameters = "Appid=" + tkn;
+                await RestApiCommunication.Get("FindUser?" + parameters);
+                
+                user = JsonConvert.DeserializeObject<User>(RestApiCommunication.jsonresponse);
+                isActive = user.Active;
+                IsUserActive();
+                //String json = JsonConvert.DeserializeObject(response.Content);
             }
         }
 

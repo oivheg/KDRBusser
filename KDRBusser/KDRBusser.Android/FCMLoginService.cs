@@ -7,6 +7,8 @@ using Firebase.Iid;
 using Firebase.Auth;
 using Android.OS;
 using Firebase;
+using KDRBusser.Communication;
+using KDRBusser.Classes;
 
 [assembly: Dependency(typeof(FCMLoginService))]
 namespace KDRBusser.Droid
@@ -86,6 +88,10 @@ namespace KDRBusser.Droid
                 await mAuth.SignInWithEmailAndPasswordAsync(email, password);
                 ToastedUserAsync("Sign In Success ");
 
+                User user = new User();
+                user.Email = email;
+                user.Appid = GetToken();
+                await RestApiCommunication.Post(user, "UpdatUser");
                 App.IsUserLoggedIn = true;
                 Xamarin.Forms.Application.Current.MainPage = new ActiveUser();
 
