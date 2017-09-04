@@ -12,12 +12,13 @@ using Xamarin.Forms;
 
 namespace KDRBusser.Droid
 {
-    [Service (Enabled = true)]
+    [Service(Name = "com.example.oivhe.resturantbusser.MyFirebaseMessagingService" ,Exported = true)]
+    [BroadcastReceiver]
     [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
     class MyFirebaseMessagingService : FirebaseMessagingService
     {
         const string TAG = "MyFirebaseMessagingService";
-
+            
         private int count = 1;
         static Timer timer;
 

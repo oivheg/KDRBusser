@@ -9,6 +9,7 @@ using Android.OS;
 using Firebase;
 using KDRBusser.Communication;
 using KDRBusser.Classes;
+using System.ComponentModel;
 
 [assembly: Dependency(typeof(FCMLoginService))]
 namespace KDRBusser.Droid
@@ -18,18 +19,21 @@ namespace KDRBusser.Droid
         //[START declare_auth]
         FirebaseAuth mAuth;
 
-        //[END declare_auth]
+        
+
+
+       
 
         public void Init()
         {
-        
+         
             mAuth = FirebaseAuth.Instance;
             mAuth.AuthState += AuthStateChanged;
         }
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            
             // [START initialize_auth]
             //mAuth = FirebaseAuth.Instance;
             // [END initialize_auth]
@@ -49,6 +53,7 @@ namespace KDRBusser.Droid
         }
         public void Createuser(String email, String password)
         {
+           
             CreateUserAsync(email, password);
         }
 
@@ -59,6 +64,7 @@ namespace KDRBusser.Droid
             {
                 await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
                 ToastedUserAsync("FCM User Created");
+              
             }
             catch (Exception ex)
             {
@@ -73,8 +79,8 @@ namespace KDRBusser.Droid
 
         public void LogInnUser(String email, String password)
         {
-       
-        
+
+           
             LogInUserAsync(email, password);
             
         }
@@ -93,8 +99,9 @@ namespace KDRBusser.Droid
                 user.Appid = GetToken();
                 await RestApiCommunication.Post(user, "UpdatUser");
                 App.IsUserLoggedIn = true;
+             
                 Xamarin.Forms.Application.Current.MainPage = new ActiveUser();
-
+               
             }
             catch (Exception ex)
             {
@@ -151,9 +158,9 @@ namespace KDRBusser.Droid
         {
 
             // this is where the FIREBASE system is initialized. every firebase related initilasion shoudl start here, at lest for now.
-           
-            //var firebaseapp = FirebaseApp.InitializeApp(this);
 
+            //var firebaseapp = FirebaseApp.InitializeApp(this);
+            mAuth.SignOut();
             var user = mAuth.CurrentUser;
             var signedIn = user != null;
 

@@ -17,6 +17,7 @@ namespace KDRBusser.Droid
 {
 
     [Service]
+    [BroadcastReceiver]
     [IntentFilter(new[] { "com.google.firebase.INSTANCE_ID_EVENT" })]
     public class MyFirebaseIIDService : FirebaseInstanceIdService
     {
@@ -32,7 +33,10 @@ namespace KDRBusser.Droid
         {
             ToastedUserAsync(title);
         }
-
+        public void onReceive(Context context, Intent intent)
+        {
+            ToastedUserAsync("onReceived");
+        }
 
         public async void ToastedUserAsync(String title)
         {
@@ -46,6 +50,8 @@ namespace KDRBusser.Droid
             var result = await notification.Notify(options);
 
         }
+
+        
         void SendRegistrationToServer(string token)
         {
             // Add custom implementation, as needed.
