@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace KDRBusser
 {
@@ -11,18 +13,20 @@ namespace KDRBusser
 
         {
             InitializeComponent();
-            DependencyService.Get<IFCMLoginService>().Init();
-        
-          
-            IsUserLoggedIn = false;
-            IsUserLoggedIn = DependencyService.Get<IFCMLoginService>().IsLoggedIn();
-            ChangeActivity();
-            
 
+           DependencyService.Get<IFCMLoginService>().Init();
+            IsUserLoggedIn =  DependencyService.Get<IFCMLoginService>().IsLoggedIn();
+
+
+
+
+
+
+            ChangeActivity();
         }
        
 
-        public void ChangeActivity()
+        public  void ChangeActivity()
         {
 
             // here i should run check, if FCMUser is logged in.

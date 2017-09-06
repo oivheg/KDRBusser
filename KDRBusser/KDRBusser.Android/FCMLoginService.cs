@@ -138,29 +138,33 @@ namespace KDRBusser.Droid
             if (user != null)
             { FirebaseApp.InitializeApp(this);
                 // User is signed in
-                //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
-
+                ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
+                App.IsUserLoggedIn = true;
+             
             }
             else
             {
+                
                 // User is signed out
-                //ToastedUserAsync("onAuthStateChanged:signed_out");
+               ToastedUserAsync("onAuthStateChanged:signed_out");
                 App.IsUserLoggedIn = false;
                 Xamarin.Forms.Application.Current.MainPage = new FCmLogin();
             }
             // [START_EXCLUDE]
             //UpdateUI(user);
             // [END_EXCLUDE]
+        
         }
 
 
+        //not in use ate the momend, chaneg with authstate listener.
         public Boolean IsLoggedIn()
         {
 
             // this is where the FIREBASE system is initialized. every firebase related initilasion shoudl start here, at lest for now.
 
             //var firebaseapp = FirebaseApp.InitializeApp(this);
-            mAuth.SignOut();
+
             var user = mAuth.CurrentUser;
             var signedIn = user != null;
 
