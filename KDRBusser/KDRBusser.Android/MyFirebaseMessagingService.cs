@@ -13,6 +13,7 @@ using Xamarin.Forms;
 namespace KDRBusser.Droid
 {
     [Service(Name = "com.example.oivhe.resturantbusser.MyFirebaseMessagingService" ,Exported = true)]
+   
     [BroadcastReceiver]
     [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
     class MyFirebaseMessagingService : FirebaseMessagingService
@@ -22,9 +23,17 @@ namespace KDRBusser.Droid
         private int count = 1;
         static Timer timer;
 
+        public override void OnCreate()
+        {
+       
+            base.OnCreate();
+            System.Console.WriteLine("MYF:test"); //Console is not found in system
+          
+        }
         public override void OnMessageReceived(RemoteMessage message)
         {
             //ToastUser("From: " + message.From);
+            System.Console.WriteLine("MYF: Message recieved"); //Console is not found in system
             var name = string.Empty; ;
             if (message.Data.Count > 0)
             {

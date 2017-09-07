@@ -26,7 +26,7 @@ namespace KDRBusser.Droid
 
         public void Init()
         {
-         
+            DependencyService.Register<MyFirebaseMessagingService>();
             mAuth = FirebaseAuth.Instance;
             mAuth.AuthState += AuthStateChanged;
         }

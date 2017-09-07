@@ -19,18 +19,20 @@ namespace KDRBusser.Droid
       
         protected override void OnCreate(Bundle bundle)
         {
-
+            base.OnCreate(bundle);
+            Forms.Init(this, bundle);
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
             FirebaseApp.InitializeApp(this);
-            base.OnCreate(bundle);
+            LoadApplication(new App());
 
            
             DependencyService.Register<FirebaseApp>(); // this probalby the reason it FCM 
             DependencyService.Register<ToastNotification>(); // Register your dependency
+           DependencyService.Register<MyFirebaseMessagingService>();
             ToastNotification.Init(this);
-             Forms.Init(this, bundle);
-            LoadApplication(new App());
+             
+           
         }
     }
 }
