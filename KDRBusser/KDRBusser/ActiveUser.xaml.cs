@@ -24,7 +24,8 @@ namespace KDRBusser
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            CommunicateDbAsync(mUser, false, false, false);
+            //DependencyService.Get<IFCMLoginService>().UpdateToken();
+            //CommunicateDbAsync(mUser, false, false, false);
         }
         bool isActive = false;
         private void BtnActiveUser_clicked(object sender, EventArgs e)
@@ -80,6 +81,7 @@ namespace KDRBusser
             if (update)
             {
                 String logout = "";
+                //_user = "oivheg@gmail.com";
                 user = new User( _user, tkn, _isActive);
 
 

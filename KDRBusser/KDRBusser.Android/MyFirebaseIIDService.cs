@@ -22,11 +22,15 @@ namespace KDRBusser.Droid
     public class MyFirebaseIIDService : FirebaseInstanceIdService
     {
         const string TAG = "MyFirebaseIIDService";
+
+        
         public override void OnTokenRefresh()
         {
             var refreshedToken = FirebaseInstanceId.Instance.Token;
             ToastUser( "Refreshed token: " + refreshedToken);
-            SendRegistrationToServer(refreshedToken);
+
+          
+            SendRegistrationToServerAsync(refreshedToken);
         }
 
         public void ToastUser(String title)
@@ -51,10 +55,12 @@ namespace KDRBusser.Droid
 
         }
 
-        
-        void SendRegistrationToServer(string token)
+
+        async void SendRegistrationToServerAsync(string token)
         {
-            // Add custom implementation, as needed.
+            await DependencyService.Get<FCMLoginService>().UpdateUserToken();
+
+
         }
     }
 }

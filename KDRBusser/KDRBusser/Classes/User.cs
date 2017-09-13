@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms.Internals;
 
 namespace KDRBusser.Classes
 {
-   public class User
+    [Preserve(AllMembers = true)]
+    public class User
     {
         public int UserId { get; set; }
         public String UserName { get; set; }

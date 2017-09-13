@@ -29,6 +29,12 @@ namespace KDRBusser.Droid
             DependencyService.Register<MyFirebaseMessagingService>();
             mAuth = FirebaseAuth.Instance;
             mAuth.AuthState += AuthStateChanged;
+            
+        }
+
+        public void UpdateToken()
+        {
+            UpdateUserToken();
         }
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -89,19 +95,16 @@ namespace KDRBusser.Droid
         {
             try
             {
-               
+
 
                 await mAuth.SignInWithEmailAndPasswordAsync(email, password);
                 ToastedUserAsync("Sign In Success ");
 
-                User user = new User();
-                user.Email = email;
-                user.Appid = GetToken();
-                await RestApiCommunication.Post(user, "UpdatUser");
+                await UpdateUserToken();
                 App.IsUserLoggedIn = true;
-             
+
                 Xamarin.Forms.Application.Current.MainPage = new ActiveUser();
-               
+
             }
             catch (Exception ex)
             {
@@ -111,6 +114,15 @@ namespace KDRBusser.Droid
                 //  be notified and logic to handle the signed in user can happen there
                 ToastedUserAsync("Sign In failed" + ex);
             }
+        }
+
+        public async System.Threading.Tasks.Task UpdateUserToken()
+        {
+            User user = new User();
+            //user.Email = email;
+            user.Email = mAuth.CurrentUser.Email;
+            user.Appid = GetToken();
+            await RestApiCommunication.Post(user, "UpdatUser");
         }
 
         public void ToastUser(String title)
@@ -175,7 +187,15 @@ namespace KDRBusser.Droid
         {
             
             String tkn = FirebaseInstanceId.Instance.Id;
+            var  mauttoken = mAuth.CurrentUser.Uid;
+          
             var refreshedToken = FirebaseInstanceId.Instance.Token;
+
+            if (refreshedToken == null)
+            {
+                mAuth.SignOut();
+            }
+
 
 
             return refreshedToken;

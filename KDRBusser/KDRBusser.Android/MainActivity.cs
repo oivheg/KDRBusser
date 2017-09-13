@@ -9,6 +9,8 @@ using Firebase;
 using Firebase.Messaging;
 using Firebase.Iid;
 using Android.Util;
+using Newtonsoft.Json;
+using KDRBusser.Communication;
 
 namespace KDRBusser.Droid
 {
@@ -26,8 +28,9 @@ namespace KDRBusser.Droid
             FirebaseApp.InitializeApp(this);
             LoadApplication(new App());
 
-           
+            //DependencyService.Register<RestApiCommunication>();
             DependencyService.Register<FirebaseApp>(); // this probalby the reason it FCM 
+            //DependencyService.Register<JsonConverter>(); // this probalby the reason it FCM 
             DependencyService.Register<ToastNotification>(); // Register your dependency
            DependencyService.Register<MyFirebaseMessagingService>();
             ToastNotification.Init(this);
