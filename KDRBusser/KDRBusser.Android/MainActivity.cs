@@ -28,9 +28,9 @@ namespace KDRBusser.Droid
             FirebaseApp.InitializeApp(this);
             LoadApplication(new App());
 
-            //DependencyService.Register<RestApiCommunication>();
+            DependencyService.Register<RestApiCommunication>();
             DependencyService.Register<FirebaseApp>(); // this probalby the reason it FCM 
-            //DependencyService.Register<JsonConverter>(); // this probalby the reason it FCM 
+            DependencyService.Register<JsonConverter>(); // this probalby the reason it FCM 
             DependencyService.Register<ToastNotification>(); // Register your dependency
            DependencyService.Register<MyFirebaseMessagingService>();
             ToastNotification.Init(this);

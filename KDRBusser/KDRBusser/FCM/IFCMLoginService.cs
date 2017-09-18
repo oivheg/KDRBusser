@@ -7,6 +7,7 @@ namespace KDRBusser
         Boolean IsLoggedIn();
         void Init();
         void UpdateToken();
+        String getEmail();
         void Createuser(String email, String password);
         void ToastUser(String title);
         void  LogInnUser(String email, String password);

@@ -18,14 +18,14 @@ namespace KDRBusser
             btnActiveUser.Clicked += BtnActiveUser_clicked;
             // button logout. clicked += BtnLogout_Clicked
             BtnLogout.Clicked += BtnLogout_Clicked;
-
+            email = DependencyService.Get<IFCMLoginService>().getEmail();
         }
-
+        String email = "";
         protected override void OnAppearing()
         {
             base.OnAppearing();
             //DependencyService.Get<IFCMLoginService>().UpdateToken();
-            //CommunicateDbAsync(mUser, false, false, false);
+            CommunicateDbAsync(mUser, false, false, false);
         }
         bool isActive = false;
         private void BtnActiveUser_clicked(object sender, EventArgs e)
@@ -111,6 +111,7 @@ namespace KDRBusser
 
                 String AppToken = tkn;
                 String parameters = "Appid=" + tkn;
+               
                 await RestApiCommunication.Get("FindUser?" + parameters);
                 
                 user = JsonConvert.DeserializeObject<User>(RestApiCommunication.jsonresponse);

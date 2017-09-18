@@ -21,8 +21,14 @@ namespace KDRBusser.Droid
 
         
 
+        public string getEmail()
+        {
+            return mAuth.CurrentUser.Email;
 
-       
+
+        }
+
+
 
         public void Init()
         {
@@ -102,7 +108,7 @@ namespace KDRBusser.Droid
 
                 await UpdateUserToken();
                 App.IsUserLoggedIn = true;
-
+              
                 Xamarin.Forms.Application.Current.MainPage = new ActiveUser();
 
             }

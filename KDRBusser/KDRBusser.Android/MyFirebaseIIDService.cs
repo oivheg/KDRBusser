@@ -58,7 +58,7 @@ namespace KDRBusser.Droid
 
         async void SendRegistrationToServerAsync(string token)
         {
-            await DependencyService.Get<FCMLoginService>().UpdateUserToken();
+            //await DependencyService.Get<FCMLoginService>().UpdateUserToken();
 
 
         }
