@@ -20,7 +20,7 @@ namespace KDRBusser.Communication
 
             var client = new HttpClient();
             string json = JsonConvert.SerializeObject(user);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            var content = new StringContent(json, Encoding.Unicode, "application/json");
             var request = new HttpRequestMessage();
             response = await client.PostAsync(Base_URL + _Command, content);
         }

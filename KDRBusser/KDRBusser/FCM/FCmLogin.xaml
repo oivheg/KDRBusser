@@ -14,6 +14,8 @@
            HorizontalOptions="Center" />
         <Entry x:Name="emailEntry" Placeholder="Email"></Entry>
         <Entry  x:Name="passwordEntry" Placeholder="Password" IsPassword="true" ></Entry>
+        <Entry  IsVisible="False" x:Name="masterEntry" Placeholder="MasterId" ></Entry>
+        <Entry  IsVisible="False" x:Name="userNameEntry" Placeholder="UserName"  ></Entry>
         <Button x:Name="btnLogin" Text="Logg in" />
     <Button x:Name="btncreateUser" Text="Create User"/>
 

@@ -15,6 +15,7 @@ namespace KDRBusser.Classes
         public String Appid { get; set; }
         public bool Active { get; set; }
         public String Email { get; set; }
+        public String MasterKey { get; set; }
 
 
         public User()

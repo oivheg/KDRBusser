@@ -23,19 +23,26 @@ namespace KDRBusser.Droid
         {
             base.OnCreate(bundle);
             Forms.Init(this, bundle);
-            TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbarResource = Resource.Layout.Toolbar;
+            ToastNotification.Init(this);
             FirebaseApp.InitializeApp(this);
-            LoadApplication(new App());
-
             DependencyService.Register<RestApiCommunication>();
             DependencyService.Register<FirebaseApp>(); // this probalby the reason it FCM 
             DependencyService.Register<JsonConverter>(); // this probalby the reason it FCM 
             DependencyService.Register<ToastNotification>(); // Register your dependency
            DependencyService.Register<MyFirebaseMessagingService>();
-            ToastNotification.Init(this);
-             
+
+            TabLayoutResource = Resource.Layout.Tabbar;
+            ToolbarResource = Resource.Layout.Toolbar;
+
+
+            
+               LoadApplication(new App());
            
+        }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
         }
     }
 }

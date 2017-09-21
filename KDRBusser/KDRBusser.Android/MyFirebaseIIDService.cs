@@ -37,7 +37,7 @@ namespace KDRBusser.Droid
         {
             ToastedUserAsync(title);
         }
-        public void onReceive(Context context, Intent intent)
+        public void OnReceive(Context context, Intent intent)
         {
             ToastedUserAsync("onReceived");
         }
@@ -58,8 +58,9 @@ namespace KDRBusser.Droid
 
         async void SendRegistrationToServerAsync(string token)
         {
-            //await DependencyService.Get<FCMLoginService>().UpdateUserToken();
 
+            String tkn = token;
+            DependencyService.Get<IFCMLoginService>().UpdateToken(tkn);
 
         }
     }

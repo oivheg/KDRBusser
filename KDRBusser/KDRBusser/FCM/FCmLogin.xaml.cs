@@ -9,25 +9,39 @@ namespace KDRBusser
     public partial class FCmLogin : ContentPage
     {
         
-        Entry Email, Password;
+        Entry Email, Password, MasterId, UserName;
 
+        public String GetMasterID()
+        {
+            return MasterId.Text;
+        }
        
         public FCmLogin()
         {
             InitializeComponent();
-            this.Title = "Sample Weather App";
+            this.Title = "KDRBusser";
             btnLogin.Clicked += BtnLogin_Clicked;
             btncreateUser.Clicked += BtncreateUser_clicked;
+  }
 
-
-
-        }
-
+        Boolean IsCreating = false;
         private void BtncreateUser_clicked(object sender, EventArgs e)
         {
-            Email = emailEntry;
-            Password = passwordEntry;
-            DependencyService.Get<IFCMLoginService>().Createuser(Email.Text, Password.Text);
+            if (IsCreating)
+            {
+                Email = emailEntry;
+                Password = passwordEntry;
+                MasterId = masterEntry;
+                DependencyService.Get<IFCMLoginService>().Createuser(Email.Text, Password.Text, MasterId.Text);
+            }
+            else
+            {
+                userNameEntry.IsVisible = true;
+                masterEntry.IsVisible = true;
+                //show the MasterID Field,
+                IsCreating = true;
+            }
+            
         }
 
         private void BtnLogin_Clicked(object sender, EventArgs e)

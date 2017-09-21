@@ -21,7 +21,7 @@ namespace KDRBusser.Droid
 
         
 
-        public string getEmail()
+        public string GetEmail()
         {
             return mAuth.CurrentUser.Email;
 
@@ -38,10 +38,13 @@ namespace KDRBusser.Droid
             
         }
 
-        public void UpdateToken()
+        public void UpdateToken(String Token)
         {
+            FCMToken = Token;
             UpdateUserToken();
         }
+
+        String FCMToken;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -63,27 +66,38 @@ namespace KDRBusser.Droid
             base.OnStop();
             mAuth.AuthState -= AuthStateChanged;
         }
-        public void Createuser(String email, String password)
+        public void Createuser(String email, String password, String masterid)
         {
            
-            CreateUserAsync(email, password);
+            CreateUserAsync(email, password, masterid);
         }
 
-        public async void CreateUserAsync(String email, String password)
+        public async void CreateUserAsync(String email, String password, String masterid)
         {
             
             try
             {
+                User newUser = new User
+                {
+                    Email = email,
+                    UserName = "1234567890".Trim(),
+                    MasterKey = masterid.Trim(),
+                    Appid = "not initialised".Trim(),
+                    Active = false
+                };
+                await RestApiCommunication.Post(newUser, "CreateUser");
+
                 await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
-                ToastedUserAsync("FCM User Created");
-              
+                //ToastedUserAsync("FCM User Created");
+             
             }
             catch (Exception ex)
             {
                 // Sign-up failed, display a message to the user
                 // If sign in succeeds, the AuthState event handler will
                 //  be notified and logic to handle the signed in user can happen there
-                ToastedUserAsync("Create user failed" + ex);
+               
+                    ToastedUserAsync("Create user failed" + ex);
             }
 
         }
@@ -91,8 +105,6 @@ namespace KDRBusser.Droid
 
         public void LogInnUser(String email, String password)
         {
-
-           
             LogInUserAsync(email, password);
             
         }
@@ -101,8 +113,6 @@ namespace KDRBusser.Droid
         {
             try
             {
-
-
                 await mAuth.SignInWithEmailAndPasswordAsync(email, password);
                 ToastedUserAsync("Sign In Success ");
 
@@ -124,11 +134,12 @@ namespace KDRBusser.Droid
 
         public async System.Threading.Tasks.Task UpdateUserToken()
         {
-            User user = new User();
-            //user.Email = email;
-            user.Email = mAuth.CurrentUser.Email;
-            user.Appid = GetToken();
-            await RestApiCommunication.Post(user, "UpdatUser");
+            User user = new User
+            {
+                Email = mAuth.CurrentUser.Email,
+                Appid = GetToken()
+            };
+          await RestApiCommunication.Post(user, "UpdatUser");
         }
 
         public void ToastUser(String title)
@@ -156,15 +167,16 @@ namespace KDRBusser.Droid
             if (user != null)
             { FirebaseApp.InitializeApp(this);
                 // User is signed in
-                ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
+                //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
                 App.IsUserLoggedIn = true;
-             
+                UpdateUserToken();
+                Xamarin.Forms.Application.Current.MainPage = new ActiveUser();
             }
             else
             {
                 
                 // User is signed out
-               ToastedUserAsync("onAuthStateChanged:signed_out");
+               //ToastedUserAsync("onAuthStateChanged:signed_out");
                 App.IsUserLoggedIn = false;
                 Xamarin.Forms.Application.Current.MainPage = new FCmLogin();
             }
@@ -184,7 +196,14 @@ namespace KDRBusser.Droid
             //var firebaseapp = FirebaseApp.InitializeApp(this);
 
             var user = mAuth.CurrentUser;
+
             var signedIn = user != null;
+
+         
+            if (signedIn)
+            {
+                UpdateUserToken();
+            }
 
             return signedIn;
         }
@@ -199,7 +218,10 @@ namespace KDRBusser.Droid
 
             if (refreshedToken == null)
             {
-                mAuth.SignOut();
+              
+                LogOut();
+                //mAuth.SignOut();
+
             }
 
 

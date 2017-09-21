@@ -12,9 +12,9 @@ using Xamarin.Forms;
 
 namespace KDRBusser.Droid
 {
-    [Service(Name = "com.example.oivhe.resturantbusser.MyFirebaseMessagingService" ,Exported = true)]
+    [Service]
    
-    [BroadcastReceiver]
+    //[BroadcastReceiver]
     [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
     class MyFirebaseMessagingService : FirebaseMessagingService
     {
@@ -28,7 +28,7 @@ namespace KDRBusser.Droid
        
             base.OnCreate();
             System.Console.WriteLine("MYF:test"); //Console is not found in system
-          
+         
         }
         public override void OnMessageReceived(RemoteMessage message)
         {
@@ -37,12 +37,14 @@ namespace KDRBusser.Droid
             var name = string.Empty; ;
             if (message.Data.Count > 0)
             {
-             
-            
+
+               
                 if (message.Data.ContainsKey("title"))
                 {
                     name = message.Data["title"];
-                    ToastUser("inform user of dinner is ready");
+                    //ToastUser("inform user of dinner is ready");
+                    System.Console.WriteLine("MYF:DInner is ready"); //Console is not found in system
+                  
                     Vibration();
                     Task.Run(async () =>  await  InformmasterAsync());
                 }
@@ -50,7 +52,7 @@ namespace KDRBusser.Droid
                     switch (message.Data["Action"])
                     {
                         case "cancelVibration":
-                            ToastUser("Vibrations Canceled");
+                            //ToastUser("Vibrations Canceled");
                             timer.Stop();
                             break;
 
@@ -70,7 +72,7 @@ namespace KDRBusser.Droid
             }
             
           
-            //SendNotification(message.GetNotification().Body);
+         
         }
 
       
@@ -144,6 +146,7 @@ namespace KDRBusser.Droid
                 Description = "KDRBusser",
                 IsClickable = false // Set to true if you want the result Clicked to come back (if the user clicks it)
             };
+            
             var notification = DependencyService.Get<IToastNotificator>();
             var result = await notification.Notify(options);
 
