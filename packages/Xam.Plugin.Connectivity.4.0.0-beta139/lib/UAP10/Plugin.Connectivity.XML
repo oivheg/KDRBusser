@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Connectivity</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.Connectivity.CrossConnectivity">
+            <summary>
+            Cross platform Connectivity implementations
+            </summary>
+        </member>
+        <member name="P:Plugin.Connectivity.CrossConnectivity.IsSupported">
+            <summary>
+            Gets if the plugin is supported on the current platform.
+            </summary>
+        </member>
+        <member name="P:Plugin.Connectivity.CrossConnectivity.Current">
+            <summary>
+            Current plugin implementation to use
+            </summary>
+        </member>
+        <member name="M:Plugin.Connectivity.CrossConnectivity.Dispose">
+            <summary>
+            Dispose of everything 
+            </summary>
+        </member>
+        <member name="T:Plugin.Connectivity.ConnectivityImplementation">
+            <summary>
+            Connectivity Implementation for Windows
+            </summary>
+        </member>
+        <member name="M:Plugin.Connectivity.ConnectivityImplementation.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Plugin.Connectivity.ConnectivityImplementation.IsConnected">
+            <summary>
+            Gets if there is an active internet connection
+            </summary>
+        </member>
+        <member name="M:Plugin.Connectivity.ConnectivityImplementation.IsReachable(System.String,System.TimeSpan)">
+            <summary>
+            Tests if a host name is pingable
+            </summary>
+            <param name="host">The host name can either be a machine name, such as "java.sun.com", or a textual representation of its IP address (127.0.0.1)</param>
+            <param name="timeout">Timeout</param>
+            <returns></returns>
+        </member>
+        <member name="M:Plugin.Connectivity.ConnectivityImplementation.IsRemoteReachable(System.Uri,System.TimeSpan)">
+            <summary>
+            Tests if a remote uri is reachable
+            </summary>
+            <param name="uri">Full valid Uri to check for reachability</param>
+            <param name="timeout">Timeout</param>
+        </member>
+        <member name="P:Plugin.Connectivity.ConnectivityImplementation.ConnectionTypes">
+            <summary>
+            Gets the list of all active connection types.
+            </summary>
+        </member>
+        <member name="P:Plugin.Connectivity.ConnectivityImplementation.Bandwidths">
+            <summary>
+            Retrieves a list of available bandwidths for the platform.
+            Only active connections.
+            </summary>
+        </member>
+        <member name="M:Plugin.Connectivity.ConnectivityImplementation.Dispose(System.Boolean)">
+            <summary>
+            Dispose
+            </summary>
+            <param name="disposing"></param>
+        </member>
+    </members>
+</doc>

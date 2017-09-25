@@ -36,6 +36,7 @@ namespace KDRBusser
             }
             else
             {
+                btnLogin.IsVisible = false;
                 userNameEntry.IsVisible = true;
                 masterEntry.IsVisible = true;
                 //show the MasterID Field,
