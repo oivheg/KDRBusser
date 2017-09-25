@@ -66,13 +66,13 @@ namespace KDRBusser.Droid
             base.OnStop();
             mAuth.AuthState -= AuthStateChanged;
         }
-        public void Createuser(String email, String password, String masterid)
+        public void Createuser(String email, String password, String masterid, String UserName)
         {
            
-            CreateUserAsync(email, password, masterid);
+            CreateUserAsync(email, password, masterid, UserName);
         }
 
-        public async void CreateUserAsync(String email, String password, String masterid)
+        public async void CreateUserAsync(String email, String password, String masterid, String UserName)
         {
             
             try
@@ -80,7 +80,7 @@ namespace KDRBusser.Droid
                 User newUser = new User
                 {
                     Email = email,
-                    UserName = "1234567890".Trim(),
+                    UserName = UserName.Trim(),
                     MasterKey = masterid.Trim(),
                     Appid = "not initialised".Trim(),
                     Active = false
