@@ -13,22 +13,22 @@ using Xamarin.Forms;
 namespace KDRBusser.Droid
 {
     [Service]
-   
+
     //[BroadcastReceiver]
     [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
     class MyFirebaseMessagingService : FirebaseMessagingService
     {
         const string TAG = "MyFirebaseMessagingService";
-            
+
         private int count = 1;
-        static Timer timer;
+        static Timer timer = new Timer();
 
         public override void OnCreate()
         {
-       
+
             base.OnCreate();
             System.Console.WriteLine("MYF:test"); //Console is not found in system
-         
+
         }
         public override void OnMessageReceived(RemoteMessage message)
         {
@@ -38,22 +38,27 @@ namespace KDRBusser.Droid
             if (message.Data.Count > 0)
             {
 
-               
+
                 if (message.Data.ContainsKey("title"))
                 {
                     name = message.Data["title"];
                     //ToastUser("inform user of dinner is ready");
                     System.Console.WriteLine("MYF:DInner is ready"); //Console is not found in system
-                  
+
                     Vibration();
-                    Task.Run(async () =>  await  InformmasterAsync());
+                    Task.Run(async () => await InformmasterAsync());
                 }
-                else if (message.Data.ContainsKey("Action")){
+                else if (message.Data.ContainsKey("Action"))
+                {
                     switch (message.Data["Action"])
                     {
                         case "cancelVibration":
                             //ToastUser("Vibrations Canceled");
-                            timer.Stop();
+                            if (timer.Enabled)
+                            {
+                                timer.Stop();
+                            }
+
                             break;
 
                         case "recieved":
@@ -64,47 +69,54 @@ namespace KDRBusser.Droid
                             break;
                     }
                 }
-                
-            }
-                {
 
-                
             }
-            
-          
-         
+
         }
 
-      
-            void Vibration()
+
+        void Vibration()
+        {
+            Vibrate();
+
+            if (!timer.Enabled)
             {
 
-                timer = new Timer();
-                timer.Interval = 1000;
+                timer.Interval = 1000; // runs every second
                 timer.Elapsed += Timer_Elapsed;
                 timer.Start();
             }
 
-            private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+        }
+
+        private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+
+
+
+            if (count < 10)
             {
-                if (count < 10)
-                {
                 count++;
-             
+
             }
             else
             {
                 count = 1;
-                Vibrator vibrator = (Vibrator)this.ApplicationContext.GetSystemService(Context.VibratorService);
-                long[] vibPatterns = { 200, 250, 350, 250, 350, 1000, 500, 350, 500, 350, 1000 };
-                vibrator.Vibrate(vibPatterns, -1);
+                Vibrate();
             }
         }
 
-            //Vibrator vibrator = (Vibrator)this.ApplicationContext.GetSystemService(Context.VibratorService);
-            //long[] vibPatterns = { 200, 500, 350, 500, 350, 1000, 500, 350, 500, 350, 1000 };
-            //vibrator.Vibrate(vibPatterns, -1);
-   
+        private void Vibrate()
+        {
+            Vibrator vibrator = (Vibrator)this.ApplicationContext.GetSystemService(Context.VibratorService);
+            long[] vibPatterns = { 200, 250, 350, 250, 350, 1000, 500, 350, 500, 350, 1000 };
+            vibrator.Vibrate(vibPatterns, -1);
+        }
+
+        //Vibrator vibrator = (Vibrator)this.ApplicationContext.GetSystemService(Context.VibratorService);
+        //long[] vibPatterns = { 200, 500, 350, 500, 350, 1000, 500, 350, 500, 350, 1000 };
+        //vibrator.Vibrate(vibPatterns, -1);
+
 
         void SendNotification(string messageBody)
         {
@@ -123,14 +135,14 @@ namespace KDRBusser.Droid
             notificationManager.Notify(0, notificationBuilder.Build());
         }
 
-        public  async Task InformmasterAsync()
+        public async Task InformmasterAsync()
         {
             User user = new User
             {
                 Appid = DependencyService.Get<IFCMLoginService>().GetToken()
             };
             await RestApiCommunication.Post(user, "Msgreceived");
-          
+
         }
         public void ToastUser(String title)
         {
@@ -146,7 +158,7 @@ namespace KDRBusser.Droid
                 Description = "KDRBusser",
                 IsClickable = false // Set to true if you want the result Clicked to come back (if the user clicks it)
             };
-            
+
             var notification = DependencyService.Get<IToastNotificator>();
             var result = await notification.Notify(options);
 

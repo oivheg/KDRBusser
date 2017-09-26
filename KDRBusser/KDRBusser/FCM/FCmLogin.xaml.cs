@@ -32,15 +32,17 @@ namespace KDRBusser
                 Email = emailEntry;
                 Password = passwordEntry;
                 MasterId = masterEntry;
-                DependencyService.Get<IFCMLoginService>().Createuser(Email.Text, Password.Text, MasterId.Text);
+                UserName = userNameEntry;
+                DependencyService.Get<IFCMLoginService>().Createuser(Email.Text, Password.Text, MasterId.Text, UserName.Text);
             }
             else
             {
+                // hides the login button and shows the entrys needed for creating a user.
                 btnLogin.IsVisible = false;
                 userNameEntry.IsVisible = true;
                 masterEntry.IsVisible = true;
-                //show the MasterID Field,
                 IsCreating = true;
+                btncreateUser.Text = "Lagre og Logg inn";
             }
             
         }
@@ -51,15 +53,6 @@ namespace KDRBusser
             Password = passwordEntry;
             DependencyService.Get<IFCMLoginService>().LogInnUser(Email.Text, Password.Text);
         }
-
-      
-
-
-
-
     }
-
-
-
-
+    
 }
