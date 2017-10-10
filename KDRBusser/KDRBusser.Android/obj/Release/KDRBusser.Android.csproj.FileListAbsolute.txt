@@ -44,7 +44,6 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Xamarin.GooglePlaySe
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\KDRBusser.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\KDRBusser.dll.config
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\FormsViewGroup.pdb
-C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\FormsViewGroup.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Newtonsoft.Json.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Plugin.Connectivity.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Plugin.Connectivity.xml
@@ -59,12 +58,9 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Toasts.Forms.Plugin.
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Toasts.Forms.Plugin.Droid.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Xamarin.Forms.Core.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Xamarin.Forms.Core.xml
-C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Xamarin.Forms.Core.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Xamarin.Forms.Platform.Android.pdb
-C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Xamarin.Forms.Platform.Android.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Xamarin.Forms.Xaml.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Xamarin.Forms.Xaml.xml
-C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Xamarin.Forms.Xaml.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\KDRBusser.Android.csprojResolveAssemblyReference.cache
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\XbdMerge\Xamarin.GooglePlayServices.Basement.dll.stamp
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\XbdMerge\Xamarin.GooglePlayServices.Tasks.dll.stamp
@@ -90,7 +86,12 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\res\values\styles.xm
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\res\drawable\icon.png
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\R.cs.flag
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\uploadflags.txt
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\res\values\goog_svcs_json.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\KDRBusser.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\FormsViewGroup.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Xamarin.Forms.Core.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Xamarin.Forms.Platform.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Xamarin.Forms.Xaml.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\KDRBusser.Android.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\FormsViewGroup.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\KDRBusser.Android.dll.mdb

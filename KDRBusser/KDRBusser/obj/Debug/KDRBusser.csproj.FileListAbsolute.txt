@@ -24,7 +24,6 @@ C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Debug\Xamarin.Forms.Platform.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\KDRBusser.csproj.App.config
-C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\KDRBusser.csprojResolveAssemblyReference.cache
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\KDRBusser.csproj.CoreCompileInputs.cache
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\KDRBusser.MainPage.xaml.g.cs
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\KDRBusser.App.xaml.g.cs
