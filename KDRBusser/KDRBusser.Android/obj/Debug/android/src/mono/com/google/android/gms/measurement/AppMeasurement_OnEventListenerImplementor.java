@@ -17,7 +17,7 @@ public class AppMeasurement_OnEventListenerImplementor
 	}
 
 
-	public AppMeasurement_OnEventListenerImplementor () throws java.lang.Throwable
+	public AppMeasurement_OnEventListenerImplementor ()
 	{
 		super ();
 		if (getClass () == AppMeasurement_OnEventListenerImplementor.class)

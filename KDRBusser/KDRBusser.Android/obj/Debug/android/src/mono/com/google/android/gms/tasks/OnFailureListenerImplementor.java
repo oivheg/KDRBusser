@@ -17,7 +17,7 @@ public class OnFailureListenerImplementor
 	}
 
 
-	public OnFailureListenerImplementor () throws java.lang.Throwable
+	public OnFailureListenerImplementor ()
 	{
 		super ();
 		if (getClass () == OnFailureListenerImplementor.class)

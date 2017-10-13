@@ -3,6 +3,8 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\FormsVi
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Newtonsoft.Json.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Plugin.Connectivity.Abstractions.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Plugin.Connectivity.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\ProgressRing.Forms.Plugin.Android.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\ProgressRing.Forms.Plugin.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Net.Http.Extensions.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Net.Http.Primitives.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Toasts.Forms.Plugin.Abstractions.dll
@@ -33,6 +35,8 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Auth.Base.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Auth.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Base.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Basement.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Tasks.dll

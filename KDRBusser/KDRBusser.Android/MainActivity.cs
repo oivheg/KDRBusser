@@ -11,6 +11,7 @@ using Firebase.Iid;
 using Android.Util;
 using Newtonsoft.Json;
 using KDRBusser.Communication;
+using ProgressRingControl.Forms.Plugin;
 
 namespace KDRBusser.Droid
 {
@@ -30,13 +31,9 @@ namespace KDRBusser.Droid
             DependencyService.Register<JsonConverter>(); // this probalby the reason it FCM 
             DependencyService.Register<ToastNotification>(); // Register your dependency
            DependencyService.Register<MyFirebaseMessagingService>();
-
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-
-
-            
-               LoadApplication(new App());
+            LoadApplication(new App());
            
         }
 

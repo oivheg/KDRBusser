@@ -18,7 +18,7 @@ public class FCMLoginService
 	}
 
 
-	public FCMLoginService () throws java.lang.Throwable
+	public FCMLoginService ()
 	{
 		super ();
 		if (getClass () == FCMLoginService.class)

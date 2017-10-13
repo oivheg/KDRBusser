@@ -22,6 +22,8 @@
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Firebase.Common\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Firebase.Iid\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Firebase.Messaging\library_project_imports\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Auth\library_project_imports\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Auth.Base\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Base\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Basement\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Tasks\library_project_imports\AndroidManifest.xml</ManifestDocument>
@@ -51,6 +53,8 @@
     <Jar>obj\Debug\__library_projects__\Xamarin.Firebase.Common\library_project_imports\classes.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.Firebase.Iid\library_project_imports\classes.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.Firebase.Messaging\library_project_imports\classes.jar</Jar>
+    <Jar>obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Auth\library_project_imports\classes.jar</Jar>
+    <Jar>obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Auth.Base\library_project_imports\classes.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Base\library_project_imports\classes.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Basement\library_project_imports\classes.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Tasks\library_project_imports\classes.jar</Jar>

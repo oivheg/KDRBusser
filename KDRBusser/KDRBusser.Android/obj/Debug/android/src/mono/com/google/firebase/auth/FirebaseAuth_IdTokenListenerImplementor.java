@@ -17,7 +17,7 @@ public class FirebaseAuth_IdTokenListenerImplementor
 	}
 
 
-	public FirebaseAuth_IdTokenListenerImplementor () throws java.lang.Throwable
+	public FirebaseAuth_IdTokenListenerImplementor ()
 	{
 		super ();
 		if (getClass () == FirebaseAuth_IdTokenListenerImplementor.class)

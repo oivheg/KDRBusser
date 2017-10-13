@@ -16,7 +16,7 @@ public class MyFirebaseIIDService
 	}
 
 
-	public MyFirebaseIIDService () throws java.lang.Throwable
+	public MyFirebaseIIDService ()
 	{
 		super ();
 		if (getClass () == MyFirebaseIIDService.class)

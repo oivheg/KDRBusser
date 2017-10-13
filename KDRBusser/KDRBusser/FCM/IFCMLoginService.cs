@@ -13,5 +13,6 @@ namespace KDRBusser
         void  LogInnUser(String email, String password);
         void LogOut();
         String GetToken();
+        void LogInGoogle();
     }
 }

@@ -17,7 +17,7 @@ public class MyFirebaseMessagingService
 	}
 
 
-	public MyFirebaseMessagingService () throws java.lang.Throwable
+	public MyFirebaseMessagingService ()
 	{
 		super ();
 		if (getClass () == MyFirebaseMessagingService.class)

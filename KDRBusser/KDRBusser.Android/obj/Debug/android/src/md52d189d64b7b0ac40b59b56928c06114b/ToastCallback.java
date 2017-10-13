@@ -16,7 +16,7 @@ public class ToastCallback
 	}
 
 
-	public ToastCallback () throws java.lang.Throwable
+	public ToastCallback ()
 	{
 		super ();
 		if (getClass () == ToastCallback.class)

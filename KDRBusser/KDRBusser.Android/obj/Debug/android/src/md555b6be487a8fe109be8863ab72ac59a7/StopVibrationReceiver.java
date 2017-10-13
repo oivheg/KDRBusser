@@ -16,7 +16,7 @@ public class StopVibrationReceiver
 	}
 
 
-	public StopVibrationReceiver () throws java.lang.Throwable
+	public StopVibrationReceiver ()
 	{
 		super ();
 		if (getClass () == StopVibrationReceiver.class)

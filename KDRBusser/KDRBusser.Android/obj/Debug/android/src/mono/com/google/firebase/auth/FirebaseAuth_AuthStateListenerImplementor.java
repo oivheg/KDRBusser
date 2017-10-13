@@ -17,7 +17,7 @@ public class FirebaseAuth_AuthStateListenerImplementor
 	}
 
 
-	public FirebaseAuth_AuthStateListenerImplementor () throws java.lang.Throwable
+	public FirebaseAuth_AuthStateListenerImplementor ()
 	{
 		super ();
 		if (getClass () == FirebaseAuth_AuthStateListenerImplementor.class)

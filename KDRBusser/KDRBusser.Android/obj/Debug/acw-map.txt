@@ -2,6 +2,10 @@ KDRBusser.Droid.FCMLoginService, KDRBusser.Android;md56ed83f03e6bc1533e25d080d5e
 KDRBusser.Droid.FCMLoginService, KDRBusser.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56ed83f03e6bc1533e25d080d5e1a3277.FCMLoginService
 KDRBusser.Droid.FCMLoginService;md56ed83f03e6bc1533e25d080d5e1a3277.FCMLoginService
 kdrbusser.droid.FCMLoginService;md56ed83f03e6bc1533e25d080d5e1a3277.FCMLoginService
+KDRBusser.Droid.GoogleSignInActivity, KDRBusser.Android;md56ed83f03e6bc1533e25d080d5e1a3277.GoogleSignInActivity
+KDRBusser.Droid.GoogleSignInActivity, KDRBusser.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56ed83f03e6bc1533e25d080d5e1a3277.GoogleSignInActivity
+KDRBusser.Droid.GoogleSignInActivity;md56ed83f03e6bc1533e25d080d5e1a3277.GoogleSignInActivity
+kdrbusser.droid.GoogleSignInActivity;md56ed83f03e6bc1533e25d080d5e1a3277.GoogleSignInActivity
 KDRBusser.Droid.MainActivity, KDRBusser.Android;md56ed83f03e6bc1533e25d080d5e1a3277.MainActivity
 KDRBusser.Droid.MainActivity, KDRBusser.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56ed83f03e6bc1533e25d080d5e1a3277.MainActivity
 KDRBusser.Droid.MainActivity;md56ed83f03e6bc1533e25d080d5e1a3277.MainActivity
@@ -22,6 +26,10 @@ Plugin.Connectivity.ConnectivityChangeBroadcastReceiver, Plugin.Connectivity;md5
 Plugin.Connectivity.ConnectivityChangeBroadcastReceiver, Plugin.Connectivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null;md5d35596039a7e7d0326bcb4b4dcef16e1.ConnectivityChangeBroadcastReceiver
 Plugin.Connectivity.ConnectivityChangeBroadcastReceiver;md5d35596039a7e7d0326bcb4b4dcef16e1.ConnectivityChangeBroadcastReceiver
 plugin.connectivity.ConnectivityChangeBroadcastReceiver;md5d35596039a7e7d0326bcb4b4dcef16e1.ConnectivityChangeBroadcastReceiver
+ProgressRingControl.Forms.Plugin.Android.ProgressRingRenderer, ProgressRing.Forms.Plugin.Android;md5d1c1610f5c6685d9b069656ffe95d103.ProgressRingRenderer
+ProgressRingControl.Forms.Plugin.Android.ProgressRingRenderer, ProgressRing.Forms.Plugin.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d1c1610f5c6685d9b069656ffe95d103.ProgressRingRenderer
+ProgressRingControl.Forms.Plugin.Android.ProgressRingRenderer;md5d1c1610f5c6685d9b069656ffe95d103.ProgressRingRenderer
+progressringcontrol.forms.plugin.android.ProgressRingRenderer;md5d1c1610f5c6685d9b069656ffe95d103.ProgressRingRenderer
 Plugin.Toasts.AlarmHandler, Toasts.Forms.Plugin.Droid;md52d189d64b7b0ac40b59b56928c06114b.AlarmHandler
 Plugin.Toasts.AlarmHandler, Toasts.Forms.Plugin.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52d189d64b7b0ac40b59b56928c06114b.AlarmHandler
 Plugin.Toasts.AlarmHandler;md52d189d64b7b0ac40b59b56928c06114b.AlarmHandler

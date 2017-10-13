@@ -16,7 +16,7 @@ public class NotificationReceiver
 	}
 
 
-	public NotificationReceiver () throws java.lang.Throwable
+	public NotificationReceiver ()
 	{
 		super ();
 		if (getClass () == NotificationReceiver.class)

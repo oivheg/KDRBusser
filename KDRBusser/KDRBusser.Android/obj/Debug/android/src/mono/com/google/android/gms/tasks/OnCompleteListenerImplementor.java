@@ -17,7 +17,7 @@ public class OnCompleteListenerImplementor
 	}
 
 
-	public OnCompleteListenerImplementor () throws java.lang.Throwable
+	public OnCompleteListenerImplementor ()
 	{
 		super ();
 		if (getClass () == OnCompleteListenerImplementor.class)

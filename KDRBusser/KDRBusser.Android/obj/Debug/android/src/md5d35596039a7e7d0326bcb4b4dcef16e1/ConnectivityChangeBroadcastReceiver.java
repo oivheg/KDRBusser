@@ -16,7 +16,7 @@ public class ConnectivityChangeBroadcastReceiver
 	}
 
 
-	public ConnectivityChangeBroadcastReceiver () throws java.lang.Throwable
+	public ConnectivityChangeBroadcastReceiver ()
 	{
 		super ();
 		if (getClass () == ConnectivityChangeBroadcastReceiver.class)

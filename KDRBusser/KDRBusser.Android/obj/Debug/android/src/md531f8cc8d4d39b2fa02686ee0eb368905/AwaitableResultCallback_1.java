@@ -17,7 +17,7 @@ public class AwaitableResultCallback_1
 	}
 
 
-	public AwaitableResultCallback_1 () throws java.lang.Throwable
+	public AwaitableResultCallback_1 ()
 	{
 		super ();
 		if (getClass () == AwaitableResultCallback_1.class)

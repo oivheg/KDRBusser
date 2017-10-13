@@ -17,7 +17,7 @@ public class OnSuccessListenerImplementor
 	}
 
 
-	public OnSuccessListenerImplementor () throws java.lang.Throwable
+	public OnSuccessListenerImplementor ()
 	{
 		super ();
 		if (getClass () == OnSuccessListenerImplementor.class)

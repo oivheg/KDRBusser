@@ -1,14 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-         
+        
              x:Class="KDRBusser.FCmLogin">
-
-
-
-
-
-
+    
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Label Text="Login To APP, using Firebase login options" 
@@ -23,11 +18,15 @@
             </Entry.Behaviors>-->
         </Entry>
         <Button x:Name="btnLogin" Text="Logg in" />
-    <Button x:Name="btncreateUser" Text="Create User"/>
+        <Button x:Name="btnGoogle" Text="Logg in With Google Acctount" />
+        <Button x:Name="btncreateUser" Text="Create User"/>
+        <ActivityIndicator HorizontalOptions="Fill" VerticalOptions="Fill" IsVisible="true" IsRunning="true" Color="Blue" />
 
-        
+
     </StackLayout>
+    <!--<RelativeLayout Opacity="0.5" BackgroundColor="Black" VerticalOptions="Center" HorizontalOptions="Center">
+        <ActivityIndicator Color="Red" IsRunning="{Binding IsBusy}" />
+    </RelativeLayout>-->
 
-    
-   
+
 </ContentPage>

@@ -17,7 +17,7 @@ public class EmptyOnClickListener
 	}
 
 
-	public EmptyOnClickListener () throws java.lang.Throwable
+	public EmptyOnClickListener ()
 	{
 		super ();
 		if (getClass () == EmptyOnClickListener.class)

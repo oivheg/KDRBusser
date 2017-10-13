@@ -16,7 +16,7 @@ public class AlarmHandler
 	}
 
 
-	public AlarmHandler () throws java.lang.Throwable
+	public AlarmHandler ()
 	{
 		super ();
 		if (getClass () == AlarmHandler.class)

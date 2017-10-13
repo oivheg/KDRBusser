@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using ProgressRingControl.Forms.Plugin;
+using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -13,7 +14,7 @@ namespace KDRBusser
 
         {
            InitializeComponent();
-           
+            var progressRing = new ProgressRing { RingThickness = 20, Progress = 0.5f };
             DependencyService.Get<IFCMLoginService>().Init();
             
             //IsUserLoggedIn =  DependencyService.Get<IFCMLoginService>().IsLoggedIn();

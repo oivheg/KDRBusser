@@ -17,7 +17,7 @@ public class GoogleApiClient_OnConnectionFailedListenerImplementor
 	}
 
 
-	public GoogleApiClient_OnConnectionFailedListenerImplementor () throws java.lang.Throwable
+	public GoogleApiClient_OnConnectionFailedListenerImplementor ()
 	{
 		super ();
 		if (getClass () == GoogleApiClient_OnConnectionFailedListenerImplementor.class)

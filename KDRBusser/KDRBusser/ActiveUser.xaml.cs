@@ -23,7 +23,7 @@ namespace KDRBusser
             //does nothing right now
             //email = DependencyService.Get<IFCMLoginService>().GetEmail();
         }
-        String email = "";
+        //String email = "";
         protected override void OnAppearing()
         {
             base.OnAppearing();

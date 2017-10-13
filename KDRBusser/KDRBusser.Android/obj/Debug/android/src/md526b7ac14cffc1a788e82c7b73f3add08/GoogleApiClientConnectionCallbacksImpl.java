@@ -18,7 +18,7 @@ public class GoogleApiClientConnectionCallbacksImpl
 	}
 
 
-	public GoogleApiClientConnectionCallbacksImpl () throws java.lang.Throwable
+	public GoogleApiClientConnectionCallbacksImpl ()
 	{
 		super ();
 		if (getClass () == GoogleApiClientConnectionCallbacksImpl.class)

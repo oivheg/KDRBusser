@@ -137,6 +137,7 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Xamarin.Forms.Platform
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Xamarin.Forms.Platform.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Xamarin.Forms.Xaml.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\KDRBusser.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\ProgressRing.Forms.Plugin.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\KDRBusser.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\KDRBusser.dll.config
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Debug\KDRBusser.UWP.csprojResolveAssemblyReference.cache
