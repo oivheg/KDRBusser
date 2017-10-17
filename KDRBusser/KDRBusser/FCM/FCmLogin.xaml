@@ -4,8 +4,8 @@
         
              x:Class="KDRBusser.FCmLogin">
 
-    <AbsoluteLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <StackLayout  IsEnabled="False" HorizontalOptions="Center" VerticalOptions="Center ">
+    <!--<AbsoluteLayout HorizontalOptions="Center" VerticalOptions="Center">-->
+        <StackLayout   HorizontalOptions="Center" VerticalOptions="Center ">
         <Label Text="Login To APP, using Firebase login options" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
@@ -24,10 +24,10 @@
 
 
         </StackLayout >
-        <StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional" BackgroundColor="Black" Opacity="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+        <!--<StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional" BackgroundColor="Black" Opacity="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
             <ActivityIndicator IsRunning="true" IsVisible="true" />
         </StackLayout>
-    </AbsoluteLayout>
+    </AbsoluteLayout>-->
     <!--<RelativeLayout Opacity="0.5" BackgroundColor="Black" VerticalOptions="Center" HorizontalOptions="Center">
         <ActivityIndicator Color="Red" IsRunning="{Binding IsBusy}" />
     </RelativeLayout>-->

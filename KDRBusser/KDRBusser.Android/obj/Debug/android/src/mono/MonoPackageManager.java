@@ -107,12 +107,17 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "KDRBusser.Android.dll" comes first in this list. */
 		"KDRBusser.Android.dll",
+		"Acr.Support.Android.dll",
+		"Acr.UserDialogs.dll",
+		"Acr.UserDialogs.Interface.dll",
+		"AndHUD.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
 		"Plugin.Connectivity.Abstractions.dll",
 		"Plugin.Connectivity.dll",
 		"ProgressRing.Forms.Plugin.Android.dll",
 		"ProgressRing.Forms.Plugin.dll",
+		"Splat.dll",
 		"System.Net.Http.Extensions.dll",
 		"System.Net.Http.Primitives.dll",
 		"Toasts.Forms.Plugin.Abstractions.dll",

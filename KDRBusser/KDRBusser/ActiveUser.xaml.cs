@@ -27,6 +27,7 @@ namespace KDRBusser
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            DependencyService.Get<IFCMLoginService>().IsLoading(true);
             CommunicateDbAsync(mUser, false, false, false);
         }
 
@@ -48,6 +49,7 @@ namespace KDRBusser
 
         private void IsUserActive()
         {
+          
             if (isActive)
             {
 
@@ -110,10 +112,12 @@ namespace KDRBusser
                     return;
                 }
                 await RestApiCommunication.Get("FindUser?" + parameters);
+                DependencyService.Get<IFCMLoginService>().IsLoading(false);
                 try
                 {
   user = JsonConvert.DeserializeObject<User>(RestApiCommunication.jsonresponse);
                 isActive = user.Active;
+                    lblemploy.Text = user.UserName;
                 IsUserActive();
                 }
                 catch

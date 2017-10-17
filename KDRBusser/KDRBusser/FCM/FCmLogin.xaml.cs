@@ -24,12 +24,9 @@ namespace KDRBusser
             btnLogin.Clicked += BtnLogin_Clicked;
             btncreateUser.Clicked += BtncreateUser_clicked;
             btnGoogle.Clicked += btnGoogle_Clicked;
-            var progressRing = new ProgressRing { RingThickness = 20, Progress = 0.5f };
-            //progressRing.IsVisible = true;
-            //progressRing.IsEnabled = true;
+            //DependencyService.Get<IFCMLoginService>().IsLoading();
 
-            //this.Content = progressRing;
-           
+
         }
 
         private void btnGoogle_Clicked(object sender, EventArgs e)
@@ -65,7 +62,8 @@ namespace KDRBusser
 
         private void BtnLogin_Clicked(object sender, EventArgs e)
         {
-            Email = emailEntry;
+            DependencyService.Get<IFCMLoginService>().IsLoading(true);
+           Email = emailEntry;
             Password = passwordEntry;
             DependencyService.Get<IFCMLoginService>().LogInnUser(Email.Text, Password.Text);
         }

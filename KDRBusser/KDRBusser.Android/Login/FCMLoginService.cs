@@ -12,6 +12,7 @@ using KDRBusser.Classes;
 using System.ComponentModel;
 using Android.Content;
 using Android.App;
+using Acr.UserDialogs;
 
 [assembly: Dependency(typeof(FCMLoginService))]
 namespace KDRBusser.Droid
@@ -23,19 +24,19 @@ namespace KDRBusser.Droid
         //[START declare_auth]
         FirebaseAuth mAuth;
 
-        
+
 
         public string GetEmail()
         {
             return mAuth.CurrentUser.Email;
         }
-        
+
         public void Init()
         {
             //DependencyService.Register<MyFirebaseMessagingService>();
-           mAuth = FirebaseAuth.Instance;
+            mAuth = FirebaseAuth.Instance;
             mAuth.AuthState += AuthStateChanged;
-            
+
         }
 
         public void UpdateToken(String Token)
@@ -83,24 +84,24 @@ namespace KDRBusser.Droid
 
                 await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
                 //ToastedUserAsync("FCM User Created");
-             
+
             }
             catch (Exception ex)
             {
                 // Sign-up failed, display a message to the user
                 // If sign in succeeds, the AuthState event handler will
                 //  be notified and logic to handle the signed in user can happen there
-               
-                    ToastedUserAsync("Create user failed" + ex);
+
+                ToastedUserAsync("Create user failed" + ex);
             }
 
         }
-        
+
         public void LogInnUser(String email, String password)
         {
             //ShowProgressDialog(this);
             LogInUserAsync(email, password);
-            
+
         }
 
         public async void LogInUserAsync(String email, string password)
@@ -109,11 +110,11 @@ namespace KDRBusser.Droid
             {
                 await mAuth.SignInWithEmailAndPasswordAsync(email, password);
                 ToastedUserAsync("Sign In Success ");
-                
+
 
                 await UpdateUserToken();
                 App.IsUserLoggedIn = true;
-              
+
                 Xamarin.Forms.Application.Current.MainPage = new ActiveUser();
 
             }
@@ -134,7 +135,7 @@ namespace KDRBusser.Droid
                 Email = mAuth.CurrentUser.Email,
                 Appid = GetToken()
             };
-          await RestApiCommunication.Post(user, "UpdatUser");
+            await RestApiCommunication.Post(user, "UpdatUser");
         }
 
         public void ToastUser(String title)
@@ -160,26 +161,27 @@ namespace KDRBusser.Droid
         {
             var user = e.Auth.CurrentUser;
             if (user != null)
-            { FirebaseApp.InitializeApp(this);
+            {
+                FirebaseApp.InitializeApp(this);
                 // User is signed in
                 //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
                 App.IsUserLoggedIn = true;
                 UpdateUserToken();
                 Xamarin.Forms.Application.Current.MainPage = new ActiveUser();
-            
+
             }
             else
             {
-                
+
                 // User is signed out
-               //ToastedUserAsync("onAuthStateChanged:signed_out");
+                //ToastedUserAsync("onAuthStateChanged:signed_out");
                 App.IsUserLoggedIn = false;
                 Xamarin.Forms.Application.Current.MainPage = new FCmLogin();
             }
             // [START_EXCLUDE]
             //UpdateUI(user);
             // [END_EXCLUDE]
-        
+
         }
 
 
@@ -195,7 +197,7 @@ namespace KDRBusser.Droid
 
             var signedIn = user != null;
 
-         
+
             if (signedIn)
             {
                 UpdateUserToken();
@@ -206,15 +208,15 @@ namespace KDRBusser.Droid
 
         public string GetToken()
         {
-            
+
             String tkn = FirebaseInstanceId.Instance.Id;
-            var  mauttoken = mAuth.CurrentUser.Uid;
-          
+            var mauttoken = mAuth.CurrentUser.Uid;
+
             var refreshedToken = FirebaseInstanceId.Instance.Token;
 
             if (refreshedToken == null)
             {
-              
+
                 LogOut();
                 //mAuth.SignOut();
 
@@ -225,7 +227,7 @@ namespace KDRBusser.Droid
         public void LogOut()
         {
             FirebaseAuth.Instance.SignOut();
-          
+
         }
 
         public void LogInGoogle()
@@ -236,6 +238,20 @@ namespace KDRBusser.Droid
             this.StartActivity(i);
 
             //Xamarin.Forms.Application.Current.MainPage = new GoogleSignInActivity();
+        }
+
+        public void IsLoading(bool isLoading)
+        {
+            if (!isLoading)
+            {
+                UserDialogs.Instance.HideLoading();
+            }
+            else
+            {
+                UserDialogs.Instance.ShowLoading("Loading", MaskType.Black);
+            }
+
+
         }
     }
 }
