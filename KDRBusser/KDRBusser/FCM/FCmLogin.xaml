@@ -3,11 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         
              x:Class="KDRBusser.FCmLogin">
-    <RelativeLayout  VerticalOptions="FillAndExpand"
-            HorizontalOptions="FillAndExpand">
-        <ActivityIndicator HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" IsVisible="true" IsRunning="true" Color="Blue" />
-    </RelativeLayout>
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+    <AbsoluteLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout  IsEnabled="False" HorizontalOptions="Center" VerticalOptions="Center ">
         <Label Text="Login To APP, using Firebase login options" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
@@ -23,11 +21,13 @@
         <Button x:Name="btnLogin" Text="Logg in" />
         <Button x:Name="btnGoogle" Text="Logg in With Google Acctount" />
         <Button x:Name="btncreateUser" Text="Create User"/>
-       
 
 
-    </StackLayout>
-    
+        </StackLayout >
+        <StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional" BackgroundColor="Black" Opacity="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+            <ActivityIndicator IsRunning="true" IsVisible="true" />
+        </StackLayout>
+    </AbsoluteLayout>
     <!--<RelativeLayout Opacity="0.5" BackgroundColor="Black" VerticalOptions="Center" HorizontalOptions="Center">
         <ActivityIndicator Color="Red" IsRunning="{Binding IsBusy}" />
     </RelativeLayout>-->
