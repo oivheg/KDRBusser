@@ -62,7 +62,7 @@ namespace KDRBusser
 
         private void BtnLogin_Clicked(object sender, EventArgs e)
         {
-            DependencyService.Get<IFCMLoginService>().IsLoading(true);
+            DependencyService.Get<IFCMLoginService>().IsLoading(true, "Loading");
            Email = emailEntry;
             Password = passwordEntry;
             DependencyService.Get<IFCMLoginService>().LogInnUser(Email.Text, Password.Text);

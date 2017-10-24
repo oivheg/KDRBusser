@@ -4,7 +4,7 @@ namespace KDRBusser
 {
     public interface IFCMLoginService 
     {
-        Boolean IsLoggedIn();
+        //Boolean IsLoggedIn();
         void Init();
         void UpdateToken(String Token);
         String GetEmail();
@@ -14,6 +14,6 @@ namespace KDRBusser
         void LogOut();
         String GetToken();
         void LogInGoogle();
-        void IsLoading(Boolean IsLoading);
+        void IsLoading(Boolean IsLoading, String text = "");
     }
 }

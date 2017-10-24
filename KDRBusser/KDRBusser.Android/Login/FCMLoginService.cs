@@ -54,7 +54,6 @@ namespace KDRBusser.Droid
         protected override void OnStart()
         {
             base.OnStart();
-            //mAuth.AuthState += AuthStateChanged;
         }
 
         protected override void OnStop()
@@ -109,7 +108,8 @@ namespace KDRBusser.Droid
             try
             {
                 await mAuth.SignInWithEmailAndPasswordAsync(email, password);
-                ToastedUserAsync("Sign In Success ");
+                // sign in sucess message
+                //ToastedUserAsync("Sign In Success ");
 
 
                 await UpdateUserToken();
@@ -172,7 +172,6 @@ namespace KDRBusser.Droid
             }
             else
             {
-
                 // User is signed out
                 //ToastedUserAsync("onAuthStateChanged:signed_out");
                 App.IsUserLoggedIn = false;
@@ -186,25 +185,25 @@ namespace KDRBusser.Droid
 
 
         //not in use ate the momend, chaneg with authstate listener.
-        public Boolean IsLoggedIn()
-        {
+        //public Boolean IsLoggedIn()
+        //{
 
-            // this is where the FIREBASE system is initialized. every firebase related initilasion shoudl start here, at lest for now.
+        //    // this is where the FIREBASE system is initialized. every firebase related initilasion shoudl start here, at lest for now.
 
-            //var firebaseapp = FirebaseApp.InitializeApp(this);
+        //    //var firebaseapp = FirebaseApp.InitializeApp(this);
 
-            var user = mAuth.CurrentUser;
+        //    var user = mAuth.CurrentUser;
 
-            var signedIn = user != null;
+        //    var signedIn = user != null;
 
 
-            if (signedIn)
-            {
-                UpdateUserToken();
-            }
+        //    if (signedIn)
+        //    {
+        //        UpdateUserToken();
+        //    }
 
-            return signedIn;
-        }
+        //    return signedIn;
+        //}
 
         public string GetToken()
         {
@@ -229,7 +228,7 @@ namespace KDRBusser.Droid
             FirebaseAuth.Instance.SignOut();
 
         }
-
+        //Gogle is stil in test phase, migt not needed at all ? 
         public void LogInGoogle()
         {
             //StartActivity(typeof(GoogleSignInActivity));
@@ -240,7 +239,8 @@ namespace KDRBusser.Droid
             //Xamarin.Forms.Application.Current.MainPage = new GoogleSignInActivity();
         }
 
-        public void IsLoading(bool isLoading)
+        //THis should ne done more general, so i can be used more places if needed. 
+        public void IsLoading(bool isLoading, String text)
         {
             if (!isLoading)
             {
@@ -248,7 +248,10 @@ namespace KDRBusser.Droid
             }
             else
             {
-                UserDialogs.Instance.ShowLoading("Loading", MaskType.Black);
+               
+                     UserDialogs.Instance.ShowLoading(text, MaskType.Black);
+               
+               
             }
 
 

@@ -17,7 +17,7 @@ using Plugin.Connectivity;
 
 namespace KDRBusser.Droid
 {
-    [Activity(Label = "KDRBusser", Theme = "@style/splashscreen", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "KDRBusser", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
 
@@ -25,22 +25,9 @@ namespace KDRBusser.Droid
         protected override void OnCreate(Bundle bundle)
         {
 
-            if (!CrossConnectivity.Current.IsConnected)
-            {
-                var notificator = DependencyService.Get<IToastNotificator>();
-
-                var options = new NotificationOptions()
-                {
-                    Title = "Title",
-                    Description = "Description"
-                };
-
-                var result =  notificator.Notify(options);
-
-                
-            }
+           
             base.OnCreate(bundle);
-            base.SetTheme(Resource.Style.MainTheme);
+            //base.SetTheme(Resource.Style.MainTheme);
             Forms.Init(this, bundle);
             ToastNotification.Init(this);
             FirebaseApp.InitializeApp(this);
@@ -50,6 +37,7 @@ namespace KDRBusser.Droid
             DependencyService.Register<JsonConverter>(); // this probalby the reason it FCM 
             DependencyService.Register<ToastNotification>(); // Register your dependency
            DependencyService.Register<MyFirebaseMessagingService>();
+            //DependencyService.Register<CrossConnectivity>();
             //TabLayoutResource = Resource.Layout.Tabbar;
             //ToolbarResource = Resource.Layout.Toolbar;
             LoadApplication(new App());
