@@ -5,9 +5,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Plugin.Connectivity.Abstractions;
 using System;
+using Xamarin.Forms.Xaml;
 
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace KDRBusser
 {
+   
     public partial class App : Application
     {
         //is this in use ? IsUserLoggedIn ? probably not anymore

@@ -19,10 +19,24 @@ namespace KDRBusser
             InitializeComponent();
             btnActiveUser.Clicked += BtnActiveUser_clicked;
             BtnLogout.Clicked += BtnLogout_Clicked;
+            BTNVibration1.Clicked += BTNVibration1_Clicked;
+            BTNVibration2.Clicked += BTNVibration2_Clicked;
 
             //does nothing right now
             //email = DependencyService.Get<IFCMLoginService>().GetEmail();
         }
+
+        public static int VibType { get; set; }
+        private void BTNVibration2_Clicked(object sender, EventArgs e)
+        {
+            VibType = 2;
+        }
+
+        private void BTNVibration1_Clicked(object sender, EventArgs e)
+        {
+            VibType = 1;
+        }
+
         //String email = "";
         protected override void OnAppearing()
         {

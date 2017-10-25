@@ -17,31 +17,28 @@ using Plugin.Connectivity;
 
 namespace KDRBusser.Droid
 {
-    [Activity(Label = "KDRBusser", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "KDRBusser", Theme = "@style/splashscreen", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
 
-      
+        //Theme = "@style/MainTheme"
         protected override void OnCreate(Bundle bundle)
-        {
-
-           
+        {        
             base.OnCreate(bundle);
-            //base.SetTheme(Resource.Style.MainTheme);
+       //Initialises the idffernet classes.
             Forms.Init(this, bundle);
             ToastNotification.Init(this);
             FirebaseApp.InitializeApp(this);
             UserDialogs.Init(this);
-            DependencyService.Register<RestApiCommunication>();
-            DependencyService.Register<FirebaseApp>(); // this probalby the reason it FCM 
-            DependencyService.Register<JsonConverter>(); // this probalby the reason it FCM 
-            DependencyService.Register<ToastNotification>(); // Register your dependency
-           DependencyService.Register<MyFirebaseMessagingService>();
-            //DependencyService.Register<CrossConnectivity>();
-            //TabLayoutResource = Resource.Layout.Tabbar;
-            //ToolbarResource = Resource.Layout.Toolbar;
+
+            //seems to be no longer needed, prorably som bug fix update in teh xamarin.forms nuget.
+            //make sure the libaries are added to anroid 
+            //DependencyService.Register<RestApiCommunication>();
+            //DependencyService.Register<FirebaseApp>(); // this probalby the reason it FCM 
+            //DependencyService.Register<JsonConverter>(); // this probalby the reason it FCM 
+            //DependencyService.Register<ToastNotification>(); // Register your dependency
+            //DependencyService.Register<MyFirebaseMessagingService>();
             LoadApplication(new App());
-           
         }
 
         protected override void OnResume()

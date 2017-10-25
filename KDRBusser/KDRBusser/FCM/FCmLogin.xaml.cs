@@ -18,15 +18,12 @@ namespace KDRBusser
        
         public FCmLogin()
         {
-          
             InitializeComponent();
             this.Title = "KDRBusser";
             btnLogin.Clicked += BtnLogin_Clicked;
             btncreateUser.Clicked += BtncreateUser_clicked;
             btnGoogle.Clicked += btnGoogle_Clicked;
             //DependencyService.Get<IFCMLoginService>().IsLoading();
-
-
         }
 
         private void btnGoogle_Clicked(object sender, EventArgs e)
@@ -38,8 +35,6 @@ namespace KDRBusser
        
         private void BtncreateUser_clicked(object sender, EventArgs e)
         {
-           
-
             if (IsCreating)
             {
                 Email = emailEntry;

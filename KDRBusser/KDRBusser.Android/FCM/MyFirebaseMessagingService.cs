@@ -108,10 +108,30 @@ namespace KDRBusser.Droid
         private void Vibrate()
         {
             Vibrator vibrator = (Vibrator)this.ApplicationContext.GetSystemService(Context.VibratorService);
-            long[] vibPatterns = { 200, 250, 350, 250, 350, 1000, 500, 350, 500, 350, 1000 };
+            long[] vibPatterns = GetVibPatterns();
             vibrator.Vibrate(vibPatterns, -1);
         }
-        
+     
+
+       
+        private static long[] GetVibPatterns()
+        {
+            
+            int _vibtype = ActiveUser.VibType; 
+            long[] pattern = new long[] { 200, 250, 350, 250, 350, 1000, 500, 350, 500, 350, 1000 };
+            switch (_vibtype)
+            {
+                case 1:
+                    pattern = new long[] { 20, 250, 20, 250, 20, 1000, 20, 350, 20, 350, 20 };
+                    break;
+                case 2:
+                    pattern = new long[] { 500, 50, 500, 50, 500, 50, 500, 350, 500, 350, 500 };
+                    break;
+                default:
+                    break;
+            }
+            return pattern;
+        }
 
         void SendNotification(string messageBody)
         {
