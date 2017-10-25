@@ -17,6 +17,7 @@ namespace KDRBusser
         public ActiveUser()
         {
             InitializeComponent();
+            DependencyService.Get<IFCMLoginService>().IsLoading(true);
             btnActiveUser.Clicked += BtnActiveUser_clicked;
             BtnLogout.Clicked += BtnLogout_Clicked;
 
@@ -24,10 +25,11 @@ namespace KDRBusser
             //email = DependencyService.Get<IFCMLoginService>().GetEmail();
         }
         //String email = "";
+        
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            DependencyService.Get<IFCMLoginService>().IsLoading(true);
+            
             CommunicateDbAsync(mUser, false, false, false);
         }
 

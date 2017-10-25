@@ -24,7 +24,6 @@
     <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Auth\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Base\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Basement\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\__library_projects__\Plugin.Connectivity\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Acr.Support.Android\library_project_imports\assets</ResolvedAssetDirectory>
@@ -37,7 +36,6 @@
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Android.Support.v4\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.Connectivity\library_project_imports\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
@@ -63,6 +61,5 @@
     <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Auth.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Base.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Basement.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\__library_projects__\Plugin.Connectivity.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

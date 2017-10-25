@@ -18,7 +18,11 @@ namespace KDRBusser
 
         {
             InitializeComponent();
-           
+            if (!HavNetwork)
+            {
+   DependencyService.Get<IFCMLoginService>().IsLoading(true, "None/Bad network conenction");
+            }
+         
             while (!HavNetwork)
             {
                 //if (!IsLoading)
