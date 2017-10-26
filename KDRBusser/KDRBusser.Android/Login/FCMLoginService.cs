@@ -167,7 +167,7 @@ namespace KDRBusser.Droid
                 //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
                 App.IsUserLoggedIn = true;
                 UpdateUserToken();
-                Xamarin.Forms.Application.Current.MainPage = new ActiveUser();
+                Xamarin.Forms.Application.Current.MainPage = new NavigationPage(new ActiveUser());
 
             }
             else
@@ -175,6 +175,7 @@ namespace KDRBusser.Droid
                 // User is signed out
                 //ToastedUserAsync("onAuthStateChanged:signed_out");
                 App.IsUserLoggedIn = false;
+                
                 Xamarin.Forms.Application.Current.MainPage = new FCmLogin();
             }
             // [START_EXCLUDE]

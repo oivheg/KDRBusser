@@ -16,17 +16,21 @@ namespace KDRBusser
         String mUser = "FromFCMLogin", tkn = "Fromm FCM APPID";
         public ActiveUser()
         {
+            BackgroundColor = Color.LightGray;
+          
             InitializeComponent();
             btnActiveUser.Clicked += BtnActiveUser_clicked;
-            BtnLogout.Clicked += BtnLogout_Clicked;
-            BTNVibration1.Clicked += BTNVibration1_Clicked;
-            BTNVibration2.Clicked += BTNVibration2_Clicked;
+            //BtnLogout.Clicked += BtnLogout_Clicked;
+            //BTNVibration1.Clicked += BTNVibration1_Clicked;
+            //BTNVibration2.Clicked += BTNVibration2_Clicked;
 
             //does nothing right now
             //email = DependencyService.Get<IFCMLoginService>().GetEmail();
         }
 
         public static int VibType { get; set; }
+
+
         private void BTNVibration2_Clicked(object sender, EventArgs e)
         {
             VibType = 2;
@@ -41,6 +45,15 @@ namespace KDRBusser
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            ToolbarItem _item = new ToolbarItem("Log Out", "", () => { });
+            _item.Clicked += ToolbarItem_Clicked;
+            ToolbarItem _item2 = new ToolbarItem("Vibration1", "", () => { });
+            _item.Clicked += ToolbarItem_Clicked;
+            ToolbarItem _item3 = new ToolbarItem("Vibration2", "", () => { });
+            _item.Clicked += ToolbarItem_Clicked;
+            this.ToolbarItems.Add(_item);
+            this.ToolbarItems.Add(_item2);
+            this.ToolbarItems.Add(_item3);
             DependencyService.Get<IFCMLoginService>().IsLoading(true);
             CommunicateDbAsync(mUser, false, false, false);
         }
@@ -63,7 +76,7 @@ namespace KDRBusser
 
         private void IsUserActive()
         {
-          
+
             if (isActive)
             {
 
@@ -90,10 +103,34 @@ namespace KDRBusser
             // this wil also run firebase logout command on each Platfrom. probably use the exsisitng itnerface wiht logout method etc. 
             CommunicateDbAsync(mUser, false, true, true);
             DependencyService.Get<IFCMLoginService>().LogOut();
+            
+           
 
         }
 
+        private void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
 
+            ToolbarItem _item = (ToolbarItem)sender;
+
+            switch (_item.Text)
+            {
+                case "Log Out":
+                    CommunicateDbAsync(mUser, false, true, true);
+                    DependencyService.Get<IFCMLoginService>().LogOut();
+                    break;
+                case "Vibration2":
+                    VibType = 2;
+                    break;
+                case "Vibration1":
+                    VibType = 1;
+                    break;
+                default:
+                    break;
+            }
+
+        }
+       
 
         public async void CommunicateDbAsync(String _user, bool _isActive, bool update, bool rmvAppId)
         {
@@ -129,17 +166,17 @@ namespace KDRBusser
                 DependencyService.Get<IFCMLoginService>().IsLoading(false);
                 try
                 {
-  user = JsonConvert.DeserializeObject<User>(RestApiCommunication.jsonresponse);
-                isActive = user.Active;
+                    user = JsonConvert.DeserializeObject<User>(RestApiCommunication.jsonresponse);
+                    isActive = user.Active;
                     lblemploy.Text = user.UserName;
-                IsUserActive();
+                    IsUserActive();
                 }
                 catch
                 {
-                    
+
                     DependencyService.Get<IFCMLoginService>().LogOut();
                 }
-              
+
 
             }
         }

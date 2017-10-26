@@ -17,14 +17,21 @@ using Plugin.Connectivity;
 
 namespace KDRBusser.Droid
 {
-    [Activity(Label = "KDRBusser", Theme = "@style/splashscreen", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "KDRBusser", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
 
         //Theme = "@style/MainTheme"
         protected override void OnCreate(Bundle bundle)
-        {        
+        {
+            //base.SetTheme(global::Android.Resource.Style.ThemeHoloLight);
+            base.SetTheme(global::Android.Resource.Style.ThemeHoloLight);
             base.OnCreate(bundle);
+            ActionBar.SetDisplayShowTitleEnabled(false);
+            ActionBar.SetDisplayShowHomeEnabled(false);
+            ActionBar.Hide();
+
+          
        //Initialises the idffernet classes.
             Forms.Init(this, bundle);
             ToastNotification.Init(this);
@@ -33,11 +40,11 @@ namespace KDRBusser.Droid
 
             //seems to be no longer needed, prorably som bug fix update in teh xamarin.forms nuget.
             //make sure the libaries are added to anroid 
-            //DependencyService.Register<RestApiCommunication>();
-            //DependencyService.Register<FirebaseApp>(); // this probalby the reason it FCM 
-            //DependencyService.Register<JsonConverter>(); // this probalby the reason it FCM 
-            //DependencyService.Register<ToastNotification>(); // Register your dependency
-            //DependencyService.Register<MyFirebaseMessagingService>();
+            DependencyService.Register<RestApiCommunication>();
+            DependencyService.Register<FirebaseApp>(); // this probalby the reason it FCM 
+            DependencyService.Register<JsonConverter>(); // this probalby the reason it FCM 
+            DependencyService.Register<ToastNotification>(); // Register your dependency
+            DependencyService.Register<MyFirebaseMessagingService>();
             LoadApplication(new App());
         }
 
