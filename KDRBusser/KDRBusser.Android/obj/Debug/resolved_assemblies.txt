@@ -14,6 +14,9 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Net.Http.Primitives.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Toasts.Forms.Plugin.Abstractions.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Toasts.Forms.Plugin.Droid.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.Android.Arch.Core.Common.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.Android.Arch.Lifecycle.Common.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.Android.Arch.Lifecycle.Runtime.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.Android.Support.Annotations.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.Android.Support.Compat.dll
