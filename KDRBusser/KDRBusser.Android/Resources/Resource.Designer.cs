@@ -6456,8 +6456,8 @@ namespace KDRBusser.Droid
 			// aapt resource value: 0x7f080039
 			public const int abc_toolbar_collapse_description = 2131230777;
 			
-			// aapt resource value: 0x7f08005a
-			public const int app_name = 2131230810;
+			// aapt resource value: 0x7f080053
+			public const int app_name = 2131230803;
 			
 			// aapt resource value: 0x7f080048
 			public const int appbar_scrolling_view_behavior = 2131230792;
@@ -6519,125 +6519,104 @@ namespace KDRBusser.Droid
 			// aapt resource value: 0x7f080010
 			public const int common_signin_button_text_long = 2131230736;
 			
-			// aapt resource value: 0x7f08006a
-			public const int create_account = 2131230826;
+			// aapt resource value: 0x7f080063
+			public const int create_account = 2131230819;
 			
-			// aapt resource value: 0x7f08006e
-			public const int custom_token = 2131230830;
+			// aapt resource value: 0x7f080067
+			public const int custom_token = 2131230823;
 			
-			// aapt resource value: 0x7f080055
-			public const int default_web_client_id = 2131230805;
+			// aapt resource value: 0x7f08005d
+			public const int desc_anonymous_auth = 2131230813;
 			
-			// aapt resource value: 0x7f080064
-			public const int desc_anonymous_auth = 2131230820;
+			// aapt resource value: 0x7f08005f
+			public const int desc_custom_auth = 2131230815;
 			
-			// aapt resource value: 0x7f080066
-			public const int desc_custom_auth = 2131230822;
+			// aapt resource value: 0x7f08005b
+			public const int desc_emailpassword = 2131230811;
 			
-			// aapt resource value: 0x7f080062
-			public const int desc_emailpassword = 2131230818;
-			
-			// aapt resource value: 0x7f08005e
-			public const int desc_facebook_login = 2131230814;
-			
-			// aapt resource value: 0x7f080073
-			public const int desc_firebase_lockup = 2131230835;
-			
-			// aapt resource value: 0x7f08005c
-			public const int desc_google_sign_in = 2131230812;
-			
-			// aapt resource value: 0x7f080060
-			public const int desc_twitter_login = 2131230816;
+			// aapt resource value: 0x7f080057
+			public const int desc_facebook_login = 2131230807;
 			
 			// aapt resource value: 0x7f08006c
-			public const int disconnect = 2131230828;
+			public const int desc_firebase_lockup = 2131230828;
 			
-			// aapt resource value: 0x7f08007f
-			public const int email_fmt = 2131230847;
+			// aapt resource value: 0x7f080055
+			public const int desc_google_sign_in = 2131230805;
 			
-			// aapt resource value: 0x7f08007a
-			public const int emailpassword_status_fmt = 2131230842;
+			// aapt resource value: 0x7f080059
+			public const int desc_twitter_login = 2131230809;
 			
-			// aapt resource value: 0x7f08007b
-			public const int emailpassword_title_text = 2131230843;
+			// aapt resource value: 0x7f080065
+			public const int disconnect = 2131230821;
 			
 			// aapt resource value: 0x7f080078
-			public const int facebook_status_fmt = 2131230840;
+			public const int email_fmt = 2131230840;
 			
-			// aapt resource value: 0x7f080079
-			public const int facebook_title_text = 2131230841;
+			// aapt resource value: 0x7f080073
+			public const int emailpassword_status_fmt = 2131230835;
+			
+			// aapt resource value: 0x7f080074
+			public const int emailpassword_title_text = 2131230836;
+			
+			// aapt resource value: 0x7f080071
+			public const int facebook_status_fmt = 2131230833;
+			
+			// aapt resource value: 0x7f080072
+			public const int facebook_title_text = 2131230834;
 			
 			// aapt resource value: 0x7f080011
 			public const int fcm_fallback_notification_channel_label = 2131230737;
 			
-			// aapt resource value: 0x7f080056
-			public const int firebase_database_url = 2131230806;
+			// aapt resource value: 0x7f08006d
+			public const int firebase_status_fmt = 2131230829;
 			
-			// aapt resource value: 0x7f080074
-			public const int firebase_status_fmt = 2131230836;
-			
-			// aapt resource value: 0x7f080075
-			public const int firebase_user_management = 2131230837;
-			
-			// aapt resource value: 0x7f080053
-			public const int gcm_defaultSenderId = 2131230803;
-			
-			// aapt resource value: 0x7f080068
-			public const int get_custom_token = 2131230824;
-			
-			// aapt resource value: 0x7f080057
-			public const int google_api_key = 2131230807;
-			
-			// aapt resource value: 0x7f080054
-			public const int google_app_id = 2131230804;
-			
-			// aapt resource value: 0x7f080058
-			public const int google_crash_reporting_api_key = 2131230808;
-			
-			// aapt resource value: 0x7f080076
-			public const int google_status_fmt = 2131230838;
-			
-			// aapt resource value: 0x7f080059
-			public const int google_storage_bucket = 2131230809;
-			
-			// aapt resource value: 0x7f080077
-			public const int google_title_text = 2131230839;
-			
-			// aapt resource value: 0x7f080071
-			public const int hint_email = 2131230833;
-			
-			// aapt resource value: 0x7f080072
-			public const int hint_password = 2131230834;
-			
-			// aapt resource value: 0x7f080067
-			public const int hint_user_id = 2131230823;
-			
-			// aapt resource value: 0x7f08007e
-			public const int id_fmt = 2131230846;
-			
-			// aapt resource value: 0x7f080063
-			public const int label_anonymous_auth = 2131230819;
-			
-			// aapt resource value: 0x7f080065
-			public const int label_custom_auth = 2131230821;
+			// aapt resource value: 0x7f08006e
+			public const int firebase_user_management = 2131230830;
 			
 			// aapt resource value: 0x7f080061
-			public const int label_emailpassword = 2131230817;
+			public const int get_custom_token = 2131230817;
 			
-			// aapt resource value: 0x7f08005d
-			public const int label_facebook_login = 2131230813;
+			// aapt resource value: 0x7f08006f
+			public const int google_status_fmt = 2131230831;
 			
-			// aapt resource value: 0x7f08005b
-			public const int label_google_sign_in = 2131230811;
+			// aapt resource value: 0x7f080070
+			public const int google_title_text = 2131230832;
 			
-			// aapt resource value: 0x7f08005f
-			public const int label_twitter_login = 2131230815;
+			// aapt resource value: 0x7f08006a
+			public const int hint_email = 2131230826;
+			
+			// aapt resource value: 0x7f08006b
+			public const int hint_password = 2131230827;
+			
+			// aapt resource value: 0x7f080060
+			public const int hint_user_id = 2131230816;
+			
+			// aapt resource value: 0x7f080077
+			public const int id_fmt = 2131230839;
+			
+			// aapt resource value: 0x7f08005c
+			public const int label_anonymous_auth = 2131230812;
+			
+			// aapt resource value: 0x7f08005e
+			public const int label_custom_auth = 2131230814;
+			
+			// aapt resource value: 0x7f08005a
+			public const int label_emailpassword = 2131230810;
+			
+			// aapt resource value: 0x7f080056
+			public const int label_facebook_login = 2131230806;
+			
+			// aapt resource value: 0x7f080054
+			public const int label_google_sign_in = 2131230804;
+			
+			// aapt resource value: 0x7f080058
+			public const int label_twitter_login = 2131230808;
 			
 			// aapt resource value: 0x7f080052
 			public const int library_name = 2131230802;
 			
-			// aapt resource value: 0x7f08006d
-			public const int loading = 2131230829;
+			// aapt resource value: 0x7f080066
+			public const int loading = 2131230822;
 			
 			// aapt resource value: 0x7f080012
 			public const int mr_button_content_description = 2131230738;
@@ -6720,26 +6699,26 @@ namespace KDRBusser.Droid
 			// aapt resource value: 0x7f08003a
 			public const int search_menu_title = 2131230778;
 			
-			// aapt resource value: 0x7f080069
-			public const int sign_in = 2131230825;
+			// aapt resource value: 0x7f080062
+			public const int sign_in = 2131230818;
 			
-			// aapt resource value: 0x7f08006b
-			public const int sign_out = 2131230827;
+			// aapt resource value: 0x7f080064
+			public const int sign_out = 2131230820;
 			
-			// aapt resource value: 0x7f08006f
-			public const int signed_out = 2131230831;
+			// aapt resource value: 0x7f080068
+			public const int signed_out = 2131230824;
 			
 			// aapt resource value: 0x7f08003b
 			public const int status_bar_notification_info_overflow = 2131230779;
 			
-			// aapt resource value: 0x7f080070
-			public const int token_null = 2131230832;
+			// aapt resource value: 0x7f080069
+			public const int token_null = 2131230825;
 			
-			// aapt resource value: 0x7f08007c
-			public const int twitter_status_fmt = 2131230844;
+			// aapt resource value: 0x7f080075
+			public const int twitter_status_fmt = 2131230837;
 			
-			// aapt resource value: 0x7f08007d
-			public const int twitter_title_text = 2131230845;
+			// aapt resource value: 0x7f080076
+			public const int twitter_title_text = 2131230838;
 			
 			static String()
 			{

@@ -45,15 +45,18 @@ namespace KDRBusser
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            ToolbarItem _item = new ToolbarItem("Log Out", "", () => { });
-            _item.Clicked += ToolbarItem_Clicked;
-            ToolbarItem _item2 = new ToolbarItem("Vibration1", "", () => { });
-            _item.Clicked += ToolbarItem_Clicked;
-            ToolbarItem _item3 = new ToolbarItem("Vibration2", "", () => { });
-            _item.Clicked += ToolbarItem_Clicked;
-            this.ToolbarItems.Add(_item);
-            this.ToolbarItems.Add(_item2);
-            this.ToolbarItems.Add(_item3);
+
+            // <---------- Test code for addind toolbar items in code --------------->
+            //ToolbarItem _item = new ToolbarItem("Log Out", "", () => { });
+            //_item.Clicked += ToolbarItem_Clicked;
+            //ToolbarItem _item2 = new ToolbarItem("Vibration1", "", () => { });
+            //_item.Clicked += ToolbarItem_Clicked;
+            //ToolbarItem _item3 = new ToolbarItem("Vibration2", "", () => { });
+            //_item.Clicked += ToolbarItem_Clicked;
+            //this.ToolbarItems.Add(_item);
+            //this.ToolbarItems.Add(_item2);
+            //this.ToolbarItems.Add(_item3);
+            //<--------------------------------->
             DependencyService.Get<IFCMLoginService>().IsLoading(true);
             CommunicateDbAsync(mUser, false, false, false);
         }

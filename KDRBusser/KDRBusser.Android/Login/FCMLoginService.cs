@@ -115,7 +115,7 @@ namespace KDRBusser.Droid
                 await UpdateUserToken();
                 App.IsUserLoggedIn = true;
 
-                Xamarin.Forms.Application.Current.MainPage = new ActiveUser();
+                ChangeActivity();
 
             }
             catch (Exception ex)
@@ -167,7 +167,7 @@ namespace KDRBusser.Droid
                 //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
                 App.IsUserLoggedIn = true;
                 UpdateUserToken();
-                Xamarin.Forms.Application.Current.MainPage = new NavigationPage(new ActiveUser());
+                ChangeActivity();
 
             }
             else
@@ -182,6 +182,11 @@ namespace KDRBusser.Droid
             //UpdateUI(user);
             // [END_EXCLUDE]
 
+        }
+
+        private static void ChangeActivity()
+        {
+            Xamarin.Forms.Application.Current.MainPage = new NavigationPage(new ActiveUser());
         }
 
 
