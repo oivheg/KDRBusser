@@ -21,7 +21,6 @@ C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Debug\System.Net.Http.Extensions.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Debug\System.Net.Http.Primitives.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Debug\Xamarin.Forms.Core.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Debug\Xamarin.Forms.Core.xml
-C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Debug\Xamarin.Forms.Platform.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\KDRBusser.csproj.App.config

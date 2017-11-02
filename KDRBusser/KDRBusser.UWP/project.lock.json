@@ -2464,7 +2464,7 @@
           "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.4.0.282": {
+      "Xamarin.Forms/2.4.0.38779": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -4987,7 +4987,7 @@
           "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.4.0.282": {
+      "Xamarin.Forms/2.4.0.38779": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -7546,7 +7546,7 @@
           "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.4.0.282": {
+      "Xamarin.Forms/2.4.0.38779": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -10078,7 +10078,7 @@
           "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.4.0.282": {
+      "Xamarin.Forms/2.4.0.38779": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -12646,7 +12646,7 @@
           "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.4.0.282": {
+      "Xamarin.Forms/2.4.0.38779": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -15178,7 +15178,7 @@
           "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.4.0.282": {
+      "Xamarin.Forms/2.4.0.38779": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -17746,7 +17746,7 @@
           "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.4.0.282": {
+      "Xamarin.Forms/2.4.0.38779": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -27843,10 +27843,10 @@
         "toasts.forms.plugin.nuspec"
       ]
     },
-    "Xamarin.Forms/2.4.0.282": {
-      "sha512": "XhgWe/d5wwWD2vZe0t0QfE+kJPqzjc01GSuSWjzbX37MNn0JunXO22js3FRSRuDMbXLE3FlwBngazxpFP0x5qA==",
+    "Xamarin.Forms/2.4.0.38779": {
+      "sha512": "fBK/R4xWN87ihLrjg3H43y/ccAxVkRA0eHNyVvMyROQyURyvetNO0Yb09EfMDpiTxMXAXjxdff7TOtrhClZZyg==",
       "type": "package",
-      "path": "xamarin.forms/2.4.0.282",
+      "path": "xamarin.forms/2.4.0.38779",
       "files": [
         "build/netstandard1.0/Mono.Cecil.Mdb.dll",
         "build/netstandard1.0/Mono.Cecil.Pdb.dll",
@@ -27887,7 +27887,6 @@
         "lib/WP80/Xamarin.Forms.Core.pdb",
         "lib/WP80/Xamarin.Forms.Core.xml",
         "lib/WP80/Xamarin.Forms.Platform.WP8.dll",
-        "lib/WP80/Xamarin.Forms.Platform.WP8.pdb",
         "lib/WP80/Xamarin.Forms.Platform.dll",
         "lib/WP80/Xamarin.Forms.Xaml.dll",
         "lib/WP80/Xamarin.Forms.Xaml.pdb",
@@ -27950,7 +27949,6 @@
         "lib/netstandard1.0/Xamarin.Forms.Core.pdb",
         "lib/netstandard1.0/Xamarin.Forms.Core.xml",
         "lib/netstandard1.0/Xamarin.Forms.Platform.dll",
-        "lib/netstandard1.0/Xamarin.Forms.Platform.pdb",
         "lib/netstandard1.0/Xamarin.Forms.Xaml.dll",
         "lib/netstandard1.0/Xamarin.Forms.Xaml.dll.mdb",
         "lib/netstandard1.0/Xamarin.Forms.Xaml.pdb",
@@ -27962,7 +27960,6 @@
         "lib/portable-win+net45+wp80+win81+wpa81/Xamarin.Forms.Core.pdb",
         "lib/portable-win+net45+wp80+win81+wpa81/Xamarin.Forms.Core.xml",
         "lib/portable-win+net45+wp80+win81+wpa81/Xamarin.Forms.Platform.dll",
-        "lib/portable-win+net45+wp80+win81+wpa81/Xamarin.Forms.Platform.pdb",
         "lib/portable-win+net45+wp80+win81+wpa81/Xamarin.Forms.Xaml.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Xamarin.Forms.Xaml.dll.mdb",
         "lib/portable-win+net45+wp80+win81+wpa81/Xamarin.Forms.Xaml.pdb",
@@ -28026,7 +28023,7 @@
         "lib/wpa81/Xamarin.Forms.Platform.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.2.4.0.282.nupkg.sha512",
+        "xamarin.forms.2.4.0.38779.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -28041,7 +28038,7 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.1",
       "Newtonsoft.Json >= 10.0.3",
       "Toasts.Forms.Plugin >= 3.2.1",
-      "Xamarin.Forms >= 2.4.0.282"
+      "Xamarin.Forms >= 2.4.0.38779"
     ],
     "UAP,Version=v10.0.10586": []
   },
@@ -28079,7 +28076,7 @@
       "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1",
       "Newtonsoft.Json": "10.0.3",
       "Toasts.Forms.Plugin": "3.2.1",
-      "Xamarin.Forms": "2.4.0.282"
+      "Xamarin.Forms": "2.4.0.38779"
     },
     "frameworks": {
       "uap10.0.10586": {}
