@@ -27,17 +27,17 @@ namespace KDRBusser.Validators
 
         protected override void OnAttachedTo(Entry bindable)
         {
-            bindable.TextChanged += bindable_TextChanged;
+            bindable.TextChanged += Bindable_TextChanged;
         }
 
-        private void bindable_TextChanged(object sender, TextChangedEventArgs e)
+        private void Bindable_TextChanged(object sender, TextChangedEventArgs e)
         {
             IsValid = e.NewTextValue?.Length >= MaxLength;
         }
 
         protected override void OnDetachingFrom(Entry bindable)
         {
-            bindable.TextChanged -= bindable_TextChanged;
+            bindable.TextChanged -= Bindable_TextChanged;
         }
     }
 }

@@ -26,12 +26,14 @@ namespace KDRBusser.iOS.FCM
 
         public string GetToken()
         {
+            
             throw new NotImplementedException();
         }
 
         public void Init()
         {
-            throw new NotImplementedException();
+            auth = Auth.DefaultInstance;
+            //throw new NotImplementedException();
         }
 
         public void IsLoading(bool IsLoading, string text = "")
@@ -82,8 +84,10 @@ namespace KDRBusser.iOS.FCM
             }
             // start ActiveUser Activity
             //NavigationController.PushViewController(new UserViewController("Firebase"), true);
-            ChangeActivity()
+            ChangeActivity();
         }
+
+
 
         private static void ChangeActivity()
         {
@@ -92,7 +96,8 @@ namespace KDRBusser.iOS.FCM
 
         public void LogOut()
         {
-            throw new NotImplementedException();
+           
+            auth.SignOut();
         }
 
         public void ToastUser(string title)
@@ -103,6 +108,23 @@ namespace KDRBusser.iOS.FCM
         public void UpdateToken(string Token)
         {
             throw new NotImplementedException();
+        }
+
+        public void IsLoading(bool isLoading, String text)
+        {
+            if (!isLoading)
+            {
+                UserDialogs.Instance.HideLoading();
+            }
+            else
+            {
+
+                UserDialogs.Instance.ShowLoading(text, MaskType.Black);
+
+
+            }
+
+
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using ProgressRingControl.Forms.Plugin;
+﻿using KDRBusser.SharedCode;
+using ProgressRingControl.Forms.Plugin;
 using System;
 
 using Xamarin.Forms;
@@ -22,11 +23,11 @@ namespace KDRBusser
             this.Title = "KDRBusser";
             btnLogin.Clicked += BtnLogin_Clicked;
             btncreateUser.Clicked += BtncreateUser_clicked;
-            btnGoogle.Clicked += btnGoogle_Clicked;
+            btnGoogle.Clicked += BtnGoogle_Clicked;
             //DependencyService.Get<IFCMLoginService>().IsLoading();
         }
 
-        private void btnGoogle_Clicked(object sender, EventArgs e)
+        private void BtnGoogle_Clicked(object sender, EventArgs e)
         {
             DependencyService.Get<IFCMLoginService>().LogInGoogle();
         }
@@ -57,7 +58,7 @@ namespace KDRBusser
 
         private void BtnLogin_Clicked(object sender, EventArgs e)
         {
-            DependencyService.Get<IFCMLoginService>().IsLoading(true, "Loading");
+            DependencyService.Get<IHelperClass>().IsLoading(true, "Loading");
            Email = emailEntry;
             Password = passwordEntry;
             DependencyService.Get<IFCMLoginService>().LogInnUser(Email.Text, Password.Text);

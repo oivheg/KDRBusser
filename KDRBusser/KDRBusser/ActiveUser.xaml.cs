@@ -1,9 +1,8 @@
 ﻿using KDRBusser.Classes;
 using KDRBusser.Communication;
+using KDRBusser.SharedCode;
 using Newtonsoft.Json;
 using System;
-using System.Net.Http;
-using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -20,12 +19,7 @@ namespace KDRBusser
           
             InitializeComponent();
             btnActiveUser.Clicked += BtnActiveUser_clicked;
-            //BtnLogout.Clicked += BtnLogout_Clicked;
-            //BTNVibration1.Clicked += BTNVibration1_Clicked;
-            //BTNVibration2.Clicked += BTNVibration2_Clicked;
-
-            //does nothing right now
-            //email = DependencyService.Get<IFCMLoginService>().GetEmail();
+        
         }
 
         public static int VibType { get; set; }
@@ -46,19 +40,10 @@ namespace KDRBusser
         {
             base.OnAppearing();
 
-            // <---------- Test code for addind toolbar items in code --------------->
-            //ToolbarItem _item = new ToolbarItem("Log Out", "", () => { });
-            //_item.Clicked += ToolbarItem_Clicked;
-            //ToolbarItem _item2 = new ToolbarItem("Vibration1", "", () => { });
-            //_item.Clicked += ToolbarItem_Clicked;
-            //ToolbarItem _item3 = new ToolbarItem("Vibration2", "", () => { });
-            //_item.Clicked += ToolbarItem_Clicked;
-            //this.ToolbarItems.Add(_item);
-            //this.ToolbarItems.Add(_item2);
-            //this.ToolbarItems.Add(_item3);
-            //<--------------------------------->
-            DependencyService.Get<IFCMLoginService>().IsLoading(true);
+            DependencyService.Get<IHelperClass>().IsLoading(true, "None/Bad network conenction");
+            DependencyService.Get<IHelperClass>().IsLoading(true);
             CommunicateDbAsync(mUser, false, false, false);
+
         }
 
         private void BtnActiveUser_clicked(object sender, EventArgs e)
@@ -67,14 +52,12 @@ namespace KDRBusser
             if (isActive)
             {
                 CommunicateDbAsync(mUser, true, true, false);
-
             }
             else
             {
                 CommunicateDbAsync(mUser, false, true, false);
             }
             IsUserActive();
-
         }
 
         private void IsUserActive()
@@ -106,8 +89,6 @@ namespace KDRBusser
             // this wil also run firebase logout command on each Platfrom. probably use the exsisitng itnerface wiht logout method etc. 
             CommunicateDbAsync(mUser, false, true, true);
             DependencyService.Get<IFCMLoginService>().LogOut();
-            
-           
 
         }
 
@@ -166,10 +147,10 @@ namespace KDRBusser
                     return;
                 }
                 await RestApiCommunication.Get("FindUser?" + parameters);
-                DependencyService.Get<IFCMLoginService>().IsLoading(false);
+                DependencyService.Get<IHelperClass>().IsLoading(false);
                 try
                 {
-                    user = JsonConvert.DeserializeObject<User>(RestApiCommunication.jsonresponse);
+                    user = JsonConvert.DeserializeObject<User>(RestApiCommunication.Jsonresponse);
                     isActive = user.Active;
                     lblemploy.Text = user.UserName;
                     IsUserActive();

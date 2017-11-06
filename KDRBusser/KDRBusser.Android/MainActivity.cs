@@ -11,6 +11,7 @@ using Firebase.Iid;
 using Android.Util;
 using Newtonsoft.Json;
 using KDRBusser.Communication;
+using KDRBusser.SharedCode;
 using ProgressRingControl.Forms.Plugin;
 using Acr.UserDialogs;
 using Plugin.Connectivity;
@@ -41,6 +42,7 @@ namespace KDRBusser.Droid
             //seems to be no longer needed, prorably som bug fix update in teh xamarin.forms nuget.
             //make sure the libaries are added to anroid 
             DependencyService.Register<RestApiCommunication>();
+            //DependencyService.Register<IHelperClass>();
             DependencyService.Register<FirebaseApp>(); // this probalby the reason it FCM 
             DependencyService.Register<JsonConverter>(); // this probalby the reason it FCM 
             DependencyService.Register<ToastNotification>(); // Register your dependency

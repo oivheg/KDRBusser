@@ -245,22 +245,10 @@ namespace KDRBusser.Droid
             //Xamarin.Forms.Application.Current.MainPage = new GoogleSignInActivity();
         }
 
-        //THis should ne done more general, so i can be used more places if needed. 
-        public void IsLoading(bool isLoading, String text)
-        {
-            if (!isLoading)
-            {
-                UserDialogs.Instance.HideLoading();
-            }
-            else
-            {
-               
-                     UserDialogs.Instance.ShowLoading(text, MaskType.Black);
-               
-               
-            }
+        
+        
 
 
-        }
+        
     }
 }

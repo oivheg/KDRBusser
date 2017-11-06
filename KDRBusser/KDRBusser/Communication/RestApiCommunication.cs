@@ -12,8 +12,8 @@ namespace KDRBusser.Communication
    public class RestApiCommunication
     {
         private static String Base_URL = "http://91.189.171.231/restbusserv/api/UserAPI/";
-       private static HttpResponseMessage response { get;  set; }
-        public static String jsonresponse { get; set; }
+       private static HttpResponseMessage Response { get;  set; }
+        public static String Jsonresponse { get; set; }
        
         public static async Task Post(Object user , String _Command)
         {
@@ -22,28 +22,24 @@ namespace KDRBusser.Communication
             string json = JsonConvert.SerializeObject(user);
             var content = new StringContent(json, Encoding.Unicode, "application/json");
             var request = new HttpRequestMessage();
-            response = await client.PostAsync(Base_URL + _Command, content);
+            Response = await client.PostAsync(Base_URL + _Command, content);
         }
 
         public static async  Task Get( String _Command)
         {
-            jsonresponse = null;
+            Jsonresponse = null;
             var request = new HttpRequestMessage();
-            //string json = JsonConvert.SerializeObject(user);
-            //var content = new StringContent(json, Encoding.UTF8, "application/json");
+    
             var client = new HttpClient();
 
-            response = await client.GetAsync(Base_URL + _Command);
+            Response = await client.GetAsync(Base_URL + _Command);
 
-            if (response.IsSuccessStatusCode)
+            if (Response.IsSuccessStatusCode)
             {
-                 jsonresponse = await response.Content.ReadAsStringAsync();
+                 Jsonresponse = await Response.Content.ReadAsStringAsync();
                
             }
         }
-
-
-       
-
+      
     }
 }

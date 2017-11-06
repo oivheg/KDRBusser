@@ -6,6 +6,7 @@ using Xamarin.Forms;
 using Plugin.Connectivity.Abstractions;
 using System;
 using Xamarin.Forms.Xaml;
+using KDRBusser.SharedCode;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace KDRBusser
@@ -21,7 +22,10 @@ namespace KDRBusser
 
         {
             InitializeComponent();
-           
+
+
+            //DependencyService.Get<IHelperClass>().IsLoading(true, "None/Bad network conenction");
+
             while (!HavNetwork)
             {
                 //if (!IsLoading)
@@ -32,7 +36,7 @@ namespace KDRBusser
 
                 HavNetwork = CrossConnectivity.Current.IsConnected;
             }
-            DependencyService.Get<IFCMLoginService>().Init();
+          
         }
 
         bool HavNetwork = false;
@@ -42,6 +46,7 @@ namespace KDRBusser
         {
             // Handle when your app starts
             HavNetwork = CrossConnectivity.Current.IsConnected;
+            DependencyService.Get<IFCMLoginService>().Init();
             CrossConnectivity.Current.ConnectivityChanged += HandleConnectivityChanged;
         }
 
@@ -51,13 +56,13 @@ namespace KDRBusser
 
             if (e.IsConnected)
             {
-              bool isconencted = true;
-                DependencyService.Get<IFCMLoginService>().IsLoading(false);
+              //bool isconencted = true;
+                DependencyService.Get<IHelperClass>().IsLoading(false);
             }
             else if (!e.IsConnected)
             {
-                bool isconencted = false;
-                DependencyService.Get<IFCMLoginService>().IsLoading(true, "None/Bad network conenction");
+                //bool isconencted = false;
+                DependencyService.Get<IHelperClass>().IsLoading(true, "None/Bad network conenction");
             }
 
 
