@@ -3,6 +3,7 @@ using Foundation;
 using UIKit;
 using Xamarin.Forms;
 using Plugin.Toasts;
+using Firebase.Auth;
 using Firebase.Core;
 namespace KDRBusser.iOS
 {
@@ -21,7 +22,7 @@ namespace KDRBusser.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-
+         
             Forms.Init();
             Firebase.Core.App.Configure();
             DependencyService.Register<ToastNotification>(); // Register your dependency

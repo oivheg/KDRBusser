@@ -105,4 +105,9 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\optimized\Icon-Smal
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\optimized\Icon-Small@2x.png
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\optimized\Icon-Small@3x.png
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\optimized\GoogleService-Info.plist
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\KDRBusser.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\System.Net.Http.Extensions.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Acr.UserDialogs.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Plugin.Connectivity.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\System.Net.Http.Extensions.xml
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Toasts.Forms.Plugin.Abstractions.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll.mdb

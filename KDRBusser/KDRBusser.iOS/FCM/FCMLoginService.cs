@@ -7,9 +7,13 @@ using Foundation;
 using UIKit;
 using Firebase.Auth;
 using Xamarin.Forms;
+using KDRBusser.iOS.FCM;
+using KDRBusser.SharedCode;
 
+[assembly: Dependency(typeof(FCMLoginService))]
 namespace KDRBusser.iOS.FCM
 {
+   
     class FCMLoginService : IFCMLoginService
     {
 
@@ -77,6 +81,8 @@ namespace KDRBusser.iOS.FCM
                     default:
                         //show some irro message etc
                         //AppDelegate.ShowMessage("Could not login!", error.LocalizedDescription, NavigationController);
+                       
+                        DependencyService.Get<IHelperClass>().IsLoading(false, "Loading");
                         break;
                 }
 
@@ -97,7 +103,7 @@ namespace KDRBusser.iOS.FCM
         public void LogOut()
         {
            
-            auth.SignOut();
+            //auth.SignOut();
         }
 
         public void ToastUser(string title)
@@ -110,21 +116,21 @@ namespace KDRBusser.iOS.FCM
             throw new NotImplementedException();
         }
 
-        public void IsLoading(bool isLoading, String text)
-        {
-            if (!isLoading)
-            {
-                UserDialogs.Instance.HideLoading();
-            }
-            else
-            {
+        //public void IsLoading(bool isLoading, String text)
+        //{
+        //    if (!isLoading)
+        //    {
+        //        UserDialogs.Instance.HideLoading();
+        //    }
+        //    else
+        //    {
 
-                UserDialogs.Instance.ShowLoading(text, MaskType.Black);
-
-
-            }
+        //        UserDialogs.Instance.ShowLoading(text, MaskType.Black);
 
 
-        }
+        //    }
+
+
+        //}
     }
 }

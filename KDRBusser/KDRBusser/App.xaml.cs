@@ -22,7 +22,7 @@ namespace KDRBusser
 
         {
             InitializeComponent();
-
+            MainPage = new FCmLogin();
 
             //DependencyService.Get<IHelperClass>().IsLoading(true, "None/Bad network conenction");
 
