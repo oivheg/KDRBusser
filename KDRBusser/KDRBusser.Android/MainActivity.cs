@@ -46,7 +46,7 @@ namespace KDRBusser.Droid
             DependencyService.Register<FirebaseApp>(); // this probalby the reason it FCM 
             DependencyService.Register<JsonConverter>(); // this probalby the reason it FCM 
             DependencyService.Register<ToastNotification>(); // Register your dependency
-            DependencyService.Register<MyFirebaseMessagingService>();
+            DependencyService.Register<Droid_MyFirebaseMessagingService>();
             LoadApplication(new App());
         }
 

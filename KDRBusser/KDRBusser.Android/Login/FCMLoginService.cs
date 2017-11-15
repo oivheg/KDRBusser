@@ -33,7 +33,7 @@ namespace KDRBusser.Droid
 
         public void Init()
         {
-            //DependencyService.Register<MyFirebaseMessagingService>();
+            //DependencyService.Register<Droid_MyFirebaseMessagingService>();
             mAuth = FirebaseAuth.Instance;
             mAuth.AuthState += AuthStateChanged;
 
@@ -239,8 +239,8 @@ namespace KDRBusser.Droid
         {
             //StartActivity(typeof(GoogleSignInActivity));
 
-            Intent i = new Intent(this, typeof(GoogleSignInActivity));
-            this.StartActivity(i);
+            //Intent i = new Intent(this, typeof(GoogleSignInActivity));
+            //this.StartActivity(i);
 
             //Xamarin.Forms.Application.Current.MainPage = new GoogleSignInActivity();
         }

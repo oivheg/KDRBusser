@@ -19,6 +19,7 @@ namespace KDRBusser
           
             InitializeComponent();
             btnActiveUser.Clicked += BtnActiveUser_clicked;
+           
         
         }
 

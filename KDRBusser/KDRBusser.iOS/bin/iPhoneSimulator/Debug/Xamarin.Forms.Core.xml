@@ -8784,6 +8784,13 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
             <summary>This interface is for internal use by platform renderers.</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="M:Xamarin.Forms.ITemplatedItemsList`1.ActivateContent(System.Int32,System.Object)">
+            <param name="index">To be added.</param>
+            <param name="item">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="P:Xamarin.Forms.ITemplatedItemsList`1.BindingContext">
             <summary>For internal use by platform renderers.</summary>
             <value>To be added.</value>
@@ -19844,6 +19851,13 @@ namespace FormsGallery
             <summary>For internal use by the Xamarin.Forms platform.</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="M:Xamarin.Forms.Internals.TemplatedItemsList`2.ActivateContent(System.Int32,System.Object)">
+            <param name="index">To be added.</param>
+            <param name="item">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="E:Xamarin.Forms.Internals.TemplatedItemsList`2.CollectionChanged">
             <summary>For internal use by the Xamarin.Forms platform.</summary>
             <remarks>To be added.</remarks>
@@ -19854,10 +19868,10 @@ namespace FormsGallery
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Internals.TemplatedItemsList`2.CreateContent(System.Int32,System.Object,System.Boolean)">
-            <param name="index">For internal use by the Xamarin.Forms platform.</param>
-            <param name="item">For internal use by the Xamarin.Forms platform.</param>
-            <param name="insert">For internal use by the Xamarin.Forms platform.</param>
-            <summary>For internal use by the Xamarin.Forms platform.</summary>
+            <param name="index">To be added.</param>
+            <param name="item">To be added.</param>
+            <param name="insert">To be added.</param>
+            <summary>To be added.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -20584,6 +20598,19 @@ namespace FormsGallery
             <returns>The updated configuration object on which developers can make successive method calls.</returns>
             <remarks>To be added.</remarks>
         </member>
+        <member name="T:Xamarin.Forms.PlatformConfiguration.iOSSpecific.LargeTitleDisplayMode">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.LargeTitleDisplayMode.Always">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.LargeTitleDisplayMode.Automatic">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.LargeTitleDisplayMode.Never">
+            <summary>To be added.</summary>
+        </member>
         <member name="T:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage">
             <summary>The navigation page instance that Xamarin.Forms created on the iOS platform.</summary>
             <remarks>To be added.</remarks>
@@ -20604,6 +20631,12 @@ namespace FormsGallery
             <param name="element">The platform specific element on which to perform the operation.</param>
             <summary>Returns a Boolean value that tells whether the navigation bar on the platform-specific navigation page is translucent.</summary>
             <returns>A Boolean value that tells whether the navigation bar on the platform-specific navigation page is translucent.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.GetPrefersLargeTitles(Xamarin.Forms.BindableObject)">
+            <param name="element">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.GetStatusBarTextColorMode(Xamarin.Forms.BindableObject)">
@@ -20628,6 +20661,16 @@ namespace FormsGallery
             <summary>Backing store for the <see cref="P:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.IsNavigationBarTranslucent" /> property</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.PrefersLargeTitles(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.NavigationPage})">
+            <param name="config">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.PrefersLargeTitlesProperty">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.SetIsNavigationBarTranslucent(Xamarin.Forms.BindableObject,System.Boolean)">
             <param name="element">The platform specific element on which to perform the operation.</param>
             <param name="value">The new property value to assign.</param>
@@ -20639,6 +20682,19 @@ namespace FormsGallery
             <param name="value">The new property value to assign.</param>
             <summary>Sets a Boolean value that controls whether the navigation bar on the platform-specific navigation page is translucent.</summary>
             <returns>The updated configuration object on which developers can make successive method calls.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.SetPrefersLargeTitles(Xamarin.Forms.BindableObject,System.Boolean)">
+            <param name="element">To be added.</param>
+            <param name="value">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.SetPrefersLargeTitles(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.NavigationPage},System.Boolean)">
+            <param name="config">To be added.</param>
+            <param name="value">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.SetStatusBarTextColorMode(Xamarin.Forms.BindableObject,Xamarin.Forms.PlatformConfiguration.iOSSpecific.StatusBarTextColorMode)">
@@ -20662,6 +20718,12 @@ namespace FormsGallery
             <summary>The page instance that Xamarin.Forms created on the iOS platform.</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.GetLargeTitleDisplay(Xamarin.Forms.BindableObject)">
+            <param name="element">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.GetPreferredStatusBarUpdateAnimation(Xamarin.Forms.BindableObject)">
             <param name="element">The platform specific element on which to perform the operation.</param>
             <summary>Returns a value that tells whether the preferred animation style to use when updating the status bar is <c>None</c>, <c>Slide</c>, or <c>Fade</c>.</summary>
@@ -20672,6 +20734,28 @@ namespace FormsGallery
             <param name="element">The platform specific element on which to perform the operation.</param>
             <summary>Returns a value that tells whether it is preferred that the status bar is shown, hidden, or relies on the system default.</summary>
             <returns>A value that tells whether it is preferred that the status bar is shown, hidden, or relies on the system default.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.GetSafeAreaInsets(Xamarin.Forms.BindableObject)">
+            <param name="element">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.GetUseSafeArea(Xamarin.Forms.BindableObject)">
+            <param name="element">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.LargeTitleDisplay(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page})">
+            <param name="config">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.LargeTitleDisplayProperty">
+            <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.PreferredStatusBarUpdateAnimation(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page})">
@@ -20692,6 +20776,29 @@ namespace FormsGallery
         </member>
         <member name="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.PrefersStatusBarHiddenProperty">
             <summary>Sets a value that controls whether it is preferred that the status bar is shown, hidden, or relies on the system default.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SafeAreaInsets(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page})">
+            <param name="config">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SafeAreaInsetsProperty">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetLargeTitleDisplay(Xamarin.Forms.BindableObject,Xamarin.Forms.PlatformConfiguration.iOSSpecific.LargeTitleDisplayMode)">
+            <param name="element">To be added.</param>
+            <param name="value">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetLargeTitleDisplay(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page},Xamarin.Forms.PlatformConfiguration.iOSSpecific.LargeTitleDisplayMode)">
+            <param name="config">To be added.</param>
+            <param name="value">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetPreferredStatusBarUpdateAnimation(Xamarin.Forms.BindableObject,Xamarin.Forms.PlatformConfiguration.iOSSpecific.UIStatusBarAnimation)">
@@ -20718,6 +20825,36 @@ namespace FormsGallery
             <param name="value">The new property value to assign.</param>
             <summary>Sets a value that controls whether it is preferred that the status bar is shown, hidden, or relies on the system default.</summary>
             <returns>The updated configuration object on which developers can make successive method calls.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetSafeAreaInsets(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page},Xamarin.Forms.Thickness)">
+            <param name="config">To be added.</param>
+            <param name="value">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetUseSafeArea(Xamarin.Forms.BindableObject,System.Boolean)">
+            <param name="element">To be added.</param>
+            <param name="value">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.SetUseSafeArea(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page},System.Boolean)">
+            <param name="config">To be added.</param>
+            <param name="value">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.UseSafeAreaProperty">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.UsingSafeArea(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Page})">
+            <param name="config">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Picker">

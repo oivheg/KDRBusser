@@ -26,7 +26,7 @@ namespace KDRBusser.Droid.Receivers
             // Do stuff here when device reboots.
          
 
-            MyFirebaseMessagingService.timer.Stop();
+            Droid_MyFirebaseMessagingService.timer.Stop();
         }
     }
 }
