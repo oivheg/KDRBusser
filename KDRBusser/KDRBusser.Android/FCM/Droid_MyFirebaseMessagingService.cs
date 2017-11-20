@@ -110,10 +110,14 @@ namespace KDRBusser.Droid
             Vibrator vibrator = (Vibrator)this.ApplicationContext.GetSystemService(Context.VibratorService);
             long[] vibPatterns = GetVibPatterns();
             vibrator.Vibrate(vibPatterns, -1);
+            //<--- Only works in android api 26 and up androud 8 --->
+            //VibrationEffect effect = VibrationEffect.CreateOneShot(1000, VibrationEffect.DefaultAmplitude);
+            //vibrator.Vibrate(effect);
+            //<--- END --->
         }
-     
 
-       
+
+
         private static long[] GetVibPatterns()
         {
             
