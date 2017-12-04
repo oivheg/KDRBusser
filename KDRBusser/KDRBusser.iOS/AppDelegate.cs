@@ -9,6 +9,8 @@ using UserNotifications;
 using Firebase.CloudMessaging;
 using System;
 using Firebase.InstanceID;
+using KDRBusser.iOS.FCM;
+
 
 namespace KDRBusser.iOS
 {
@@ -18,9 +20,6 @@ namespace KDRBusser.iOS
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate, IUNUserNotificationCenterDelegate, IMessagingDelegate
     {
-
-
-        public event EventHandler<UserInfoEventArgs> NotificationReceived;
         public void DidRefreshRegistrationToken(Messaging messaging, string fcmToken)
         {
             throw new NotImplementedException();
@@ -31,8 +30,13 @@ namespace KDRBusser.iOS
          
             Forms.Init();
             Firebase.Core.App.Configure();
+            IOS_MyFirebaseMessagingService notif = new IOS_MyFirebaseMessagingService();
+
+        
             DependencyService.Register<ToastNotification>(); // Register your dependency
             ToastNotification.Init();
+
+           
             LoadApplication(new App());
 
 
@@ -41,23 +45,57 @@ namespace KDRBusser.iOS
             return base.FinishedLaunching(app, options);
         }
 
-        public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)
+
+        // To receive notifications in foreground on iOS 10 devices.
+[Export("userNotificationCenter:willPresentNotification:withCompletionHandler:")]
+public void WillPresentNotification(UNUserNotificationCenter center, UNNotification notification, Action<UNNotificationPresentationOptions> completionHandler)
         {
-            // If you are receiving a notification message while your app is in the background,
-            // this callback will not be fired 'till the user taps on the notification launching the application.
-
-            // If you disable method swizzling, you'll need to call this method. 
-            // This lets FCM track message delivery and analytics, which is performed
-            // automatically with method swizzling enabled.
-            //Messaging.GetInstance ().AppDidReceiveMessage (userInfo);
-
-            if (NotificationReceived == null)
-                return;
-
-            var e = new UserInfoEventArgs { UserInfo = userInfo };
-            NotificationReceived(this, e);
+            // Do your magic to handle the notification data
+            System.Console.WriteLine(notification.Request.Content.UserInfo);
         }
 
+        [Export("userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:")]
+        public void DidReceiveNotificationResponse(UNUserNotificationCenter center, UNNotificationResponse response, Action completionHandler)
+        {
+            // Do your magic to handle the notification data
+            System.Console.WriteLine("infor");
+        }
+
+        // Receive data message on iOS 10 devices.
+        public void ApplicationReceivedRemoteMessage(RemoteMessage remoteMessage)
+        {
+            Console.WriteLine(remoteMessage.AppData);
+        }
+        public void RegisterForNotifications()
+        {
+            // Register your app for remote notifications.
+            if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
+            {
+                // iOS 10 or later
+                var authOptions = UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound;
+                UNUserNotificationCenter.Current.RequestAuthorization(authOptions, (granted, error) => {
+                    Console.WriteLine(granted);
+                });
+
+                // For iOS 10 display notification (sent via APNS)
+                UNUserNotificationCenter.Current.Delegate = this;
+
+                // For iOS 10 data message (sent via FCM)
+                Messaging.SharedInstance.RemoteMessageDelegate = this;
+            }
+            else
+            {
+                // iOS 9 or before
+                var allNotificationTypes = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound;
+                var settings = UIUserNotificationSettings.GetSettingsForTypes(allNotificationTypes, null);
+                UIApplication.SharedApplication.RegisterUserNotificationSettings(settings);
+            }
+
+            UIApplication.SharedApplication.RegisterForRemoteNotifications();
+
+
+
+        }
 
     }
 }

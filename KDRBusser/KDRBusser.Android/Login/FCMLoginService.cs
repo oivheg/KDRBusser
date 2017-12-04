@@ -13,6 +13,7 @@ using System.ComponentModel;
 using Android.Content;
 using Android.App;
 using Acr.UserDialogs;
+using KDRBusser.SharedCode;
 
 [assembly: Dependency(typeof(FCMLoginService))]
 namespace KDRBusser.Droid
@@ -120,6 +121,7 @@ namespace KDRBusser.Droid
             }
             catch (Exception ex)
             {
+                DependencyService.Get<IHelperClass>().IsLoading(false);
                 Console.WriteLine(ex);
                 // Sign-in failed, display a message to the user
                 // If sign in succeeds, the AuthState event handler will

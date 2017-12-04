@@ -39,6 +39,7 @@ namespace KDRBusser
           
         }
 
+
         bool HavNetwork = false;
         bool IsLoading = false;
 
