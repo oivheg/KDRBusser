@@ -1,11 +1,11 @@
-﻿using Firebase.CloudMessaging;
+﻿using AudioToolbox;
+using Firebase.CloudMessaging;
 using Foundation;
 using KDRBusser.SharedCode;
 using Plugin.Toasts;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using UIKit;
 using UserNotifications;
 using Xamarin.Forms;
@@ -64,19 +64,70 @@ namespace KDRBusser.iOS.FCM
             // Do your magic to handle the notification data
             System.Console.WriteLine(notification.Request.Content.UserInfo);
             var notific = notification.Request.Content.UserInfo;
- var title = notific["title"];
+          
+            var title = notific["title"];
+            var Action = notific["Action"];
             if (title != null)
             {
 
                 System.Console.WriteLine("MYF:DInner is ready"); //Console is not found in system
-                ToastedUserAsync("Dinner is Ready");
-                //Vibration();
-                Task.Run(async () => await DependencyService.Get<SharedHelper>().InformmasterAsync());
+                //ToastedUserAsync("Dinner is Ready");
+                Vibration();
+                Task.Run(async () => await SharedHelper.InformmasterAsync());
+            }
+            else if (Action != null)
+            {
+
+                var tmp = notific["Action"];
+                if (tmp.ToString() == "cancelVibration")
+                {
+                    if (timer.Enabled)
+                    {
+                        timer.Stop();
+                    }
+                }
+
             }
            
             var body = notific["body"];
         }
 
+        public static Timer timer = new Timer();
+
+
+        private void Vibration()
+        {
+           
+
+            if (!timer.Enabled)
+            {
+
+                timer.Interval = 500; // runs every second
+                timer.Elapsed += Timer_Elapsed;
+                timer.Start();
+            }
+
+        }
+        private int count = 1;
+        private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+
+            if (count < 10)
+            {
+                count++;
+
+            }
+            else
+            {
+                count = 1;
+                Vibrate();
+            }
+        }
+
+        private void Vibrate()
+        {
+            SystemSound.Vibrate.PlaySystemSound();
+        }
 
         public async void ToastedUserAsync(String title)
         {

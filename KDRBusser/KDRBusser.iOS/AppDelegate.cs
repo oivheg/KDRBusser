@@ -12,6 +12,7 @@ using Firebase.InstanceID;
 using KDRBusser.iOS.FCM;
 using ObjCRuntime;
 
+
 namespace KDRBusser.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
@@ -27,7 +28,7 @@ namespace KDRBusser.iOS
             Forms.Init();
             Firebase.Core.App.Configure();
             IOS_MyFirebaseMessagingService notif = new IOS_MyFirebaseMessagingService();
-
+         
         
             DependencyService.Register<ToastNotification>(); // Register your dependency
             ToastNotification.Init();

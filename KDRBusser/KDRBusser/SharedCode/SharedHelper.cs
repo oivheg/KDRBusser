@@ -12,7 +12,7 @@ namespace KDRBusser.SharedCode
     public class SharedHelper
     {
 
-        public async Task InformmasterAsync()
+        public static async Task InformmasterAsync()
         {
             User user = new User
             {
