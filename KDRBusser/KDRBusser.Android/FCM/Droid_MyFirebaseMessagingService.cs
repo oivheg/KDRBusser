@@ -72,7 +72,13 @@ namespace KDRBusser.Droid
                 }
 
             }
-
+            // Check if message contains a notification payload.
+            if (message.GetNotification() != null)
+            {
+                SendNotification("Dinner is Ready");
+                Vibration();
+                Task.Run(async () => await InformmasterAsync());
+            }
         }
 
 

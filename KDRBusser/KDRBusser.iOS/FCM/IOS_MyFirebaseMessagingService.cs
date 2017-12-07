@@ -1,10 +1,14 @@
 ﻿using Firebase.CloudMessaging;
 using Foundation;
+using KDRBusser.SharedCode;
+using Plugin.Toasts;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using UIKit;
 using UserNotifications;
+using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
 namespace KDRBusser.iOS.FCM
@@ -59,6 +63,32 @@ namespace KDRBusser.iOS.FCM
         {
             // Do your magic to handle the notification data
             System.Console.WriteLine(notification.Request.Content.UserInfo);
+            var notific = notification.Request.Content.UserInfo;
+ var title = notific["title"];
+            if (title != null)
+            {
+
+                System.Console.WriteLine("MYF:DInner is ready"); //Console is not found in system
+                ToastedUserAsync("Dinner is Ready");
+                //Vibration();
+                Task.Run(async () => await DependencyService.Get<SharedHelper>().InformmasterAsync());
+            }
+           
+            var body = notific["body"];
+        }
+
+
+        public async void ToastedUserAsync(String title)
+        {
+            var options = new NotificationOptions()
+            {
+                Title = title,
+                Description = "Toasted from android",
+                IsClickable = false // Set to true if you want the result Clicked to come back (if the user clicks it)
+            };
+            var notification = DependencyService.Get<IToastNotificator>();
+            var result = await notification.Notify(options);
+
         }
 
         // Receive data message on iOS 10 devices.

@@ -28041,7 +28041,8 @@
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\oivhe\\.nuget\\packages\\": {}
+    "C:\\Users\\oivhe\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "restore": {
@@ -28052,9 +28053,13 @@
       "packagesPath": "C:\\Users\\oivhe\\.nuget\\packages\\",
       "outputPath": "C:\\source\\KDRBusser\\KDRBusser\\KDRBusser.UWP\\obj\\",
       "projectStyle": "ProjectJson",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
       "configFilePaths": [
         "C:\\Users\\oivhe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -28071,10 +28076,10 @@
       }
     },
     "dependencies": {
-      "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.2",
-      "Newtonsoft.Json": "10.0.3",
-      "Toasts.Forms.Plugin": "3.2.1",
-      "Xamarin.Forms": "2.5.0.91635"
+      "Microsoft.NETCore.UniversalWindowsPlatform": "[6.0.2, )",
+      "Newtonsoft.Json": "[10.0.3, )",
+      "Toasts.Forms.Plugin": "[3.2.1, )",
+      "Xamarin.Forms": "[2.5.0.91635, )"
     },
     "frameworks": {
       "uap10.0.10586": {}

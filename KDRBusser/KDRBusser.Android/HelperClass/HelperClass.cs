@@ -1,6 +1,10 @@
 ﻿using Acr.UserDialogs;
+using KDRBusser.Classes;
+using KDRBusser.Communication;
 using KDRBusser.Droid.HelperClass;
 using KDRBusser.SharedCode;
+using System.Threading.Tasks;
+using Xamarin.Forms;
 
 [assembly: Xamarin.Forms.Dependency(typeof(HelperClass))]
 namespace KDRBusser.Droid.HelperClass
@@ -27,5 +31,7 @@ namespace KDRBusser.Droid.HelperClass
 
             }
         }
+
+        
     }
 }

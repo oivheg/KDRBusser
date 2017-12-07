@@ -31,3 +31,4 @@ C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\KDRBusser.FCM.FCmLogin.xaml.g.
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\KDRBusser.ActiveUser.xaml.g.cs
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\KDRBusser.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\KDRBusser.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\KDRBusser.csprojResolveAssemblyReference.cache

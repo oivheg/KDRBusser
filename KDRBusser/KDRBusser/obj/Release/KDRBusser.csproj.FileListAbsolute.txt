@@ -4,6 +4,7 @@ C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\KDRBusser.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\Newtonsoft.Json.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\Plugin.Connectivity.Abstractions.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\Plugin.Connectivity.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\ProgressRing.Forms.Plugin.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\System.Net.Http.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\System.Net.Http.Extensions.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\System.Net.Http.Primitives.dll
@@ -20,7 +21,6 @@ C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\System.Net.Http.Extensions.x
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\System.Net.Http.Primitives.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\Xamarin.Forms.Core.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\Xamarin.Forms.Core.xml
-C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\Xamarin.Forms.Platform.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\Xamarin.Forms.Xaml.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\Xamarin.Forms.Xaml.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Release\KDRBusser.csproj.App.config
