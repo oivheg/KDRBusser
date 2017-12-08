@@ -21,14 +21,37 @@ namespace KDRBusser.iOS.FCM
     {
 
         Auth auth;
-        public void Createuser(string email, string password, string masterid, string UserName)
+        public async void CreateuserAsync(string email, string password, string masterid, string UserName)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Classes.User newUser = new Classes.User
+                {
+                    Email = email,
+                    UserName = UserName.Trim(),
+                    MasterKey = masterid.Trim(),
+                    Appid = "not initialised".Trim(),
+                    Active = false
+                };
+                await RestApiCommunication.Post(newUser, "CreateUser");
+                 auth.CreateUser(email, password, SignInOnCompletion);
+
+                SharedHelper.ToastedUserAsync("FCM User Created");
+
+            }
+            catch (Exception ex)
+            {
+                // Sign-up failed, display a message to the user
+                // If sign in succeeds, the AuthState event handler will
+                //  be notified and logic to handle the signed in user can happen there
+                SharedHelper.ToastedUserAsync("user Creation Failed", ex.ToString());
+                //ToastedUserAsync("Create user failed" + ex);
+            }
         }
 
         public string GetEmail()
         {
-            throw new NotImplementedException();
+            return auth.CurrentUser.Email;
         }
 
         public string GetToken()
@@ -52,6 +75,26 @@ namespace KDRBusser.iOS.FCM
         public void Init()
         {
             auth = Auth.DefaultInstance;
+            var listenerHandle = Auth.DefaultInstance.AddAuthStateDidChangeListener(async (auth, user) => {
+                if (user != null)
+                {
+                    //FirebaseApp.InitializeApp(this);
+                    // User is signed in
+                    //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
+                    App.IsUserLoggedIn = true;
+                    await UpdateUserToken();
+                    ChangeActivity();
+                }
+                else
+                {
+                    // User is signed out
+                    //ToastedUserAsync("onAuthStateChanged:signed_out");
+                    App.IsUserLoggedIn = false;
+
+                    Xamarin.Forms.Application.Current.MainPage = new FCmLogin();
+                }
+            });
+        
             //throw new NotImplementedException();
         }
 
@@ -146,22 +189,16 @@ namespace KDRBusser.iOS.FCM
             await RestApiCommunication.Post(user, "UpdatUser");
         }
 
+        public void Createuser(string email, string password, string masterid, string UserName)
+        {
+            CreateuserAsync(email, password, masterid, UserName);
+        }
+
         String FCMToken;
-        //public void IsLoading(bool isLoading, String text)
-        //{
-        //    if (!isLoading)
-        //    {
-        //        UserDialogs.Instance.HideLoading();
-        //    }
-        //    else
-        //    {
-
-        //        UserDialogs.Instance.ShowLoading(text, MaskType.Black);
-
-
-        //    }
-
-
-        //}
+       
     }
+
+
+
+
 }

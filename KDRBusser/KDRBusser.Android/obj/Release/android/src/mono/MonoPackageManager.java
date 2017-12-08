@@ -152,6 +152,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"Xamarin.GooglePlayServices.Auth.Api.Phone.dll",
 		"Xamarin.GooglePlayServices.Auth.Base.dll",
 		"Xamarin.GooglePlayServices.Auth.dll",
 		"Xamarin.GooglePlayServices.Base.dll",

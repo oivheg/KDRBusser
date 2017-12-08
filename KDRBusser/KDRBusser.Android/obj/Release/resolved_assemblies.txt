@@ -56,6 +56,7 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamar
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Forms.Platform.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Forms.Xaml.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.GooglePlayServices.Auth.Api.Phone.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.GooglePlayServices.Auth.Base.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.GooglePlayServices.Auth.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.GooglePlayServices.Base.dll

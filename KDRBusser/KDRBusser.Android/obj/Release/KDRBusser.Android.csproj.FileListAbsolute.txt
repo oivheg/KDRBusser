@@ -93,7 +93,6 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\XbdMerge\Xamarin.Goo
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\XbdMerge\Xamarin.Firebase.Auth.dll.stamp
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\XbdMerge\Xamarin.GooglePlayServices.Auth.Base.dll.stamp
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\XbdMerge\Xamarin.GooglePlayServices.Auth.dll.stamp
-C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\ProcessGoogleServicesJson.stamp
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\KDRBusser.Android.csproj.CoreCompileInputs.cache
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\KDRBusser.Android.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\KDRBusser.Android.pdb
@@ -126,7 +125,9 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Toast
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\KDRBusser.Android.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Xamarin.GooglePlayServices.Auth.Api.Phone.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\XbdMerge\Xamarin.GooglePlayServices.Auth.Api.Phone.dll.stamp
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\googsvcsjson\values\goog_svcs_json.xml
 bin\Release\KDRBusser.dll.mdb
 bin\Release\Microsoft.CSharp.pdb
 bin\Release\Mono.Android.pdb

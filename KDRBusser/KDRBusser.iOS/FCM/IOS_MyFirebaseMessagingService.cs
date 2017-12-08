@@ -71,25 +71,30 @@ namespace KDRBusser.iOS.FCM
             {
 
                 System.Console.WriteLine("MYF:DInner is ready"); //Console is not found in system
-                //ToastedUserAsync("Dinner is Ready");
+                                                                 //ToastedUserAsync("Dinner is Ready");
+                                                                 //SharedHelper.ToastedUserAsync("IOS", "Dinner IOs Ready");
                 Vibration();
+                //Vibration();
+                
                 Task.Run(async () => await SharedHelper.InformmasterAsync());
             }
             else if (Action != null)
             {
-
+                //Finds the key dictionary "action" and check if the value is "cancelVibrations" 
                 var tmp = notific["Action"];
-                if (tmp.ToString() == "cancelVibration")
                 {
+                    //SharedHelper.ToastedUserAsync("Before timer stopped ", "Canceled diner");
                     if (timer.Enabled)
                     {
+                        //SharedHelper.ToastedUserAsync("Timer Stopped", "Canceled diner");
                         timer.Stop();
                     }
                 }
 
             }
            
-            var body = notific["body"];
+            //var body = notific["body"];
+            //RegisterForNotifications();
         }
 
         public static Timer timer = new Timer();
@@ -112,7 +117,7 @@ namespace KDRBusser.iOS.FCM
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
 
-            if (count < 10)
+            if (count < 5)
             {
                 count++;
 
@@ -129,20 +134,23 @@ namespace KDRBusser.iOS.FCM
             SystemSound.Vibrate.PlaySystemSound();
         }
 
-        public async void ToastedUserAsync(String title)
-        {
-            var options = new NotificationOptions()
-            {
-                Title = title,
-                Description = "Toasted from android",
-                IsClickable = false // Set to true if you want the result Clicked to come back (if the user clicks it)
-            };
-            var notification = DependencyService.Get<IToastNotificator>();
-            var result = await notification.Notify(options);
+        //public async void ToastedUserAsync(String title)
+        //{
+        //    var options = new NotificationOptions()
+        //    {
+        //        Title = title,
+        //        Description = "Toasted from android",
+        //        IsClickable = false // Set to true if you want the result Clicked to come back (if the user clicks it)
+        //    };
+        //    var notification = DependencyService.Get<IToastNotificator>();
+        //    var result = await notification.Notify(options);
 
-        }
+        //}
 
         // Receive data message on iOS 10 devices.
+        
+
+             
         public void ApplicationReceivedRemoteMessage(RemoteMessage remoteMessage)
         {
             Console.WriteLine(remoteMessage.AppData);
@@ -172,10 +180,15 @@ namespace KDRBusser.iOS.FCM
         }
         // To receive notifications in foreground on iOS 10 devices.
 
-       
-       
+
+        public override void ReceivedRemoteNotification(UIApplication application, NSDictionary userInfo)
+        {
+
+            
+            Console.WriteLine("Recieve Notification calling ");
+        }
 
 
-        
+
     }
 }

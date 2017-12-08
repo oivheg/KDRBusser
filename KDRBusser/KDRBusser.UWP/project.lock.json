@@ -2453,7 +2453,7 @@
           }
         }
       },
-      "Toasts.Forms.Plugin/3.2.1": {
+      "Toasts.Forms.Plugin/3.3.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.dll": {},
@@ -2464,7 +2464,7 @@
           "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.5.0.91635": {
+      "Xamarin.Forms/2.5.0.121934": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -4976,7 +4976,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Toasts.Forms.Plugin/3.2.1": {
+      "Toasts.Forms.Plugin/3.3.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.dll": {},
@@ -4987,7 +4987,7 @@
           "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.5.0.91635": {
+      "Xamarin.Forms/2.5.0.121934": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -7535,7 +7535,7 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Toasts.Forms.Plugin/3.2.1": {
+      "Toasts.Forms.Plugin/3.3.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.dll": {},
@@ -7546,7 +7546,7 @@
           "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.5.0.91635": {
+      "Xamarin.Forms/2.5.0.121934": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -10067,7 +10067,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Toasts.Forms.Plugin/3.2.1": {
+      "Toasts.Forms.Plugin/3.3.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.dll": {},
@@ -10078,7 +10078,7 @@
           "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.5.0.91635": {
+      "Xamarin.Forms/2.5.0.121934": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -12635,7 +12635,7 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Toasts.Forms.Plugin/3.2.1": {
+      "Toasts.Forms.Plugin/3.3.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.dll": {},
@@ -12646,7 +12646,7 @@
           "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.5.0.91635": {
+      "Xamarin.Forms/2.5.0.121934": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -15167,7 +15167,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Toasts.Forms.Plugin/3.2.1": {
+      "Toasts.Forms.Plugin/3.3.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.dll": {},
@@ -15178,7 +15178,7 @@
           "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.5.0.91635": {
+      "Xamarin.Forms/2.5.0.121934": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -17735,7 +17735,7 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Toasts.Forms.Plugin/3.2.1": {
+      "Toasts.Forms.Plugin/3.3.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.dll": {},
@@ -17746,7 +17746,7 @@
           "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.5.0.91635": {
+      "Xamarin.Forms/2.5.0.121934": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -27821,10 +27821,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Toasts.Forms.Plugin/3.2.1": {
-      "sha512": "4rPUkEMNPkBc0Hku/L3CMCBK1bPo/J8ExAFADgPcNBzoqzJVr2fZuOk1lr8HC3xbMwbOtb8yCWZhkhqni2Gb2g==",
+    "Toasts.Forms.Plugin/3.3.0": {
+      "sha512": "N4OfZ7rLIReP1CD9NZHqDZLo9uZtkUldBIKIS4czV4c+CdbRuCfyKXIz3FrbbS8nJ2H+tYxmzW/qNOtL9XOscQ==",
       "type": "package",
-      "path": "toasts.forms.plugin/3.2.1",
+      "path": "toasts.forms.plugin/3.3.0",
       "files": [
         "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.dll",
         "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.pdb",
@@ -27839,14 +27839,14 @@
         "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.pdb",
         "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll",
         "lib/uap10.0/Toasts.Forms.Plugin.UWP.pdb",
-        "toasts.forms.plugin.3.2.1.nupkg.sha512",
+        "toasts.forms.plugin.3.3.0.nupkg.sha512",
         "toasts.forms.plugin.nuspec"
       ]
     },
-    "Xamarin.Forms/2.5.0.91635": {
-      "sha512": "rsEaYnT21VJBmqg/ucUDtKQ9BNbpVMPquPr8Ss3NZ2Y6K2Q75h4T21j7R1hG5MqLfb7DeiHjBv8UnPW7+EPNcw==",
+    "Xamarin.Forms/2.5.0.121934": {
+      "sha512": "H3Gh6nvximMk9i8LdfhPnARo+kEsh8hDXWRboiUPb1r22gkIGA8i8tbnRcSXJWk4fCW/kdMTom6SFN0L+NhItw==",
       "type": "package",
-      "path": "xamarin.forms/2.5.0.91635",
+      "path": "xamarin.forms/2.5.0.121934",
       "files": [
         "build/netstandard1.0/Mono.Cecil.Mdb.dll",
         "build/netstandard1.0/Mono.Cecil.Pdb.dll",
@@ -28021,7 +28021,7 @@
         "lib/wpa81/Xamarin.Forms.Platform.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.2.5.0.91635.nupkg.sha512",
+        "xamarin.forms.2.5.0.121934.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -28035,8 +28035,8 @@
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.2",
       "Newtonsoft.Json >= 10.0.3",
-      "Toasts.Forms.Plugin >= 3.2.1",
-      "Xamarin.Forms >= 2.5.0.91635"
+      "Toasts.Forms.Plugin >= 3.3.0",
+      "Xamarin.Forms >= 2.5.0.121934"
     ],
     "UAP,Version=v10.0.10586": []
   },
@@ -28078,8 +28078,8 @@
     "dependencies": {
       "Microsoft.NETCore.UniversalWindowsPlatform": "[6.0.2, )",
       "Newtonsoft.Json": "[10.0.3, )",
-      "Toasts.Forms.Plugin": "[3.2.1, )",
-      "Xamarin.Forms": "[2.5.0.91635, )"
+      "Toasts.Forms.Plugin": "[3.3.0, )",
+      "Xamarin.Forms": "[2.5.0.121934, )"
     },
     "frameworks": {
       "uap10.0.10586": {}

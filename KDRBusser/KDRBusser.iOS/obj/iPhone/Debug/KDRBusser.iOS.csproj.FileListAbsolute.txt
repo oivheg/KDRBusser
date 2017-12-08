@@ -44,6 +44,7 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll.mdb
@@ -102,6 +103,7 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\optimized\Icon-Smal
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\optimized\GoogleService-Info.plist
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\optimized\
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\KDRBusser.iOS.csprojResolveAssemblyReference.cache
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\KDRBusser.iOS.exe.config
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\XbdMerge\Firebase.Core.dll.stamp
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\XbdMerge\Firebase.InstanceID.dll.stamp
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\XbdMerge\Firebase.Analytics.dll.stamp
@@ -110,6 +112,4 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\XbdMerge\Firebase.C
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\KDRBusser.iOS.csproj.CoreCompileInputs.cache
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\KDRBusser.iOS.exe
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\KDRBusser.iOS.pdb
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\KDRBusser.iOS.exe.config
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\KDRBusser.dll.mdb
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll.mdb

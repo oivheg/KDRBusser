@@ -2,8 +2,8 @@
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.2",
     "Newtonsoft.Json": "10.0.3",
-    "Toasts.Forms.Plugin": "3.2.1",
-    "Xamarin.Forms": "2.5.0.91635"
+    "Toasts.Forms.Plugin": "3.3.0",
+    "Xamarin.Forms": "2.5.0.121934"
   },
   "frameworks": {
     "uap10.0.10586": {}
