@@ -24,7 +24,8 @@ namespace KDRBusser
             btnLogin.Clicked += BtnLogin_Clicked;
             btncreateUser.Clicked += BtncreateUser_clicked;
             btnGoogle.Clicked += BtnGoogle_Clicked;
-            //DependencyService.Get<IFCMLoginService>().IsLoading();
+           
+     
         }
 
         private void BtnGoogle_Clicked(object sender, EventArgs e)

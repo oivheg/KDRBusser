@@ -2,6 +2,7 @@
 using Firebase.CloudMessaging;
 using Foundation;
 using KDRBusser.SharedCode;
+using ObjCRuntime;
 using Plugin.Toasts;
 using System;
 using System.Threading.Tasks;
@@ -134,20 +135,7 @@ namespace KDRBusser.iOS.FCM
             SystemSound.Vibrate.PlaySystemSound();
         }
 
-        //public async void ToastedUserAsync(String title)
-        //{
-        //    var options = new NotificationOptions()
-        //    {
-        //        Title = title,
-        //        Description = "Toasted from android",
-        //        IsClickable = false // Set to true if you want the result Clicked to come back (if the user clicks it)
-        //    };
-        //    var notification = DependencyService.Get<IToastNotificator>();
-        //    var result = await notification.Notify(options);
-
-        //}
-
-        // Receive data message on iOS 10 devices.
+       
         
 
              
@@ -168,26 +156,22 @@ namespace KDRBusser.iOS.FCM
             Console.WriteLine("Disconnected from FCM");
         }
 
-        [Export("userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:")]
-        public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)
+        public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo,  Action<UIBackgroundFetchResult> completionHandler)
         {
-            // If you are receiving a notification message while your app is in the background,
-            // this callback will not be fired 'till the user taps on the notification launching the application.
-            Messaging.SharedInstance.AppDidReceiveMessage(userInfo);
-
-            // Do your magic to handle the notification data
-            System.Console.WriteLine(userInfo);
+            base.DidReceiveRemoteNotification(application, userInfo, completionHandler);
         }
-        // To receive notifications in foreground on iOS 10 devices.
-
-
         public override void ReceivedRemoteNotification(UIApplication application, NSDictionary userInfo)
         {
-
-            
-            Console.WriteLine("Recieve Notification calling ");
+            if (application.ApplicationState == UIApplicationState.Active)
+            {
+            }
+            else if (application.ApplicationState == UIApplicationState.Background)
+            {
+            }
+            else if (application.ApplicationState == UIApplicationState.Inactive)
+            {
+            }
         }
-
 
 
     }

@@ -34,8 +34,9 @@ namespace KDRBusser.iOS.FCM
                     Active = false
                 };
                 await RestApiCommunication.Post(newUser, "CreateUser");
-                 auth.CreateUser(email, password, SignInOnCompletion);
-
+                   auth.CreateUser(email, password, CreateOnCompletion);
+                
+                
                 SharedHelper.ToastedUserAsync("FCM User Created");
 
             }
@@ -74,8 +75,10 @@ namespace KDRBusser.iOS.FCM
 
         public void Init()
         {
+            DependencyService.Get<IHelperClass>().IsLoading(true, "Logger INN");
             auth = Auth.DefaultInstance;
             var listenerHandle = Auth.DefaultInstance.AddAuthStateDidChangeListener(async (auth, user) => {
+               
                 if (user != null)
                 {
                     //FirebaseApp.InitializeApp(this);
@@ -113,6 +116,40 @@ namespace KDRBusser.iOS.FCM
             //throw new NotImplementedException();
             auth.SignIn(email, password, SignInOnCompletion);
             
+        }
+
+        private void CreateOnCompletion(Firebase.Auth.User user, NSError error)
+        {
+            // stop animation 
+            //indicatorView.StopAnimating();
+
+            if (error != null)
+            {
+                AuthErrorCode errorCode;
+                if (IntPtr.Size == 8) // 64 bits devices
+                    errorCode = (AuthErrorCode)((long)error.Code);
+                else // 32 bits devices
+                    errorCode = (AuthErrorCode)((int)error.Code);
+
+                // Posible error codes that SignIn method with email and password could throw
+                // Visit https://firebase.google.com/docs/auth/ios/errors for more information
+                switch (errorCode)
+                {
+                    case AuthErrorCode.OperationNotAllowed:
+                    case AuthErrorCode.InvalidEmail:
+                    case AuthErrorCode.UserDisabled:
+                    case AuthErrorCode.WrongPassword:
+                    default:
+                        // Print error
+                        break;
+                }
+            }
+            else
+            {
+                UpdateUserToken();
+                ChangeActivity();
+                // Do your magic to handle authentication result
+            }
         }
 
         private void SignInOnCompletion(Firebase.Auth.User user, NSError error)
@@ -191,6 +228,7 @@ namespace KDRBusser.iOS.FCM
 
         public void Createuser(string email, string password, string masterid, string UserName)
         {
+            DependencyService.Get<IHelperClass>().IsLoading(true,"Creating User");
             CreateuserAsync(email, password, masterid, UserName);
         }
 

@@ -34,7 +34,8 @@ namespace KDRBusser.Droid
 
         public void Init()
         {
-            //DependencyService.Register<Droid_MyFirebaseMessagingService>();
+           
+           
             mAuth = FirebaseAuth.Instance;
             mAuth.AuthState += AuthStateChanged;
 
@@ -65,6 +66,7 @@ namespace KDRBusser.Droid
         public void Createuser(String email, String password, String masterid, String UserName)
         {
             //ShowProgressDialog(this);
+            DependencyService.Get<IHelperClass>().IsLoading(true, "Creating User");
             CreateUserAsync(email, password, masterid, UserName);
         }
 
@@ -161,16 +163,18 @@ namespace KDRBusser.Droid
 
         void AuthStateChanged(object sender, FirebaseAuth.AuthStateEventArgs e)
         {
+          
             var user = e.Auth.CurrentUser;
             if (user != null)
             {
+                DependencyService.Get<IHelperClass>().IsLoading(true, "Logger INN");
                 FirebaseApp.InitializeApp(this);
                 // User is signed in
                 //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
                 App.IsUserLoggedIn = true;
                 UpdateUserToken();
                 ChangeActivity();
-
+                
             }
             else
             {
@@ -187,6 +191,7 @@ namespace KDRBusser.Droid
         }
 
         private static void ChangeActivity()
+
         {
             Xamarin.Forms.Application.Current.MainPage = new NavigationPage(new ActiveUser());
         }

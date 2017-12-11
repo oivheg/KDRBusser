@@ -31,6 +31,7 @@ namespace KDRBusser.iOS
          
         
             DependencyService.Register<ToastNotification>(); // Register your dependency
+        
             ToastNotification.Init();
 
            
