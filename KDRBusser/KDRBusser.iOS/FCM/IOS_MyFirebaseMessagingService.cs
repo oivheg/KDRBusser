@@ -15,7 +15,7 @@ using Xamarin.Forms.Platform.iOS;
 namespace KDRBusser.iOS.FCM
 {
     [Register("IOS_MyFirebaseMessagingService")]
-    class IOS_MyFirebaseMessagingService : FormsApplicationDelegate, IMessagingDelegate, IUNUserNotificationCenterDelegate
+    public class IOS_MyFirebaseMessagingService : FormsApplicationDelegate, IMessagingDelegate, IUNUserNotificationCenterDelegate
     {
 
         public IOS_MyFirebaseMessagingService()
@@ -32,7 +32,7 @@ namespace KDRBusser.iOS.FCM
             if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
             {
                 // iOS 10 or later
-                var authOptions = UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound;
+                var authOptions = UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound | UNAuthorizationOptions.None;
                 UNUserNotificationCenter.Current.RequestAuthorization(authOptions, (granted, error) => {
                     Console.WriteLine(granted);
                 });
@@ -138,7 +138,7 @@ namespace KDRBusser.iOS.FCM
         public static Timer timer = new Timer();
 
 
-        private void Vibration()
+        public void Vibration()
         {
            
 
@@ -192,11 +192,16 @@ namespace KDRBusser.iOS.FCM
             Messaging.SharedInstance.Disconnect();
             Console.WriteLine("Disconnected from FCM");
         }
-        [Export("userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:")]
-        public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo,  Action<UIBackgroundFetchResult> completionHandler)
+        [Export("application:didReceiveRemoteNotification:fetchCompletionHandler:")]
+        public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)
         {
+         
+            var test = "test";
             base.DidReceiveRemoteNotification(application, userInfo, completionHandler);
         }
+        // Receive data message on iOS 10 devices.
+
+    
         public override void ReceivedRemoteNotification(UIApplication application, NSDictionary userInfo)
         {
             if (application.ApplicationState == UIApplicationState.Active)
@@ -210,6 +215,7 @@ namespace KDRBusser.iOS.FCM
             }
         }
 
+       
 
     }
 }

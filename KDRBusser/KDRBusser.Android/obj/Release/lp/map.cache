@@ -45,10 +45,10 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
+Xamarin.GooglePlayServices.Auth.Api.Phone
 Xamarin.GooglePlayServices.Auth.Base
 Xamarin.GooglePlayServices.Auth
 Xamarin.GooglePlayServices.Base
 Xamarin.GooglePlayServices.Basement
 Xamarin.GooglePlayServices.Tasks
 System.Diagnostics.Tools
-Xamarin.GooglePlayServices.Auth.Api.Phone

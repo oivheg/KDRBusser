@@ -119,8 +119,6 @@ class MonoPackageManager_Resources {
 		"ProgressRing.Forms.Plugin.Android.dll",
 		"ProgressRing.Forms.Plugin.dll",
 		"Splat.dll",
-		"System.Net.Http.Extensions.dll",
-		"System.Net.Http.Primitives.dll",
 		"Toasts.Forms.Plugin.Abstractions.dll",
 		"Toasts.Forms.Plugin.Droid.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
