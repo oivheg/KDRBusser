@@ -34,7 +34,7 @@ namespace KDRBusser.iOS.FCM
                     Active = false
                 };
                 await RestApiCommunication.Post(newUser, "CreateUser");
-                   auth.CreateUser(email, password, CreateOnCompletion);
+                   auth.CreateUser(email, password, CreateOnCompletionAsync);
                 
                 
                 SharedHelper.ToastedUserAsync("FCM User Created");
@@ -65,7 +65,7 @@ namespace KDRBusser.iOS.FCM
             if (refreshedToken == null)
             {
 
-                LogOut();
+                auth.SignOut(out NSError error);
                 //mAuth.SignOut();
 
             }
@@ -85,7 +85,7 @@ namespace KDRBusser.iOS.FCM
                     // User is signed in
                     //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
                     App.IsUserLoggedIn = true;
-                    await UpdateUserToken();
+                    await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
                     ChangeActivity();
                 }
                 else
@@ -114,11 +114,12 @@ namespace KDRBusser.iOS.FCM
         public void LogInnUser(string email, string password)
         {
             //throw new NotImplementedException();
-            auth.SignIn(email, password, SignInOnCompletion);
+
+            auth.SignIn(email, password, SignInOnCompletionAsync);
             
         }
 
-        private void CreateOnCompletion(Firebase.Auth.User user, NSError error)
+        private async void CreateOnCompletionAsync(Firebase.Auth.User user, NSError error)
         {
             // stop animation 
             //indicatorView.StopAnimating();
@@ -146,13 +147,13 @@ namespace KDRBusser.iOS.FCM
             }
             else
             {
-                UpdateUserToken();
-                ChangeActivity();
+               await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
+                //ChangeActivity();
                 // Do your magic to handle authentication result
             }
         }
 
-        private void SignInOnCompletion(Firebase.Auth.User user, NSError error)
+        private async void SignInOnCompletionAsync(Firebase.Auth.User user, NSError error)
         {
             // stop animation 
             //indicatorView.StopAnimating();
@@ -186,7 +187,7 @@ namespace KDRBusser.iOS.FCM
             }
             // start ActiveUser Activity
             //NavigationController.PushViewController(new UserViewController("Firebase"), true);
-            UpdateUserToken();
+          await  SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
             ChangeActivity();
         }
 
@@ -197,11 +198,15 @@ namespace KDRBusser.iOS.FCM
             Xamarin.Forms.Application.Current.MainPage = new NavigationPage(new ActiveUser());
         }
 
-        public void LogOut()
+        public async void LogOut()
         {
-
+            await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken(), true);
             auth.SignOut(out NSError error);
-            Xamarin.Forms.Application.Current.MainPage = new NavigationPage(new FCmLogin());
+            //Xamarin.Forms.Application.Current.MainPage = new NavigationPage(new FCmLogin()); not used, done in authstate listener.
+        }
+
+        public void LogoutFirebase(){
+            auth.SignOut(out NSError error);
         }
 
         public void ToastUser(string title)
@@ -212,19 +217,19 @@ namespace KDRBusser.iOS.FCM
         public void UpdateToken(string Token)
         {
             FCMToken = Token;
-            UpdateUserToken();
-            
+            SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
+
         }
 
-        private async System.Threading.Tasks.Task UpdateUserToken()
-        {
-            Classes.User user = new Classes.User
-            {
-                Email = auth.CurrentUser.Email,
-                Appid = GetToken()
-            };
-            await RestApiCommunication.Post(user, "UpdatUser");
-        }
+        //private async System.Threading.Tasks.Task UpdateUserToken()
+        //{
+        //    Classes.User user = new Classes.User
+        //    {
+        //        Email = auth.CurrentUser.Email,
+        //        Appid = GetToken()
+        //    };
+        //    await RestApiCommunication.Post(user, "UpdatUser");
+        //}
 
         public void Createuser(string email, string password, string masterid, string UserName)
         {

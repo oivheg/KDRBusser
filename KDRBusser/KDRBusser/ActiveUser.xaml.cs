@@ -19,8 +19,8 @@ namespace KDRBusser
           
             InitializeComponent();
             btnActiveUser.Clicked += BtnActiveUser_clicked;
-           
-        
+            tkn = DependencyService.Get<IFCMLoginService>().GetToken();
+
         }
 
         public static int VibType { get; set; }
@@ -120,7 +120,7 @@ namespace KDRBusser
         public async void CommunicateDbAsync(String _user, bool _isActive, bool update, bool rmvAppId)
         {
 
-            tkn = DependencyService.Get<IFCMLoginService>().GetToken();
+           
             User user = new User();
             if (update)
             {

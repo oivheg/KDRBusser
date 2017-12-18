@@ -37,16 +37,20 @@ namespace KDRBusser.iOS
            
             LoadApplication(new App());
 
+            // Request notification permissions from the user
+            UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert, (approved, err) => {
+                // Handle approval
+            });
 
-           
+            
 
             return base.FinishedLaunching(app, options);
         }
 
 
+        
 
 
-       
 
     }
 }

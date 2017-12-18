@@ -15,6 +15,7 @@ using KDRBusser.SharedCode;
 using ProgressRingControl.Forms.Plugin;
 using Acr.UserDialogs;
 using Plugin.Connectivity;
+using KDRBusser.Droid.HelperClass;
 
 namespace KDRBusser.Droid
 {
@@ -47,6 +48,7 @@ namespace KDRBusser.Droid
             DependencyService.Register<JsonConverter>(); // this probalby the reason it FCM 
             DependencyService.Register<ToastNotification>(); // Register your dependency
             DependencyService.Register<Droid_MyFirebaseMessagingService>();
+            DependencyService.Register<MyBroadcastReceiver>();
             LoadApplication(new App());
         }
 

@@ -253,7 +253,7 @@
     <AppxPackagedFile Include="C:\Users\oivhe\.nuget\packages\system.net.websockets\4.0.0\lib\netstandard1.3\System.Net.WebSockets.dll">
       <PackagePath>System.Net.WebSockets.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\oivhe\.nuget\packages\system.net.websockets.client\4.0.0\runtimes\win\lib\netcore50\System.Net.WebSockets.Client.dll">
+    <AppxPackagedFile Include="C:\Users\oivhe\.nuget\packages\system.net.websockets.client\4.0.2\runtimes\win\lib\netcore50\System.Net.WebSockets.Client.dll">
       <PackagePath>System.Net.WebSockets.Client.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\oivhe\.nuget\packages\system.numerics.vectors\4.1.1\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.dll">

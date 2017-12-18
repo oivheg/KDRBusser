@@ -37,14 +37,14 @@ namespace KDRBusser.Droid
            
            
             mAuth = FirebaseAuth.Instance;
-            mAuth.AuthState += AuthStateChanged;
+            mAuth.AuthState += AuthStateChangedAsync;
 
         }
 
         public void UpdateToken(String Token)
         {
             FCMToken = Token;
-            UpdateUserToken();
+            SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
         }
 
         String FCMToken;
@@ -61,7 +61,7 @@ namespace KDRBusser.Droid
         protected override void OnStop()
         {
             base.OnStop();
-            mAuth.AuthState -= AuthStateChanged;
+            mAuth.AuthState -= AuthStateChangedAsync;
         }
         public void Createuser(String email, String password, String masterid, String UserName)
         {
@@ -115,10 +115,10 @@ namespace KDRBusser.Droid
                 //ToastedUserAsync("Sign In Success ");
 
 
-                await UpdateUserToken();
+               await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken() );
                 App.IsUserLoggedIn = true;
 
-                ChangeActivity();
+                //ChangeActivity();
 
             }
             catch (Exception ex)
@@ -132,15 +132,19 @@ namespace KDRBusser.Droid
             }
         }
 
-        public async System.Threading.Tasks.Task UpdateUserToken()
-        {
-            User user = new User
-            {
-                Email = mAuth.CurrentUser.Email,
-                Appid = GetToken()
-            };
-            await RestApiCommunication.Post(user, "UpdatUser");
-        }
+        //public async System.Threading.Tasks.Task UpdateUserToken(String _email, String _appid,Boolean logout = false)
+        //{
+        //    User user = new User
+        //    {
+        //        Email = _email,
+        //        Appid = _appid
+        //    };
+        //    if (logout)
+        //    {
+        //        user.Appid = "logged Out";
+        //    }
+        //    await RestApiCommunication.Post(user, "UpdatUser");
+        //}
 
         public void ToastUser(String title)
         {
@@ -161,7 +165,7 @@ namespace KDRBusser.Droid
 
         }
 
-        void AuthStateChanged(object sender, FirebaseAuth.AuthStateEventArgs e)
+        async void AuthStateChangedAsync(object sender, FirebaseAuth.AuthStateEventArgs e)
         {
           
             var user = e.Auth.CurrentUser;
@@ -172,7 +176,7 @@ namespace KDRBusser.Droid
                 // User is signed in
                 //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
                 App.IsUserLoggedIn = true;
-                UpdateUserToken();
+                await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
                 ChangeActivity();
                 
             }
@@ -197,26 +201,7 @@ namespace KDRBusser.Droid
         }
 
 
-        //not in use ate the momend, chaneg with authstate listener.
-        //public Boolean IsLoggedIn()
-        //{
-
-        //    // this is where the FIREBASE system is initialized. every firebase related initilasion shoudl start here, at lest for now.
-
-        //    //var firebaseapp = FirebaseApp.InitializeApp(this);
-
-        //    var user = mAuth.CurrentUser;
-
-        //    var signedIn = user != null;
-
-
-        //    if (signedIn)
-        //    {
-        //        UpdateUserToken();
-        //    }
-
-        //    return signedIn;
-        //}
+      
 
         public string GetToken()
         {
@@ -236,8 +221,9 @@ namespace KDRBusser.Droid
             return refreshedToken;
         }
 
-        public void LogOut()
+        public async void LogOut()
         {
+            await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken(), true);
             FirebaseAuth.Instance.SignOut();
 
         }

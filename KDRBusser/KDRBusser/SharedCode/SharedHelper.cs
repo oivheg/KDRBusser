@@ -51,7 +51,23 @@ namespace KDRBusser.SharedCode
 
         //    }
         //}
+
+        public static async Task UpdateUserTokenAsync(String _email, String _appid, Boolean logout = false)
+        {
+            User user = new User
+            {
+                Email = _email,
+                Appid = _appid
+            };
+            if (logout)
+            {
+                user.Appid = "logged Out";
+            }
+            await RestApiCommunication.Post(user, "UpdatUser");
+        }
+
     }
+
 
 
 

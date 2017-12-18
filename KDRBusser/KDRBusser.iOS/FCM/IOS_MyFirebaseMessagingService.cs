@@ -72,8 +72,39 @@ namespace KDRBusser.iOS.FCM
             {
 
                 System.Console.WriteLine("MYF:DInner is ready"); //Console is not found in system
-                                                                 //ToastedUserAsync("Dinner is Ready");
-                                                                 //SharedHelper.ToastedUserAsync("IOS", "Dinner IOs Ready");
+                                                                 //Test Notifications local etc device
+
+                // create the notification
+                var IOSNotification = new UILocalNotification();
+
+                // set the fire date (the date time in which it will fire)
+                IOSNotification.FireDate = NSDate.Now;
+
+                // configure the alert
+                IOSNotification.AlertAction = "View Alert";
+                IOSNotification.AlertBody = "Your one minute alert has fired!";
+
+                // modify the badge
+                IOSNotification.ApplicationIconBadgeNumber = 1;
+
+                // set the sound to be the default sound
+                IOSNotification.SoundName = UILocalNotification.DefaultSoundName;
+
+                // schedule it
+                UIApplication.SharedApplication.ScheduleLocalNotification(IOSNotification);
+
+
+                //var content = new UNMutableNotificationContent();
+                //content.Title = "Notification Title";
+                //content.Subtitle = "Notification Subtitle";
+                //content.Body = "This is the message body of the notification.";
+                //content.Badge = 1;//ToastedUserAsync("Dinner is Ready");
+                //var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(5, false);
+
+                //var requestID = "sampleRequest";
+                //var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);  
+                completionHandler(UNNotificationPresentationOptions.Alert);
+                //SharedHelper.ToastedUserAsync("IOS", "Dinner IOs Ready");
                 Vibration();
                 //Vibration();
                 
@@ -93,11 +124,17 @@ namespace KDRBusser.iOS.FCM
                 }
 
             }
+
            
             //var body = notific["body"];
             //RegisterForNotifications();
         }
 
+
+        public override void FailedToRegisterForRemoteNotifications(UIApplication application, NSError error)
+        {
+            new UIAlertView("Error registering push notifications", error.LocalizedDescription, null, "OK", null).Show();
+        }
         public static Timer timer = new Timer();
 
 
@@ -108,7 +145,7 @@ namespace KDRBusser.iOS.FCM
             if (!timer.Enabled)
             {
 
-                timer.Interval = 500; // runs every second
+                timer.Interval = 1000; // runs every second
                 timer.Elapsed += Timer_Elapsed;
                 timer.Start();
             }
@@ -155,7 +192,7 @@ namespace KDRBusser.iOS.FCM
             Messaging.SharedInstance.Disconnect();
             Console.WriteLine("Disconnected from FCM");
         }
-
+        [Export("userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:")]
         public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo,  Action<UIBackgroundFetchResult> completionHandler)
         {
             base.DidReceiveRemoteNotification(application, userInfo, completionHandler);

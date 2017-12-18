@@ -4,6 +4,7 @@ using Android.OS;
 using Firebase.Messaging;
 using KDRBusser.Classes;
 using KDRBusser.Communication;
+using KDRBusser.Droid.HelperClass;
 using KDRBusser.Droid.Receivers;
 using Plugin.Toasts;
 using System;
@@ -29,8 +30,10 @@ namespace KDRBusser.Droid
             Instance = this;
             base.OnCreate();
             System.Console.WriteLine("MYF:test"); //Console is not found in system
-
+            deleteReceiver = new MyBroadcastReceiver();
         }
+
+        
         public override void OnMessageReceived(RemoteMessage message)
         {
             //ToastUser("From: " + message.From);
@@ -81,9 +84,8 @@ namespace KDRBusser.Droid
             //    Task.Run(async () => await InformmasterAsync());
             //}
         }
-
-
-        void Vibration()
+ 
+    void Vibration()
         {
             Vibrate();
 
@@ -143,22 +145,42 @@ namespace KDRBusser.Droid
             }
             return pattern;
         }
-
+        MyBroadcastReceiver deleteReceiver;
+        static readonly int REQUEST_CODE = 2323;
+        public  readonly string ACTION_NOTIFICATION_DELETE = "com.xamarin.Droid_MyFirebaseMesagingService.delete";
         void SendNotification(string messageBody)
         {
-            Intent intent = new Intent("CancelVibrations");
+
+            
+        Intent intent = new Intent("CancelVibrations");
             intent.PutExtra("fromNotification", true);
             var pendingIntent = PendingIntent.GetBroadcast(this, 1, intent, PendingIntentFlags.UpdateCurrent);
 
-            var notificationBuilder = new Android.App.Notification.Builder(this)
+//            // Create a PendingIntent to be fired upon deletion of a Notification.
+//            var deleteIntent = new Intent(this.ACTION_NOTIFICATION_DELETE);
+//            PendingIntent deletePendingIntent = PendingIntent.GetBroadcast(this, REQUEST_CODE, deleteIntent, 0);
+
+//            Intent notiDeleted = new Intent(");
+//notiDeleted.putExtra(ctx.getString(R.string.noti_deleted), true);
+//PendingIntent notiDeletedIntent = PendingIntent.getBroadcast(ctx, 0, notiDeleted, 0);
+
+
+        var notificationBuilder = new Android.App.Notification.Builder(this)
                 .SetSmallIcon(Resource.Drawable.abc_btn_check_material)
                 .SetContentTitle("FCM Message")
                 .SetContentText(messageBody)
                 .SetAutoCancel(true)
+                .SetDeleteIntent(pendingIntent)
                 .SetContentIntent(pendingIntent);
+            
 
             var notificationManager = NotificationManager.FromContext(this);
             notificationManager.Notify(0, notificationBuilder.Build());
+        }
+
+        private object CancelDinner()
+        {
+            throw new NotImplementedException();
         }
 
         public async Task InformmasterAsync()
@@ -198,3 +220,4 @@ namespace KDRBusser.Droid
 
     }
 }
+
