@@ -65,7 +65,16 @@ namespace KDRBusser.iOS.FCM
             // Do your magic to handle the notification data
             System.Console.WriteLine(notification.Request.Content.UserInfo);
             var notific = notification.Request.Content.UserInfo;
-          
+
+            CheckPayload( notific);
+            //var body = notific["body"];
+            //RegisterForNotifications();
+        }
+
+        public void CheckPayload( NSDictionary notific)
+        {
+
+            //Action<UNNotificationPresentationOptions> completionHandler for variable into funciton
             var title = notific["title"];
             var Action = notific["Action"];
             if (title != null)
@@ -75,23 +84,23 @@ namespace KDRBusser.iOS.FCM
                                                                  //Test Notifications local etc device
 
                 // create the notification
-                var IOSNotification = new UILocalNotification();
+                //var IOSNotification = new UILocalNotification();
 
-                // set the fire date (the date time in which it will fire)
-                IOSNotification.FireDate = NSDate.Now;
+                //// set the fire date (the date time in which it will fire)
+                //IOSNotification.FireDate = NSDate.Now;
 
-                // configure the alert
-                IOSNotification.AlertAction = "View Alert";
-                IOSNotification.AlertBody = "Your one minute alert has fired!";
+                //// configure the alert
+                //IOSNotification.AlertAction = "View Alert";
+                //IOSNotification.AlertBody = "Your one minute alert has fired!";
 
-                // modify the badge
-                IOSNotification.ApplicationIconBadgeNumber = 1;
+                //// modify the badge
+                //IOSNotification.ApplicationIconBadgeNumber = 1;
 
-                // set the sound to be the default sound
-                IOSNotification.SoundName = UILocalNotification.DefaultSoundName;
+                //// set the sound to be the default sound
+                //IOSNotification.SoundName = UILocalNotification.DefaultSoundName;
 
-                // schedule it
-                UIApplication.SharedApplication.ScheduleLocalNotification(IOSNotification);
+                //// schedule it
+                //UIApplication.SharedApplication.ScheduleLocalNotification(IOSNotification);
 
 
                 //var content = new UNMutableNotificationContent();
@@ -103,11 +112,11 @@ namespace KDRBusser.iOS.FCM
 
                 //var requestID = "sampleRequest";
                 //var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);  
-                completionHandler(UNNotificationPresentationOptions.Alert);
+                //completionHandler(UNNotificationPresentationOptions.Alert);
                 //SharedHelper.ToastedUserAsync("IOS", "Dinner IOs Ready");
                 Vibration();
                 //Vibration();
-                
+
                 Task.Run(async () => await SharedHelper.InformmasterAsync());
             }
             else if (Action != null)
@@ -125,11 +134,7 @@ namespace KDRBusser.iOS.FCM
 
             }
 
-           
-            //var body = notific["body"];
-            //RegisterForNotifications();
         }
-
 
         public override void FailedToRegisterForRemoteNotifications(UIApplication application, NSError error)
         {

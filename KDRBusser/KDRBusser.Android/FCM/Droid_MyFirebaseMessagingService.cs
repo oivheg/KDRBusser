@@ -58,6 +58,7 @@ namespace KDRBusser.Droid
                     {
                         case "cancelVibration":
                             //ToastUser("Vibrations Canceled");
+                            SendNotification("CANCELED");
                             if (timer.Enabled)
                             {
                                 //timer.Elapsed -= Timer_Elapsed;
