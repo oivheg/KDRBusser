@@ -12,6 +12,7 @@ using Firebase.InstanceID;
 using KDRBusser.iOS.FCM;
 using ObjCRuntime;
 using AudioToolbox;
+using System.Threading.Tasks;
 
 namespace KDRBusser.iOS
 {
@@ -51,11 +52,33 @@ namespace KDRBusser.iOS
         [Export("application:didReceiveRemoteNotification:fetchCompletionHandler:")]
         public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)
         {
-
+            nint taskID = -1;
             //This code works without using thte "notification parameter" which is awsome, as the same call can be sendt to both ios and android wuthout any device verifications inbetween. 
             // this code unfortinaly only runs when app is in "foreground"
             //background might not work.  VoIP Might work ( by hacking it to fucntion as a "notification" call instead of calling for real.
-            notif.CheckPayload(userInfo);
+        
+
+            var app = UIApplication.SharedApplication;
+
+            Task.Run(() =>
+            {
+
+                // this only works fora limited time,, should restart or continue somhow.
+                // this also does work while app is in background, but are not allowed to vibrate / use timer.
+                taskID = app.BeginBackgroundTask(() =>
+                {
+                    System.Console.WriteLine("Bacground time expires");
+                });
+
+                notif.CheckPayload(userInfo);
+                //FinishLongRunningTask();
+                if (taskID != -1)
+                {
+                    app.EndBackgroundTask(taskID);
+                }
+
+
+            });
 
         }
 

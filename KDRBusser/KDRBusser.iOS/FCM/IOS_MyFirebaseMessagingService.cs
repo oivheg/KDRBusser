@@ -58,6 +58,7 @@ namespace KDRBusser.iOS.FCM
 
         }
         NSDictionary notific;
+        nint taskID = -1;
          // To receive notifications in foreground on iOS 10 devices.
          [Export("userNotificationCenter:willPresentNotification:withCompletionHandler:")]
         public void WillPresentNotification(UNUserNotificationCenter center, UNNotification notification, Action<UNNotificationPresentationOptions> completionHandler)
@@ -65,14 +66,33 @@ namespace KDRBusser.iOS.FCM
             // Do your magic to handle the notification data
             System.Console.WriteLine(notification.Request.Content.UserInfo);
              notific = notification.Request.Content.UserInfo;
-            nint taskID = UIApplication.SharedApplication.BeginBackgroundTask(() => { });
+            var app = UIApplication.SharedApplication;
+
+            Task.Run(() =>
+            {
 
 
-            FinishLongRunningTask();
+                taskID = app.BeginBackgroundTask(() =>
+                {
+                    Console.WriteLine("Bacground time expires");
+                });
 
 
-            UIApplication.SharedApplication.EndBackgroundTask(taskID);
+                //FinishLongRunningTask();
+                if (taskID != -1)
+                {
+ app.EndBackgroundTask(taskID);
+                }
 
+               
+            });
+              
+
+            
+            
+
+
+         
             //CheckPayloadAsync(notific);
             //var body = notific["body"];
             //RegisterForNotifications();
@@ -85,21 +105,19 @@ namespace KDRBusser.iOS.FCM
 
         }
         Boolean myFlag = true;
+        Boolean tmp_bol = true;
         private void FinishLongRunningTask()
         {
-            BackgroundTaskId = UIApplication.SharedApplication.BeginBackgroundTask(() => {
-                // Handle expiration: will happen before reaching 600 secs
-               
-                UIApplication.SharedApplication.EndBackgroundTask(BackgroundTaskId);
+          
 
-            });
-
-            Task.Run(() => {
-                CheckPayload(notific);
-            });
         }
 
-        public void CheckPayload( NSDictionary notific)
+        private void OnExpiration()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CheckPayload(NSDictionary notific)
         {
 
             //Action<UNNotificationPresentationOptions> completionHandler for variable into funciton
@@ -109,13 +127,16 @@ namespace KDRBusser.iOS.FCM
             {
 
                 System.Console.WriteLine("MYF:DInner is ready"); //Console is not found in system
-                                                                 //Test Notifications local etc device
+                     
+               //tests if vibrations works in background
+                SystemSound.Vibrate.PlaySystemSound();
 
-                
+                //the original ivbrations with timer, works in foregound.
                 Vibration();
                 //Vibration();
 
                 Task.Run(async () => await SharedHelper.InformmasterAsync());
+                tmp_bol = true;
             }
             else if (Action != null)
             {
@@ -125,13 +146,15 @@ namespace KDRBusser.iOS.FCM
                     //SharedHelper.ToastedUserAsync("Before timer stopped ", "Canceled diner");
                     if (timer.Enabled)
                     {
+
                         //SharedHelper.ToastedUserAsync("Timer Stopped", "Canceled diner");
                         timer.Stop();
+                        tmp_bol = false;
+                        System.Console.WriteLine("MYF:Dinner Canceled");
                     }
                 }
 
             }
-
         }
 
         public override void FailedToRegisterForRemoteNotifications(UIApplication application, NSError error)
@@ -147,10 +170,11 @@ namespace KDRBusser.iOS.FCM
 
             if (!timer.Enabled)
             {
-
+                
                 timer.Interval = 1000; // runs every second
                 timer.Elapsed += Timer_Elapsed;
                 timer.Start();
+                System.Console.WriteLine("MYF. Vibration() Timer is started ");
             }
 
         }
@@ -170,6 +194,7 @@ namespace KDRBusser.iOS.FCM
             {
                 count = 1;
                 Vibrate();
+                System.Console.WriteLine("MYF. Timer_elapsed Timer is running");
             }
         }
 
