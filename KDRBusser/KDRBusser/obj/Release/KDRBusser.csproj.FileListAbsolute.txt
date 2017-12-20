@@ -32,3 +32,4 @@ C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Release\KDRBusser.FCM.FCmLogin.xaml.
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Release\KDRBusser.ActiveUser.xaml.g.cs
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Release\KDRBusser.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Release\KDRBusser.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Release\KDRBusser.csprojResolveAssemblyReference.cache

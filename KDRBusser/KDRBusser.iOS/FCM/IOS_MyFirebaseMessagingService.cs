@@ -5,6 +5,7 @@ using KDRBusser.SharedCode;
 using ObjCRuntime;
 using Plugin.Toasts;
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
 using UIKit;
@@ -56,19 +57,46 @@ namespace KDRBusser.iOS.FCM
            
 
         }
-
-
-        // To receive notifications in foreground on iOS 10 devices.
-        [Export("userNotificationCenter:willPresentNotification:withCompletionHandler:")]
+        NSDictionary notific;
+         // To receive notifications in foreground on iOS 10 devices.
+         [Export("userNotificationCenter:willPresentNotification:withCompletionHandler:")]
         public void WillPresentNotification(UNUserNotificationCenter center, UNNotification notification, Action<UNNotificationPresentationOptions> completionHandler)
         {
             // Do your magic to handle the notification data
             System.Console.WriteLine(notification.Request.Content.UserInfo);
-            var notific = notification.Request.Content.UserInfo;
+             notific = notification.Request.Content.UserInfo;
+            nint taskID = UIApplication.SharedApplication.BeginBackgroundTask(() => { });
 
-            CheckPayload( notific);
+
+            FinishLongRunningTask();
+
+
+            UIApplication.SharedApplication.EndBackgroundTask(taskID);
+
+            //CheckPayloadAsync(notific);
             //var body = notific["body"];
             //RegisterForNotifications();
+
+
+
+            //CheckPayload(notific);
+            //runs on main or background thread
+
+
+        }
+        Boolean myFlag = true;
+        private void FinishLongRunningTask()
+        {
+            BackgroundTaskId = UIApplication.SharedApplication.BeginBackgroundTask(() => {
+                // Handle expiration: will happen before reaching 600 secs
+               
+                UIApplication.SharedApplication.EndBackgroundTask(BackgroundTaskId);
+
+            });
+
+            Task.Run(() => {
+                CheckPayload(notific);
+            });
         }
 
         public void CheckPayload( NSDictionary notific)
@@ -83,37 +111,7 @@ namespace KDRBusser.iOS.FCM
                 System.Console.WriteLine("MYF:DInner is ready"); //Console is not found in system
                                                                  //Test Notifications local etc device
 
-                // create the notification
-                //var IOSNotification = new UILocalNotification();
-
-                //// set the fire date (the date time in which it will fire)
-                //IOSNotification.FireDate = NSDate.Now;
-
-                //// configure the alert
-                //IOSNotification.AlertAction = "View Alert";
-                //IOSNotification.AlertBody = "Your one minute alert has fired!";
-
-                //// modify the badge
-                //IOSNotification.ApplicationIconBadgeNumber = 1;
-
-                //// set the sound to be the default sound
-                //IOSNotification.SoundName = UILocalNotification.DefaultSoundName;
-
-                //// schedule it
-                //UIApplication.SharedApplication.ScheduleLocalNotification(IOSNotification);
-
-
-                //var content = new UNMutableNotificationContent();
-                //content.Title = "Notification Title";
-                //content.Subtitle = "Notification Subtitle";
-                //content.Body = "This is the message body of the notification.";
-                //content.Badge = 1;//ToastedUserAsync("Dinner is Ready");
-                //var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(5, false);
-
-                //var requestID = "sampleRequest";
-                //var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);  
-                //completionHandler(UNNotificationPresentationOptions.Alert);
-                //SharedHelper.ToastedUserAsync("IOS", "Dinner IOs Ready");
+                
                 Vibration();
                 //Vibration();
 
@@ -140,7 +138,7 @@ namespace KDRBusser.iOS.FCM
         {
             new UIAlertView("Error registering push notifications", error.LocalizedDescription, null, "OK", null).Show();
         }
-        public static Timer timer = new Timer();
+        public static System.Timers.Timer timer = new System.Timers.Timer();
 
 
         public void Vibration()
@@ -157,6 +155,9 @@ namespace KDRBusser.iOS.FCM
 
         }
         private int count = 1;
+
+        public nint BackgroundTaskId { get; private set; }
+
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
 
