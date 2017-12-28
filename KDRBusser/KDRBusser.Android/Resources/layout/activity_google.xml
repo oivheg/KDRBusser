@@ -39,9 +39,7 @@
         android:id="@+id/detail"
         style="@style/ThemeOverlay.MyTextDetail"
         tools:text="Firebase User ID: 123456789abc" />
-
   </LinearLayout>
-
 
   <RelativeLayout
       android:layout_width="fill_parent"
@@ -84,7 +82,5 @@
           android:text="@string/disconnect"
           android:theme="@style/ThemeOverlay.MyDarkButton" />
     </LinearLayout>
-
   </RelativeLayout>
-
 </LinearLayout>

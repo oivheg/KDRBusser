@@ -2,9 +2,6 @@
 using KDRBusser.Communication;
 using Plugin.Toasts;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -12,7 +9,6 @@ namespace KDRBusser.SharedCode
 {
     public class SharedHelper
     {
-
         public static async Task InformmasterAsync()
         {
             User user = new User
@@ -20,12 +16,10 @@ namespace KDRBusser.SharedCode
                 Appid = DependencyService.Get<IFCMLoginService>().GetToken()
             };
             await RestApiCommunication.Post(user, "Msgreceived");
-
         }
 
         public static async void ToastedUserAsync(String title, String content = "Default Content")
         {
-         
             var options = new NotificationOptions()
             {
                 Title = title,
@@ -34,7 +28,6 @@ namespace KDRBusser.SharedCode
             };
             var notification = DependencyService.Get<IToastNotificator>();
             var result = await notification.Notify(options);
-
         }
 
         //public void IsLoading(bool isLoading, string text = "")
@@ -45,9 +38,7 @@ namespace KDRBusser.SharedCode
         //    }
         //    else
         //    {
-
         //        UserDialogs.Instance.ShowLoading(text, MaskType.Black);
-
 
         //    }
         //}
@@ -65,10 +56,5 @@ namespace KDRBusser.SharedCode
             }
             await RestApiCommunication.Post(user, "UpdatUser");
         }
-
     }
-
-
-
-
 }

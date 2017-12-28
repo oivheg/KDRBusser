@@ -4,9 +4,7 @@
              xmlns:local="clr-namespace:KDRBusser"
              x:Class="KDRBusser.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
+    <Label Text="Welcome to Xamarin Forms!"
+           VerticalOptions="Center"
            HorizontalOptions="Center" />
-    
-
 </ContentPage>

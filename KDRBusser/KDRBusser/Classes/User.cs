@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms.Internals;
 
 namespace KDRBusser.Classes
@@ -17,24 +13,16 @@ namespace KDRBusser.Classes
         public String Email { get; set; }
         public String MasterKey { get; set; }
 
-
         public User()
         {
-           
-
         }
 
-        public User( String _UserName,String _Appid, bool _Active)
+        public User(String _UserName, String _Appid, bool _Active)
         {
             UserId = 0;
             UserName = _UserName;
             Appid = _Appid;
             Active = _Active;
-
         }
-
-      
     }
-
-    
 }

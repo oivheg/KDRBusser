@@ -35,7 +35,6 @@
     <item name="colorAccent">@color/colorAccent</item>
   </style>
 
-
   <!-- Activity with no Title -->
   <style name="ThemeOverlay.MyNoTitleActivity" parent="AppTheme">
     <item name="windowActionBar">false</item>
@@ -51,7 +50,7 @@
   </style>
 
   <!-- Light EditTexts -->
-  <style name="ThemeOverlay.MyLightEditText" parent="ThemeOverlay.AppCompat.Dark"/>
+  <style name="ThemeOverlay.MyLightEditText" parent="ThemeOverlay.AppCompat.Dark" />
 
   <style name="ThemeOverlay.MyTextDetail" parent="AppTheme">
     <item name="android:layout_width">wrap_content</item>
@@ -79,6 +78,5 @@
     <item name="android:windowIsTranslucent">false</item>
     <item name="android:windowIsFloating">false</item>
     <item name="android:backgroundDimEnabled">true</item>
-   
   </style>
 </resources>

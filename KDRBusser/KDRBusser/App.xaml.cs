@@ -1,21 +1,19 @@
-﻿using Plugin.Connectivity;
-using ProgressRingControl.Forms.Plugin;
-using System.Threading;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+﻿using KDRBusser.SharedCode;
+using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
 using System;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using KDRBusser.SharedCode;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+
 namespace KDRBusser
 {
-   
     public partial class App : Application
     {
         //is this in use ? IsUserLoggedIn ? probably not anymore
         public static bool IsUserLoggedIn { get; set; }
+
         public static string FCmToken { get; set; }
 
         public App()
@@ -36,12 +34,10 @@ namespace KDRBusser
 
                 HavNetwork = CrossConnectivity.Current.IsConnected;
             }
-          
         }
 
-
-        bool HavNetwork = false;
-        bool IsLoading = false;
+        private bool HavNetwork = false;
+        private bool IsLoading = false;
 
         protected override void OnStart()
         {
@@ -57,7 +53,7 @@ namespace KDRBusser
 
             if (e.IsConnected)
             {
-              //bool isconencted = true;
+                //bool isconencted = true;
                 DependencyService.Get<IHelperClass>().IsLoading(false);
             }
             else if (!e.IsConnected)
@@ -65,9 +61,6 @@ namespace KDRBusser
                 //bool isconencted = false;
                 DependencyService.Get<IHelperClass>().IsLoading(true, "None/Bad network conenction");
             }
-
-
-
         }
 
         protected override void OnSleep()
@@ -79,7 +72,5 @@ namespace KDRBusser
         {
             // Handle when your app resumes
         }
-
-        
     }
 }

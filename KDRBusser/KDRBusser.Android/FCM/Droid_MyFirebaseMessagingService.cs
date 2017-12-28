@@ -20,7 +20,7 @@ namespace KDRBusser.Droid
     [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
     public class Droid_MyFirebaseMessagingService : FirebaseMessagingService
     {
-        const string TAG = "Droid_MyFirebaseMessagingService";
+        private const string TAG = "Droid_MyFirebaseMessagingService";
         public static Droid_MyFirebaseMessagingService Instance;
         private int count = 1;
         public static Timer timer = new Timer();
@@ -33,7 +33,6 @@ namespace KDRBusser.Droid
             deleteReceiver = new MyBroadcastReceiver();
         }
 
-        
         public override void OnMessageReceived(RemoteMessage message)
         {
             //ToastUser("From: " + message.From);
@@ -41,8 +40,6 @@ namespace KDRBusser.Droid
             var name = string.Empty; ;
             if (message.Data.Count > 0)
             {
-
-
                 if (message.Data.ContainsKey("title"))
                 {
                     name = message.Data["title"];
@@ -70,12 +67,12 @@ namespace KDRBusser.Droid
                         case "recieved":
                             ToastUser("Something recieved");
                             break;
+
                         default:
                             ToastUser("Default value");
                             break;
                     }
                 }
-
             }
             // Check if message contains a notification payload.
             //if (message.GetNotification() != null)
@@ -85,28 +82,24 @@ namespace KDRBusser.Droid
             //    Task.Run(async () => await InformmasterAsync());
             //}
         }
- 
-    void Vibration()
+
+        private void Vibration()
         {
             Vibrate();
 
             if (!timer.Enabled)
             {
-
                 timer.Interval = 1000; // runs every second
                 timer.Elapsed += Timer_Elapsed;
                 timer.Start();
             }
-
         }
 
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
-
             if (count < 10)
             {
                 count++;
-
             }
             else
             {
@@ -126,54 +119,51 @@ namespace KDRBusser.Droid
             //<--- END --->
         }
 
-
-
         private static long[] GetVibPatterns()
         {
-            
-            int _vibtype = ActiveUser.VibType; 
+            int _vibtype = ActiveUser.VibType;
             long[] pattern = new long[] { 200, 250, 350, 250, 350, 1000, 500, 350, 500, 350, 1000 };
             switch (_vibtype)
             {
                 case 1:
                     pattern = new long[] { 20, 250, 20, 250, 20, 1000, 20, 350, 20, 350, 20 };
                     break;
+
                 case 2:
                     pattern = new long[] { 500, 50, 500, 50, 500, 50, 500, 350, 500, 350, 500 };
                     break;
+
                 default:
                     break;
             }
             return pattern;
         }
-        MyBroadcastReceiver deleteReceiver;
-        static readonly int REQUEST_CODE = 2323;
-        public  readonly string ACTION_NOTIFICATION_DELETE = "com.xamarin.Droid_MyFirebaseMesagingService.delete";
-        void SendNotification(string messageBody)
-        {
 
-            
-        Intent intent = new Intent("CancelVibrations");
+        private MyBroadcastReceiver deleteReceiver;
+        private static readonly int REQUEST_CODE = 2323;
+        public readonly string ACTION_NOTIFICATION_DELETE = "com.xamarin.Droid_MyFirebaseMesagingService.delete";
+
+        private void SendNotification(string messageBody)
+        {
+            Intent intent = new Intent("CancelVibrations");
             intent.PutExtra("fromNotification", true);
             var pendingIntent = PendingIntent.GetBroadcast(this, 1, intent, PendingIntentFlags.UpdateCurrent);
 
-//            // Create a PendingIntent to be fired upon deletion of a Notification.
-//            var deleteIntent = new Intent(this.ACTION_NOTIFICATION_DELETE);
-//            PendingIntent deletePendingIntent = PendingIntent.GetBroadcast(this, REQUEST_CODE, deleteIntent, 0);
+            //            // Create a PendingIntent to be fired upon deletion of a Notification.
+            //            var deleteIntent = new Intent(this.ACTION_NOTIFICATION_DELETE);
+            //            PendingIntent deletePendingIntent = PendingIntent.GetBroadcast(this, REQUEST_CODE, deleteIntent, 0);
 
-//            Intent notiDeleted = new Intent(");
-//notiDeleted.putExtra(ctx.getString(R.string.noti_deleted), true);
-//PendingIntent notiDeletedIntent = PendingIntent.getBroadcast(ctx, 0, notiDeleted, 0);
+            //            Intent notiDeleted = new Intent(");
+            //notiDeleted.putExtra(ctx.getString(R.string.noti_deleted), true);
+            //PendingIntent notiDeletedIntent = PendingIntent.getBroadcast(ctx, 0, notiDeleted, 0);
 
-
-        var notificationBuilder = new Android.App.Notification.Builder(this)
-                .SetSmallIcon(Resource.Drawable.abc_btn_check_material)
-                .SetContentTitle("FCM Message")
-                .SetContentText(messageBody)
-                .SetAutoCancel(true)
-                .SetDeleteIntent(pendingIntent)
-                .SetContentIntent(pendingIntent);
-            
+            var notificationBuilder = new Android.App.Notification.Builder(this)
+                    .SetSmallIcon(Resource.Drawable.abc_btn_check_material)
+                    .SetContentTitle("FCM Message")
+                    .SetContentText(messageBody)
+                    .SetAutoCancel(true)
+                    .SetDeleteIntent(pendingIntent)
+                    .SetContentIntent(pendingIntent);
 
             var notificationManager = NotificationManager.FromContext(this);
             notificationManager.Notify(0, notificationBuilder.Build());
@@ -191,13 +181,12 @@ namespace KDRBusser.Droid
                 Appid = DependencyService.Get<IFCMLoginService>().GetToken()
             };
             await RestApiCommunication.Post(user, "Msgreceived");
-
         }
+
         public void ToastUser(String title)
         {
             ToastedUserAsync(title);
         }
-
 
         public async void ToastedUserAsync(String title)
         {
@@ -210,15 +199,8 @@ namespace KDRBusser.Droid
 
             var notification = DependencyService.Get<IToastNotificator>();
             var result = await notification.Notify(options);
-
         }
 
-
         private StopVibrationReceiver mBroadcastReceiver;
-       
-     
-
-
     }
 }
-

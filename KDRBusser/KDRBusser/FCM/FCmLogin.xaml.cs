@@ -1,5 +1,4 @@
 ﻿using KDRBusser.SharedCode;
-using ProgressRingControl.Forms.Plugin;
 using System;
 
 using Xamarin.Forms;
@@ -10,13 +9,13 @@ namespace KDRBusser
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FCmLogin : ContentPage
     {
-        Entry Email, Password, MasterId, UserName;
-      
+        private Entry Email, Password, MasterId, UserName;
+
         public String GetMasterID()
         {
             return MasterId.Text;
         }
-       
+
         public FCmLogin()
         {
             InitializeComponent();
@@ -24,8 +23,6 @@ namespace KDRBusser
             btnLogin.Clicked += BtnLogin_Clicked;
             btncreateUser.Clicked += BtncreateUser_clicked;
             btnGoogle.Clicked += BtnGoogle_Clicked;
-           
-     
         }
 
         private void BtnGoogle_Clicked(object sender, EventArgs e)
@@ -33,8 +30,8 @@ namespace KDRBusser
             DependencyService.Get<IFCMLoginService>().LogInGoogle();
         }
 
-        Boolean IsCreating = false;
-       
+        private Boolean IsCreating = false;
+
         private void BtncreateUser_clicked(object sender, EventArgs e)
         {
             if (IsCreating)
@@ -54,16 +51,14 @@ namespace KDRBusser
                 IsCreating = true;
                 btncreateUser.Text = "Lagre og Logg inn";
             }
-            
         }
 
         private void BtnLogin_Clicked(object sender, EventArgs e)
         {
             DependencyService.Get<IHelperClass>().IsLoading(true, "Loading");
-           Email = emailEntry;
+            Email = emailEntry;
             Password = passwordEntry;
             DependencyService.Get<IFCMLoginService>().LogInnUser(Email.Text, Password.Text);
         }
     }
-    
 }

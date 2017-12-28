@@ -1,26 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿using Firebase.Auth;
+using Firebase.InstanceID;
 using Foundation;
-using UIKit;
-using Firebase.Auth;
-using Xamarin.Forms;
+using KDRBusser.Communication;
 using KDRBusser.iOS.FCM;
 using KDRBusser.SharedCode;
-using Firebase.InstanceID;
-using KDRBusser.Classes;
-using KDRBusser.Communication;
+using System;
+using Xamarin.Forms;
 
 [assembly: Dependency(typeof(IOS_FCMLoginService))]
+
 namespace KDRBusser.iOS.FCM
 {
-   
-    class IOS_FCMLoginService : IFCMLoginService
+    internal class IOS_FCMLoginService : IFCMLoginService
     {
+        private Auth auth;
 
-        Auth auth;
         public async void CreateuserAsync(string email, string password, string masterid, string UserName)
         {
             try
@@ -34,11 +28,9 @@ namespace KDRBusser.iOS.FCM
                     Active = false
                 };
                 await RestApiCommunication.Post(newUser, "CreateUser");
-                   auth.CreateUser(email, password, CreateOnCompletionAsync);
-                
-                
-                SharedHelper.ToastedUserAsync("FCM User Created");
+                auth.CreateUser(email, password, CreateOnCompletionAsync);
 
+                SharedHelper.ToastedUserAsync("FCM User Created");
             }
             catch (Exception ex)
             {
@@ -64,21 +56,18 @@ namespace KDRBusser.iOS.FCM
 
             if (refreshedToken == null)
             {
-
                 auth.SignOut(out NSError error);
                 //mAuth.SignOut();
-
             }
             return refreshedToken;
-          
         }
 
         public void Init()
         {
             DependencyService.Get<IHelperClass>().IsLoading(true, "Logger INN");
             auth = Auth.DefaultInstance;
-            var listenerHandle = Auth.DefaultInstance.AddAuthStateDidChangeListener(async (auth, user) => {
-               
+            var listenerHandle = Auth.DefaultInstance.AddAuthStateDidChangeListener(async (auth, user) =>
+            {
                 if (user != null)
                 {
                     //FirebaseApp.InitializeApp(this);
@@ -97,7 +86,7 @@ namespace KDRBusser.iOS.FCM
                     Xamarin.Forms.Application.Current.MainPage = new FCmLogin();
                 }
             });
-        
+
             //throw new NotImplementedException();
         }
 
@@ -116,12 +105,11 @@ namespace KDRBusser.iOS.FCM
             //throw new NotImplementedException();
 
             auth.SignIn(email, password, SignInOnCompletionAsync);
-            
         }
 
         private async void CreateOnCompletionAsync(Firebase.Auth.User user, NSError error)
         {
-            // stop animation 
+            // stop animation
             //indicatorView.StopAnimating();
 
             if (error != null)
@@ -147,7 +135,7 @@ namespace KDRBusser.iOS.FCM
             }
             else
             {
-               await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
+                await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
                 //ChangeActivity();
                 // Do your magic to handle authentication result
             }
@@ -155,12 +143,12 @@ namespace KDRBusser.iOS.FCM
 
         private async void SignInOnCompletionAsync(Firebase.Auth.User user, NSError error)
         {
-            // stop animation 
+            // stop animation
             //indicatorView.StopAnimating();
 
             if (error != null)
             {
-               var NSERROR =  error.UserInfo;
+                var NSERROR = error.UserInfo;
                 AuthErrorCode errorCode;
                 if (IntPtr.Size == 8) // 64 bits devices
                     errorCode = (AuthErrorCode)((long)error.Code);
@@ -178,7 +166,7 @@ namespace KDRBusser.iOS.FCM
                     default:
                         //show some irro message etc
                         //AppDelegate.ShowMessage("Could not login!", error.LocalizedDescription, NavigationController);
-                       
+
                         DependencyService.Get<IHelperClass>().IsLoading(false, "Loading");
                         break;
                 }
@@ -187,11 +175,9 @@ namespace KDRBusser.iOS.FCM
             }
             // start ActiveUser Activity
             //NavigationController.PushViewController(new UserViewController("Firebase"), true);
-          await  SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
+            await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
             ChangeActivity();
         }
-
-
 
         private static void ChangeActivity()
         {
@@ -205,7 +191,8 @@ namespace KDRBusser.iOS.FCM
             //Xamarin.Forms.Application.Current.MainPage = new NavigationPage(new FCmLogin()); not used, done in authstate listener.
         }
 
-        public void LogoutFirebase(){
+        public void LogoutFirebase()
+        {
             auth.SignOut(out NSError error);
         }
 
@@ -218,7 +205,6 @@ namespace KDRBusser.iOS.FCM
         {
             FCMToken = Token;
             SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
-
         }
 
         //private async System.Threading.Tasks.Task UpdateUserToken()
@@ -233,15 +219,10 @@ namespace KDRBusser.iOS.FCM
 
         public void Createuser(string email, string password, string masterid, string UserName)
         {
-            DependencyService.Get<IHelperClass>().IsLoading(true,"Creating User");
+            DependencyService.Get<IHelperClass>().IsLoading(true, "Creating User");
             CreateuserAsync(email, password, masterid, UserName);
         }
 
-        String FCMToken;
-       
+        private String FCMToken;
     }
-
-
-
-
 }

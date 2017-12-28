@@ -1,35 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Firebase.Iid;
 using Plugin.Toasts;
+using System;
 using Xamarin.Forms;
 
 namespace KDRBusser.Droid
 {
-
     [Service]
     [BroadcastReceiver]
     [IntentFilter(new[] { "com.google.firebase.INSTANCE_ID_EVENT" })]
     public class MyFirebaseIIDService : FirebaseInstanceIdService
     {
-        const string TAG = "MyFirebaseIIDService";
+        private const string TAG = "MyFirebaseIIDService";
 
-        
         public override void OnTokenRefresh()
         {
             var refreshedToken = FirebaseInstanceId.Instance.Token;
-            ToastUser( "Refreshed token: " + refreshedToken);
+            ToastUser("Refreshed token: " + refreshedToken);
 
-          
             SendRegistrationToServerAsync(refreshedToken);
         }
 
@@ -37,6 +26,7 @@ namespace KDRBusser.Droid
         {
             ToastedUserAsync(title);
         }
+
         public void OnReceive(Context context, Intent intent)
         {
             ToastedUserAsync("onReceived");
@@ -52,16 +42,12 @@ namespace KDRBusser.Droid
             };
             var notification = DependencyService.Get<IToastNotificator>();
             var result = await notification.Notify(options);
-
         }
 
-
-        async void SendRegistrationToServerAsync(string token)
+        private async void SendRegistrationToServerAsync(string token)
         {
-
             String tkn = token;
             DependencyService.Get<IFCMLoginService>().UpdateToken(tkn);
-
         }
     }
 }

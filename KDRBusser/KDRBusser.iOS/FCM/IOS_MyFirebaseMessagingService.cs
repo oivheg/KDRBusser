@@ -2,15 +2,11 @@
 using Firebase.CloudMessaging;
 using Foundation;
 using KDRBusser.SharedCode;
-using ObjCRuntime;
-using Plugin.Toasts;
 using System;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
 using UIKit;
 using UserNotifications;
-using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
 namespace KDRBusser.iOS.FCM
@@ -18,23 +14,23 @@ namespace KDRBusser.iOS.FCM
     [Register("IOS_MyFirebaseMessagingService")]
     public class IOS_MyFirebaseMessagingService : FormsApplicationDelegate, IMessagingDelegate, IUNUserNotificationCenterDelegate
     {
-
         public IOS_MyFirebaseMessagingService()
         {
             RegisterForNotifications();
         }
 
-     
         //public IntPtr Handle => throw new NotImplementedException();
         //public event EventHandler<UserInfoEventArgs> NotificationReceived;
 
-        public void  RegisterForNotifications(){
+        public void RegisterForNotifications()
+        {
             // Register your app for remote notifications.
             if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
             {
                 // iOS 10 or later
                 var authOptions = UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound | UNAuthorizationOptions.None;
-                UNUserNotificationCenter.Current.RequestAuthorization(authOptions, (granted, error) => {
+                UNUserNotificationCenter.Current.RequestAuthorization(authOptions, (granted, error) =>
+                {
                     Console.WriteLine(granted);
                 });
 
@@ -53,63 +49,45 @@ namespace KDRBusser.iOS.FCM
             }
 
             UIApplication.SharedApplication.RegisterForRemoteNotifications();
-
-           
-
         }
-        NSDictionary notific;
-        nint taskID = -1;
-         // To receive notifications in foreground on iOS 10 devices.
-         [Export("userNotificationCenter:willPresentNotification:withCompletionHandler:")]
+
+        private NSDictionary notific;
+        private nint taskID = -1;
+
+        // To receive notifications in foreground on iOS 10 devices.
+        [Export("userNotificationCenter:willPresentNotification:withCompletionHandler:")]
         public void WillPresentNotification(UNUserNotificationCenter center, UNNotification notification, Action<UNNotificationPresentationOptions> completionHandler)
         {
             // Do your magic to handle the notification data
             System.Console.WriteLine(notification.Request.Content.UserInfo);
-             notific = notification.Request.Content.UserInfo;
+            notific = notification.Request.Content.UserInfo;
             var app = UIApplication.SharedApplication;
 
             Task.Run(() =>
             {
-
-
                 taskID = app.BeginBackgroundTask(() =>
                 {
                     Console.WriteLine("Bacground time expires");
                 });
 
-
                 //FinishLongRunningTask();
                 if (taskID != -1)
                 {
- app.EndBackgroundTask(taskID);
+                    app.EndBackgroundTask(taskID);
                 }
-
-               
             });
-              
-
-            
-            
-
-
-         
             //CheckPayloadAsync(notific);
             //var body = notific["body"];
-            //RegisterForNotifications();
-
-
-
+            //RegisterForNotifications
             //CheckPayload(notific);
             //runs on main or background thread
-
-
         }
-        Boolean myFlag = true;
-        Boolean tmp_bol = true;
+
+        private Boolean myFlag = true;
+        private Boolean tmp_bol = true;
+
         private void FinishLongRunningTask()
         {
-          
-
         }
 
         private void OnExpiration()
@@ -119,16 +97,14 @@ namespace KDRBusser.iOS.FCM
 
         public void CheckPayload(NSDictionary notific)
         {
-
             //Action<UNNotificationPresentationOptions> completionHandler for variable into funciton
             var title = notific["title"];
             var Action = notific["Action"];
             if (title != null)
             {
-
                 System.Console.WriteLine("MYF:DInner is ready"); //Console is not found in system
-                     
-               //tests if vibrations works in background
+
+                //tests if vibrations works in background
                 SystemSound.Vibrate.PlaySystemSound();
 
                 //the original ivbrations with timer, works in foregound.
@@ -140,20 +116,18 @@ namespace KDRBusser.iOS.FCM
             }
             else if (Action != null)
             {
-                //Finds the key dictionary "action" and check if the value is "cancelVibrations" 
+                //Finds the key dictionary "action" and check if the value is "cancelVibrations"
                 var tmp = notific["Action"];
                 {
                     //SharedHelper.ToastedUserAsync("Before timer stopped ", "Canceled diner");
                     if (timer.Enabled)
                     {
-
                         //SharedHelper.ToastedUserAsync("Timer Stopped", "Canceled diner");
                         timer.Stop();
                         tmp_bol = false;
                         System.Console.WriteLine("MYF:Dinner Canceled");
                     }
                 }
-
             }
         }
 
@@ -161,34 +135,29 @@ namespace KDRBusser.iOS.FCM
         {
             new UIAlertView("Error registering push notifications", error.LocalizedDescription, null, "OK", null).Show();
         }
-        public static System.Timers.Timer timer = new System.Timers.Timer();
 
+        public static System.Timers.Timer timer = new System.Timers.Timer();
 
         public void Vibration()
         {
-           
-
             if (!timer.Enabled)
             {
-                
                 timer.Interval = 1000; // runs every second
                 timer.Elapsed += Timer_Elapsed;
                 timer.Start();
                 System.Console.WriteLine("MYF. Vibration() Timer is started ");
             }
-
         }
+
         private int count = 1;
 
         public nint BackgroundTaskId { get; private set; }
 
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
-
             if (count < 5)
             {
                 count++;
-
             }
             else
             {
@@ -203,19 +172,17 @@ namespace KDRBusser.iOS.FCM
             SystemSound.Vibrate.PlaySystemSound();
         }
 
-       
-        
-
-             
         public void ApplicationReceivedRemoteMessage(RemoteMessage remoteMessage)
         {
             Console.WriteLine(remoteMessage.AppData);
         }
+
         public void DidRefreshRegistrationToken(Messaging messaging, string fcmToken)
         {
             //throw new NotImplementedException();
             string fmc_token = fcmToken;
         }
+
         public override void DidEnterBackground(UIApplication application)
         {
             // Use this method to release shared resources, save user data, invalidate timers and store the application state.
@@ -223,16 +190,16 @@ namespace KDRBusser.iOS.FCM
             Messaging.SharedInstance.Disconnect();
             Console.WriteLine("Disconnected from FCM");
         }
+
         [Export("application:didReceiveRemoteNotification:fetchCompletionHandler:")]
         public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)
         {
-         
             var test = "test";
             base.DidReceiveRemoteNotification(application, userInfo, completionHandler);
         }
+
         // Receive data message on iOS 10 devices.
 
-    
         public override void ReceivedRemoteNotification(UIApplication application, NSDictionary userInfo)
         {
             if (application.ApplicationState == UIApplicationState.Active)
@@ -245,8 +212,5 @@ namespace KDRBusser.iOS.FCM
             {
             }
         }
-
-       
-
     }
 }

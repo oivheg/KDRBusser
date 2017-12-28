@@ -1,31 +1,28 @@
-﻿using System;
-using Plugin.Toasts;
-using Xamarin.Forms;
-using KDRBusser.Droid;
-using Android.Support.V7.App;
-using Firebase.Iid;
-using Firebase.Auth;
+﻿using Android.App;
 using Android.OS;
+using Android.Support.V7.App;
 using Firebase;
-using KDRBusser.Communication;
+using Firebase.Auth;
+using Firebase.Iid;
 using KDRBusser.Classes;
-using System.ComponentModel;
-using Android.Content;
-using Android.App;
-using Acr.UserDialogs;
+using KDRBusser.Communication;
+using KDRBusser.Droid;
 using KDRBusser.SharedCode;
+using Plugin.Toasts;
+using System;
+using Xamarin.Forms;
 
 [assembly: Dependency(typeof(FCMLoginService))]
+
 namespace KDRBusser.Droid
 {
     [Activity(Label = "FCM Login")]
-    class FCMLoginService : AppCompatActivity, IFCMLoginService
+    internal class FCMLoginService : AppCompatActivity, IFCMLoginService
     {
-        const string TAG = "FCMActivity";
+        private const string TAG = "FCMActivity";
+
         //[START declare_auth]
-        FirebaseAuth mAuth;
-
-
+        private FirebaseAuth mAuth;
 
         public string GetEmail()
         {
@@ -34,11 +31,8 @@ namespace KDRBusser.Droid
 
         public void Init()
         {
-           
-           
             mAuth = FirebaseAuth.Instance;
             mAuth.AuthState += AuthStateChangedAsync;
-
         }
 
         public void UpdateToken(String Token)
@@ -47,12 +41,13 @@ namespace KDRBusser.Droid
             SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
         }
 
-        String FCMToken;
+        private String FCMToken;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
         }
+
         protected override void OnStart()
         {
             base.OnStart();
@@ -63,6 +58,7 @@ namespace KDRBusser.Droid
             base.OnStop();
             mAuth.AuthState -= AuthStateChangedAsync;
         }
+
         public void Createuser(String email, String password, String masterid, String UserName)
         {
             //ShowProgressDialog(this);
@@ -86,7 +82,6 @@ namespace KDRBusser.Droid
 
                 await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
                 //ToastedUserAsync("FCM User Created");
-
             }
             catch (Exception ex)
             {
@@ -96,14 +91,12 @@ namespace KDRBusser.Droid
 
                 ToastedUserAsync("Create user failed" + ex);
             }
-
         }
 
         public void LogInnUser(String email, String password)
         {
             //ShowProgressDialog(this);
             LogInUserAsync(email, password);
-
         }
 
         public async void LogInUserAsync(String email, string password)
@@ -114,12 +107,10 @@ namespace KDRBusser.Droid
                 // sign in sucess message
                 //ToastedUserAsync("Sign In Success ");
 
-
-               await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken() );
+                await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
                 App.IsUserLoggedIn = true;
 
                 //ChangeActivity();
-
             }
             catch (Exception ex)
             {
@@ -151,7 +142,6 @@ namespace KDRBusser.Droid
             ToastedUserAsync(title);
         }
 
-
         public async void ToastedUserAsync(String title)
         {
             var options = new NotificationOptions()
@@ -162,12 +152,10 @@ namespace KDRBusser.Droid
             };
             var notification = DependencyService.Get<IToastNotificator>();
             var result = await notification.Notify(options);
-
         }
 
-        async void AuthStateChangedAsync(object sender, FirebaseAuth.AuthStateEventArgs e)
+        private async void AuthStateChangedAsync(object sender, FirebaseAuth.AuthStateEventArgs e)
         {
-          
             var user = e.Auth.CurrentUser;
             if (user != null)
             {
@@ -178,20 +166,18 @@ namespace KDRBusser.Droid
                 App.IsUserLoggedIn = true;
                 await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
                 ChangeActivity();
-                
             }
             else
             {
                 // User is signed out
                 //ToastedUserAsync("onAuthStateChanged:signed_out");
                 App.IsUserLoggedIn = false;
-                
+
                 Xamarin.Forms.Application.Current.MainPage = new FCmLogin();
             }
             // [START_EXCLUDE]
             //UpdateUI(user);
             // [END_EXCLUDE]
-
         }
 
         private static void ChangeActivity()
@@ -200,12 +186,8 @@ namespace KDRBusser.Droid
             Xamarin.Forms.Application.Current.MainPage = new NavigationPage(new ActiveUser());
         }
 
-
-      
-
         public string GetToken()
         {
-
             String tkn = FirebaseInstanceId.Instance.Id;
             var mauttoken = mAuth.CurrentUser.Uid;
 
@@ -213,10 +195,8 @@ namespace KDRBusser.Droid
 
             if (refreshedToken == null)
             {
-
                 LogOut();
                 //mAuth.SignOut();
-
             }
             return refreshedToken;
         }
@@ -225,9 +205,9 @@ namespace KDRBusser.Droid
         {
             await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken(), true);
             FirebaseAuth.Instance.SignOut();
-
         }
-        //Gogle is stil in test phase, migt not needed at all ? 
+
+        //Gogle is stil in test phase, migt not needed at all ?
         public void LogInGoogle()
         {
             //StartActivity(typeof(GoogleSignInActivity));
@@ -237,11 +217,5 @@ namespace KDRBusser.Droid
 
             //Xamarin.Forms.Application.Current.MainPage = new GoogleSignInActivity();
         }
-
-        
-        
-
-
-        
     }
 }
