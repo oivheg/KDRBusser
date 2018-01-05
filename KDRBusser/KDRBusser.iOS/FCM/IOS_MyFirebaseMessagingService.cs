@@ -122,13 +122,18 @@ namespace KDRBusser.iOS.FCM
                     //SharedHelper.ToastedUserAsync("Before timer stopped ", "Canceled diner");
                     if (timer.Enabled)
                     {
-                        //SharedHelper.ToastedUserAsync("Timer Stopped", "Canceled diner");
-                        timer.Stop();
-                        tmp_bol = false;
-                        System.Console.WriteLine("MYF:Dinner Canceled");
+                        CancelVibration();
                     }
                 }
             }
+        }
+
+        public void CancelVibration()
+        {
+            //SharedHelper.ToastedUserAsync("Timer Stopped", "Canceled diner");
+            timer.Stop();
+            tmp_bol = false;
+            System.Console.WriteLine("MYF:Dinner Canceled");
         }
 
         public override void FailedToRegisterForRemoteNotifications(UIApplication application, NSError error)
@@ -162,6 +167,24 @@ namespace KDRBusser.iOS.FCM
             else
             {
                 count = 1;
+                var content = new UNMutableNotificationContent();
+                content.Title = "Notification Title";
+                content.Subtitle = "Notification Subtitle";
+                content.Body = "This is the message body of the notification.";
+                content.Badge = 1;
+                content.Sound = UNNotificationSound.Default;
+                var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(5, false);
+
+                var requestID = "sampleRequest";
+                var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);
+
+                UNUserNotificationCenter.Current.AddNotificationRequest(request, (err) =>
+                {
+                    if (err != null)
+                    {
+                        // Do something with error...
+                    }
+                });
                 Vibrate();
                 System.Console.WriteLine("MYF. Timer_elapsed Timer is running");
             }

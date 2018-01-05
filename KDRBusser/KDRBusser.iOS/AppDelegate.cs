@@ -57,6 +57,13 @@ namespace KDRBusser.iOS
             UIApplication.SharedApplication.ScheduleLocalNotification(notification);
 
             var app = UIApplication.SharedApplication;
+            UILocalNotification localNotification = userInfo[UIApplication.LaunchOptionsLocalNotificationKey] as UILocalNotification;
+            if (localNotification != null)
+            {
+                new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
+                // reset our badge
+                UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
+            }
 
             Task.Run(() =>
             {
@@ -83,8 +90,9 @@ namespace KDRBusser.iOS
             UIAlertController okayAlertController = UIAlertController.Create(notification.AlertAction, notification.AlertBody, UIAlertControllerStyle.Alert);
             okayAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
 
-            Window.RootViewController.PresentViewController(okayAlertController, true, null);
-
+            //Window.RootViewController.PresentViewController(okayAlertController, true, null);
+            System.Console.WriteLine("APPDEL:  Notification was swiped");
+            notif.CancelVibration();
             // reset our badge
             UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
         }
