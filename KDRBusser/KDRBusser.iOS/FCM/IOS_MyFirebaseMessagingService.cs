@@ -108,8 +108,8 @@ namespace KDRBusser.iOS.FCM
                 SystemSound.Vibrate.PlaySystemSound();
 
                 //the original ivbrations with timer, works in foregound.
+
                 Vibration();
-                //Vibration();
 
                 Task.Run(async () => await SharedHelper.InformmasterAsync());
                 tmp_bol = true;
@@ -167,27 +167,33 @@ namespace KDRBusser.iOS.FCM
             else
             {
                 count = 1;
-                var content = new UNMutableNotificationContent();
-                content.Title = "Notification Title";
-                content.Subtitle = "Notification Subtitle";
-                content.Body = "This is the message body of the notification.";
-                content.Badge = 1;
-                content.Sound = UNNotificationSound.Default;
-                var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(5, false);
-
-                var requestID = "sampleRequest";
-                var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);
-
-                UNUserNotificationCenter.Current.AddNotificationRequest(request, (err) =>
-                {
-                    if (err != null)
-                    {
-                        // Do something with error...
-                    }
-                });
+                CreateNotification();
                 Vibrate();
                 System.Console.WriteLine("MYF. Timer_elapsed Timer is running");
             }
+        }
+
+        private static void CreateNotification()
+        {
+            var content = new UNMutableNotificationContent
+            {
+                Title = "Remember Dinner",
+                //content.Subtitle = "Notification Subtitle";
+                Body = "Dinner is Ready",
+                Badge = 0,
+                Sound = UNNotificationSound.Default
+            };
+            var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(1, false);
+            var requestID = "sampleRequest";
+            var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);
+
+            UNUserNotificationCenter.Current.AddNotificationRequest(request, (err) =>
+            {
+                if (err != null)
+                {
+                    // Do something with error...
+                }
+            });
         }
 
         private void Vibrate()

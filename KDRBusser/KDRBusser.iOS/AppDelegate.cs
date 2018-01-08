@@ -50,10 +50,21 @@ namespace KDRBusser.iOS
             // this code unfortinaly only runs when app is in "foreground"
             //background might not work.  VoIP Might work ( by hacking it to fucntion as a "notification" call instead of calling for real.
             UILocalNotification notification = new UILocalNotification();
-            NSDate.FromTimeIntervalSinceNow(15);
+            NSDate.FromTimeIntervalSinceNow(1);
             //notification.AlertTitle = "Alert Title"; // required for Apple Watch notifications
             notification.AlertAction = "View Alert";
-            notification.AlertBody = "Your 15 second alert has fired!";
+            var body = userInfo["body"];
+            var Action = userInfo["Action"];
+
+            if (Action != null)
+            {
+                notification.AlertBody = "Dinner Canceled";
+            }
+            else if (body != null)
+            {
+                notification.AlertBody = "Dinner is Ready";
+            }
+
             UIApplication.SharedApplication.ScheduleLocalNotification(notification);
 
             var app = UIApplication.SharedApplication;
@@ -61,6 +72,7 @@ namespace KDRBusser.iOS
             if (localNotification != null)
             {
                 new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
+
                 // reset our badge
                 UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
             }
@@ -71,7 +83,10 @@ namespace KDRBusser.iOS
                 // this also does work while app is in background, but are not allowed to vibrate / use timer.
                 taskID = app.BeginBackgroundTask(() =>
                 {
+                    notification.AlertBody = "Backgorudn task acten when ending";
+                    UIApplication.SharedApplication.ScheduleLocalNotification(notification);
                     System.Console.WriteLine("Bacground time expires");
+                    new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
                 });
 
                 notif.CheckPayload(userInfo);
@@ -79,6 +94,9 @@ namespace KDRBusser.iOS
                 //FinishLongRunningTask();
                 if (taskID != -1)
                 {
+                    notification.AlertBody = "Backgorudn task Finishing stuff";
+                    UIApplication.SharedApplication.ScheduleLocalNotification(notification);
+                    new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
                     app.EndBackgroundTask(taskID);
                 }
             });
