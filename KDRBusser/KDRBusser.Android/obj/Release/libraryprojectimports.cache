@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
+    <Jar>obj\Release\lp\4\jl\formsviewgroup.jar</Jar>
+    <Jar>obj\Release\lp\18\jl\arch-core-common.jar</Jar>
+    <Jar>obj\Release\lp\19\jl\arch-lifecycle-common.jar</Jar>
+    <Jar>obj\Release\lp\22\jl\support-annotations.jar</Jar>
     <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\lp\18\jl\arch-core-common.jar</Jar>
     <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\lp\19\jl\arch-lifecycle-common.jar</Jar>
     <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\lp\20\jl\bin\classes.jar</Jar>

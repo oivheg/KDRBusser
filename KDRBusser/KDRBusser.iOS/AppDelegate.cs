@@ -76,9 +76,10 @@ namespace KDRBusser.iOS
                 // reset our badge
                 UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
             }
-            app.SetKeepAliveTimeout(600, () => { /* keep alive handler code*/ });
+
             //Task.Run(() =>
             //{
+            app.SetKeepAliveTimeout(600, () => { /* keep alive handler code*/ });
             Task.Factory.StartNew(() =>
             {
                 //    // this only works fora limited time,, should restart or continue somhow.

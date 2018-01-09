@@ -40,6 +40,64 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
+              "client_id": "810661396254-3nbv97g3qo6kegh6cv1mo2bh64115d9g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "KDRBusser.iOS"
+              }
+            },
+            {
+              "client_id": "810661396254-mp3dic844ga8c28rgd37t0mbakathmiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810661396254:android:4878e493d6cd5bef",
+        "android_client_info": {
+          "package_name": "com.oivheg.KdrBusser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810661396254-qesd052h3hgc44583vk3cac1vsjjl3rv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.oivheg.KdrBusser",
+            "certificate_hash": "261bcac46bd5a4169a844224ab1b859cd2e5a35a"
+          }
+        },
+        {
+          "client_id": "810661396254-mp3dic844ga8c28rgd37t0mbakathmiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUyU3GQ3blnCmXjwisywkcRIaqjo32KNk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810661396254-3nbv97g3qo6kegh6cv1mo2bh64115d9g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "KDRBusser.iOS"
+              }
+            },
+            {
               "client_id": "810661396254-mp3dic844ga8c28rgd37t0mbakathmiu.apps.googleusercontent.com",
               "client_type": 3
             }

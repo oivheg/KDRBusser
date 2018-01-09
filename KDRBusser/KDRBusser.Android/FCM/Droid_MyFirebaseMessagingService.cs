@@ -112,7 +112,25 @@ namespace KDRBusser.Droid
         {
             Vibrator vibrator = (Vibrator)this.ApplicationContext.GetSystemService(Context.VibratorService);
             long[] vibPatterns = GetVibPatterns();
+
             vibrator.Vibrate(vibPatterns, -1);
+
+            // ________Code for Newer Androdid levle 26 with VibrationEffect________
+
+            //if (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.O)
+            //{
+            //    if (vibrator.HasAmplitudeControl)
+            //    {
+            //        VibrationEffect effect = VibrationEffect.CreateOneShot(1000, VibrationEffect.DefaultAmplitude);
+            //        vibrator.Vibrate(effect);
+            //    }
+            //    else
+            //    {
+            //        vibrator.Vibrate(vibPatterns, -1);
+            //    }
+            //}
+            //--------------END CODE --------------
+
             //<--- Only works in android api 26 and up androud 8 --->
             //VibrationEffect effect = VibrationEffect.CreateOneShot(1000, VibrationEffect.DefaultAmplitude);
             //vibrator.Vibrate(effect);
@@ -122,7 +140,7 @@ namespace KDRBusser.Droid
         private static long[] GetVibPatterns()
         {
             int _vibtype = ActiveUser.VibType;
-            long[] pattern = new long[] { 200, 250, 350, 250, 350, 1000, 500, 350, 500, 350, 1000 };
+            long[] pattern = new long[] { 100, 2000, 90, 2000, 80, 2500, 70, 3000, 60, 4000, 50, 5000 };
             switch (_vibtype)
             {
                 case 1:
