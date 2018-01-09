@@ -76,18 +76,20 @@ namespace KDRBusser.iOS
                 // reset our badge
                 UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
             }
-
-            Task.Run(() =>
+            app.SetKeepAliveTimeout(600, () => { /* keep alive handler code*/ });
+            //Task.Run(() =>
+            //{
+            Task.Factory.StartNew(() =>
             {
-                // this only works fora limited time,, should restart or continue somhow.
+                //    // this only works fora limited time,, should restart or continue somhow.
                 // this also does work while app is in background, but are not allowed to vibrate / use timer.
                 taskID = app.BeginBackgroundTask(() =>
-                {
-                    notification.AlertBody = "Backgorudn task acten when ending";
-                    UIApplication.SharedApplication.ScheduleLocalNotification(notification);
-                    System.Console.WriteLine("Bacground time expires");
-                    new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
-                });
+       {
+           notification.AlertBody = "Bacground time expires";
+           UIApplication.SharedApplication.ScheduleLocalNotification(notification);
+           System.Console.WriteLine("Bacground time expires");
+           new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
+       });
 
                 notif.CheckPayload(userInfo);
 
