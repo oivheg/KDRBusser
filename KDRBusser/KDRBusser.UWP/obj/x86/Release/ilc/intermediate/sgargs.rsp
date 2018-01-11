@@ -1,0 +1,12 @@
+/out:"C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\SgGenerated\\"
+/int:"C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\\"
+/ref:"C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\TransformedSRWR"
+/ref:"C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in"
+/ref:"C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\\"
+/ref:"C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\\"
+/ref:"C:\Users\oivhe\.nuget\packages\microsoft.net.native.compiler\1.7.3\tools\x86\ilc\lib\Private\\"
+/ref:"C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\WinMetadata"
+/ca:System.Private.CoreLib
+/cscpath:"C:\Users\oivhe\.nuget\packages\microsoft.net.native.compiler\1.7.3\tools\x86\ilc\csc"
+"@C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\ComputedSerializationInput.txt"

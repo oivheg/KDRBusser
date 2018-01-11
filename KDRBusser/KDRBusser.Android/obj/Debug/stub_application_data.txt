@@ -1,2 +1,0 @@
-android.support.multidex.MultiDexApplication
-com.oivheg.KdrBusser

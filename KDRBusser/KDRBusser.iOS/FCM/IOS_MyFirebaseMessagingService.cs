@@ -63,19 +63,19 @@ namespace KDRBusser.iOS.FCM
             notific = notification.Request.Content.UserInfo;
             var app = UIApplication.SharedApplication;
 
-            Task.Run(() =>
-            {
-                taskID = app.BeginBackgroundTask(() =>
-                {
-                    Console.WriteLine("Bacground time expires");
-                });
+            //Task.Run(() =>
+            //{
+            //    taskID = app.BeginBackgroundTask(() =>
+            //    {
+            //        Console.WriteLine("Bacground time expires");
+            //    });
 
-                //FinishLongRunningTask();
-                if (taskID != -1)
-                {
-                    app.EndBackgroundTask(taskID);
-                }
-            });
+            //    //FinishLongRunningTask();
+            //    if (taskID != -1)
+            //    {
+            //        app.EndBackgroundTask(taskID);
+            //    }
+            //});
             //CheckPayloadAsync(notific);
             //var body = notific["body"];
             //RegisterForNotifications
@@ -95,6 +95,18 @@ namespace KDRBusser.iOS.FCM
             throw new NotImplementedException();
         }
 
+        private bool _IsVibrating = true;
+
+        public bool IsVibrating()
+        {
+            return _IsVibrating;
+        }
+
+        public void CreateTimedNotification()
+        {
+            CreateNotification();
+        }
+
         public void CheckPayload(NSDictionary notific)
         {
             //Action<UNNotificationPresentationOptions> completionHandler for variable into funciton
@@ -102,6 +114,7 @@ namespace KDRBusser.iOS.FCM
             var Action = notific["Action"];
             if (title != null)
             {
+                _IsVibrating = true;
                 System.Console.WriteLine("MYF:DInner is ready"); //Console is not found in system
 
                 //tests if vibrations works in background
@@ -122,7 +135,17 @@ namespace KDRBusser.iOS.FCM
                     //SharedHelper.ToastedUserAsync("Before timer stopped ", "Canceled diner");
                     if (timer.Enabled)
                     {
+                        if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
+                        {
+                            UNUserNotificationCenter.Current.RemoveAllPendingNotificationRequests(); // To remove all pending notifications which are not delivered yet but scheduled.
+                            UNUserNotificationCenter.Current.RemoveAllDeliveredNotifications(); // To remove all delivered notifications
+                        }
+                        else
+                        {
+                            UIApplication.SharedApplication.CancelAllLocalNotifications();
+                        }
                         CancelVibration();
+                        _IsVibrating = false;
                     }
                 }
             }
@@ -168,7 +191,7 @@ namespace KDRBusser.iOS.FCM
             {
                 count = 1;
                 CreateNotification();
-                Vibrate();
+                //Vibrate();
                 System.Console.WriteLine("MYF. Timer_elapsed Timer is running");
             }
         }
@@ -184,7 +207,8 @@ namespace KDRBusser.iOS.FCM
                 Sound = UNNotificationSound.Default
             };
             var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(1, false);
-            var requestID = "sampleRequest";
+
+            var requestID = "Dinner";
             var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);
 
             UNUserNotificationCenter.Current.AddNotificationRequest(request, (err) =>

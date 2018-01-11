@@ -28,10 +28,11 @@ namespace KDRBusser.iOS
             ToastNotification.Init();
 
             var settings = UIUserNotificationSettings.GetSettingsForTypes(
-   UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound
-   , null);
+            UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound, null);
+
             UIApplication.SharedApplication.RegisterUserNotificationSettings(settings);
-            LoadApplication(new App());
+
+            LoadApplication(application: new App());
 
             // Request notification permissions from the user
             UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert, (approved, err) =>
@@ -72,37 +73,72 @@ namespace KDRBusser.iOS
             if (localNotification != null)
             {
                 new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
-
+                CreateNotification();
+                //notif.CreateTimedNotification();
                 // reset our badge
                 UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
             }
 
             //Task.Run(() =>
             //{
-            app.SetKeepAliveTimeout(600, () => { /* keep alive handler code*/ });
+            //app.SetKeepAliveTimeout(600, () =>
+            //{ /* keep alive handler code*/
+            //    SetNotification(notification, localNotification, "Keeping ALIVE");
+            //});
             Task.Factory.StartNew(() =>
             {
                 //    // this only works fora limited time,, should restart or continue somhow.
                 // this also does work while app is in background, but are not allowed to vibrate / use timer.
                 taskID = app.BeginBackgroundTask(() =>
-       {
-           notification.AlertBody = "Bacground time expires";
-           UIApplication.SharedApplication.ScheduleLocalNotification(notification);
-           System.Console.WriteLine("Bacground time expires");
-           new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
-       });
+                {
+                    SetNotification(notification, localNotification, "Pleace Pick Up Dinner");
+                    notif.CreateTimedNotification();
+                    app.EndBackgroundTask(taskID);
+                });
 
                 notif.CheckPayload(userInfo);
 
                 //FinishLongRunningTask();
                 if (taskID != -1)
                 {
-                    notification.AlertBody = "Backgorudn task Finishing stuff";
-                    UIApplication.SharedApplication.ScheduleLocalNotification(notification);
-                    new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
+                    SetNotification(notification, localNotification, "Backgorudn task Finishing stuff");
+
                     app.EndBackgroundTask(taskID);
                 }
             });
+        }
+
+        private static void CreateNotification()
+        {
+            var content = new UNMutableNotificationContent
+            {
+                Title = "Pleace Pickup Dinner",
+                //content.Subtitle = "Notification Subtitle";
+                Body = "Dinner is Ready",
+                Badge = 0,
+                Sound = UNNotificationSound.Default
+            };
+            var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(60, true);
+
+            var requestID = "Dinner";
+            var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);
+
+            UNUserNotificationCenter.Current.AddNotificationRequest(request, (err) =>
+            {
+                if (err != null)
+                {
+                    // Do something with error...
+                }
+            });
+        }
+
+        private static void SetNotification(UILocalNotification notification, UILocalNotification localNotification, String _text)
+        {
+            notification.AlertBody = _text;
+
+            UIApplication.SharedApplication.ScheduleLocalNotification(notification);
+            System.Console.WriteLine(_text);
+            new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
         }
 
         public override void ReceivedLocalNotification(UIApplication application, UILocalNotification notification)

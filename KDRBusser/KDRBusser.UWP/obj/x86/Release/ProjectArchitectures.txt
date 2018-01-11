@@ -1,0 +1,2 @@
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\KDRBusser.UWP.csproj;x86
+C:\source\KDRBusser\KDRBusser\KDRBusser\KDRBusser.csproj;neutral

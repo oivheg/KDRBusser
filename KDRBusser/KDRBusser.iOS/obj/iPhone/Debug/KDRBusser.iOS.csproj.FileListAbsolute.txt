@@ -112,3 +112,4 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\XbdMerge\Firebase.C
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\KDRBusser.iOS.csproj.CoreCompileInputs.cache
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\KDRBusser.iOS.exe
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Debug\KDRBusser.iOS.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\KDRBusser.dll.mdb
