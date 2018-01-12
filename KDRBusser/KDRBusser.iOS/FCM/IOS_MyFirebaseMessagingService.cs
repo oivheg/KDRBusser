@@ -191,7 +191,7 @@ namespace KDRBusser.iOS.FCM
             {
                 count = 1;
                 CreateNotification();
-                //Vibrate();
+                Vibrate();
                 System.Console.WriteLine("MYF. Timer_elapsed Timer is running");
             }
         }

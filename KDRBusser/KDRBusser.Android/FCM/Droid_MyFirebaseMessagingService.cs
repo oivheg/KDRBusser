@@ -140,7 +140,7 @@ namespace KDRBusser.Droid
         private static long[] GetVibPatterns()
         {
             int _vibtype = ActiveUser.VibType;
-            long[] pattern = new long[] { 100, 2000, 90, 2000, 80, 2500, 70, 3000, 60, 4000, 50, 5000 };
+            long[] pattern = new long[] { 100, 2000, 90, 2000, 80 };
             switch (_vibtype)
             {
                 case 1:

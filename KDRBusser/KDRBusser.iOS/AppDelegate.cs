@@ -91,7 +91,7 @@ namespace KDRBusser.iOS
                 // this also does work while app is in background, but are not allowed to vibrate / use timer.
                 taskID = app.BeginBackgroundTask(() =>
                 {
-                    SetNotification(notification, localNotification, "Pleace Pick Up Dinner");
+                    //SetNotification(notification, localNotification, "Pleace Pick Up Dinner");
                     notif.CreateTimedNotification();
                     app.EndBackgroundTask(taskID);
                 });
