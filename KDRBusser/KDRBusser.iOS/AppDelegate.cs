@@ -66,13 +66,15 @@ namespace KDRBusser.iOS
                 notification.AlertBody = "Dinner is Ready";
             }
 
-            UIApplication.SharedApplication.ScheduleLocalNotification(notification);
+            // UIApplication.SharedApplication.ScheduleLocalNotification(notification);
 
             var app = UIApplication.SharedApplication;
             UILocalNotification localNotification = userInfo[UIApplication.LaunchOptionsLocalNotificationKey] as UILocalNotification;
             if (localNotification != null)
             {
-                new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
+                //new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
+                var okCancelAlertController = UIAlertController.Create("tiitle", localNotification.AlertBody, UIAlertControllerStyle.Alert);
+                UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(okCancelAlertController, true, null);
                 CreateNotification();
                 //notif.CreateTimedNotification();
                 // reset our badge
@@ -114,11 +116,11 @@ namespace KDRBusser.iOS
             {
                 Title = "Pleace Pickup Dinner",
                 //content.Subtitle = "Notification Subtitle";
-                Body = "Dinner is Ready",
+                Body = "Dinner is Waiting",
                 Badge = 0,
                 Sound = UNNotificationSound.Default
             };
-            var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(60, true);
+            var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(30, true);
 
             var requestID = "Dinner";
             var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);
@@ -138,7 +140,10 @@ namespace KDRBusser.iOS
 
             UIApplication.SharedApplication.ScheduleLocalNotification(notification);
             System.Console.WriteLine(_text);
-            new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
+            //new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
+
+            var okCancelAlertController = UIAlertController.Create("New Notification", _text, UIAlertControllerStyle.Alert);
+            UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(okCancelAlertController, true, null);
         }
 
         public override void ReceivedLocalNotification(UIApplication application, UILocalNotification notification)

@@ -156,12 +156,15 @@ namespace KDRBusser.iOS.FCM
             //SharedHelper.ToastedUserAsync("Timer Stopped", "Canceled diner");
             timer.Stop();
             tmp_bol = false;
+            count = 1;
             System.Console.WriteLine("MYF:Dinner Canceled");
         }
 
         public override void FailedToRegisterForRemoteNotifications(UIApplication application, NSError error)
         {
-            new UIAlertView("Error registering push notifications", error.LocalizedDescription, null, "OK", null).Show();
+            //new UIAlertView("Error registering push notifications", error.LocalizedDescription, null, "OK", null).Show();
+            var okCancelAlertController = UIAlertController.Create("Error registering push notifications", error.LocalizedDescription, UIAlertControllerStyle.Alert);
+            UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(okCancelAlertController, true, null);
         }
 
         public static System.Timers.Timer timer = new System.Timers.Timer();
@@ -170,30 +173,49 @@ namespace KDRBusser.iOS.FCM
         {
             if (!timer.Enabled)
             {
-                timer.Interval = 1000; // runs every second
+                timer.Interval = 500; // runs every second
                 timer.Elapsed += Timer_Elapsed;
+
                 timer.Start();
                 System.Console.WriteLine("MYF. Vibration() Timer is started ");
             }
         }
 
         private int count = 1;
-
+        private bool _isVibrating = false;
         public nint BackgroundTaskId { get; private set; }
 
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            if (count < 5)
+            if (count <= 5)
             {
-                count++;
+                _isVibrating = true;
             }
-            else
+            switch (count)
             {
-                count = 1;
-                CreateNotification();
+                case 30:
+                    timer.Interval = 5000;
+                    count = 1;
+                    break;
+
+                case 15:
+                    _isVibrating = false;
+
+                    break;
+
+                case 10:
+                    _isVibrating = true;
+
+                    break;
+            }
+
+            if (_isVibrating)
+            {
+                //CreateNotification();
                 Vibrate();
                 System.Console.WriteLine("MYF. Timer_elapsed Timer is running");
             }
+            count++;
         }
 
         private static void CreateNotification()

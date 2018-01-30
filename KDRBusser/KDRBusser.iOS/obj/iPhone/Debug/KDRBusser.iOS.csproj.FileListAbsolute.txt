@@ -3,7 +3,6 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\KDRBusser.iOS.exe
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\KDRBusser.iOS.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Acr.Support.iOS.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Acr.UserDialogs.dll
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Acr.UserDialogs.Interface.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\BTProgressHUD.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Firebase.Analytics.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Firebase.Auth.dll
@@ -28,9 +27,6 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Xamarin.SimplePing.iOS.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\KDRBusser.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\KDRBusser.dll.config
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Acr.UserDialogs.pdb
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Acr.UserDialogs.dll.mdb
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Acr.UserDialogs.Interface.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Newtonsoft.Json.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Plugin.Connectivity.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Debug\Plugin.Connectivity.xml
