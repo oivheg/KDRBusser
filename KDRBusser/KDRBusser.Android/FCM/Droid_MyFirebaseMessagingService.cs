@@ -167,14 +167,6 @@ namespace KDRBusser.Droid
             intent.PutExtra("fromNotification", true);
             var pendingIntent = PendingIntent.GetBroadcast(this, 1, intent, PendingIntentFlags.UpdateCurrent);
 
-            //            // Create a PendingIntent to be fired upon deletion of a Notification.
-            //            var deleteIntent = new Intent(this.ACTION_NOTIFICATION_DELETE);
-            //            PendingIntent deletePendingIntent = PendingIntent.GetBroadcast(this, REQUEST_CODE, deleteIntent, 0);
-
-            //            Intent notiDeleted = new Intent(");
-            //notiDeleted.putExtra(ctx.getString(R.string.noti_deleted), true);
-            //PendingIntent notiDeletedIntent = PendingIntent.getBroadcast(ctx, 0, notiDeleted, 0);
-
             var notificationBuilder = new Android.App.Notification.Builder(this)
                     .SetSmallIcon(Resource.Drawable.abc_btn_check_material)
                     .SetContentTitle("FCM Message")
@@ -189,7 +181,7 @@ namespace KDRBusser.Droid
 
         private object CancelDinner()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public async Task InformmasterAsync()
