@@ -26,7 +26,6 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Release\Xamarin.Forms.Xam
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Release\Xamarin.SimplePing.iOS.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Release\KDRBusser.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Release\KDRBusser.dll.config
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Release\KDRBusser.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Release\Newtonsoft.Json.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Release\Plugin.Connectivity.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Release\Plugin.Connectivity.xml
@@ -77,6 +76,16 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Release\vi\Xamarin.Forms.
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Release\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Release\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Release\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\KDRBusser.iOS.csprojResolveAssemblyReference.cache
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\KDRBusser.iOS.exe.config
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\XbdMerge\Firebase.Core.dll.stamp
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\XbdMerge\Firebase.InstanceID.dll.stamp
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\XbdMerge\Firebase.Analytics.dll.stamp
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\XbdMerge\Firebase.Auth.dll.stamp
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\XbdMerge\Firebase.CloudMessaging.dll.stamp
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\KDRBusser.iOS.csproj.CoreCompileInputs.cache
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\KDRBusser.iOS.exe
+C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\bin\iPhone\Release\Xamarin.Forms.Platform.iOS.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\device-builds\iphone5.2-10.3.3\ibtool\_BundleResourceWithLogicalName.items
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\device-builds\iphone5.2-10.3.3\actool\_PartialAppManifest.items
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\device-builds\iphone5.2-10.3.3\actool\_BundleResourceWithLogicalName.items
@@ -97,12 +106,3 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\device-builds\iph
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\device-builds\iphone5.2-10.3.3\optimized\Icon-Small@3x.png
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\device-builds\iphone5.2-10.3.3\optimized\GoogleService-Info.plist
 C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\device-builds\iphone5.2-10.3.3\optimized\
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\KDRBusser.iOS.csprojResolveAssemblyReference.cache
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\KDRBusser.iOS.exe.config
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\XbdMerge\Firebase.Core.dll.stamp
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\XbdMerge\Firebase.InstanceID.dll.stamp
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\XbdMerge\Firebase.Analytics.dll.stamp
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\XbdMerge\Firebase.Auth.dll.stamp
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\XbdMerge\Firebase.CloudMessaging.dll.stamp
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\KDRBusser.iOS.csproj.CoreCompileInputs.cache
-C:\source\KDRBusser\KDRBusser\KDRBusser.iOS\obj\iPhone\Release\KDRBusser.iOS.exe

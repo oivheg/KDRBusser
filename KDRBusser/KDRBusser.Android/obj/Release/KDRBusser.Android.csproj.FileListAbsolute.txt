@@ -124,14 +124,6 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\XbdMerge\00d975c9.pr
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\XbdMerge\d0759c3a.proguard.stamp
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\XbdMerge\42561b21.proguard.stamp
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\XbdMerge\f3cea06a.proguard.stamp
-C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\KDRBusser.dll
-C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\KDRBusser.Android.dll
-C:\source\KDRBusser\packages\Xamarin.Forms.2.5.0.122203\lib\MonoAndroid10\FormsViewGroup.dll
-C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\KDRBusser.dll
-C:\source\KDRBusser\packages\Toasts.Forms.Plugin.3.3.1\lib\MonoAndroid10\Toasts.Forms.Plugin.Droid.dll
-C:\source\KDRBusser\packages\Xamarin.Forms.2.5.0.122203\lib\MonoAndroid10\Xamarin.Forms.Core.dll
-C:\source\KDRBusser\packages\Xamarin.Forms.2.5.0.122203\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll
-C:\source\KDRBusser\packages\Xamarin.Forms.2.5.0.122203\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll
 bin\Release\FormsViewGroup.dll.mdb
 bin\Release\KDRBusser.dll.mdb
 bin\Release\Toasts.Forms.Plugin.Droid.dll.mdb

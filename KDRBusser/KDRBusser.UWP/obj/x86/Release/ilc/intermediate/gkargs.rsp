@@ -1,7 +1,7 @@
 /In:"C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in"
 /Lib:"C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in"
-/Lib:"C:\Users\oivhe\.nuget\packages\microsoft.net.native.compiler\1.7.3\tools\x86\ilc\lib\Private"
+/Lib:"C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.compiler\1.7.3\tools\x86\ilc\lib\Private"
 /WinMD:"C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd"
-/VSTelemetrySessionSettings:"{"AppId":1001,"AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","HostName":"Dev14","Id":"411a5eac-cd0a-4cb9-bb2f-5113bbfb35a9","IsOptedIn":true,"ProcessStartTime":636511662287081833,"UserId":"763522c9-6c37-4769-ba84-7e73fffdbb14"}"
-/RdXmlPath:"C:\Users\oivhe\.nuget\packages\microsoft.net.native.compiler\1.7.3\tools\LibraryXML"
+/VSTelemetrySessionSettings:"{"AppId":1001,"AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","HostName":"Dev14","Id":"fae865e8-99fa-4c45-a463-655ed07b2a95","IsOptedIn":true,"ProcessStartTime":636540224325557560,"UserId":"763522c9-6c37-4769-ba84-7e73fffdbb14"}"
+/RdXmlPath:"C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.compiler\1.7.3\tools\LibraryXML"
 /RunOnlyPreDR

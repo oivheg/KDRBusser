@@ -165,52 +165,52 @@
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Users\oivhe\.nuget\packages\microsoft.net.native.sharedlibrary-x86\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x86\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
       <Name>Microsoft.NET.Native.Framework.1.7</Name>
       <Version>1.7.25531.0</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\oivhe\.nuget\packages\microsoft.net.native.sharedlibrary-x86\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x86\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\oivhe\.nuget\packages\microsoft.net.native.sharedlibrary-x64\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x64\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
       <Name>Microsoft.NET.Native.Framework.1.7</Name>
       <Version>1.7.25531.0</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\oivhe\.nuget\packages\microsoft.net.native.sharedlibrary-x64\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x64\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\oivhe\.nuget\packages\microsoft.net.native.sharedlibrary-arm\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-arm\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
       <Name>Microsoft.NET.Native.Framework.1.7</Name>
       <Version>1.7.25531.0</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\oivhe\.nuget\packages\microsoft.net.native.sharedlibrary-arm\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-arm\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\oivhe\.nuget\packages\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.1.7.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.1.7.appx">
       <Name>Microsoft.NET.Native.Runtime.1.7</Name>
       <Version>1.7.25531.0</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\oivhe\.nuget\packages\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.1.7.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.1.7.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\oivhe\.nuget\packages\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.1.7.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.1.7.appx">
       <Name>Microsoft.NET.Native.Runtime.1.7</Name>
       <Version>1.7.25531.0</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\oivhe\.nuget\packages\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.1.7.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.1.7.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\oivhe\.nuget\packages\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.1.7.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.1.7.appx">
       <Name>Microsoft.NET.Native.Runtime.1.7</Name>
       <Version>1.7.25531.0</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\oivhe\.nuget\packages\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.1.7.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.1.7.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
