@@ -139,12 +139,22 @@ namespace KDRBusser.Droid
 
         private static long[] GetVibPatterns()
         {
+            int dot = 200;      // Length of a Morse Code "dot" in milliseconds
+
+            int dash = 500;     // Length of a Morse Code "dash" in milliseconds
+
+            int short_gap = 200;    // Length of Gap Between dots/dashes
+
+            int medium_gap = 500;   // Length of Gap Between Letters
+
+            int long_gap = 1000;    // Length of Gap Between Words
+
             int _vibtype = ActiveUser.VibType;
-            long[] pattern = new long[] { 100, 2000, 90, 2000, 80 };
+            long[] pattern = new long[] { dot, dot, dash, short_gap, dot, dot, dash };
             switch (_vibtype)
             {
                 case 1:
-                    pattern = new long[] { 20, 250, 20, 250, 20, 1000, 20, 350, 20, 350, 20 };
+                    pattern = new long[] { dash, dot, dot, long_gap, dash, dot, dot };
                     break;
 
                 case 2:
@@ -181,7 +191,7 @@ namespace KDRBusser.Droid
 
         private object CancelDinner()
         {
-            //throw new NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public async Task InformmasterAsync()

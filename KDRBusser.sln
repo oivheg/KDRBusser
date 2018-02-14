@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KDRBusser.Android", "KDRBusser\KDRBusser.Android\KDRBusser.Android.csproj", "{F57286F9-0288-4CFA-B5FA-EDD1C989BAFB}"
 EndProject
@@ -221,7 +221,8 @@ Global
 		{780AA74A-7FD3-41DF-B67B-C3D68F948273}.Release|x86.ActiveCfg = Release|x86
 		{780AA74A-7FD3-41DF-B67B-C3D68F948273}.Release|x86.Build.0 = Release|x86
 		{780AA74A-7FD3-41DF-B67B-C3D68F948273}.Release|x86.Deploy.0 = Release|x86
-		{5F5F0233-1B64-494A-8188-B0250DB9E5ED}.Ad-Hoc|Any CPU.ActiveCfg = Ad-Hoc|iPhone
+		{5F5F0233-1B64-494A-8188-B0250DB9E5ED}.Ad-Hoc|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{5F5F0233-1B64-494A-8188-B0250DB9E5ED}.Ad-Hoc|Any CPU.Build.0 = Release|iPhoneSimulator
 		{5F5F0233-1B64-494A-8188-B0250DB9E5ED}.Ad-Hoc|ARM.ActiveCfg = Ad-Hoc|iPhone
 		{5F5F0233-1B64-494A-8188-B0250DB9E5ED}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{5F5F0233-1B64-494A-8188-B0250DB9E5ED}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
@@ -256,5 +257,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2CFAF59-F51B-4BDA-B00B-1934ADEEF2B6}
 	EndGlobalSection
 EndGlobal
