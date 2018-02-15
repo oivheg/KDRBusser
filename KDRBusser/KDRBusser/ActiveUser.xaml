@@ -4,13 +4,17 @@
              x:Class="KDRBusser.ActiveUser" BackgroundColor="#666868">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text ="Vibration1"
-                Priority="0" Order="Primary" Clicked="ToolbarItem_Clicked" />
+                Priority="2" Order="Secondary" Clicked="ToolbarItem_Clicked" />
         <!--<ToolbarItem Text ="Item 2"
               Priority="1" Order="Primary" />-->
         <ToolbarItem Text ="Vibration2"
-              Priority="1" Order="Primary" Clicked="ToolbarItem_Clicked" />
+              Priority="2" Order="Secondary" Clicked="ToolbarItem_Clicked" />
+        <ToolbarItem Text ="Orginal"
+                Priority="2" Order="Secondary" Clicked="ToolbarItem_Clicked" />
+        <ToolbarItem   Text ="FinalFantasy"
+              Priority="2" Order="Secondary" Clicked="ToolbarItem_Clicked" />
         <ToolbarItem   Text ="Log Out"
-              Priority="1" Order="Primary" Clicked="ToolbarItem_Clicked" />
+              Priority="2" Order="Secondary" Clicked="ToolbarItem_Clicked" />
     </ContentPage.ToolbarItems>
 
     <Grid>

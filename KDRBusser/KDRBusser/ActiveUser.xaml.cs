@@ -68,6 +68,7 @@ namespace KDRBusser
             else
             {
                 ChangeButton(Color.ForestGreen, "At Home", true);
+                DependencyService.Get<IFCMLoginService>().CancelVIbrations();
             }
         }
 
@@ -103,6 +104,14 @@ namespace KDRBusser
 
                 case "Vibration1":
                     VibType = 1;
+                    break;
+
+                case "Orginal":
+                    VibType = 0;
+                    break;
+
+                case "FinalFantasy":
+                    VibType = 3;
                     break;
 
                 default:

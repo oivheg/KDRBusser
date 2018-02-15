@@ -55,12 +55,8 @@ namespace KDRBusser.Droid
                     {
                         case "cancelVibration":
                             //ToastUser("Vibrations Canceled");
-                            SendNotification("CANCELED");
-                            if (timer.Enabled)
-                            {
-                                //timer.Elapsed -= Timer_Elapsed;
-                                timer.Stop();
-                            }
+                            //SendNotification("CANCELED");
+                            CancelTimerVibration();
 
                             break;
 
@@ -81,6 +77,15 @@ namespace KDRBusser.Droid
             //    Vibration();
             //    Task.Run(async () => await InformmasterAsync());
             //}
+        }
+
+        public static void CancelTimerVibration()
+        {
+            if (timer.Enabled)
+            {
+                //timer.Elapsed -= Timer_Elapsed;
+                timer.Stop();
+            }
         }
 
         private void Vibration()
@@ -145,7 +150,7 @@ namespace KDRBusser.Droid
 
             int short_gap = 200;    // Length of Gap Between dots/dashes
 
-            int medium_gap = 500;   // Length of Gap Between Letters
+            int medium_gap = 700;   // Length of Gap Between Letters
 
             int long_gap = 1000;    // Length of Gap Between Words
 
@@ -158,7 +163,15 @@ namespace KDRBusser.Droid
                     break;
 
                 case 2:
-                    pattern = new long[] { 500, 50, 500, 50, 500, 50, 500, 350, 500, 350, 500 };
+                    pattern = new long[] { dash, dash, dot, dash, dot, dot, dot };
+                    break;
+
+                case 3:
+                    pattern = new long[] { 0, 50, 100, 50, 100, 50, 100, 400, 100, 300, 100, 350, 50, 200, 100, 100, 50, 600 };
+                    break;
+
+                case 0:
+                    pattern = new long[] { dot, dot, dash, short_gap, dot, dot, dash };
                     break;
 
                 default:

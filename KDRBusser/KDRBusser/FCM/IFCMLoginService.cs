@@ -19,6 +19,8 @@ namespace KDRBusser
 
         void LogOut();
 
+        void CancelVIbrations();
+
         String GetToken();
 
         void LogInGoogle();

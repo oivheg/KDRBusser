@@ -217,5 +217,10 @@ namespace KDRBusser.Droid
 
             //Xamarin.Forms.Application.Current.MainPage = new GoogleSignInActivity();
         }
+
+        public void CancelVIbrations()
+        {
+            Droid_MyFirebaseMessagingService.CancelTimerVibration();
+        }
     }
 }
