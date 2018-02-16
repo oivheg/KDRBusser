@@ -19,23 +19,18 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="200" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-
-        <Label x:Name="lblMstr" Grid.Row="0" Grid.Column="1" Text="MasterID"></Label>
-
-        <!--<Button  Grid.Row="0" Grid.Column="0"  x:Name="BTNVibration1" Text="Vib1" VerticalOptions="Start" HorizontalOptions="End"></Button>
-        <Button  Grid.Row="0" Grid.Column="0"  x:Name="BTNVibration2" Text="Vib2" VerticalOptions="Start" HorizontalOptions="End"></Button>-->
-        <!--<Button  Grid.Row="0" Grid.Column="2"  x:Name="BtnLogout" Text="LogOut" VerticalOptions="Start" HorizontalOptions="End"></Button>-->
-        <!--<Switch Grid.Row="1" Grid.Column="1" x:Name="tglActiveUser"></Switch>-->
-        <Button  Grid.Row="1" Grid.Column="1" x:Name="btnActiveUser" Text="Logg in to work" ></Button>
-        <Label x:Name="lblemploy"  Grid.Row="2" Grid.Column="1" Text="AnsattNavn"></Label>
+        <Label HorizontalOptions="Center" VerticalOptions="Center" x:Name="lblemploy"  Grid.Row="0" Grid.Column="1" Text="AnsattNavn"></Label>
+        <Label  HorizontalOptions="Center" VerticalOptions="Center" x:Name="lblMstr" Grid.Row="2" Grid.Column="1" Text="MasterID"></Label>
+        <Button  HorizontalOptions="CenterAndExpand"  Grid.Row="1" Grid.Column="1" x:Name="btnActiveUser" Text="Logg in to work" ></Button>
+      
     </Grid>
 </ContentPage>

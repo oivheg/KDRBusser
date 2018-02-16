@@ -196,15 +196,10 @@ namespace KDRBusser.iOS.FCM
             auth.SignOut(out NSError error);
         }
 
-        public void ToastUser(string title)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void UpdateToken(string Token)
+        public async void UpdateTokenAsync(string Token) // chaged this to asyc, if there is errrs
         {
             FCMToken = Token;
-            SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
+            await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
         }
 
         //private async System.Threading.Tasks.Task UpdateUserToken()
@@ -221,6 +216,11 @@ namespace KDRBusser.iOS.FCM
         {
             DependencyService.Get<IHelperClass>().IsLoading(true, "Creating User");
             CreateuserAsync(email, password, masterid, UserName);
+        }
+
+        public void CancelVIbrations()
+        {
+            throw new NotImplementedException();
         }
 
         private String FCMToken;

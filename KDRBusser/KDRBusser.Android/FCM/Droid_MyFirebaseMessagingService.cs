@@ -6,6 +6,7 @@ using KDRBusser.Classes;
 using KDRBusser.Communication;
 using KDRBusser.Droid.HelperClass;
 using KDRBusser.Droid.Receivers;
+using KDRBusser.SharedCode;
 using Plugin.Toasts;
 using System;
 using System.Threading.Tasks;
@@ -57,15 +58,20 @@ namespace KDRBusser.Droid
                             //ToastUser("Vibrations Canceled");
                             //SendNotification("CANCELED");
                             CancelTimerVibration();
-
+                            SharedHelper.CancelAllNotificationsAsync();
+                            NotificationManager mNotificationManager;
+                            mNotificationManager = (NotificationManager)this.GetSystemService(NotificationService);
+                            mNotificationManager.CancelAll();
                             break;
 
                         case "recieved":
-                            ToastUser("Something recieved");
+
+                            SharedHelper.ToastedUserAsync("Something recieved");
                             break;
 
                         default:
-                            ToastUser("Default value");
+
+                            SharedHelper.ToastedUserAsync("Default value");
                             break;
                     }
                 }
@@ -216,23 +222,23 @@ namespace KDRBusser.Droid
             await RestApiCommunication.Post(user, "Msgreceived");
         }
 
-        public void ToastUser(String title)
-        {
-            ToastedUserAsync(title);
-        }
+        //public void ToastUser(String title)
+        //{
+        //    ToastedUserAsync(title);
+        //}
 
-        public async void ToastedUserAsync(String title)
-        {
-            var options = new NotificationOptions()
-            {
-                Title = title,
-                Description = "KDRBusser",
-                IsClickable = false // Set to true if you want the result Clicked to come back (if the user clicks it)
-            };
+        //public async void ToastedUserAsync(String title)
+        //{
+        //    var options = new NotificationOptions()
+        //    {
+        //        Title = title,
+        //        Description = "KDRBusser",
+        //        IsClickable = false // Set to true if you want the result Clicked to come back (if the user clicks it)
+        //    };
 
-            var notification = DependencyService.Get<IToastNotificator>();
-            var result = await notification.Notify(options);
-        }
+        //    var notification = DependencyService.Get<IToastNotificator>();
+        //    var result = await notification.Notify(options);
+        //}
 
         private StopVibrationReceiver mBroadcastReceiver;
     }

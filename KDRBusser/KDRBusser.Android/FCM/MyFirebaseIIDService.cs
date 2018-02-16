@@ -19,7 +19,7 @@ namespace KDRBusser.Droid
             var refreshedToken = FirebaseInstanceId.Instance.Token;
             ToastUser("Refreshed token: " + refreshedToken);
 
-            SendRegistrationToServerAsync(refreshedToken);
+            SendRegistrationToServer(refreshedToken);
         }
 
         public void ToastUser(String title)
@@ -44,10 +44,10 @@ namespace KDRBusser.Droid
             var result = await notification.Notify(options);
         }
 
-        private async void SendRegistrationToServerAsync(string token)
+        private void SendRegistrationToServer(string token)
         {
             String tkn = token;
-            DependencyService.Get<IFCMLoginService>().UpdateToken(tkn);
+            DependencyService.Get<IFCMLoginService>().UpdateTokenAsync(tkn);
         }
     }
 }

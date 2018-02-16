@@ -153,6 +153,7 @@ namespace KDRBusser
                     user = JsonConvert.DeserializeObject<User>(RestApiCommunication.Jsonresponse);
                     isActive = user.Active;
                     lblemploy.Text = user.UserName;
+                    lblMstr.Text = user.MasterKey;
                     IsUserActive();
                 }
                 catch

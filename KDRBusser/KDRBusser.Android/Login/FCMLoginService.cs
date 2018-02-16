@@ -35,10 +35,10 @@ namespace KDRBusser.Droid
             mAuth.AuthState += AuthStateChangedAsync;
         }
 
-        public void UpdateToken(String Token)
+        public async void UpdateTokenAsync(String Token)
         {
             FCMToken = Token;
-            SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
+            await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
         }
 
         private String FCMToken;
@@ -89,7 +89,7 @@ namespace KDRBusser.Droid
                 // If sign in succeeds, the AuthState event handler will
                 //  be notified and logic to handle the signed in user can happen there
 
-                ToastedUserAsync("Create user failed" + ex);
+                SharedHelper.ToastedUserAsync("Create user failed" + ex);
             }
         }
 
@@ -119,7 +119,7 @@ namespace KDRBusser.Droid
                 // Sign-in failed, display a message to the user
                 // If sign in succeeds, the AuthState event handler will
                 //  be notified and logic to handle the signed in user can happen there
-                ToastedUserAsync("Sign In failed" + ex);
+                SharedHelper.ToastedUserAsync("Sign In failed" + ex);
             }
         }
 
@@ -137,22 +137,22 @@ namespace KDRBusser.Droid
         //    await RestApiCommunication.Post(user, "UpdatUser");
         //}
 
-        public void ToastUser(String title)
-        {
-            ToastedUserAsync(title);
-        }
+        //public void ToastUser(String title)
+        //{
+        //    ToastedUserAsync(title);
+        //}
 
-        public async void ToastedUserAsync(String title)
-        {
-            var options = new NotificationOptions()
-            {
-                Title = title,
-                Description = "Toasted from android",
-                IsClickable = false // Set to true if you want the result Clicked to come back (if the user clicks it)
-            };
-            var notification = DependencyService.Get<IToastNotificator>();
-            var result = await notification.Notify(options);
-        }
+        //public async void ToastedUserAsync(String title)
+        //{
+        //    var options = new NotificationOptions()
+        //    {
+        //        Title = title,
+        //        Description = "Toasted from android",
+        //        IsClickable = false // Set to true if you want the result Clicked to come back (if the user clicks it)
+        //    };
+        //    var notification = DependencyService.Get<IToastNotificator>();
+        //    var result = await notification.Notify(options);
+        //}
 
         private async void AuthStateChangedAsync(object sender, FirebaseAuth.AuthStateEventArgs e)
         {
