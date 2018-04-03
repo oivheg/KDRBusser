@@ -147,9 +147,6 @@
     <AppxPackagedFile Include="C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\KDRBusser.dll.config">
-      <PackagePath>KDRBusser.dll.config</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\KDRBusser.UWP.dll">
       <PackagePath>KDRBusser.UWP.dll</PackagePath>
     </AppxPackagedFile>
@@ -162,6 +159,9 @@
     <AppxPackagedFile Include="C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\Staff Busser.dll.config">
+      <PackagePath>Staff Busser.dll.config</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

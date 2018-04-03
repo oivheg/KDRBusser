@@ -8,13 +8,13 @@
 /multiFile
 /sharedGenericsMode StandardUniversalGenericsHeuristics
 /in "C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\KDRBusser.UWP.ilexe"
-/in "C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\KDRBusser.ildll"
 /in "C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\KDRBusser.UWP.McgInterop.ildll"
 /in "C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\Microsoft.CSharp.ildll"
 /in "C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\Microsoft.Win32.Primitives.ildll"
 /in "C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\Newtonsoft.Json.ildll"
 /in "C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\Plugin.Connectivity.Abstractions.ildll"
 /in "C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\Plugin.Connectivity.ildll"
+/in "C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\Staff Busser.ildll"
 /in "C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\System.AppContext.ildll"
 /in "C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\System.Buffers.ildll"
 /in "C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\System.Collections.NonGeneric.ildll"

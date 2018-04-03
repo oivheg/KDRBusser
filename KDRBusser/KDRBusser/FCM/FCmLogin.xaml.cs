@@ -22,12 +22,16 @@ namespace KDRBusser
             this.Title = "KDRBusser";
             btnLogin.Clicked += BtnLogin_Clicked;
             btncreateUser.Clicked += BtncreateUser_clicked;
-            btnGoogle.Clicked += BtnGoogle_Clicked;
+            //btnGoogle.Clicked += BtnGoogle_Clicked;
         }
 
         private void BtnGoogle_Clicked(object sender, EventArgs e)
         {
             DependencyService.Get<IFCMLoginService>().LogInGoogle();
+        }
+
+        public void Notifyuser(String text)
+        {
         }
 
         private Boolean IsCreating = false;
@@ -36,11 +40,20 @@ namespace KDRBusser
         {
             if (IsCreating)
             {
-                Email = emailEntry;
-                Password = passwordEntry;
-                MasterId = masterEntry;
-                UserName = userNameEntry;
-                DependencyService.Get<IFCMLoginService>().Createuser(Email.Text, Password.Text, MasterId.Text, UserName.Text);
+                Entry[] entrylist = { emailEntry, passwordEntry, masterEntry, userNameEntry };
+                Boolean isValid = CheckTextBox(entrylist);
+                if (!isValid)
+                {
+                    App.Current.MainPage.DisplayAlert("Noen Felt er tommer", "Vennligst fyll alel felt", "OK");
+                }
+                else
+                {
+                    Email = emailEntry;
+                    Password = passwordEntry;
+                    MasterId = masterEntry;
+                    UserName = userNameEntry;
+                    DependencyService.Get<IFCMLoginService>().Createuser(Email.Text.Trim(), Password.Text, MasterId.Text, UserName.Text);
+                }
             }
             else
             {
@@ -53,12 +66,33 @@ namespace KDRBusser
             }
         }
 
+        private Boolean CheckTextBox(Entry[] tb)
+        {
+            foreach (var item in tb)
+            {
+                if (string.IsNullOrEmpty(item.Text))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
         private void BtnLogin_Clicked(object sender, EventArgs e)
         {
-            DependencyService.Get<IHelperClass>().IsLoading(true, "Loading");
-            Email = emailEntry;
-            Password = passwordEntry;
-            DependencyService.Get<IFCMLoginService>().LogInnUser(Email.Text, Password.Text);
+            Entry[] entrylist = { emailEntry, passwordEntry };
+            Boolean isValid = CheckTextBox(entrylist);
+            if (!isValid)
+            {
+                App.Current.MainPage.DisplayAlert("Noen Felt er tommer", "Vennligst fyll alel felt", "OK");
+            }
+            else
+            {
+                DependencyService.Get<IHelperClass>().IsLoading(true, "Loading");
+                Email = emailEntry;
+                Password = passwordEntry;
+                DependencyService.Get<IFCMLoginService>().LogInnUser(Email.Text.Trim(), Password.Text);
+            }
         }
     }
 }

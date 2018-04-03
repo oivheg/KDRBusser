@@ -1,10 +1,10 @@
-KDRBusser, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+"Staff Busser", Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 KDRBusser.UWP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 KDRBusser.UWP.McgInterop, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 Microsoft.CSharp, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
 Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
 mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
 Plugin.Connectivity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Plugin.Connectivity.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a

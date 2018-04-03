@@ -58,7 +58,7 @@ namespace KDRBusser.Droid
                             //ToastUser("Vibrations Canceled");
                             //SendNotification("CANCELED");
                             CancelTimerVibration();
-                            SharedHelper.CancelAllNotificationsAsync();
+                            //SharedHelper.CancelAllNotificationsAsync();
                             NotificationManager mNotificationManager;
                             mNotificationManager = (NotificationManager)this.GetSystemService(NotificationService);
                             mNotificationManager.CancelAll();
@@ -240,6 +240,6 @@ namespace KDRBusser.Droid
         //    var result = await notification.Notify(options);
         //}
 
-        private StopVibrationReceiver mBroadcastReceiver;
+        //private StopVibrationReceiver mBroadcastReceiver;
     }
 }

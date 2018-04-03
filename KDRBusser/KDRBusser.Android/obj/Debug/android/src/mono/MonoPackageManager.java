@@ -105,20 +105,20 @@ public class MonoPackageManager {
 
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
-		/* We need to ensure that "KDRBusser.Android.dll" comes first in this list. */
-		"KDRBusser.Android.dll",
+		/* We need to ensure that "Staff_Busser.Android.dll" comes first in this list. */
+		"Staff_Busser.Android.dll",
 		"Acr.Support.Android.dll",
 		"Acr.UserDialogs.dll",
 		"Acr.UserDialogs.Interface.dll",
 		"AndHUD.dll",
 		"FormsViewGroup.dll",
-		"KDRBusser.dll",
 		"Newtonsoft.Json.dll",
 		"Plugin.Connectivity.Abstractions.dll",
 		"Plugin.Connectivity.dll",
 		"ProgressRing.Forms.Plugin.Android.dll",
 		"ProgressRing.Forms.Plugin.dll",
 		"Splat.dll",
+		"Staff Busser.dll",
 		"System.Net.Http.Extensions.dll",
 		"System.Net.Http.Primitives.dll",
 		"Toasts.Forms.Plugin.Abstractions.dll",
@@ -135,11 +135,14 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.Fragment.dll",
 		"Xamarin.Android.Support.Media.Compat.dll",
 		"Xamarin.Android.Support.Transition.dll",
+		"Xamarin.Android.Support.v13.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.AppCompat.dll",
 		"Xamarin.Android.Support.v7.CardView.dll",
+		"Xamarin.Android.Support.v7.GridLayout.dll",
 		"Xamarin.Android.Support.v7.MediaRouter.dll",
 		"Xamarin.Android.Support.v7.Palette.dll",
+		"Xamarin.Android.Support.v7.Preference.dll",
 		"Xamarin.Android.Support.v7.RecyclerView.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
 		"Xamarin.Firebase.Analytics.dll",
@@ -161,5 +164,5 @@ class MonoPackageManager_Resources {
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_26";
+	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_27";
 }

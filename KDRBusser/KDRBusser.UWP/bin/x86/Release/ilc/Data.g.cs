@@ -19715,118 +19715,118 @@ namespace __Interop
 				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.IDisposable).TypeHandle), //  166, System.IDisposable
 				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  167, System.Collections.Generic.IEnumerable<System.Object>
 				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Windows.Input.ICommand).TypeHandle), //  168, System.Windows.Input.ICommand
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IDictionary<string, string>).TypeHandle), //  169, System.Collections.Generic.IDictionary<string,string>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>).TypeHandle), //  170, System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string,string>>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  171, System.Collections.IEnumerable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyDictionary<string, string>).TypeHandle), //  172, System.Collections.Generic.IReadOnlyDictionary<string,string>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  173, System.Collections.IEnumerable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  174, System.Collections.IEnumerable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IList).TypeHandle), //  175, System.Collections.IList
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  176, System.Collections.Generic.IEnumerable<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  177, System.Collections.Generic.IReadOnlyList<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IList<global::System.Type>).TypeHandle), //  178, System.Collections.Generic.IList<System.Type>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Type>).TypeHandle), //  179, System.Collections.Generic.IEnumerable<System.Type>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  180, System.Collections.IEnumerable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IList).TypeHandle), //  181, System.Collections.IList
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Type>).TypeHandle), //  182, System.Collections.Generic.IReadOnlyList<System.Type>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  183, System.Collections.Generic.IEnumerable<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  184, System.Collections.Generic.IReadOnlyList<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IList<int>).TypeHandle), //  185, System.Collections.Generic.IList<int>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<int>).TypeHandle), //  186, System.Collections.Generic.IEnumerable<int>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  187, System.Collections.IEnumerable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IList).TypeHandle), //  188, System.Collections.IList
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<int>).TypeHandle), //  189, System.Collections.Generic.IReadOnlyList<int>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IList<global::System.ComponentModel.INotifyPropertyChanged>).TypeHandle), //  190, System.Collections.Generic.IList<System.ComponentModel.INotifyPropertyChanged>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.ComponentModel.INotifyPropertyChanged>).TypeHandle), //  191, System.Collections.Generic.IEnumerable<System.ComponentModel.INotifyPropertyChanged>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  192, System.Collections.IEnumerable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IList).TypeHandle), //  193, System.Collections.IList
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.ComponentModel.INotifyPropertyChanged>).TypeHandle), //  194, System.Collections.Generic.IReadOnlyList<System.ComponentModel.INotifyPropertyChanged>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  169, System.Collections.IEnumerable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  170, System.Collections.IEnumerable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IList).TypeHandle), //  171, System.Collections.IList
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  172, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  173, System.Collections.Generic.IReadOnlyList<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IList<global::System.Type>).TypeHandle), //  174, System.Collections.Generic.IList<System.Type>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Type>).TypeHandle), //  175, System.Collections.Generic.IEnumerable<System.Type>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  176, System.Collections.IEnumerable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IList).TypeHandle), //  177, System.Collections.IList
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Type>).TypeHandle), //  178, System.Collections.Generic.IReadOnlyList<System.Type>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  179, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  180, System.Collections.Generic.IReadOnlyList<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IList<int>).TypeHandle), //  181, System.Collections.Generic.IList<int>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<int>).TypeHandle), //  182, System.Collections.Generic.IEnumerable<int>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  183, System.Collections.IEnumerable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IList).TypeHandle), //  184, System.Collections.IList
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<int>).TypeHandle), //  185, System.Collections.Generic.IReadOnlyList<int>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IList<global::System.ComponentModel.INotifyPropertyChanged>).TypeHandle), //  186, System.Collections.Generic.IList<System.ComponentModel.INotifyPropertyChanged>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.ComponentModel.INotifyPropertyChanged>).TypeHandle), //  187, System.Collections.Generic.IEnumerable<System.ComponentModel.INotifyPropertyChanged>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  188, System.Collections.IEnumerable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IList).TypeHandle), //  189, System.Collections.IList
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.ComponentModel.INotifyPropertyChanged>).TypeHandle), //  190, System.Collections.Generic.IReadOnlyList<System.ComponentModel.INotifyPropertyChanged>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  191, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  192, System.Collections.Generic.IReadOnlyList<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Specialized.INotifyCollectionChanged).TypeHandle), //  193, System.Collections.Specialized.INotifyCollectionChanged
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.ComponentModel.INotifyPropertyChanged).TypeHandle), //  194, System.ComponentModel.INotifyPropertyChanged
 				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  195, System.Collections.Generic.IEnumerable<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  196, System.Collections.Generic.IReadOnlyList<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Specialized.INotifyCollectionChanged).TypeHandle), //  197, System.Collections.Specialized.INotifyCollectionChanged
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.ComponentModel.INotifyPropertyChanged).TypeHandle), //  198, System.ComponentModel.INotifyPropertyChanged
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  199, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.ComponentModel.INotifyPropertyChanged>).TypeHandle), //  196, System.Collections.Generic.IEnumerable<System.ComponentModel.INotifyPropertyChanged>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  197, System.Collections.Generic.IReadOnlyList<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.ComponentModel.INotifyPropertyChanged>).TypeHandle), //  198, System.Collections.Generic.IReadOnlyList<System.ComponentModel.INotifyPropertyChanged>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.ComponentModel.INotifyPropertyChanged>).TypeHandle), //  199, System.Collections.Generic.IReadOnlyList<System.ComponentModel.INotifyPropertyChanged>
 				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.ComponentModel.INotifyPropertyChanged>).TypeHandle), //  200, System.Collections.Generic.IEnumerable<System.ComponentModel.INotifyPropertyChanged>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  201, System.Collections.Generic.IReadOnlyList<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.ComponentModel.INotifyPropertyChanged>).TypeHandle), //  202, System.Collections.Generic.IReadOnlyList<System.ComponentModel.INotifyPropertyChanged>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.ComponentModel.INotifyPropertyChanged>).TypeHandle), //  203, System.Collections.Generic.IReadOnlyList<System.ComponentModel.INotifyPropertyChanged>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.ComponentModel.INotifyPropertyChanged>).TypeHandle), //  204, System.Collections.Generic.IEnumerable<System.ComponentModel.INotifyPropertyChanged>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  205, System.Collections.IEnumerable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  206, System.Collections.Generic.IReadOnlyList<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  207, System.Collections.Generic.IEnumerable<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IDictionary<global::System.Type, global::Windows.UI.Xaml.DependencyProperty>).TypeHandle), //  208, System.Collections.Generic.IDictionary<System.Type,Windows.UI.Xaml.DependencyProperty>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<global::System.Type, global::Windows.UI.Xaml.DependencyProperty>>).TypeHandle), //  209, System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.Type,Windows.UI.Xaml.DependencyProperty>>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  210, System.Collections.IEnumerable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyDictionary<global::System.Type, global::Windows.UI.Xaml.DependencyProperty>).TypeHandle), //  211, System.Collections.Generic.IReadOnlyDictionary<System.Type,Windows.UI.Xaml.DependencyProperty>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Specialized.INotifyCollectionChanged).TypeHandle), //  212, System.Collections.Specialized.INotifyCollectionChanged
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.ComponentModel.INotifyPropertyChanged).TypeHandle), //  213, System.ComponentModel.INotifyPropertyChanged
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  214, System.Collections.Generic.IEnumerable<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.IEnumerable>).TypeHandle), //  215, System.Collections.Generic.IEnumerable<System.Collections.IEnumerable>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.IEnumerable<char>>).TypeHandle), //  216, System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<char>>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  217, System.Collections.Generic.IReadOnlyList<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Collections.IEnumerable>).TypeHandle), //  218, System.Collections.Generic.IReadOnlyList<System.Collections.IEnumerable>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Collections.Generic.IEnumerable<char>>).TypeHandle), //  219, System.Collections.Generic.IReadOnlyList<System.Collections.Generic.IEnumerable<char>>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IList<string>).TypeHandle), //  220, System.Collections.Generic.IList<string>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<string>).TypeHandle), //  221, System.Collections.Generic.IEnumerable<string>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  222, System.Collections.IEnumerable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IList).TypeHandle), //  223, System.Collections.IList
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<string>).TypeHandle), //  224, System.Collections.Generic.IReadOnlyList<string>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  225, System.Collections.Generic.IEnumerable<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.IEnumerable>).TypeHandle), //  226, System.Collections.Generic.IEnumerable<System.Collections.IEnumerable>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.IEnumerable<char>>).TypeHandle), //  227, System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<char>>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  228, System.Collections.Generic.IReadOnlyList<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Collections.IEnumerable>).TypeHandle), //  229, System.Collections.Generic.IReadOnlyList<System.Collections.IEnumerable>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Collections.Generic.IEnumerable<char>>).TypeHandle), //  230, System.Collections.Generic.IReadOnlyList<System.Collections.Generic.IEnumerable<char>>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.FrameworkElement>).TypeHandle), //  231, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.FrameworkElement>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  232, System.Collections.IEnumerable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.IDisposable).TypeHandle), //  233, System.IDisposable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.UIElement>).TypeHandle), //  234, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.UIElement>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.DependencyObject>).TypeHandle), //  235, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.DependencyObject>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  236, System.Collections.Generic.IEnumerable<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IDependencyObject>).TypeHandle), //  237, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IDependencyObject>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IDependencyObject2>).TypeHandle), //  238, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IDependencyObject2>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IUIElement>).TypeHandle), //  239, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IUIElement>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IUIElementOverrides>).TypeHandle), //  240, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IUIElementOverrides>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IUIElement2>).TypeHandle), //  241, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IUIElement2>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IUIElement3>).TypeHandle), //  242, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IUIElement3>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IUIElement4>).TypeHandle), //  243, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IUIElement4>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IUIElement5>).TypeHandle), //  244, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IUIElement5>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IFrameworkElement>).TypeHandle), //  245, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IFrameworkElement>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IFrameworkElementOverrides>).TypeHandle), //  246, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IFrameworkElementOverrides>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IFrameworkElement2>).TypeHandle), //  247, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IFrameworkElement2>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IFrameworkElementOverrides2>).TypeHandle), //  248, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IFrameworkElementOverrides2>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IFrameworkElement3>).TypeHandle), //  249, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IFrameworkElement3>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IFrameworkElement4>).TypeHandle), //  250, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IFrameworkElement4>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  251, System.Collections.Generic.IEnumerable<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.IEnumerable>).TypeHandle), //  252, System.Collections.Generic.IEnumerable<System.Collections.IEnumerable>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.IEnumerable<char>>).TypeHandle), //  253, System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<char>>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<string>).TypeHandle), //  254, System.Collections.Generic.IEnumerable<string>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  255, System.Collections.IEnumerable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.IDisposable).TypeHandle), //  256, System.IDisposable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  257, System.Collections.Generic.IEnumerable<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.IEnumerable>).TypeHandle), //  258, System.Collections.Generic.IEnumerable<System.Collections.IEnumerable>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.IEnumerable<char>>).TypeHandle), //  259, System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<char>>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  260, System.Collections.Generic.IEnumerable<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IList<object>).TypeHandle), //  261, System.Collections.Generic.IList<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  262, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  201, System.Collections.IEnumerable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  202, System.Collections.Generic.IReadOnlyList<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  203, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IDictionary<global::System.Type, global::Windows.UI.Xaml.DependencyProperty>).TypeHandle), //  204, System.Collections.Generic.IDictionary<System.Type,Windows.UI.Xaml.DependencyProperty>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<global::System.Type, global::Windows.UI.Xaml.DependencyProperty>>).TypeHandle), //  205, System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.Type,Windows.UI.Xaml.DependencyProperty>>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  206, System.Collections.IEnumerable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyDictionary<global::System.Type, global::Windows.UI.Xaml.DependencyProperty>).TypeHandle), //  207, System.Collections.Generic.IReadOnlyDictionary<System.Type,Windows.UI.Xaml.DependencyProperty>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Specialized.INotifyCollectionChanged).TypeHandle), //  208, System.Collections.Specialized.INotifyCollectionChanged
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.ComponentModel.INotifyPropertyChanged).TypeHandle), //  209, System.ComponentModel.INotifyPropertyChanged
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  210, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.IEnumerable>).TypeHandle), //  211, System.Collections.Generic.IEnumerable<System.Collections.IEnumerable>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.IEnumerable<char>>).TypeHandle), //  212, System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<char>>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  213, System.Collections.Generic.IReadOnlyList<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Collections.IEnumerable>).TypeHandle), //  214, System.Collections.Generic.IReadOnlyList<System.Collections.IEnumerable>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Collections.Generic.IEnumerable<char>>).TypeHandle), //  215, System.Collections.Generic.IReadOnlyList<System.Collections.Generic.IEnumerable<char>>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IList<string>).TypeHandle), //  216, System.Collections.Generic.IList<string>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<string>).TypeHandle), //  217, System.Collections.Generic.IEnumerable<string>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  218, System.Collections.IEnumerable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IList).TypeHandle), //  219, System.Collections.IList
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<string>).TypeHandle), //  220, System.Collections.Generic.IReadOnlyList<string>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  221, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.IEnumerable>).TypeHandle), //  222, System.Collections.Generic.IEnumerable<System.Collections.IEnumerable>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.IEnumerable<char>>).TypeHandle), //  223, System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<char>>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  224, System.Collections.Generic.IReadOnlyList<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Collections.IEnumerable>).TypeHandle), //  225, System.Collections.Generic.IReadOnlyList<System.Collections.IEnumerable>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Collections.Generic.IEnumerable<char>>).TypeHandle), //  226, System.Collections.Generic.IReadOnlyList<System.Collections.Generic.IEnumerable<char>>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.FrameworkElement>).TypeHandle), //  227, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.FrameworkElement>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  228, System.Collections.IEnumerable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.IDisposable).TypeHandle), //  229, System.IDisposable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.UIElement>).TypeHandle), //  230, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.UIElement>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.DependencyObject>).TypeHandle), //  231, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.DependencyObject>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  232, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IDependencyObject>).TypeHandle), //  233, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IDependencyObject>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IDependencyObject2>).TypeHandle), //  234, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IDependencyObject2>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IUIElement>).TypeHandle), //  235, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IUIElement>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IUIElementOverrides>).TypeHandle), //  236, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IUIElementOverrides>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IUIElement2>).TypeHandle), //  237, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IUIElement2>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IUIElement3>).TypeHandle), //  238, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IUIElement3>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IUIElement4>).TypeHandle), //  239, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IUIElement4>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IUIElement5>).TypeHandle), //  240, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IUIElement5>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IFrameworkElement>).TypeHandle), //  241, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IFrameworkElement>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IFrameworkElementOverrides>).TypeHandle), //  242, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IFrameworkElementOverrides>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IFrameworkElement2>).TypeHandle), //  243, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IFrameworkElement2>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IFrameworkElementOverrides2>).TypeHandle), //  244, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IFrameworkElementOverrides2>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IFrameworkElement3>).TypeHandle), //  245, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IFrameworkElement3>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.UI.Xaml.IFrameworkElement4>).TypeHandle), //  246, System.Collections.Generic.IEnumerable<Windows.UI.Xaml.IFrameworkElement4>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  247, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.IEnumerable>).TypeHandle), //  248, System.Collections.Generic.IEnumerable<System.Collections.IEnumerable>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.IEnumerable<char>>).TypeHandle), //  249, System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<char>>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<string>).TypeHandle), //  250, System.Collections.Generic.IEnumerable<string>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  251, System.Collections.IEnumerable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.IDisposable).TypeHandle), //  252, System.IDisposable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  253, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.IEnumerable>).TypeHandle), //  254, System.Collections.Generic.IEnumerable<System.Collections.IEnumerable>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.IEnumerable<char>>).TypeHandle), //  255, System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<char>>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  256, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IList<object>).TypeHandle), //  257, System.Collections.Generic.IList<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  258, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  259, System.Collections.IEnumerable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IList).TypeHandle), //  260, System.Collections.IList
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  261, System.Collections.Generic.IReadOnlyList<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.IList<global::System.Collections.Generic.IEnumerable<object>>>).TypeHandle), //  262, System.Collections.Generic.IEnumerable<System.Collections.Generic.IList<System.Collections.Generic.IEnumerable<System.Object>>>
 				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  263, System.Collections.IEnumerable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IList).TypeHandle), //  264, System.Collections.IList
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  265, System.Collections.Generic.IReadOnlyList<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.IList<global::System.Collections.Generic.IEnumerable<object>>>).TypeHandle), //  266, System.Collections.Generic.IEnumerable<System.Collections.Generic.IList<System.Collections.Generic.IEnumerable<System.Object>>>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  267, System.Collections.IEnumerable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.IDisposable).TypeHandle), //  268, System.IDisposable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  269, System.Collections.Generic.IEnumerable<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.IEnumerable>).TypeHandle), //  270, System.Collections.Generic.IEnumerable<System.Collections.IEnumerable>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.IList>).TypeHandle), //  271, System.Collections.Generic.IEnumerable<System.Collections.IList>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IList<global::System.Collections.Generic.IEnumerable<object>>).TypeHandle), //  272, System.Collections.Generic.IList<System.Collections.Generic.IEnumerable<System.Object>>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.IEnumerable<object>>).TypeHandle), //  273, System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<System.Object>>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  274, System.Collections.IEnumerable
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IList).TypeHandle), //  275, System.Collections.IList
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Collections.Generic.IEnumerable<object>>).TypeHandle), //  276, System.Collections.Generic.IReadOnlyList<System.Collections.Generic.IEnumerable<System.Object>>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  277, System.Collections.Generic.IEnumerable<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.IEnumerable>).TypeHandle), //  278, System.Collections.Generic.IEnumerable<System.Collections.IEnumerable>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  279, System.Collections.Generic.IReadOnlyList<System.Object>
-				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Collections.IEnumerable>).TypeHandle), //  280, System.Collections.Generic.IReadOnlyList<System.Collections.IEnumerable>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.IDisposable).TypeHandle), //  264, System.IDisposable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  265, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.IEnumerable>).TypeHandle), //  266, System.Collections.Generic.IEnumerable<System.Collections.IEnumerable>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.IList>).TypeHandle), //  267, System.Collections.Generic.IEnumerable<System.Collections.IList>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IList<global::System.Collections.Generic.IEnumerable<object>>).TypeHandle), //  268, System.Collections.Generic.IList<System.Collections.Generic.IEnumerable<System.Object>>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.IEnumerable<object>>).TypeHandle), //  269, System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<System.Object>>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  270, System.Collections.IEnumerable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IList).TypeHandle), //  271, System.Collections.IList
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Collections.Generic.IEnumerable<object>>).TypeHandle), //  272, System.Collections.Generic.IReadOnlyList<System.Collections.Generic.IEnumerable<System.Object>>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<object>).TypeHandle), //  273, System.Collections.Generic.IEnumerable<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.IEnumerable>).TypeHandle), //  274, System.Collections.Generic.IEnumerable<System.Collections.IEnumerable>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<object>).TypeHandle), //  275, System.Collections.Generic.IReadOnlyList<System.Object>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Collections.IEnumerable>).TypeHandle), //  276, System.Collections.Generic.IReadOnlyList<System.Collections.IEnumerable>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IDictionary<string, string>).TypeHandle), //  277, System.Collections.Generic.IDictionary<string,string>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, string>>).TypeHandle), //  278, System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string,string>>
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  279, System.Collections.IEnumerable
+				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyDictionary<string, string>).TypeHandle), //  280, System.Collections.Generic.IReadOnlyDictionary<string,string>
 				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IDictionary<string, global::System.IDisposable>).TypeHandle), //  281, System.Collections.Generic.IDictionary<string,System.IDisposable>
 				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.IEnumerable).TypeHandle), //  282, System.Collections.IEnumerable
 				new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyDictionary<string, global::System.IDisposable>).TypeHandle), //  283, System.Collections.Generic.IReadOnlyDictionary<string,System.IDisposable>
@@ -20273,7 +20273,6 @@ namespace __Interop
 				57590, // Windows.Foundation.IClosable
 				57590, // Windows.Foundation.IClosable
 				57590, // Windows.Foundation.IClosable
-				19714, // Windows.Foundation.Collections.IMap`2<String,String>
 				57651, // Windows.UI.Xaml.Interop.IBindableIterable
 				57651, // Windows.UI.Xaml.Interop.IBindableIterable
 				0, // 
@@ -20310,6 +20309,7 @@ namespace __Interop
 				0, // 
 				29589, // Windows.Foundation.Collections.IIterable`1<Windows.Foundation.Collections.IVector`1<Windows.Foundation.Collections.IIterable`1<Object>>>
 				29152, // Windows.Foundation.Collections.IVector`1<Windows.Foundation.Collections.IIterable`1<Object>>
+				19714, // Windows.Foundation.Collections.IMap`2<String,String>
 				29721, // Windows.Foundation.Collections.IMap`2<String,Windows.Foundation.IClosable>
 				0, // 
 				0, // 
@@ -21679,7 +21679,7 @@ namespace __Interop
 				}, 
 				// Index = 142
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.JsonReader, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed")),
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.JsonReader, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 21,
 					NumberOfSupportedInterface = 1,
 					ParentCCWTemplateIndex = -1,
@@ -21687,7 +21687,7 @@ namespace __Interop
 				}, 
 				// Index = 143
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.JsonTextReader, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6a" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.JsonTextReader, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6a" +
 								"eed")),
 					SupportedInterfaceListBeginIndex = 17,
 					NumberOfSupportedInterface = 0,
@@ -21696,7 +21696,7 @@ namespace __Interop
 				}, 
 				// Index = 144
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.JsonTextWriter, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6a" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.JsonTextWriter, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6a" +
 								"eed")),
 					SupportedInterfaceListBeginIndex = 17,
 					NumberOfSupportedInterface = 0,
@@ -21705,7 +21705,7 @@ namespace __Interop
 				}, 
 				// Index = 145
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.JsonWriter, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed")),
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.JsonWriter, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 21,
 					NumberOfSupportedInterface = 1,
 					ParentCCWTemplateIndex = -1,
@@ -21713,7 +21713,7 @@ namespace __Interop
 				}, 
 				// Index = 146
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JArray, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JArray, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" +
 								"")),
 					SupportedInterfaceListBeginIndex = 90,
 					NumberOfSupportedInterface = 5,
@@ -21722,7 +21722,7 @@ namespace __Interop
 				}, 
 				// Index = 147
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JContainer, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JContainer, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6" +
 								"aeed")),
 					SupportedInterfaceListBeginIndex = 95,
 					NumberOfSupportedInterface = 7,
@@ -21731,7 +21731,7 @@ namespace __Interop
 				}, 
 				// Index = 148
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" +
 								"")),
 					SupportedInterfaceListBeginIndex = 102,
 					NumberOfSupportedInterface = 4,
@@ -21740,7 +21740,7 @@ namespace __Interop
 				}, 
 				// Index = 149
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JConstructor, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JConstructor, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2" +
 								"a6aeed")),
 					SupportedInterfaceListBeginIndex = 106,
 					NumberOfSupportedInterface = 2,
@@ -21749,7 +21749,7 @@ namespace __Interop
 				}, 
 				// Index = 150
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JObject, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aee" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JObject, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aee" +
 								"d")),
 					SupportedInterfaceListBeginIndex = 108,
 					NumberOfSupportedInterface = 5,
@@ -21758,7 +21758,7 @@ namespace __Interop
 				}, 
 				// Index = 151
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JProperty, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6a" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JProperty, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6a" +
 								"eed")),
 					SupportedInterfaceListBeginIndex = 106,
 					NumberOfSupportedInterface = 2,
@@ -21767,7 +21767,7 @@ namespace __Interop
 				}, 
 				// Index = 152
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JRaw, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed")),
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JRaw, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 106,
 					NumberOfSupportedInterface = 2,
 					ParentCCWTemplateIndex = 153,
@@ -21775,7 +21775,7 @@ namespace __Interop
 				}, 
 				// Index = 153
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JValue, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JValue, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" +
 								"")),
 					SupportedInterfaceListBeginIndex = 106,
 					NumberOfSupportedInterface = 2,
@@ -21784,7 +21784,7 @@ namespace __Interop
 				}, 
 				// Index = 154
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JTokenReader, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JTokenReader, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2" +
 								"a6aeed")),
 					SupportedInterfaceListBeginIndex = 17,
 					NumberOfSupportedInterface = 0,
@@ -21793,7 +21793,7 @@ namespace __Interop
 				}, 
 				// Index = 155
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JTokenWriter, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JTokenWriter, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2" +
 								"a6aeed")),
 					SupportedInterfaceListBeginIndex = 17,
 					NumberOfSupportedInterface = 0,
@@ -21802,7 +21802,7 @@ namespace __Interop
 				}, 
 				// Index = 156
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JContainer+<GetDescendants>d__26, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, Publi" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JContainer+<GetDescendants>d__26, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, Publi" +
 								"cKeyToken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 113,
 					NumberOfSupportedInterface = 5,
@@ -21811,7 +21811,7 @@ namespace __Interop
 				}, 
 				// Index = 157
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JObject+<GetEnumerator>d__58, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKey" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JObject+<GetEnumerator>d__62, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKey" +
 								"Token=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 21,
 					NumberOfSupportedInterface = 1,
@@ -21820,7 +21820,7 @@ namespace __Interop
 				}, 
 				// Index = 158
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JToken+<GetAncestors>d__48, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyTo" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JToken+<GetAncestors>d__48, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyTo" +
 								"ken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 113,
 					NumberOfSupportedInterface = 5,
@@ -21829,7 +21829,7 @@ namespace __Interop
 				}, 
 				// Index = 159
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JToken+<AfterSelf>d__49, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JToken+<AfterSelf>d__49, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken" +
 								"=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 113,
 					NumberOfSupportedInterface = 5,
@@ -21838,7 +21838,7 @@ namespace __Interop
 				}, 
 				// Index = 160
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JToken+<BeforeSelf>d__50, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToke" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JToken+<BeforeSelf>d__50, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToke" +
 								"n=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 113,
 					NumberOfSupportedInterface = 5,
@@ -21847,7 +21847,7 @@ namespace __Interop
 				}, 
 				// Index = 161
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JToken+<Annotations>d__182, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyTo" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JToken+<Annotations>d__182, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyTo" +
 								"ken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 118,
 					NumberOfSupportedInterface = 3,
@@ -21856,7 +21856,7 @@ namespace __Interop
 				}, 
 				// Index = 162
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.ArrayIndexFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, Culture=n" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.ArrayIndexFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, Culture=n" +
 								"eutral, PublicKeyToken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 113,
 					NumberOfSupportedInterface = 5,
@@ -21865,7 +21865,7 @@ namespace __Interop
 				}, 
 				// Index = 163
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.ArrayMultipleIndexFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, C" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.ArrayMultipleIndexFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, C" +
 								"ulture=neutral, PublicKeyToken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 113,
 					NumberOfSupportedInterface = 5,
@@ -21874,7 +21874,7 @@ namespace __Interop
 				}, 
 				// Index = 164
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.ArraySliceFilter+<ExecuteFilter>d__12, Newtonsoft.Json, Version=10.0.0.0, Culture=" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.ArraySliceFilter+<ExecuteFilter>d__12, Newtonsoft.Json, Version=11.0.0.0, Culture=" +
 								"neutral, PublicKeyToken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 113,
 					NumberOfSupportedInterface = 5,
@@ -21883,7 +21883,7 @@ namespace __Interop
 				}, 
 				// Index = 165
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.FieldFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, Culture=neutra" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.FieldFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, Culture=neutra" +
 								"l, PublicKeyToken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 113,
 					NumberOfSupportedInterface = 5,
@@ -21892,7 +21892,7 @@ namespace __Interop
 				}, 
 				// Index = 166
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.FieldMultipleFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, Cultur" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.FieldMultipleFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, Cultur" +
 								"e=neutral, PublicKeyToken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 113,
 					NumberOfSupportedInterface = 5,
@@ -21901,7 +21901,7 @@ namespace __Interop
 				}, 
 				// Index = 167
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.QueryFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, Culture=neutra" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.QueryFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, Culture=neutra" +
 								"l, PublicKeyToken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 113,
 					NumberOfSupportedInterface = 5,
@@ -21910,7 +21910,7 @@ namespace __Interop
 				}, 
 				// Index = 168
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.QueryScanFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, Culture=ne" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.QueryScanFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, Culture=ne" +
 								"utral, PublicKeyToken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 113,
 					NumberOfSupportedInterface = 5,
@@ -21919,7 +21919,7 @@ namespace __Interop
 				}, 
 				// Index = 169
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.ScanFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.ScanFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral" +
 								", PublicKeyToken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 113,
 					NumberOfSupportedInterface = 5,
@@ -21928,7 +21928,7 @@ namespace __Interop
 				}, 
 				// Index = 170
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.ScanMultipleFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, Culture" +
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Newtonsoft.Json.Linq.JsonPath.ScanMultipleFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, Culture" +
 								"=neutral, PublicKeyToken=30ad4fe6b2a6aeed")),
 					SupportedInterfaceListBeginIndex = 113,
 					NumberOfSupportedInterface = 5,
@@ -22451,248 +22451,240 @@ namespace __Interop
 				}, 
 				// Index = 232
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Xml.XmlNode, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
 					SupportedInterfaceListBeginIndex = 169,
-					NumberOfSupportedInterface = 4,
+					NumberOfSupportedInterface = 1,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 233
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Xml.XmlNode, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 173,
-					NumberOfSupportedInterface = 1,
-					ParentCCWTemplateIndex = -1,
-					IsWinRTType = false,
-				}, 
-				// Index = 234
-				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Xml.XmlDocument, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
 								"a")),
 					SupportedInterfaceListBeginIndex = 17,
 					NumberOfSupportedInterface = 0,
-					ParentCCWTemplateIndex = 233,
+					ParentCCWTemplateIndex = 232,
 					IsWinRTType = false,
 				}, 
-				// Index = 235
+				// Index = 234
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[System.Reflection.MemberInfo, System.Private.Reflection, Version=4.0.0.0, Cul" +
 								"ture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicK" +
 								"eyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 174,
+					SupportedInterfaceListBeginIndex = 170,
+					NumberOfSupportedInterface = 4,
+					ParentCCWTemplateIndex = -1,
+					IsWinRTType = false,
+				}, 
+				// Index = 235
+				new global::System.Runtime.InteropServices.CCWTemplateData() {
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.List`1[[Newtonsoft.Json.Serialization.SerializationCallback, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 170,
 					NumberOfSupportedInterface = 4,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 236
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.List`1[[Newtonsoft.Json.Serialization.SerializationCallback, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 174,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.List`1[[Newtonsoft.Json.Serialization.SerializationErrorCallback, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 170,
 					NumberOfSupportedInterface = 4,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 237
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.List`1[[Newtonsoft.Json.Serialization.SerializationErrorCallback, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[System.Type, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Public" +
+								"KeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d5" +
+								"0a3a")),
 					SupportedInterfaceListBeginIndex = 174,
-					NumberOfSupportedInterface = 4,
+					NumberOfSupportedInterface = 7,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 238
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[System.Type, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Public" +
-								"KeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d5" +
-								"0a3a")),
-					SupportedInterfaceListBeginIndex = 178,
-					NumberOfSupportedInterface = 7,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publi" +
+								"cKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d" +
+								"50a3a")),
+					SupportedInterfaceListBeginIndex = 181,
+					NumberOfSupportedInterface = 5,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 239
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publi" +
-								"cKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d" +
-								"50a3a")),
-					SupportedInterfaceListBeginIndex = 185,
-					NumberOfSupportedInterface = 5,
-					ParentCCWTemplateIndex = -1,
-					IsWinRTType = false,
-				}, 
-				// Index = 240
-				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Xml.XmlElement, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" +
 								"")),
 					SupportedInterfaceListBeginIndex = 17,
 					NumberOfSupportedInterface = 0,
-					ParentCCWTemplateIndex = 241,
+					ParentCCWTemplateIndex = 240,
 					IsWinRTType = false,
 				}, 
-				// Index = 241
+				// Index = 240
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Xml.XmlLinkedNode, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50" +
 								"a3a")),
 					SupportedInterfaceListBeginIndex = 17,
 					NumberOfSupportedInterface = 0,
-					ParentCCWTemplateIndex = 233,
+					ParentCCWTemplateIndex = 232,
 					IsWinRTType = false,
 				}, 
-				// Index = 242
+				// Index = 241
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.ObjectModel.ReadOnlyCollection`1[[Xamarin.Forms.Element, Xamarin.Forms.Core, Version=2.0.0.0," +
 								" Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyTok" +
 								"en=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 190,
+					SupportedInterfaceListBeginIndex = 186,
 					NumberOfSupportedInterface = 7,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 243
+				// Index = 242
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.ObjectModel.ObservableCollection`1[[Xamarin.Forms.Element, Xamarin.Forms.Core, Version=2.0.0." +
 								"0, Culture=neutral, PublicKeyToken=null]], System.ObjectModel, Version=4.0.10.0, Culture=neutral, PublicKeyToke" +
 								"n=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 197,
+					SupportedInterfaceListBeginIndex = 193,
 					NumberOfSupportedInterface = 6,
-					ParentCCWTemplateIndex = 244,
+					ParentCCWTemplateIndex = 243,
 					IsWinRTType = false,
 				}, 
-				// Index = 244
+				// Index = 243
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.ObjectModel.Collection`1[[Xamarin.Forms.Element, Xamarin.Forms.Core, Version=2.0.0.0, Culture" +
 								"=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5" +
 								"f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 190,
+					SupportedInterfaceListBeginIndex = 186,
 					NumberOfSupportedInterface = 7,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 245
+				// Index = 244
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.ObjectModel.ObservableCollection`1[[Xamarin.Forms.MenuItem, Xamarin.Forms.Core, Version=2.0.0" +
 								".0, Culture=neutral, PublicKeyToken=null]], System.ObjectModel, Version=4.0.10.0, Culture=neutral, PublicKeyTok" +
 								"en=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 197,
+					SupportedInterfaceListBeginIndex = 193,
 					NumberOfSupportedInterface = 6,
-					ParentCCWTemplateIndex = 246,
+					ParentCCWTemplateIndex = 245,
 					IsWinRTType = false,
 				}, 
-				// Index = 246
+				// Index = 245
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.ObjectModel.Collection`1[[Xamarin.Forms.MenuItem, Xamarin.Forms.Core, Version=2.0.0.0, Cultur" +
 								"e=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f" +
 								"5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 190,
+					SupportedInterfaceListBeginIndex = 186,
 					NumberOfSupportedInterface = 7,
+					ParentCCWTemplateIndex = -1,
+					IsWinRTType = false,
+				}, 
+				// Index = 246
+				new global::System.Runtime.InteropServices.CCWTemplateData() {
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"Xamarin.Forms.ReadOnlyCastingList`2[[Xamarin.Forms.Page, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null],[Xamarin.Forms.Element, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null]], Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null")),
+					SupportedInterfaceListBeginIndex = 199,
+					NumberOfSupportedInterface = 5,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 247
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"Xamarin.Forms.ReadOnlyCastingList`2[[Xamarin.Forms.Page, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null],[Xamarin.Forms.Element, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null]], Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null")),
-					SupportedInterfaceListBeginIndex = 203,
-					NumberOfSupportedInterface = 5,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[Xamarin.Forms.Page, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, Pub" +
+								"licKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 186,
+					NumberOfSupportedInterface = 7,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 248
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[Xamarin.Forms.Page, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, Pub" +
-								"licKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 190,
-					NumberOfSupportedInterface = 7,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Concurrent.ConcurrentDictionary`2[[System.Type, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Windows.UI.Xaml.DependencyProperty, Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime]], System.Collections.Concurrent, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 204,
+					NumberOfSupportedInterface = 4,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 249
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Concurrent.ConcurrentDictionary`2[[System.Type, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Windows.UI.Xaml.DependencyProperty, Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime]], System.Collections.Concurrent, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 208,
-					NumberOfSupportedInterface = 4,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[Xamarin.Forms.BindableObject, Xamarin.Forms.Core, Version=2.0.0.0, Culture=ne" +
+								"utral, PublicKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d" +
+								"50a3a")),
+					SupportedInterfaceListBeginIndex = 186,
+					NumberOfSupportedInterface = 7,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 250
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[Xamarin.Forms.BindableObject, Xamarin.Forms.Core, Version=2.0.0.0, Culture=ne" +
-								"utral, PublicKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d" +
-								"50a3a")),
-					SupportedInterfaceListBeginIndex = 190,
-					NumberOfSupportedInterface = 7,
-					ParentCCWTemplateIndex = -1,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.ObjectModel.ObservableCollection`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, C" +
+								"ulture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.ObjectModel, Version=4.0.10.0, Culture=neutral, Publi" +
+								"cKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 208,
+					NumberOfSupportedInterface = 8,
+					ParentCCWTemplateIndex = 251,
 					IsWinRTType = false,
 				}, 
 				// Index = 251
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.ObjectModel.ObservableCollection`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, C" +
-								"ulture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.ObjectModel, Version=4.0.10.0, Culture=neutral, Publi" +
-								"cKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 212,
-					NumberOfSupportedInterface = 8,
-					ParentCCWTemplateIndex = 252,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.ObjectModel.Collection`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neu" +
+								"tral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyTok" +
+								"en=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 216,
+					NumberOfSupportedInterface = 11,
+					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 252
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.ObjectModel.Collection`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neu" +
-								"tral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyTok" +
-								"en=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 220,
-					NumberOfSupportedInterface = 11,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"Xamarin.Forms.Platform.UWP.FrameworkElementExtensions+<GetChildren>d__10`1[[Windows.UI.Xaml.FrameworkElement, Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime]], Xamarin.Forms.Platform.UAP, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null")),
+					SupportedInterfaceListBeginIndex = 227,
+					NumberOfSupportedInterface = 20,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 253
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"Xamarin.Forms.Platform.UWP.FrameworkElementExtensions+<GetChildren>d__10`1[[Windows.UI.Xaml.FrameworkElement, Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime]], Xamarin.Forms.Platform.UAP, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null")),
-					SupportedInterfaceListBeginIndex = 231,
-					NumberOfSupportedInterface = 20,
-					ParentCCWTemplateIndex = -1,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Linq.Enumerable+WhereSelectEnumerableIterator`2[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchemaModel, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 247,
+					NumberOfSupportedInterface = 3,
+					ParentCCWTemplateIndex = 254,
 					IsWinRTType = false,
 				}, 
 				// Index = 254
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Linq.Enumerable+WhereSelectEnumerableIterator`2[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchemaModel, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 251,
-					NumberOfSupportedInterface = 3,
-					ParentCCWTemplateIndex = 255,
-					IsWinRTType = false,
-				}, 
-				// Index = 255
-				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Linq.Enumerable+Iterator`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publ" +
 								"icKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 254,
+					SupportedInterfaceListBeginIndex = 250,
 					NumberOfSupportedInterface = 6,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
+				// Index = 255
+				new global::System.Runtime.InteropServices.CCWTemplateData() {
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Linq.Enumerable+WhereSelectArrayIterator`2[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchemaModel, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 247,
+					NumberOfSupportedInterface = 3,
+					ParentCCWTemplateIndex = 254,
+					IsWinRTType = false,
+				}, 
 				// Index = 256
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Linq.Enumerable+WhereSelectArrayIterator`2[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchemaModel, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 251,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Linq.Enumerable+WhereSelectListIterator`2[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchemaModel, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 247,
 					NumberOfSupportedInterface = 3,
-					ParentCCWTemplateIndex = 255,
+					ParentCCWTemplateIndex = 254,
 					IsWinRTType = false,
 				}, 
 				// Index = 257
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Linq.Enumerable+WhereSelectListIterator`2[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchemaModel, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 251,
-					NumberOfSupportedInterface = 3,
-					ParentCCWTemplateIndex = 255,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Linq.Enumerable+WhereSelectEnumerableIterator`2[[System.Dynamic.DynamicMetaObject, System.Dynamic.Runtime, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Linq.Expressions.Expression, System.Linq.Expressions, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 256,
+					NumberOfSupportedInterface = 1,
+					ParentCCWTemplateIndex = 258,
 					IsWinRTType = false,
 				}, 
 				// Index = 258
-				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Linq.Enumerable+WhereSelectEnumerableIterator`2[[System.Dynamic.DynamicMetaObject, System.Dynamic.Runtime, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Linq.Expressions.Expression, System.Linq.Expressions, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 260,
-					NumberOfSupportedInterface = 1,
-					ParentCCWTemplateIndex = 259,
-					IsWinRTType = false,
-				}, 
-				// Index = 259
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Linq.Enumerable+Iterator`1[[System.Linq.Expressions.Expression, System.Linq.Expressions, Version=4.0.10.0" +
 								", Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyT" +
@@ -22702,89 +22694,97 @@ namespace __Interop
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
-				// Index = 260
+				// Index = 259
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Linq.Enumerable+WhereSelectArrayIterator`2[[System.Dynamic.DynamicMetaObject, System.Dynamic.Runtime, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Linq.Expressions.Expression, System.Linq.Expressions, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 260,
+					SupportedInterfaceListBeginIndex = 256,
 					NumberOfSupportedInterface = 1,
-					ParentCCWTemplateIndex = 259,
+					ParentCCWTemplateIndex = 258,
+					IsWinRTType = false,
+				}, 
+				// Index = 260
+				new global::System.Runtime.InteropServices.CCWTemplateData() {
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Linq.Enumerable+WhereSelectListIterator`2[[System.Dynamic.DynamicMetaObject, System.Dynamic.Runtime, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Linq.Expressions.Expression, System.Linq.Expressions, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 256,
+					NumberOfSupportedInterface = 1,
+					ParentCCWTemplateIndex = 258,
 					IsWinRTType = false,
 				}, 
 				// Index = 261
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Linq.Enumerable+WhereSelectListIterator`2[[System.Dynamic.DynamicMetaObject, System.Dynamic.Runtime, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Linq.Expressions.Expression, System.Linq.Expressions, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 260,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Utilities.ReflectionMember, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 169,
 					NumberOfSupportedInterface = 1,
-					ParentCCWTemplateIndex = 259,
+					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 262
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Utilities.ReflectionMember, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 173,
-					NumberOfSupportedInterface = 1,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publ" +
+								"icKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11" +
+								"d50a3a")),
+					SupportedInterfaceListBeginIndex = 257,
+					NumberOfSupportedInterface = 5,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 263
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publ" +
-								"icKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11" +
-								"d50a3a")),
-					SupportedInterfaceListBeginIndex = 261,
-					NumberOfSupportedInterface = 5,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[Newtonsoft.Json.Schema.JsonSchema, Newtonsoft.Json, Version=11.0.0.0, Culture" +
+								"=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyTo" +
+								"ken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 170,
+					NumberOfSupportedInterface = 4,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 264
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[Newtonsoft.Json.Schema.JsonSchema, Newtonsoft.Json, Version=10.0.0.0, Culture" +
-								"=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyTo" +
-								"ken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 174,
-					NumberOfSupportedInterface = 4,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchema, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 169,
+					NumberOfSupportedInterface = 1,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 265
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchema, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 173,
-					NumberOfSupportedInterface = 1,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.List`1[[Newtonsoft.Json.Schema.JsonSchemaGenerator+TypeSchema, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 170,
+					NumberOfSupportedInterface = 4,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 266
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.List`1[[Newtonsoft.Json.Schema.JsonSchemaGenerator+TypeSchema, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 174,
-					NumberOfSupportedInterface = 4,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Linq.Enumerable+<CastIterator>d__1`1[[Newtonsoft.Json.Linq.JProperty, Newtonsoft.Json, Version=11.0.0.0, " +
+								"Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyTok" +
+								"en=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 262,
+					NumberOfSupportedInterface = 6,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 267
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Linq.Enumerable+<CastIterator>d__1`1[[Newtonsoft.Json.Linq.JProperty, Newtonsoft.Json, Version=10.0.0.0, " +
-								"Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyTok" +
-								"en=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 266,
-					NumberOfSupportedInterface = 6,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=11.0.0.0, Culture=neutr" +
+								"al, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b0" +
+								"3f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 268,
+					NumberOfSupportedInterface = 9,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 268
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=10.0.0.0, Culture=neutr" +
-								"al, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b0" +
-								"3f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 272,
-					NumberOfSupportedInterface = 9,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections.Concurrent, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 277,
+					NumberOfSupportedInterface = 4,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 269
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Threading.ManualResetEvent, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Threading.ManualResetEvent, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections.Concurrent, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
 					SupportedInterfaceListBeginIndex = 281,
 					NumberOfSupportedInterface = 3,
 					ParentCCWTemplateIndex = -1,
@@ -22792,16 +22792,16 @@ namespace __Interop
 				}, 
 				// Index = 270
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Plugin.Toasts.NotificationResult, Toasts.Forms.Plugin.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 173,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Plugin.Toasts.NotificationResult, Toasts.Forms.Plugin.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Collections.Concurrent, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 169,
 					NumberOfSupportedInterface = 1,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
 				}, 
 				// Index = 271
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Plugin.Toasts.INotificationOptions, Toasts.Forms.Plugin.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 173,
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Plugin.Toasts.INotificationOptions, Toasts.Forms.Plugin.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Collections.Concurrent, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
+					SupportedInterfaceListBeginIndex = 169,
 					NumberOfSupportedInterface = 1,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
@@ -22809,7 +22809,7 @@ namespace __Interop
 				// Index = 272
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.Dictionary`2[[Xamarin.Forms.BindableProperty, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null],[Xamarin.Forms.BindingBase, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 173,
+					SupportedInterfaceListBeginIndex = 169,
 					NumberOfSupportedInterface = 1,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
@@ -22817,7 +22817,7 @@ namespace __Interop
 				// Index = 273
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.Dictionary`2[[Xamarin.Forms.BindableProperty, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 173,
+					SupportedInterfaceListBeginIndex = 169,
 					NumberOfSupportedInterface = 1,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
@@ -22856,7 +22856,7 @@ namespace __Interop
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[Xamarin.Forms.View, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, Pub" +
 								"licKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 190,
+					SupportedInterfaceListBeginIndex = 186,
 					NumberOfSupportedInterface = 7,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
@@ -22865,7 +22865,7 @@ namespace __Interop
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Xamarin.Forms.AttachedCollection`1[[Xamarin.Forms.Behavior, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral" +
 								", PublicKeyToken=null]], Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null")),
-					SupportedInterfaceListBeginIndex = 203,
+					SupportedInterfaceListBeginIndex = 199,
 					NumberOfSupportedInterface = 5,
 					ParentCCWTemplateIndex = 279,
 					IsWinRTType = false,
@@ -22875,7 +22875,7 @@ namespace __Interop
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.ObjectModel.ObservableCollection`1[[Xamarin.Forms.Behavior, Xamarin.Forms.Core, Version=2.0.0" +
 								".0, Culture=neutral, PublicKeyToken=null]], System.ObjectModel, Version=4.0.10.0, Culture=neutral, PublicKeyTok" +
 								"en=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 197,
+					SupportedInterfaceListBeginIndex = 193,
 					NumberOfSupportedInterface = 6,
 					ParentCCWTemplateIndex = 280,
 					IsWinRTType = false,
@@ -22885,7 +22885,7 @@ namespace __Interop
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.ObjectModel.Collection`1[[Xamarin.Forms.Behavior, Xamarin.Forms.Core, Version=2.0.0.0, Cultur" +
 								"e=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f" +
 								"5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 190,
+					SupportedInterfaceListBeginIndex = 186,
 					NumberOfSupportedInterface = 7,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
@@ -22894,7 +22894,7 @@ namespace __Interop
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("Xamarin.Forms.AttachedCollection`1[[Xamarin.Forms.TriggerBase, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neut" +
 								"ral, PublicKeyToken=null]], Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null")),
-					SupportedInterfaceListBeginIndex = 203,
+					SupportedInterfaceListBeginIndex = 199,
 					NumberOfSupportedInterface = 5,
 					ParentCCWTemplateIndex = 282,
 					IsWinRTType = false,
@@ -22904,7 +22904,7 @@ namespace __Interop
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.ObjectModel.ObservableCollection`1[[Xamarin.Forms.TriggerBase, Xamarin.Forms.Core, Version=2." +
 								"0.0.0, Culture=neutral, PublicKeyToken=null]], System.ObjectModel, Version=4.0.10.0, Culture=neutral, PublicKey" +
 								"Token=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 197,
+					SupportedInterfaceListBeginIndex = 193,
 					NumberOfSupportedInterface = 6,
 					ParentCCWTemplateIndex = 283,
 					IsWinRTType = false,
@@ -22914,7 +22914,7 @@ namespace __Interop
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.ObjectModel.Collection`1[[Xamarin.Forms.TriggerBase, Xamarin.Forms.Core, Version=2.0.0.0, Cul" +
 								"ture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b" +
 								"03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 190,
+					SupportedInterfaceListBeginIndex = 186,
 					NumberOfSupportedInterface = 7,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
@@ -22941,7 +22941,7 @@ namespace __Interop
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[Xamarin.Forms.Setter, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, P" +
 								"ublicKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 174,
+					SupportedInterfaceListBeginIndex = 170,
 					NumberOfSupportedInterface = 4,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
@@ -22968,7 +22968,7 @@ namespace __Interop
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[Xamarin.Forms.BindableProperty, Xamarin.Forms.Core, Version=2.0.0.0, Culture=" +
 								"neutral, PublicKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f1" +
 								"1d50a3a")),
-					SupportedInterfaceListBeginIndex = 174,
+					SupportedInterfaceListBeginIndex = 170,
 					NumberOfSupportedInterface = 4,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
@@ -23011,7 +23011,7 @@ namespace __Interop
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[Xamarin.Forms.Internals.XmlnsDefinitionAttribute, Xamarin.Forms.Core, Version" +
 								"=2.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, Public" +
 								"KeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 174,
+					SupportedInterfaceListBeginIndex = 170,
 					NumberOfSupportedInterface = 4,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
@@ -23053,7 +23053,7 @@ namespace __Interop
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Collections.Generic.List`1[[Xamarin.Forms.MessagingCenter+Subscription, Xamarin.Forms.Core, Version=2.0.0" +
 								".0, Culture=neutral, PublicKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyTok" +
 								"en=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 174,
+					SupportedInterfaceListBeginIndex = 170,
 					NumberOfSupportedInterface = 4,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
@@ -23072,7 +23072,7 @@ namespace __Interop
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Xml.XmlAttributeCollection, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f" +
 								"5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 173,
+					SupportedInterfaceListBeginIndex = 169,
 					NumberOfSupportedInterface = 1,
 					ParentCCWTemplateIndex = 302,
 					IsWinRTType = false,
@@ -23081,7 +23081,7 @@ namespace __Interop
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Xml.XmlNamedNodeMap, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d" +
 								"50a3a")),
-					SupportedInterfaceListBeginIndex = 173,
+					SupportedInterfaceListBeginIndex = 169,
 					NumberOfSupportedInterface = 1,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
@@ -23107,7 +23107,7 @@ namespace __Interop
 				// Index = 305
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf(@"System.Collections.Generic.List`1[[System.WeakReference`1[[System.Xml.XmlElement, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")),
-					SupportedInterfaceListBeginIndex = 174,
+					SupportedInterfaceListBeginIndex = 170,
 					NumberOfSupportedInterface = 4,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
@@ -23346,7 +23346,7 @@ namespace __Interop
 				new global::System.Runtime.InteropServices.CCWTemplateData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("System.Net.CookieCollection, System.Net.Primitives, Version=4.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11" +
 								"d50a3a")),
-					SupportedInterfaceListBeginIndex = 173,
+					SupportedInterfaceListBeginIndex = 169,
 					NumberOfSupportedInterface = 1,
 					ParentCCWTemplateIndex = -1,
 					IsWinRTType = false,
@@ -33376,60 +33376,60 @@ namespace __Interop
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(3360, "System.Array, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(3384, "System.Diagnostics.Tracing.EventSource, System.Diagnostics.Tracing, Version=4.0.20.0, Culture=neutral, PublicKey" +
 				"Token=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3408, "Newtonsoft.Json.JsonReader, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3432, "Newtonsoft.Json.JsonTextReader, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6a" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3408, "Newtonsoft.Json.JsonReader, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3432, "Newtonsoft.Json.JsonTextReader, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6a" +
 				"eed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3456, "Newtonsoft.Json.JsonTextWriter, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6a" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3456, "Newtonsoft.Json.JsonTextWriter, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6a" +
 				"eed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3480, "Newtonsoft.Json.JsonWriter, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3504, "Newtonsoft.Json.Linq.JArray, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3480, "Newtonsoft.Json.JsonWriter, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3504, "Newtonsoft.Json.Linq.JArray, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" +
 				"")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3528, "Newtonsoft.Json.Linq.JContainer, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3528, "Newtonsoft.Json.Linq.JContainer, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6" +
 				"aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3552, "Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3552, "Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" +
 				"")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3576, "Newtonsoft.Json.Linq.JConstructor, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3576, "Newtonsoft.Json.Linq.JConstructor, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2" +
 				"a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3600, "Newtonsoft.Json.Linq.JObject, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aee" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3600, "Newtonsoft.Json.Linq.JObject, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aee" +
 				"d")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3624, "Newtonsoft.Json.Linq.JProperty, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6a" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3624, "Newtonsoft.Json.Linq.JProperty, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6a" +
 				"eed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3648, "Newtonsoft.Json.Linq.JRaw, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3672, "Newtonsoft.Json.Linq.JValue, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3648, "Newtonsoft.Json.Linq.JRaw, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3672, "Newtonsoft.Json.Linq.JValue, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" +
 				"")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3696, "Newtonsoft.Json.Linq.JTokenReader, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3696, "Newtonsoft.Json.Linq.JTokenReader, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2" +
 				"a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3720, "Newtonsoft.Json.Linq.JTokenWriter, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3720, "Newtonsoft.Json.Linq.JTokenWriter, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2" +
 				"a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3744, "Newtonsoft.Json.Linq.JContainer+<GetDescendants>d__26, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, Publi" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3744, "Newtonsoft.Json.Linq.JContainer+<GetDescendants>d__26, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, Publi" +
 				"cKeyToken=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3768, "Newtonsoft.Json.Linq.JObject+<GetEnumerator>d__58, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKey" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3768, "Newtonsoft.Json.Linq.JObject+<GetEnumerator>d__62, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKey" +
 				"Token=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3792, "Newtonsoft.Json.Linq.JToken+<GetAncestors>d__48, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyTo" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3792, "Newtonsoft.Json.Linq.JToken+<GetAncestors>d__48, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyTo" +
 				"ken=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3816, "Newtonsoft.Json.Linq.JToken+<AfterSelf>d__49, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3816, "Newtonsoft.Json.Linq.JToken+<AfterSelf>d__49, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken" +
 				"=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3840, "Newtonsoft.Json.Linq.JToken+<BeforeSelf>d__50, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToke" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3840, "Newtonsoft.Json.Linq.JToken+<BeforeSelf>d__50, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToke" +
 				"n=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3864, "Newtonsoft.Json.Linq.JToken+<Annotations>d__182, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyTo" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3864, "Newtonsoft.Json.Linq.JToken+<Annotations>d__182, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyTo" +
 				"ken=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3888, "Newtonsoft.Json.Linq.JsonPath.ArrayIndexFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, Culture=n" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3888, "Newtonsoft.Json.Linq.JsonPath.ArrayIndexFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, Culture=n" +
 				"eutral, PublicKeyToken=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3912, "Newtonsoft.Json.Linq.JsonPath.ArrayMultipleIndexFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, C" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3912, "Newtonsoft.Json.Linq.JsonPath.ArrayMultipleIndexFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, C" +
 				"ulture=neutral, PublicKeyToken=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3936, "Newtonsoft.Json.Linq.JsonPath.ArraySliceFilter+<ExecuteFilter>d__12, Newtonsoft.Json, Version=10.0.0.0, Culture=" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3936, "Newtonsoft.Json.Linq.JsonPath.ArraySliceFilter+<ExecuteFilter>d__12, Newtonsoft.Json, Version=11.0.0.0, Culture=" +
 				"neutral, PublicKeyToken=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3960, "Newtonsoft.Json.Linq.JsonPath.FieldFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, Culture=neutra" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3960, "Newtonsoft.Json.Linq.JsonPath.FieldFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, Culture=neutra" +
 				"l, PublicKeyToken=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(3984, "Newtonsoft.Json.Linq.JsonPath.FieldMultipleFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, Cultur" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(3984, "Newtonsoft.Json.Linq.JsonPath.FieldMultipleFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, Cultur" +
 				"e=neutral, PublicKeyToken=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(4008, "Newtonsoft.Json.Linq.JsonPath.QueryFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, Culture=neutra" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(4008, "Newtonsoft.Json.Linq.JsonPath.QueryFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, Culture=neutra" +
 				"l, PublicKeyToken=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(4032, "Newtonsoft.Json.Linq.JsonPath.QueryScanFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, Culture=ne" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(4032, "Newtonsoft.Json.Linq.JsonPath.QueryScanFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, Culture=ne" +
 				"utral, PublicKeyToken=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(4056, "Newtonsoft.Json.Linq.JsonPath.ScanFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(4056, "Newtonsoft.Json.Linq.JsonPath.ScanFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral" +
 				", PublicKeyToken=30ad4fe6b2a6aeed")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(4080, "Newtonsoft.Json.Linq.JsonPath.ScanMultipleFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=10.0.0.0, Culture" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(4080, "Newtonsoft.Json.Linq.JsonPath.ScanMultipleFilter+<ExecuteFilter>d__4, Newtonsoft.Json, Version=11.0.0.0, Culture" +
 				"=neutral, PublicKeyToken=30ad4fe6b2a6aeed")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(4104, "Xamarin.Forms.Application, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(4128, "Xamarin.Forms.Element, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null")]
@@ -33518,83 +33518,83 @@ namespace __Interop
 				"ulture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(5544, "System.Xml.XmlWriter, System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" +
 				"")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5568, @"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5592, "System.Xml.XmlNode, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5616, "System.Xml.XmlDocument, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5568, "System.Xml.XmlNode, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5592, "System.Xml.XmlDocument, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
 				"a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5640, "System.Collections.Generic.List`1[[System.Reflection.MemberInfo, System.Private.Reflection, Version=4.0.0.0, Cul" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5616, "System.Collections.Generic.List`1[[System.Reflection.MemberInfo, System.Private.Reflection, Version=4.0.0.0, Cul" +
 				"ture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicK" +
 				"eyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5664, @"System.Collections.Generic.List`1[[Newtonsoft.Json.Serialization.SerializationCallback, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5688, @"System.Collections.Generic.List`1[[Newtonsoft.Json.Serialization.SerializationErrorCallback, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5712, "System.Collections.Generic.List`1[[System.Type, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Public" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5640, @"System.Collections.Generic.List`1[[Newtonsoft.Json.Serialization.SerializationCallback, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5664, @"System.Collections.Generic.List`1[[Newtonsoft.Json.Serialization.SerializationErrorCallback, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5688, "System.Collections.Generic.List`1[[System.Type, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Public" +
 				"KeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d5" +
 				"0a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5736, "System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publi" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5712, "System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publi" +
 				"cKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d" +
 				"50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5760, "System.Xml.XmlElement, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5736, "System.Xml.XmlElement, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" +
 				"")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5784, "System.Xml.XmlLinkedNode, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5760, "System.Xml.XmlLinkedNode, System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50" +
 				"a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5808, "System.Collections.ObjectModel.ReadOnlyCollection`1[[Xamarin.Forms.Element, Xamarin.Forms.Core, Version=2.0.0.0," +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5784, "System.Collections.ObjectModel.ReadOnlyCollection`1[[Xamarin.Forms.Element, Xamarin.Forms.Core, Version=2.0.0.0," +
 				" Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyTok" +
 				"en=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5832, "System.Collections.ObjectModel.ObservableCollection`1[[Xamarin.Forms.Element, Xamarin.Forms.Core, Version=2.0.0." +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5808, "System.Collections.ObjectModel.ObservableCollection`1[[Xamarin.Forms.Element, Xamarin.Forms.Core, Version=2.0.0." +
 				"0, Culture=neutral, PublicKeyToken=null]], System.ObjectModel, Version=4.0.10.0, Culture=neutral, PublicKeyToke" +
 				"n=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5856, "System.Collections.ObjectModel.Collection`1[[Xamarin.Forms.Element, Xamarin.Forms.Core, Version=2.0.0.0, Culture" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5832, "System.Collections.ObjectModel.Collection`1[[Xamarin.Forms.Element, Xamarin.Forms.Core, Version=2.0.0.0, Culture" +
 				"=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5" +
 				"f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5880, "System.Collections.ObjectModel.ObservableCollection`1[[Xamarin.Forms.MenuItem, Xamarin.Forms.Core, Version=2.0.0" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5856, "System.Collections.ObjectModel.ObservableCollection`1[[Xamarin.Forms.MenuItem, Xamarin.Forms.Core, Version=2.0.0" +
 				".0, Culture=neutral, PublicKeyToken=null]], System.ObjectModel, Version=4.0.10.0, Culture=neutral, PublicKeyTok" +
 				"en=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5904, "System.Collections.ObjectModel.Collection`1[[Xamarin.Forms.MenuItem, Xamarin.Forms.Core, Version=2.0.0.0, Cultur" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5880, "System.Collections.ObjectModel.Collection`1[[Xamarin.Forms.MenuItem, Xamarin.Forms.Core, Version=2.0.0.0, Cultur" +
 				"e=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f" +
 				"5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5928, @"Xamarin.Forms.ReadOnlyCastingList`2[[Xamarin.Forms.Page, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null],[Xamarin.Forms.Element, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null]], Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5952, "System.Collections.Generic.List`1[[Xamarin.Forms.Page, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, Pub" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5904, @"Xamarin.Forms.ReadOnlyCastingList`2[[Xamarin.Forms.Page, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null],[Xamarin.Forms.Element, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null]], Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5928, "System.Collections.Generic.List`1[[Xamarin.Forms.Page, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, Pub" +
 				"licKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(5976, @"System.Collections.Concurrent.ConcurrentDictionary`2[[System.Type, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Windows.UI.Xaml.DependencyProperty, Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime]], System.Collections.Concurrent, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6000, "System.Collections.Generic.List`1[[Xamarin.Forms.BindableObject, Xamarin.Forms.Core, Version=2.0.0.0, Culture=ne" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5952, @"System.Collections.Concurrent.ConcurrentDictionary`2[[System.Type, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Windows.UI.Xaml.DependencyProperty, Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime]], System.Collections.Concurrent, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(5976, "System.Collections.Generic.List`1[[Xamarin.Forms.BindableObject, Xamarin.Forms.Core, Version=2.0.0.0, Culture=ne" +
 				"utral, PublicKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d" +
 				"50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6024, "System.Collections.ObjectModel.ObservableCollection`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, C" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6000, "System.Collections.ObjectModel.ObservableCollection`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, C" +
 				"ulture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.ObjectModel, Version=4.0.10.0, Culture=neutral, Publi" +
 				"cKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6048, "System.Collections.ObjectModel.Collection`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neu" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6024, "System.Collections.ObjectModel.Collection`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neu" +
 				"tral, PublicKeyToken=b03f5f7f11d50a3a]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyTok" +
 				"en=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6072, @"Xamarin.Forms.Platform.UWP.FrameworkElementExtensions+<GetChildren>d__10`1[[Windows.UI.Xaml.FrameworkElement, Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime]], Xamarin.Forms.Platform.UAP, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6096, @"System.Linq.Enumerable+WhereSelectEnumerableIterator`2[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchemaModel, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6120, "System.Linq.Enumerable+Iterator`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publ" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6048, @"Xamarin.Forms.Platform.UWP.FrameworkElementExtensions+<GetChildren>d__10`1[[Windows.UI.Xaml.FrameworkElement, Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime]], Xamarin.Forms.Platform.UAP, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6072, @"System.Linq.Enumerable+WhereSelectEnumerableIterator`2[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchemaModel, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6096, "System.Linq.Enumerable+Iterator`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publ" +
 				"icKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6144, @"System.Linq.Enumerable+WhereSelectArrayIterator`2[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchemaModel, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6168, @"System.Linq.Enumerable+WhereSelectListIterator`2[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchemaModel, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6192, @"System.Linq.Enumerable+WhereSelectEnumerableIterator`2[[System.Dynamic.DynamicMetaObject, System.Dynamic.Runtime, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Linq.Expressions.Expression, System.Linq.Expressions, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6216, "System.Linq.Enumerable+Iterator`1[[System.Linq.Expressions.Expression, System.Linq.Expressions, Version=4.0.10.0" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6120, @"System.Linq.Enumerable+WhereSelectArrayIterator`2[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchemaModel, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6144, @"System.Linq.Enumerable+WhereSelectListIterator`2[[System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchemaModel, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6168, @"System.Linq.Enumerable+WhereSelectEnumerableIterator`2[[System.Dynamic.DynamicMetaObject, System.Dynamic.Runtime, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Linq.Expressions.Expression, System.Linq.Expressions, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6192, "System.Linq.Enumerable+Iterator`1[[System.Linq.Expressions.Expression, System.Linq.Expressions, Version=4.0.10.0" +
 				", Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyT" +
 				"oken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6240, @"System.Linq.Enumerable+WhereSelectArrayIterator`2[[System.Dynamic.DynamicMetaObject, System.Dynamic.Runtime, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Linq.Expressions.Expression, System.Linq.Expressions, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6264, @"System.Linq.Enumerable+WhereSelectListIterator`2[[System.Dynamic.DynamicMetaObject, System.Dynamic.Runtime, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Linq.Expressions.Expression, System.Linq.Expressions, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6288, @"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Utilities.ReflectionMember, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6312, "System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publ" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6216, @"System.Linq.Enumerable+WhereSelectArrayIterator`2[[System.Dynamic.DynamicMetaObject, System.Dynamic.Runtime, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Linq.Expressions.Expression, System.Linq.Expressions, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6240, @"System.Linq.Enumerable+WhereSelectListIterator`2[[System.Dynamic.DynamicMetaObject, System.Dynamic.Runtime, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Linq.Expressions.Expression, System.Linq.Expressions, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6264, @"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Utilities.ReflectionMember, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6288, "System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, Publ" +
 				"icKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11" +
 				"d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6336, "System.Collections.Generic.List`1[[Newtonsoft.Json.Schema.JsonSchema, Newtonsoft.Json, Version=10.0.0.0, Culture" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6312, "System.Collections.Generic.List`1[[Newtonsoft.Json.Schema.JsonSchema, Newtonsoft.Json, Version=11.0.0.0, Culture" +
 				"=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyTo" +
 				"ken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6360, @"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchema, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6384, @"System.Collections.Generic.List`1[[Newtonsoft.Json.Schema.JsonSchemaGenerator+TypeSchema, Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6408, "System.Linq.Enumerable+<CastIterator>d__1`1[[Newtonsoft.Json.Linq.JProperty, Newtonsoft.Json, Version=10.0.0.0, " +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6336, @"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Newtonsoft.Json.Schema.JsonSchema, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6360, @"System.Collections.Generic.List`1[[Newtonsoft.Json.Schema.JsonSchemaGenerator+TypeSchema, Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6384, "System.Linq.Enumerable+<CastIterator>d__1`1[[Newtonsoft.Json.Linq.JProperty, Newtonsoft.Json, Version=11.0.0.0, " +
 				"Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed]], System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyTok" +
 				"en=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6432, "System.Collections.Generic.List`1[[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=10.0.0.0, Culture=neutr" +
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6408, "System.Collections.Generic.List`1[[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=11.0.0.0, Culture=neutr" +
 				"al, PublicKeyToken=30ad4fe6b2a6aeed]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b0" +
 				"3f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6456, @"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Threading.ManualResetEvent, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6480, @"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Plugin.Toasts.NotificationResult, Toasts.Forms.Plugin.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(6504, @"System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Plugin.Toasts.INotificationOptions, Toasts.Forms.Plugin.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6432, @"System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections.Concurrent, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6456, @"System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Threading.ManualResetEvent, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections.Concurrent, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6480, @"System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Plugin.Toasts.NotificationResult, Toasts.Forms.Plugin.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Collections.Concurrent, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(6504, @"System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Plugin.Toasts.INotificationOptions, Toasts.Forms.Plugin.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Collections.Concurrent, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(6528, @"System.Collections.Generic.Dictionary`2[[Xamarin.Forms.BindableProperty, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null],[Xamarin.Forms.BindingBase, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(6552, @"System.Collections.Generic.Dictionary`2[[Xamarin.Forms.BindableProperty, Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]], System.Collections, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(6576, "System.Collections.ObjectModel.ObservableCollection`1[[Xamarin.Forms.ResourceDictionary, Xamarin.Forms.Core, Ver" +
@@ -33902,42 +33902,42 @@ namespace __Interop
 					0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x15, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x76, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0x8D, 0x0, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xE5, 0x0, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x15, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xE7, 0x0, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x15, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xA9, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0xFF, 0xFF, 0xFF, 0xFF, 0xAD, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xE9, 0x0, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 
-					0xFF, 0xFF, 0xAE, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAE, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 
-					0xAE, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xB2, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xB9, 0x0, 
-					0x0, 0x0, 0x5, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xF1, 0x0, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xE9, 0x0, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 
-					0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xBE, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xF4, 0x0, 0x0, 0x0, 0xC5, 0x0, 0x0, 0x0, 0x6, 0x0, 
-					0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xBE, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xF6, 0x0, 0x0, 0x0, 0xC5, 0x0, 0x0, 0x0, 0x6, 0x0, 0x0, 0x0, 
-					0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xBE, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xCB, 0x0, 0x0, 0x0, 0x5, 0x0, 0x0, 0x0, 0x0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xBE, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xD0, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xBE, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFC, 0x0, 0x0, 0x0, 0xD4, 0x0, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xDC, 0x0, 0x0, 0x0, 0xB, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xE7, 0x0, 0x0, 0x0, 0x14, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0xFF, 0x0, 0x0, 0x0, 0xFB, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xFE, 0x0, 0x0, 0x0, 0x6, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0xFF, 0x0, 0x0, 0x0, 0xFB, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0x0, 0x0, 0x0, 0xFB, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0x3, 0x1, 0x0, 0x0, 0x4, 0x1, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x76, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x3, 0x1, 
-					0x0, 0x0, 0x4, 0x1, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x3, 0x1, 0x0, 0x0, 0x4, 0x1, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 
-					0xAD, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x5, 0x1, 0x0, 0x0, 0x5, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAE, 0x0, 
-					0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAD, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAE, 0x0, 0x0, 0x0, 
-					0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xA, 0x1, 0x0, 0x0, 0x6, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x10, 0x1, 0x0, 0x0, 0x9, 0x0, 
-					0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x19, 0x1, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAD, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 
-					0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAD, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAD, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAD, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x13, 0x1, 0x0, 0x0, 0x1C, 0x1, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 
+					0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x15, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xA9, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0xE8, 0x0, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAA, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 
+					0xFF, 0xFF, 0xAA, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAA, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 
+					0xAE, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xB5, 0x0, 0x0, 0x0, 0x5, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xF0, 0x0, 0x0, 0x0, 0x11, 0x0, 
+					0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xE8, 0x0, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xBA, 0x0, 0x0, 0x0, 
+					0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xF3, 0x0, 0x0, 0x0, 0xC1, 0x0, 0x0, 0x0, 0x6, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xBA, 0x0, 0x0, 0x0, 0x7, 0x0, 
+					0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xF5, 0x0, 0x0, 0x0, 0xC1, 0x0, 0x0, 0x0, 0x6, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xBA, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 
+					0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xC7, 0x0, 0x0, 0x0, 0x5, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xBA, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xCC, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xBA, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0xFB, 0x0, 0x0, 0x0, 0xD0, 0x0, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xD8, 0x0, 0x0, 0x0, 0xB, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xE3, 0x0, 0x0, 0x0, 0x14, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFE, 0x0, 0x0, 0x0, 0xF7, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xFA, 0x0, 0x0, 0x0, 0x6, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFE, 0x0, 0x0, 0x0, 0xF7, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0xFE, 0x0, 0x0, 0x0, 0xF7, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x2, 0x1, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0xFF, 0xFF, 0xFF, 0xFF, 0x76, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x2, 0x1, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x2, 0x1, 
+					0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xA9, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 
+					0x1, 0x1, 0x0, 0x0, 0x5, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAA, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xA9, 0x0, 
+					0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAA, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x6, 0x1, 0x0, 0x0, 
+					0x6, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xC, 0x1, 0x0, 0x0, 0x9, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x15, 0x1, 0x0, 0x0, 0x4, 0x0, 
+					0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x19, 0x1, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xA9, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 
+					0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xA9, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xA9, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xA9, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x13, 0x1, 0x0, 0x0, 0x1C, 0x1, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x24, 0x1, 0x0, 0x0, 0x9, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x24, 0x1, 0x0, 0x0, 0x9, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xBE, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x17, 0x1, 0x0, 0x0, 0xCB, 0x0, 0x0, 0x0, 0x5, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0x18, 0x1, 0x0, 0x0, 0xC5, 0x0, 0x0, 0x0, 0x6, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xBE, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0x1A, 0x1, 0x0, 0x0, 0xCB, 0x0, 0x0, 0x0, 0x5, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x1B, 0x1, 0x0, 0x0, 0xC5, 0x0, 0x0, 0x0, 0x6, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0xFF, 0xFF, 0xFF, 0xFF, 0xBE, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2D, 0x1, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 
-					0xFF, 0xFF, 0x2D, 0x1, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAE, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 
-					0x2D, 0x1, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x58, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAE, 0x0, 
+					0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xBA, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x17, 0x1, 0x0, 0x0, 0xC7, 0x0, 0x0, 0x0, 0x5, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0x18, 0x1, 0x0, 0x0, 0xC1, 0x0, 0x0, 0x0, 0x6, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xBA, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0x1A, 0x1, 0x0, 0x0, 0xC7, 0x0, 0x0, 0x0, 0x5, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x1B, 0x1, 0x0, 0x0, 0xC1, 0x0, 0x0, 0x0, 0x6, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0xFF, 0xFF, 0xFF, 0xFF, 0xBA, 0x0, 0x0, 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2D, 0x1, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 
+					0xFF, 0xFF, 0x2D, 0x1, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAA, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 
+					0x2D, 0x1, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x58, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAA, 0x0, 
 					0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x58, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x58, 0x0, 0x0, 0x0, 
 					0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x2F, 0x1, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x33, 0x1, 0x0, 0x0, 0x5, 0x0, 
-					0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAE, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xAD, 0x0, 0x0, 0x0, 0x38, 0x1, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 
+					0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAA, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xAD, 0x0, 0x0, 0x0, 0x38, 0x1, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 
 					0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x40, 0x1, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xAD, 0x0, 0x0, 0x0, 0x38, 0x1, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xAD, 0x0, 0x0, 0x0, 0x38, 0x1, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAE, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x58, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x2E, 0x1, 0x0, 0x0, 0xAD, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAD, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x76, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAE, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xAD, 0x0, 0x0, 0x0, 0x38, 0x1, 0x0, 0x0, 0x8, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAA, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x58, 0x0, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x2E, 0x1, 0x0, 0x0, 0xA9, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xA9, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x76, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAA, 0x0, 0x0, 0x0, 0x4, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x76, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x34, 0x1, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0xFF, 0xFF, 0xFF, 0xFF, 0x44, 0x1, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x34, 0x1, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x34, 0x1, 
 					0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x46, 0x1, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 
@@ -33950,7 +33950,7 @@ namespace __Interop
 					0, 0, 0, 0, 0, 0, 0, 0, 0x3A, 0x1, 0x0, 0x0, 0x59, 0x1, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x3A, 0x1, 0x0, 0x0, 0x5B, 0x1, 0x0, 0x0, 0x2, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x49, 0x1, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0x4A, 0x1, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xE5, 0x0, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0x4A, 0x1, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xAD, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0x4A, 0x1, 0x0, 0x0, 0x11, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xA9, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0xFF, 0xFF, 0xFF, 0xFF, 0x76, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x76, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 
 					0xFF, 0xFF, 0x76, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x76, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 
 					0x76, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x76, 0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0x76, 0x0, 

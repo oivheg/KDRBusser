@@ -24,11 +24,27 @@ public class ProgressWheel_SpinHandler
 	}
 
 
+	public ProgressWheel_SpinHandler (android.os.Handler.Callback p0)
+	{
+		super (p0);
+		if (getClass () == ProgressWheel_SpinHandler.class)
+			mono.android.TypeManager.Activate ("AndroidHUD.ProgressWheel+SpinHandler, AndHUD, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null", "Android.OS.Handler+ICallback, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", this, new java.lang.Object[] { p0 });
+	}
+
+
 	public ProgressWheel_SpinHandler (android.os.Looper p0)
 	{
 		super (p0);
 		if (getClass () == ProgressWheel_SpinHandler.class)
 			mono.android.TypeManager.Activate ("AndroidHUD.ProgressWheel+SpinHandler, AndHUD, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null", "Android.OS.Looper, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", this, new java.lang.Object[] { p0 });
+	}
+
+
+	public ProgressWheel_SpinHandler (android.os.Looper p0, android.os.Handler.Callback p1)
+	{
+		super (p0, p1);
+		if (getClass () == ProgressWheel_SpinHandler.class)
+			mono.android.TypeManager.Activate ("AndroidHUD.ProgressWheel+SpinHandler, AndHUD, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null", "Android.OS.Looper, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065:Android.OS.Handler+ICallback, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", this, new java.lang.Object[] { p0, p1 });
 	}
 
 

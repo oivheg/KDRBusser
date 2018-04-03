@@ -44,7 +44,6 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\DataContractSeri
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\DotNetNative.debugger-services-def.json
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\Helpers.g.cs
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\ImplTypes.g.cs
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\KDRBusser.dll.config
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\KDRBusser.UWP.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\KDRBusser.UWP.exe
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\KDRBusser.UWP.pdb
@@ -53,6 +52,7 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\PInvoke.g.cs
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\resources.pri
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\SafeTypes.g.cs
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\SharedStubs.g.cs
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\Staff Busser.dll.config
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\ilc\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\KDRBusser.UWP.build.appxrecipe
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\Microsoft.CSharp.dll
@@ -181,11 +181,11 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\Xamarin.Forms.Core.d
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\Xamarin.Forms.Platform.UAP.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\Xamarin.Forms.Platform.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\Xamarin.Forms.Xaml.dll
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\KDRBusser.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\Staff Busser.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\Plugin.Connectivity.Abstractions.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\Plugin.Connectivity.dll
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\KDRBusser.pdb
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\KDRBusser.dll.config
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\Staff Busser.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\Staff Busser.dll.config
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\Plugin.Connectivity.Abstractions.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\Plugin.Connectivity.Abstractions.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Release\Plugin.Connectivity.pdb
@@ -202,6 +202,7 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\App.xbf
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\MainPage.xbf
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\XamlSaveStateFile.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\KDRBusser.UWP.csproj.CoreCompileInputs.cache
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\KDRBusser.UWP.csproj.CopyComplete
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\KDRBusser.UWP.exe
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\KDRBusser.UWP.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ResourceHandlingTask.state
@@ -224,7 +225,7 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\KDRBusser.UWP
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\AppxManifest.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\KDRBusser.UWP.pdb
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\KDRBusser.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Staff Busser.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Toasts.Forms.Plugin.Abstractions.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Toasts.Forms.Plugin.UWP.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Plugin.Connectivity.Abstractions.pdb
@@ -353,13 +354,13 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Xamarin.Forms
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Xamarin.Forms.Platform.UAP.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Xamarin.Forms.Platform.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Xamarin.Forms.Xaml.dll
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\KDRBusser.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Staff Busser.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Plugin.Connectivity.Abstractions.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Plugin.Connectivity.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\resources.pri
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\clrcompression.dll
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\KDRBusser.dll.config
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Staff Busser.dll.config
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Assets\LockScreenLogo.scale-100.png
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Assets\LockScreenLogo.scale-125.png
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\in\Assets\LockScreenLogo.scale-150.png
@@ -397,8 +398,6 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\Bui
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\BuildInfo\BuildInfo.txt
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\DataContractSerializerHelper.g.cs
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\gkargs.rsp
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\KDRBusser.ildll
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\KDRBusser.ilpdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\KDRBusser.UWP.closure.csv
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\KDRBusser.UWP.csv
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\KDRBusser.UWP.forwarders.csv
@@ -420,6 +419,8 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILT
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\Plugin.Connectivity.Abstractions.ilpdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\Plugin.Connectivity.ildll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\Plugin.Connectivity.ilpdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\Staff Busser.ildll
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\Staff Busser.ilpdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\System.AppContext.ildll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\System.AppContext.ilpdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\System.Buffers.ildll
@@ -568,12 +569,12 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\Nat
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreInitStructs.cs
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed.ILTransformTask.repro
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\ComputedSerializationInput.txt
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\KDRBusser.dll
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\KDRBusser.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\KDRBusser.UWP.exe
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\KDRBusser.UWP.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\Newtonsoft.Json.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\Newtonsoft.Json.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\Staff Busser.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\Staff Busser.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\Xamarin.Forms.Core.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\Xamarin.Forms.Core.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\Xamarin.Forms.Xaml.dll

@@ -19,7 +19,8 @@
         </Entry>
 
         <Button x:Name="btnLogin" Text="Logg in" />
-        <Button x:Name="btnGoogle" Text="Logg in With Google Acctount" />
+        <!--<Button x:Name="btnGoogle" Text="Logg in With Google Acctount" />-->
+
         <Button x:Name="btncreateUser" Text="Create User" />
     </StackLayout>
     <!--<StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional" BackgroundColor="Black" Opacity="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">

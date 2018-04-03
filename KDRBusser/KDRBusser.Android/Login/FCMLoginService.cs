@@ -1,4 +1,11 @@
-﻿using Android.App;
+﻿using Android;
+using Android.App;
+using Android.Content;
+using Android.Gms.Auth.Api;
+using Android.Gms.Auth.Api.SignIn;
+using Android.Gms.Common;
+using Android.Gms.Common.Apis;
+using Android.Gms.Tasks;
 using Android.OS;
 using Android.Support.V7.App;
 using Firebase;
@@ -8,7 +15,6 @@ using KDRBusser.Classes;
 using KDRBusser.Communication;
 using KDRBusser.Droid;
 using KDRBusser.SharedCode;
-using Plugin.Toasts;
 using System;
 using Xamarin.Forms;
 
@@ -38,14 +44,30 @@ namespace KDRBusser.Droid
         public async void UpdateTokenAsync(String Token)
         {
             FCMToken = Token;
-            await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
+            if (mAuth.CurrentUser != null)
+            {
+                await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
+            }
         }
 
         private String FCMToken;
+        //private GoogleApiClient mGoogleApiClient;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            //  GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DefaultSignIn)
+            //.RequestIdToken("810661396254-d05a62hlbilehtl9ld5neonh64n40sq8.apps.googleusercontent.com")
+            //.RequestEmail()
+            //.Build();
+            //  mGoogleApiClient = new GoogleApiClient.Builder(this)
+            //      .EnableAutoManage(this, this)
+            //      .AddApi(Auth.GOOGLE_SIGN_IN_API, gso)
+            //      .AddConnectionCallbacks(this)
+            //      .AddOnConnectionFailedListener(this)
+
+            //      .Build();
         }
 
         protected override void OnStart()
@@ -68,28 +90,47 @@ namespace KDRBusser.Droid
 
         public async void CreateUserAsync(String email, String password, String masterid, String UserName)
         {
-            try
+            User Mstr = new User
             {
-                User newUser = new User
-                {
-                    Email = email,
-                    UserName = UserName.Trim(),
-                    MasterKey = masterid.Trim(),
-                    Appid = "not initialised".Trim(),
-                    Active = false
-                };
-                await RestApiCommunication.Post(newUser, "CreateUser");
+                MasterKey = masterid.Trim()
+            };
+            Boolean response;
+            response = await RestApiCommunication.PostMasterKey(Mstr, "ChckKey");
 
-                await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
-                //ToastedUserAsync("FCM User Created");
+            if (!response)
+            {
+                DependencyService.Get<IHelperClass>().IsLoading(false, "Creating User");
+                await App.Current.MainPage.DisplayAlert("Feil i MasterID", "Sjekk tegn og prøv på nytt", "OK");
             }
-            catch (Exception ex)
+            else
             {
-                // Sign-up failed, display a message to the user
-                // If sign in succeeds, the AuthState event handler will
-                //  be notified and logic to handle the signed in user can happen there
+                try
+                {
+                    IAuthResult FResults = await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
+                    User newUser = new User
+                    {
+                        Email = email,
+                        UserName = UserName.Trim(),
+                        MasterKey = masterid.Trim(),
+                        Appid = GetToken(),
+                        Active = false
+                    };
 
-                SharedHelper.ToastedUserAsync("Create user failed" + ex);
+                    await RestApiCommunication.Post(newUser, "CreateUser");
+
+                    //ToastedUserAsync("FCM User Created");
+                }
+                catch (Exception ex)
+                {
+                    // Sign-up failed, display a message to the user
+                    // If sign in succeeds, the AuthState event handler will
+                    //  be notified and logic to handle the signed in user can happen there
+                    DependencyService.Get<IHelperClass>().IsLoading(false);
+                    await App.Current.MainPage.DisplayAlert("Bruker eksisterer", "Vennligst gå tilbake og logg inn", "OK");
+                    //DependencyService.Get<IHelperClass>().isAlert();
+
+                    //SharedHelper.ToastedUserAsync("Create user failed" + ex);
+                }
             }
         }
 
@@ -107,7 +148,7 @@ namespace KDRBusser.Droid
                 // sign in sucess message
                 //ToastedUserAsync("Sign In Success ");
 
-                await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
+                //await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
                 App.IsUserLoggedIn = true;
 
                 //ChangeActivity();
@@ -119,7 +160,8 @@ namespace KDRBusser.Droid
                 // Sign-in failed, display a message to the user
                 // If sign in succeeds, the AuthState event handler will
                 //  be notified and logic to handle the signed in user can happen there
-                SharedHelper.ToastedUserAsync("Sign In failed" + ex);
+                //SharedHelper.ToastedUserAsync("Sign In failed" + ex);
+                await App.Current.MainPage.DisplayAlert("Feil", "Vennligst sjekk epost og passord", "OK");
             }
         }
 
@@ -208,19 +250,38 @@ namespace KDRBusser.Droid
         }
 
         //Gogle is stil in test phase, migt not needed at all ?
+
         public void LogInGoogle()
         {
-            //StartActivity(typeof(GoogleSignInActivity));
+            //var signInIntent = Auth.GoogleSignInApi.GetSignInIntent(mGoogleApiClient);
+            //mGoogleApiClient.Connect();
+        }
 
-            //Intent i = new Intent(this, typeof(GoogleSignInActivity));
-            //this.StartActivity(i);
-
-            //Xamarin.Forms.Application.Current.MainPage = new GoogleSignInActivity();
+        private void FirebaseAuthWithGoogle(GoogleSignInAccount acct)
+        {
+            // Log.Debug(Tag, "FirebaseAuthWithGoogle:" + acct.Id);
+            //AuthCredential credential = GoogleAuthProvider.GetCredential(acct.IdToken, null);
+            //mAuth.SignInWithCredential(credential).AddOnCompleteListener(this, this);
         }
 
         public void CancelVIbrations()
         {
             Droid_MyFirebaseMessagingService.CancelTimerVibration();
+        }
+
+        public void OnConnected(Bundle connectionHint)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnConnectionSuspended(int cause)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnConnectionFailed(ConnectionResult result)
+        {
+            throw new NotImplementedException();
         }
     }
 }

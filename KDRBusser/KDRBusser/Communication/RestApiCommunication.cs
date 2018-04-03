@@ -21,9 +21,27 @@ namespace KDRBusser.Communication
             Response = await client.PostAsync(Base_URL + _Command, content);
         }
 
-        public static async Task Get(String _Command)
+        public static async Task<Boolean> PostMasterKey(Object user, String _Command)
         {
-            Jsonresponse = null;
+            var client = new HttpClient();
+            string json = JsonConvert.SerializeObject(user);
+            var content = new StringContent(json, Encoding.Unicode, "application/json");
+            var request = new HttpRequestMessage();
+            Response = await client.PostAsync(Base_URL + _Command, content);
+            Jsonresponse = await Response.Content.ReadAsStringAsync();
+            if (Jsonresponse.ToLower().Equals("true"))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static async Task<String> Get(String _Command)
+        {
+            Jsonresponse = "";
             var request = new HttpRequestMessage();
 
             var client = new HttpClient();
@@ -34,6 +52,7 @@ namespace KDRBusser.Communication
             {
                 Jsonresponse = await Response.Content.ReadAsStringAsync();
             }
+            return await Response.Content.ReadAsStringAsync();
         }
     }
 }

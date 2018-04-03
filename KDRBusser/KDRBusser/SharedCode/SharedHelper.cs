@@ -30,10 +30,6 @@ namespace KDRBusser.SharedCode
             var result = await notification.Notify(options);
         }
 
-        public static async void CancelAllNotificationsAsync()
-        {
-        }
-
         //public void IsLoading(bool isLoading, string text = "")
         //{
         //    if (!isLoading)

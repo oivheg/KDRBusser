@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.oivheg.KdrBusser" android:versionName="Beta" android:versionCode="5">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.oivheg.KdrBusser" android:versionName="Beta" android:versionCode="12">
 	<uses-sdk android:minSdkVersion="19" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -10,7 +10,9 @@
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 	<uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
 	<uses-permission android:name="android.permission.READ_CONTACTS" />
-	<application android:label="KDRBusser.Android" android:icon="@drawable/icon">
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />
+	<application android:label="Staff Busser" android:icon="@drawable/icon">
 		<!--<service android:name=".MyFirebaseMessagingService">
       <intent-filter>
         <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -22,11 +24,10 @@
       </intent-filter>-->
 		<!--</service>-->
 
-		 START Manual Firebase Additions
-		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" /><receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND"><intent-filter><action android:name="android.intent.action.BOOT_COMPLETED" /><action android:name="com.google.android.c2dm.intent.RECEIVE" /><action android:name="com.google.android.c2dm.intent.REGISTRATION" /><category android:name="${applicationId}" /></intent-filter></receiver>
-		 END Manual Firebase Additions
-
-    <!-- put this inside your application element --><!--<receiver
+    START Manual Firebase Additions
+    <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" /><receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND"><intent-filter><action android:name="android.intent.action.BOOT_COMPLETED" /><action android:name="com.google.android.c2dm.intent.RECEIVE" /><action android:name="com.google.android.c2dm.intent.REGISTRATION" /><category android:name="${applicationId}" /></intent-filter></receiver>
+    END Manual Firebase Additions
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" /><!-- put this inside your application element --><!--<receiver
       android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
       android:exported="false" />
 

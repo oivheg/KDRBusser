@@ -136,11 +136,11 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Xamarin.Forms.Core.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Xamarin.Forms.Platform.UAP.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Xamarin.Forms.Platform.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Xamarin.Forms.Xaml.dll
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\KDRBusser.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Staff Busser.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Plugin.Connectivity.Abstractions.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Plugin.Connectivity.dll
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\KDRBusser.pdb
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\KDRBusser.dll.config
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Staff Busser.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Staff Busser.dll.config
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Plugin.Connectivity.Abstractions.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Plugin.Connectivity.Abstractions.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\bin\x86\Debug\Plugin.Connectivity.pdb
@@ -157,6 +157,7 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Debug\App.xbf
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Debug\MainPage.xbf
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Debug\XamlSaveStateFile.xml
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Debug\KDRBusser.UWP.csproj.CoreCompileInputs.cache
+C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Debug\KDRBusser.UWP.csproj.CopyComplete
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Debug\KDRBusser.UWP.exe
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Debug\KDRBusser.UWP.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\obj\x86\Debug\ResourceHandlingTask.state

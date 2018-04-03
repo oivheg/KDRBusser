@@ -17,9 +17,22 @@ namespace KDRBusser.Droid
         public override void OnTokenRefresh()
         {
             var refreshedToken = FirebaseInstanceId.Instance.Token;
-            ToastUser("Refreshed token: " + refreshedToken);
-
-            SendRegistrationToServer(refreshedToken);
+            //ToastUser("Refreshed token: " + refreshedToken);
+            try
+            {
+                if (!refreshedToken.Equals(null))
+                {
+ SendRegistrationToServer(refreshedToken);
+                }
+               
+            }
+            catch (Exception e) 
+            {
+                string tmp = "refreshedToken was empty" + refreshedToken + "  ERROR  :" + e;
+                 App.Current.MainPage.DisplayAlert("Token Error",tmp, "OK");
+                throw;
+            }
+           
         }
 
         public void ToastUser(String title)

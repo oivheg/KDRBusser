@@ -146,15 +146,20 @@ namespace KDRBusser
                 {
                     return;
                 }
-                await RestApiCommunication.Get("FindUser?" + parameters);
-                DependencyService.Get<IHelperClass>().IsLoading(false);
+                //Boolean FoundUser = await RestApiCommunication.Get("FindUser?" + parameters);
+
                 try
                 {
-                    user = JsonConvert.DeserializeObject<User>(RestApiCommunication.Jsonresponse);
+                    //if (FoundUser)
+                    //{
+                    //    user = JsonConvert.DeserializeObject<User>(RestApiCommunication.Jsonresponse);
+                    //}
+                    user = JsonConvert.DeserializeObject<User>(await RestApiCommunication.Get("FindUser?" + parameters));
                     isActive = user.Active;
                     lblemploy.Text = user.UserName;
                     lblMstr.Text = user.MasterKey;
                     IsUserActive();
+                    DependencyService.Get<IHelperClass>().IsLoading(false);
                 }
                 catch
                 {

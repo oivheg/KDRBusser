@@ -37,7 +37,7 @@ namespace KDRBusser
         }
 
         private bool HavNetwork = false;
-        private bool IsLoading = false;
+        // private bool IsLoading = false;
 
         protected override void OnStart()
         {
