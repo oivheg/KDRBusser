@@ -136,9 +136,6 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\res\drawable-xxhdpi\
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\res\drawable\nbdata.png
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\R.cs.flag
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\uploadflags.txt
-C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\Staff Busser.dll
-C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Staff_Busser.Android.dll
-C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Release\Staff Busser.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Microsoft.CSharp.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Mono.Android.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\mscorlib.pdb
@@ -183,6 +180,51 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\System.Compo
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\System.Web.Services.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\System.ServiceModel.Internals.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Staff Busser.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\Staff_Busser.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\Acr.Support.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\Acr.UserDialogs.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\FormsViewGroup.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\Plugin.Connectivity.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\Staff Busser.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\Toasts.Forms.Plugin.Droid.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\Xamarin.Forms.Core.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\Xamarin.Forms.Xaml.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Staff_Busser.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Acr.Support.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Acr.UserDialogs.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\FormsViewGroup.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Plugin.Connectivity.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Staff Busser.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Staff_Busser.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Toasts.Forms.Plugin.Droid.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Acr.UserDialogs.Interface.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Microsoft.CSharp.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Mono.Android.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Mono.Data.Tds.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Mono.Security.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\mscorlib.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Plugin.Connectivity.Abstractions.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.ComponentModel.Composition.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.Core.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.Data.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.IdentityModel.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.IO.Compression.FileSystem.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.IO.Compression.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.Net.Http.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.Numerics.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.Runtime.Serialization.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.ServiceModel.Internals.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.Transactions.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.Web.Services.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.Xml.Linq.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\System.Xml.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Toasts.Forms.Plugin.Abstractions.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Release\Staff_Busser.Android.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\Staff_Busser.Android.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\Acr.Support.Android.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\linksrc\Acr.UserDialogs.dll.mdb

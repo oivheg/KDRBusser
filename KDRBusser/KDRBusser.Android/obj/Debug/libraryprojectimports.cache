@@ -34,12 +34,13 @@
     <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\45\jl\classes.jar</Jar>
     <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\46\jl\classes.jar</Jar>
     <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\47\jl\classes.jar</Jar>
-    <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\52\jl\classes.jar</Jar>
+    <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\48\jl\classes.jar</Jar>
     <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\53\jl\classes.jar</Jar>
     <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\54\jl\classes.jar</Jar>
     <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\55\jl\classes.jar</Jar>
     <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\56\jl\classes.jar</Jar>
     <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\57\jl\classes.jar</Jar>
+    <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\58\jl\classes.jar</Jar>
   </Jars>
   <ResolvedResourceDirectories>
     <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\0\jl\res</ResolvedResourceDirectory>
@@ -59,10 +60,11 @@
     <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\37\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\39\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\40\jl\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\47\jl\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\54\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\46\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\48\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\55\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\56\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\57\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\7\jl\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
@@ -94,10 +96,11 @@
     <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\37.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\39.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\40.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\47.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\54.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\46.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\48.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\55.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\56.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\57.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\7.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

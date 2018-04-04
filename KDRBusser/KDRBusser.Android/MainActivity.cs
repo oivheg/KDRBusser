@@ -42,6 +42,12 @@ namespace KDRBusser.Droid
             LoadApplication(new App());
         }
 
+        public override void OnBackPressed()
+        {
+            //Include the code here
+            return;
+        }
+
         protected override void OnResume()
         {
             base.OnResume();

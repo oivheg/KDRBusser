@@ -132,10 +132,10 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\res\drawable-xxhdpi\fi
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\res\drawable\nbdata.png
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\R.cs.flag
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\uploadflags.txt
-C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Debug\Staff Busser.dll
-C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Staff_Busser.Android.dll
-C:\source\KDRBusser\KDRBusser\KDRBusser\bin\Debug\Staff Busser.dll
-C:\source\KDRBusser\packages\Toasts.Forms.Plugin.3.3.2\lib\MonoAndroid10\Toasts.Forms.Plugin.Droid.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Toasts.Forms.Plugin.Droid.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Xamarin.Firebase.Crash.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\XbdMerge\Xamarin.Firebase.Crash.dll.stamp
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\XbdMerge\d0c26d5f.proguard.stamp
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Microsoft.CSharp.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Mono.Android.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\mscorlib.pdb
@@ -180,7 +180,6 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\System.Compone
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\System.Web.Services.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\System.ServiceModel.Internals.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Staff Busser.dll.mdb
-C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Toasts.Forms.Plugin.Droid.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Staff_Busser.Android.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Acr.Support.Android.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Acr.UserDialogs.dll.mdb
@@ -191,3 +190,37 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Toasts.Forms.P
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Xamarin.Forms.Core.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Xamarin.Forms.Xaml.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Staff_Busser.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Acr.Support.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Acr.UserDialogs.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Plugin.Connectivity.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Staff Busser.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Staff_Busser.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Toasts.Forms.Plugin.Droid.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Acr.UserDialogs.Interface.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Microsoft.CSharp.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Mono.Android.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Mono.Data.Tds.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Mono.Security.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\mscorlib.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Plugin.Connectivity.Abstractions.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.ComponentModel.Composition.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Core.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Data.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.IdentityModel.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.IO.Compression.FileSystem.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.IO.Compression.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Net.Http.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Numerics.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Runtime.Serialization.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Transactions.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Web.Services.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Xml.Linq.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Xml.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Toasts.Forms.Plugin.Abstractions.pdb

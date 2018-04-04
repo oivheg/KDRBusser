@@ -44,6 +44,7 @@ Xamarin.Firebase.Analytics
 Xamarin.Firebase.Analytics.Impl
 Xamarin.Firebase.Auth
 Xamarin.Firebase.Common
+Xamarin.Firebase.Crash
 Xamarin.Firebase.Iid
 Xamarin.Firebase.Messaging
 Xamarin.Forms.Core

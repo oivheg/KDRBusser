@@ -149,6 +149,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.Firebase.Analytics.Impl.dll",
 		"Xamarin.Firebase.Auth.dll",
 		"Xamarin.Firebase.Common.dll",
+		"Xamarin.Firebase.Crash.dll",
 		"Xamarin.Firebase.Iid.dll",
 		"Xamarin.Firebase.Messaging.dll",
 		"Xamarin.Forms.Core.dll",
