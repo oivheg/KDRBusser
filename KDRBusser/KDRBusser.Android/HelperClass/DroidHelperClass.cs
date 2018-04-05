@@ -26,5 +26,10 @@ namespace KDRBusser.Droid.HelperClass
             //UserDialogs.Instance.ShowLoading("User Already Excist", MaskType.Black);
             UserDialogs.Instance.Alert("User Already Excist", "Thankyou");
         }
+
+        public void DebugMEssage(string text)
+        {
+            System.Console.WriteLine("text");
+        }
     }
 }

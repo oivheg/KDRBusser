@@ -33,3 +33,4 @@ C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\Staff_Busser.ActiveUser.xaml.g
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\KDRBusser.csproj.CopyComplete
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\Staff Busser.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\Staff Busser.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser\obj\Debug\KDRBusser.csprojResolveAssemblyReference.cache

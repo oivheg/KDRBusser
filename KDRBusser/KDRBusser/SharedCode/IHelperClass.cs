@@ -7,5 +7,7 @@ namespace KDRBusser.SharedCode
         void IsLoading(bool isLoading, String text = "");
 
         void isAlert();
+
+        void DebugMEssage(string text);
     }
 }

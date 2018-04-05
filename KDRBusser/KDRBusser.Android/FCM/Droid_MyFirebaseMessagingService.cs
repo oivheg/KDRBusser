@@ -1,11 +1,12 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.OS;
+using Firebase.Auth;
+using Firebase.Iid;
 using Firebase.Messaging;
 using KDRBusser.Classes;
 using KDRBusser.Communication;
 using KDRBusser.Droid.HelperClass;
-using KDRBusser.Droid.Receivers;
 using KDRBusser.SharedCode;
 using Plugin.Toasts;
 using System;
@@ -46,9 +47,15 @@ namespace KDRBusser.Droid
                     name = message.Data["title"];
                     //ToastUser("inform user of dinner is ready");
                     System.Console.WriteLine("MYF:DInner is ready"); //Console is not found in system
-                    SendNotification("Dinner is Ready");
+                    SendNotification("Dinner is Ready1");
+
                     Vibration();
-                    Task.Run(async () => await InformmasterAsync());
+                    //There is an error that makes this not run when app is "force Closed"
+                    //Task.Run(async () => await InformmasterAsync());
+                    SendNotification("Started: Informing");
+                    InformmasterAsync();
+
+                    //Task.Run(async () => { await InformmasterAsync(); });
                 }
                 else if (message.Data.ContainsKey("Action"))
                 {
@@ -213,13 +220,19 @@ namespace KDRBusser.Droid
             throw new NotImplementedException();
         }
 
-        public async Task InformmasterAsync()
+        // NOT in USE, SharedHelper now perform this action.
+        public async void InformmasterAsync()
         {
-            User user = new User
-            {
-                Appid = DependencyService.Get<IFCMLoginService>().GetToken()
-            };
+            SendNotification("Started: token infomr");
+
+            User user = new User();
+
+            user.Appid = FirebaseInstanceId.Instance.Token;
+            //user.Appid = DependencyService.Get<IFCMLoginService>().GetToken();
+
+            SendNotification("Started: HTTP Post");
             await RestApiCommunication.Post(user, "Msgreceived");
+            SendNotification("FINISHED");
         }
 
         //public void ToastUser(String title)

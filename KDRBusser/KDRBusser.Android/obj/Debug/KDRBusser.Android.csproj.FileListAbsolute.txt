@@ -224,3 +224,14 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Xml.Linq.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Xml.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Toasts.Forms.Plugin.Abstractions.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Staff_Busser.Android.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Staff_Busser.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Acr.Support.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Acr.UserDialogs.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Plugin.Connectivity.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Staff Busser.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Toasts.Forms.Plugin.Droid.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Xamarin.Forms.Core.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Xamarin.Forms.Xaml.dll.mdb

@@ -36,20 +36,19 @@
     <ManifestDocument>obj\Release\lp\44\jl\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Release\lp\45\jl\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Release\lp\46\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Release\lp\46\jl\manifest\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Release\lp\47\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Release\lp\47\jl\manifest\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Release\lp\48\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Release\lp\49\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Release\lp\49\jl\manifest\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Release\lp\48\jl\manifest\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Release\lp\53\jl\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Release\lp\54\jl\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Release\lp\55\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Release\lp\55\jl\manifest\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Release\lp\56\jl\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Release\lp\56\jl\manifest\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Release\lp\57\jl\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Release\lp\57\jl\manifest\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Release\lp\58\jl\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Release\lp\58\jl\manifest\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Release\lp\59\jl\AndroidManifest.xml</ManifestDocument>
   </ManifestDocuments>
   <NativeLibraries />
   <Jars>
@@ -83,12 +82,11 @@
     <Jar>obj\Release\lp\46\jl\classes.jar</Jar>
     <Jar>obj\Release\lp\47\jl\classes.jar</Jar>
     <Jar>obj\Release\lp\48\jl\classes.jar</Jar>
-    <Jar>obj\Release\lp\49\jl\classes.jar</Jar>
+    <Jar>obj\Release\lp\53\jl\classes.jar</Jar>
     <Jar>obj\Release\lp\54\jl\classes.jar</Jar>
     <Jar>obj\Release\lp\55\jl\classes.jar</Jar>
     <Jar>obj\Release\lp\56\jl\classes.jar</Jar>
     <Jar>obj\Release\lp\57\jl\classes.jar</Jar>
     <Jar>obj\Release\lp\58\jl\classes.jar</Jar>
-    <Jar>obj\Release\lp\59\jl\classes.jar</Jar>
   </Jars>
 </Paths>
