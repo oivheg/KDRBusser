@@ -1,13 +1,11 @@
 ﻿using System;
 
-namespace KDRBusser.SharedCode
+namespace StaffBusser.SharedCode
 {
     public interface IHelperClass
     {
         void IsLoading(bool isLoading, String text = "");
 
         void isAlert();
-
-        void DebugMEssage(string text);
     }
 }

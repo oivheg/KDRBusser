@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace KDRBusser.iOS
+namespace StaffBusser.iOS
 {
     public class Application
     {

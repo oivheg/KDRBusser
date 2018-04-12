@@ -1,12 +1,12 @@
-﻿using KDRBusser.Classes;
-using KDRBusser.Communication;
-using KDRBusser.SharedCode;
+﻿using StaffBusser.Classes;
+using StaffBusser.Communication;
+using StaffBusser.SharedCode;
 using Newtonsoft.Json;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace KDRBusser
+namespace StaffBusser
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ActiveUser : ContentPage
@@ -161,7 +161,7 @@ namespace KDRBusser
                     IsUserActive();
                     DependencyService.Get<IHelperClass>().IsLoading(false);
                 }
-                catch
+                catch (Exception e)
                 {
                     DependencyService.Get<IFCMLoginService>().LogOut();
                 }

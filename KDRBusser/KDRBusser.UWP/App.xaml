@@ -1,7 +1,7 @@
 ﻿<Application
-    x:Class="KDRBusser.UWP.App"
+    x:Class="StaffBusser.UWP.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:KDRBusser.UWP"
+    xmlns:local="using:StaffBusser.UWP"
     RequestedTheme="Light">
 </Application>

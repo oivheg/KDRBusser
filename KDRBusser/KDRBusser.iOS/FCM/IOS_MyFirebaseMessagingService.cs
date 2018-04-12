@@ -1,7 +1,7 @@
 ﻿using AudioToolbox;
 using Firebase.CloudMessaging;
 using Foundation;
-using KDRBusser.SharedCode;
+using StaffBusser.SharedCode;
 using System;
 using System.Threading.Tasks;
 using System.Timers;
@@ -9,7 +9,7 @@ using UIKit;
 using UserNotifications;
 using Xamarin.Forms.Platform.iOS;
 
-namespace KDRBusser.iOS.FCM
+namespace StaffBusser.iOS.FCM
 {
     [Register("IOS_MyFirebaseMessagingService")]
     public class IOS_MyFirebaseMessagingService : FormsApplicationDelegate, IMessagingDelegate, IUNUserNotificationCenterDelegate
@@ -38,6 +38,7 @@ namespace KDRBusser.iOS.FCM
                 UNUserNotificationCenter.Current.Delegate = this;
 
                 // For iOS 10 data message (sent via FCM)
+
                 Messaging.SharedInstance.RemoteMessageDelegate = this;
             }
             else
@@ -62,25 +63,6 @@ namespace KDRBusser.iOS.FCM
             System.Console.WriteLine(notification.Request.Content.UserInfo);
             notific = notification.Request.Content.UserInfo;
             var app = UIApplication.SharedApplication;
-
-            //Task.Run(() =>
-            //{
-            //    taskID = app.BeginBackgroundTask(() =>
-            //    {
-            //        Console.WriteLine("Bacground time expires");
-            //    });
-
-            //    //FinishLongRunningTask();
-            //    if (taskID != -1)
-            //    {
-            //        app.EndBackgroundTask(taskID);
-            //    }
-            //});
-            //CheckPayloadAsync(notific);
-            //var body = notific["body"];
-            //RegisterForNotifications
-            //CheckPayload(notific);
-            //runs on main or background thread
         }
 
         private Boolean myFlag = true;

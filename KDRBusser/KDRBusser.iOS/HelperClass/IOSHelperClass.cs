@@ -1,10 +1,10 @@
 ﻿using Acr.UserDialogs;
-using KDRBusser.iOS.HelperClass;
-using KDRBusser.SharedCode;
+using StaffBusser.iOS.HelperClass;
+using StaffBusser.SharedCode;
 
 [assembly: Xamarin.Forms.Dependency(typeof(IOSHelperClass))]
 
-namespace KDRBusser.iOS.HelperClass
+namespace StaffBusser.iOS.HelperClass
 {
     public class IOSHelperClass : IHelperClass
     {

@@ -374,7 +374,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/11.0.1": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -2483,7 +2483,7 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "KDRBusser/1.0.0": {
+      "StaffBusser/1.0.0": {
         "type": "project"
       }
     },
@@ -2809,7 +2809,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/11.0.1": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -5006,7 +5006,7 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "KDRBusser/1.0.0": {
+      "StaffBusser/1.0.0": {
         "type": "project"
       }
     },
@@ -5333,7 +5333,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/11.0.1": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -7565,7 +7565,7 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "KDRBusser/1.0.0": {
+      "StaffBusser/1.0.0": {
         "type": "project"
       }
     },
@@ -7894,7 +7894,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/11.0.1": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -10097,7 +10097,7 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "KDRBusser/1.0.0": {
+      "StaffBusser/1.0.0": {
         "type": "project"
       }
     },
@@ -10427,7 +10427,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/11.0.1": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -12665,7 +12665,7 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "KDRBusser/1.0.0": {
+      "StaffBusser/1.0.0": {
         "type": "project"
       }
     },
@@ -12994,7 +12994,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/11.0.1": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -15197,7 +15197,7 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "KDRBusser/1.0.0": {
+      "StaffBusser/1.0.0": {
         "type": "project"
       }
     },
@@ -15527,7 +15527,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/11.0.1": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -17765,7 +17765,7 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "KDRBusser/1.0.0": {
+      "StaffBusser/1.0.0": {
         "type": "project"
       }
     }
@@ -20452,10 +20452,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/11.0.1": {
-      "sha512": "pNN4l+J6LlpIvHOeNdXlwxv39NPJ2B5klz+Rd2UQZIx30Squ5oND1Yy3wEAUoKn0GPUj6Yxt9lxlYWQqfZcvKg==",
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
-      "path": "newtonsoft.json/11.0.1",
+      "path": "newtonsoft.json/11.0.2",
       "files": [
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
@@ -20476,7 +20476,7 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.1.nupkg.sha512",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
       ]
     },
@@ -27866,16 +27866,16 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "KDRBusser/1.0.0": {
+    "StaffBusser/1.0.0": {
       "type": "project",
-      "path": "../KDRBusser/KDRBusser.csproj",
-      "msbuildProject": "../KDRBusser/KDRBusser.csproj"
+      "path": "../KDRBusser/StaffBusser.csproj",
+      "msbuildProject": "../KDRBusser/StaffBusser.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.8",
-      "Newtonsoft.Json >= 11.0.1",
+      "Newtonsoft.Json >= 11.0.2",
       "Toasts.Forms.Plugin >= 3.3.2",
       "Xamarin.Forms >= 2.5.0.280555"
     ],
@@ -27887,9 +27887,9 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\source\\KDRBusser\\KDRBusser\\KDRBusser.UWP\\KDRBusser.UWP.csproj",
-      "projectName": "KDRBusser.UWP",
-      "projectPath": "C:\\source\\KDRBusser\\KDRBusser\\KDRBusser.UWP\\KDRBusser.UWP.csproj",
+      "projectUniqueName": "C:\\source\\KDRBusser\\KDRBusser\\KDRBusser.UWP\\StaffBusser.UWP.csproj",
+      "projectName": "StaffBusser.UWP",
+      "projectPath": "C:\\source\\KDRBusser\\KDRBusser\\KDRBusser.UWP\\StaffBusser.UWP.csproj",
       "projectJsonPath": "C:\\source\\KDRBusser\\KDRBusser\\KDRBusser.UWP\\project.json",
       "packagesPath": "C:\\Users\\oivhe\\.nuget\\packages\\",
       "outputPath": "C:\\source\\KDRBusser\\KDRBusser\\KDRBusser.UWP\\obj\\",
@@ -27909,8 +27909,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\source\\KDRBusser\\KDRBusser\\KDRBusser\\KDRBusser.csproj": {
-              "projectPath": "C:\\source\\KDRBusser\\KDRBusser\\KDRBusser\\KDRBusser.csproj"
+            "C:\\source\\KDRBusser\\KDRBusser\\KDRBusser\\StaffBusser.csproj": {
+              "projectPath": "C:\\source\\KDRBusser\\KDRBusser\\KDRBusser\\StaffBusser.csproj"
             }
           }
         }
@@ -27918,7 +27918,7 @@
     },
     "dependencies": {
       "Microsoft.NETCore.UniversalWindowsPlatform": "[6.0.8, )",
-      "Newtonsoft.Json": "[11.0.1, )",
+      "Newtonsoft.Json": "[11.0.2, )",
       "Toasts.Forms.Plugin": "[3.3.2, )",
       "Xamarin.Forms": "[2.5.0.280555, )"
     },

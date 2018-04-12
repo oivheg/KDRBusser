@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "810661396254",
-    "firebase_url": "https://resturantbusser.firebaseio.com",
-    "project_id": "resturantbusser",
-    "storage_bucket": "resturantbusser.appspot.com"
+    "project_number": "1084249644121",
+    "firebase_url": "https://staff-busser.firebaseio.com",
+    "project_id": "staff-busser",
+    "storage_bucket": "staff-busser.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:810661396254:android:9235f981421343ec",
+        "mobilesdk_app_id": "1:1084249644121:android:290f33abcf5d23a8",
         "android_client_info": {
-          "package_name": "com.example.oivhe.resturantbusser"
+          "package_name": "com.NbData.Staff_Busser"
         }
       },
       "oauth_client": [
         {
-          "client_id": "810661396254-d05a62hlbilehtl9ld5neonh64n40sq8.apps.googleusercontent.com",
+          "client_id": "1084249644121-mfgama61fpthe4e6r68cv6bs4872e7sm.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.oivhe.resturantbusser",
+            "package_name": "com.NbData.Staff_Busser",
             "certificate_hash": "261bcac46bd5a4169a844224ab1b859cd2e5a35a"
           }
         },
         {
-          "client_id": "810661396254-mp3dic844ga8c28rgd37t0mbakathmiu.apps.googleusercontent.com",
+          "client_id": "1084249644121-cv7dvgf3tmpcoh5gbiqatamfuceurejn.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDUyU3GQ3blnCmXjwisywkcRIaqjo32KNk"
+          "current_key": "AIzaSyDRKazd0WIQ5c09A-l0rtqR_0y5gP-11tA"
         }
       ],
       "services": {
@@ -40,65 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "810661396254-3nbv97g3qo6kegh6cv1mo2bh64115d9g.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "KDRBusser.iOS"
-              }
-            },
-            {
-              "client_id": "810661396254-mp3dic844ga8c28rgd37t0mbakathmiu.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:810661396254:android:4878e493d6cd5bef",
-        "android_client_info": {
-          "package_name": "com.oivheg.KdrBusser"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "810661396254-qesd052h3hgc44583vk3cac1vsjjl3rv.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.oivheg.KdrBusser",
-            "certificate_hash": "261bcac46bd5a4169a844224ab1b859cd2e5a35a"
-          }
-        },
-        {
-          "client_id": "810661396254-mp3dic844ga8c28rgd37t0mbakathmiu.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDUyU3GQ3blnCmXjwisywkcRIaqjo32KNk"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "810661396254-3nbv97g3qo6kegh6cv1mo2bh64115d9g.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "KDRBusser.iOS"
-              }
-            },
-            {
-              "client_id": "810661396254-mp3dic844ga8c28rgd37t0mbakathmiu.apps.googleusercontent.com",
+              "client_id": "1084249644121-cv7dvgf3tmpcoh5gbiqatamfuceurejn.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

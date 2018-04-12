@@ -3,15 +3,16 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Firebase;
-using KDRBusser.Communication;
-using KDRBusser.Droid.HelperClass;
+using StaffBusser.Communication;
+using StaffBusser.Droid.HelperClass;
 using Newtonsoft.Json;
 using Plugin.Toasts;
 using Xamarin.Forms;
 
-namespace KDRBusser.Droid
+namespace StaffBusser.Droid
 {
-    [Activity(Label = "Staff Busser", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
+    [Activity(Label = "Staff Busser", Icon = "@mipmap/ic_launcher",
+        RoundIcon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         //Theme = "@style/MainTheme"

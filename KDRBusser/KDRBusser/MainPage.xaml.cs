@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace KDRBusser
+namespace StaffBusser
 {
     public partial class MainPage : ContentPage
     {

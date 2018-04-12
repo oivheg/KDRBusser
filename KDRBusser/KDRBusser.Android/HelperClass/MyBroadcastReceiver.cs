@@ -1,10 +1,10 @@
 ﻿using Android.Content;
-using KDRBusser.SharedCode;
+using StaffBusser.SharedCode;
 using Plugin.Toasts;
 using System;
 using Xamarin.Forms;
 
-namespace KDRBusser.Droid.HelperClass
+namespace StaffBusser.Droid.HelperClass
 {
     public class MyBroadcastReceiver : BroadcastReceiver
     {
@@ -19,7 +19,7 @@ namespace KDRBusser.Droid.HelperClass
         //    var options = new NotificationOptions()
         //    {
         //        Title = title,
-        //        Description = "KDRBusser",
+        //        Description = "StaffBusser",
         //        IsClickable = false // Set to true if you want the result Clicked to come back (if the user clicks it)
         //    };
 

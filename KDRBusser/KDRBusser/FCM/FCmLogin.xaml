@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 
-             x:Class="KDRBusser.FCmLogin">
+             x:Class="StaffBusser.FCmLogin">
 
     <!--<AbsoluteLayout HorizontalOptions="Center" VerticalOptions="Center">-->
     <StackLayout   HorizontalOptions="Center" VerticalOptions="Center ">
-        <Label Text="Login To APP, using Firebase login options"
+        <Label Text="         Login To Staff Busser         "
            VerticalOptions="Center"
            HorizontalOptions="Center" />
         <Entry x:Name="emailEntry" Placeholder="Email"></Entry>

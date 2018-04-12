@@ -5,7 +5,7 @@ using Plugin.Toasts;
 using System;
 using Xamarin.Forms;
 
-namespace KDRBusser.Droid
+namespace StaffBusser.Droid
 {
     [Service]
     [BroadcastReceiver]

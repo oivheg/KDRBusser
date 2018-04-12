@@ -1,11 +1,11 @@
-﻿using KDRBusser.Classes;
-using KDRBusser.Communication;
+﻿using StaffBusser.Classes;
+using StaffBusser.Communication;
 using Plugin.Toasts;
 using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace KDRBusser.SharedCode
+namespace StaffBusser.SharedCode
 {
     public class SharedHelper
     {

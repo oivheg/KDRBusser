@@ -1,10 +1,10 @@
-﻿using KDRBusser.SharedCode;
+﻿using StaffBusser.SharedCode;
 using System;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace KDRBusser
+namespace StaffBusser
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FCmLogin : ContentPage
@@ -19,7 +19,7 @@ namespace KDRBusser
         public FCmLogin()
         {
             InitializeComponent();
-            this.Title = "KDRBusser";
+            this.Title = "StaffBusser";
             btnLogin.Clicked += BtnLogin_Clicked;
             btncreateUser.Clicked += BtncreateUser_clicked;
             //btnGoogle.Clicked += BtnGoogle_Clicked;

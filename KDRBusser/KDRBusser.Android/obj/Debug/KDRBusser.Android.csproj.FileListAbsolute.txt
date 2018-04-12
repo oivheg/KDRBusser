@@ -1,8 +1,6 @@
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Staff_Busser.Android.dll.config
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Staff_Busser.Android.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Staff_Busser.Android.pdb
-C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\com.oivheg.KdrBusser.apk
-C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\com.oivheg.KdrBusser-Signed.apk
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Acr.Support.Android.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Acr.UserDialogs.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Acr.UserDialogs.Interface.dll
@@ -115,7 +113,6 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\KDRBusser.Android.cspr
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\KDRBusser.Android.csproj.CopyComplete
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\Staff_Busser.Android.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\Staff_Busser.Android.pdb
-C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\bin\com.oivheg.KdrBusser.apk
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\res\drawable\stockicon.png
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\res\drawable-hdpi\icon.png
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\res\drawable-xhdpi\icon.png
@@ -136,6 +133,9 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Toasts.Forms.Plugin.Dr
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Xamarin.Firebase.Crash.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\XbdMerge\Xamarin.Firebase.Crash.dll.stamp
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\XbdMerge\d0c26d5f.proguard.stamp
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\com.NbData.Staff_Busser.apk
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\com.NbData.Staff_Busser-Signed.apk
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\bin\com.NbData.Staff_Busser.apk
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Microsoft.CSharp.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Mono.Android.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\mscorlib.pdb
@@ -224,7 +224,20 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Xml.Linq.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\System.Xml.pdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\android\assets\Toasts.Forms.Plugin.Abstractions.pdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\res\mipmap-hdpi\ic_launcher.png
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\res\mipmap-mdpi\ic_launcher.png
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\res\mipmap-xhdpi\ic_launcher.png
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\res\mipmap-xxhdpi\ic_launcher.png
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\res\mipmap-xxxhdpi\ic_launcher.png
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Staff_Busser.Android.dll
+C:\source\KDRBusser\packages\Xamarin.Forms.2.5.1.444934\lib\MonoAndroid10\FormsViewGroup.dll
+C:\source\KDRBusser\packages\Xamarin.Forms.2.5.1.444934\lib\MonoAndroid10\Xamarin.Forms.Core.dll
+C:\source\KDRBusser\packages\Xamarin.Forms.2.5.1.444934\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll
+C:\source\KDRBusser\packages\Xamarin.Forms.2.5.1.444934\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\FormsViewGroup.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Xamarin.Forms.Core.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Staff_Busser.Android.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Acr.Support.Android.dll.mdb
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\linksrc\Acr.UserDialogs.dll.mdb

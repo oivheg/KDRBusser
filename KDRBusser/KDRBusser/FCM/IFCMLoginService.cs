@@ -1,10 +1,11 @@
 ﻿using System;
 
-namespace KDRBusser
+namespace StaffBusser
 {
     public interface IFCMLoginService
     {
         //Boolean IsLoggedIn();
+
         void Init();
 
         void UpdateTokenAsync(String Token);

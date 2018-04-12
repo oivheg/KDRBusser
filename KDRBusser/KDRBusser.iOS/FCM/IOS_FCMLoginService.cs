@@ -1,20 +1,23 @@
 ﻿using Firebase.Auth;
 using Firebase.InstanceID;
 using Foundation;
-using KDRBusser.Communication;
-using KDRBusser.iOS.FCM;
-using KDRBusser.SharedCode;
+using StaffBusser.Communication;
+using StaffBusser.iOS.FCM;
+using StaffBusser.SharedCode;
 using System;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(IOS_FCMLoginService))]
 
-namespace KDRBusser.iOS.FCM
+namespace StaffBusser.iOS.FCM
 {
     internal class IOS_FCMLoginService : IFCMLoginService
     {
         private Auth auth;
 
+        //public IOS_FCMLoginService()
+        //{
+        //}
         public async void CreateuserAsync(string email, string password, string masterid, string UserName)
         {
             try
@@ -220,7 +223,7 @@ namespace KDRBusser.iOS.FCM
 
         public void CancelVIbrations()
         {
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
 
         private String FCMToken;

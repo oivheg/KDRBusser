@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms.Internals;
 
-namespace KDRBusser.Classes
+namespace StaffBusser.Classes
 {
     [Preserve(AllMembers = true)]
     public class User

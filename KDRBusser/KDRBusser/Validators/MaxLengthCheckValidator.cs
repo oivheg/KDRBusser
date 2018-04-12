@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace KDRBusser.Validators
+namespace StaffBusser.Validators
 {
     public class MaxLengthCheckValidator : Behavior<Entry>
     {

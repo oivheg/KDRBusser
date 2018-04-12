@@ -1,7 +1,7 @@
 ﻿using Plugin.Toasts.UWP;
 using Xamarin.Forms;
 
-namespace KDRBusser.UWP
+namespace StaffBusser.UWP
 {
     public sealed partial class MainPage
     {
@@ -12,7 +12,7 @@ namespace KDRBusser.UWP
             DependencyService.Register<ToastNotification>(); // Register your dependency
             ToastNotification.Init();
 
-            LoadApplication(new KDRBusser.App());
+            LoadApplication(new StaffBusser.App());
         }
     }
 }

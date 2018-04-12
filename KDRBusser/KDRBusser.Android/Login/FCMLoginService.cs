@@ -11,16 +11,16 @@ using Android.Support.V7.App;
 using Firebase;
 using Firebase.Auth;
 using Firebase.Iid;
-using KDRBusser.Classes;
-using KDRBusser.Communication;
-using KDRBusser.Droid;
-using KDRBusser.SharedCode;
+using StaffBusser.Classes;
+using StaffBusser.Communication;
+using StaffBusser.Droid;
+using StaffBusser.SharedCode;
 using System;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(FCMLoginService))]
 
-namespace KDRBusser.Droid
+namespace StaffBusser.Droid
 {
     [Activity(Label = "FCM Login")]
     internal class FCMLoginService : AppCompatActivity, IFCMLoginService

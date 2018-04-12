@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Content;
 
-namespace KDRBusser.Droid.Receivers
+namespace StaffBusser.Droid.Receivers
 {
     [BroadcastReceiver(Enabled = true)]
     [IntentFilter(new[] { "CancelVibrations" })]

@@ -1,5 +1,5 @@
 ﻿using Foundation;
-using KDRBusser.iOS.FCM;
+using StaffBusser.iOS.FCM;
 using Plugin.Toasts;
 using System;
 using System.Threading.Tasks;
@@ -7,7 +7,7 @@ using UIKit;
 using UserNotifications;
 using Xamarin.Forms;
 
-namespace KDRBusser.iOS
+namespace StaffBusser.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the
     // User Interface of the application, as well as listening (and optionally responding) to
@@ -81,12 +81,6 @@ namespace KDRBusser.iOS
                 UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
             }
 
-            //Task.Run(() =>
-            //{
-            //app.SetKeepAliveTimeout(600, () =>
-            //{ /* keep alive handler code*/
-            //    SetNotification(notification, localNotification, "Keeping ALIVE");
-            //});
             Task.Factory.StartNew(() =>
             {
                 //    // this only works fora limited time,, should restart or continue somhow.
@@ -95,11 +89,12 @@ namespace KDRBusser.iOS
                 {
                     //SetNotification(notification, localNotification, "Pleace Pick Up Dinner");
                     notif.CreateTimedNotification();
+                    CreateNotification("Notification Factory");
                     app.EndBackgroundTask(taskID);
                 });
 
                 notif.CheckPayload(userInfo);
-
+                SharedCode.SharedHelper.ToastedUserAsync("Notification");
                 //FinishLongRunningTask();
                 if (taskID != -1)
                 {
@@ -110,7 +105,7 @@ namespace KDRBusser.iOS
             });
         }
 
-        private static void CreateNotification()
+        private static void CreateNotification(String title = "")
         {
             var content = new UNMutableNotificationContent
             {

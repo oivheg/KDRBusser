@@ -9,11 +9,11 @@
 
 
 
-namespace KDRBusser.UWP
+namespace StaffBusser.UWP
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-    private global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlTypeInfoProvider _provider;
+    private global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         /// <summary>
         /// GetXamlType(Type)
@@ -22,7 +22,7 @@ namespace KDRBusser.UWP
         {
             if(_provider == null)
             {
-                _provider = new global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
         }
@@ -34,7 +34,7 @@ namespace KDRBusser.UWP
         {
             if(_provider == null)
             {
-                _provider = new global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
         }
@@ -49,7 +49,7 @@ namespace KDRBusser.UWP
     }
 }
 
-namespace KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo
+namespace StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -67,7 +67,7 @@ namespace KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo
             {
                 xamlType = CreateXamlType(typeIndex);
             }
-            var userXamlType = xamlType as global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlUserType;
+            var userXamlType = xamlType as global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlUserType;
             if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
             {
                 global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForType(type);
@@ -103,7 +103,7 @@ namespace KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo
             {
                 xamlType = CreateXamlType(typeIndex);
             }
-            var userXamlType = xamlType as global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlUserType;
+            var userXamlType = xamlType as global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlUserType;
             if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
             {
                 global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForName(typeName);
@@ -161,14 +161,14 @@ namespace KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo
             _typeNameTable[1] = "Xamarin.Forms.Platform.UWP.WindowsBasePage";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[3] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[4] = "KDRBusser.UWP.MainPage";
+            _typeNameTable[4] = "StaffBusser.UWP.MainPage";
 
             _typeTable = new global::System.Type[5];
             _typeTable[0] = typeof(global::Xamarin.Forms.Platform.UWP.WindowsPage);
             _typeTable[1] = typeof(global::Xamarin.Forms.Platform.UWP.WindowsBasePage);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[4] = typeof(global::KDRBusser.UWP.MainPage);
+            _typeTable[4] = typeof(global::StaffBusser.UWP.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -204,12 +204,12 @@ namespace KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo
         }
 
         private object Activate_0_WindowsPage() { return new global::Xamarin.Forms.Platform.UWP.WindowsPage(); }
-        private object Activate_4_MainPage() { return new global::KDRBusser.UWP.MainPage(); }
+        private object Activate_4_MainPage() { return new global::StaffBusser.UWP.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
-            global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlUserType userType;
+            global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlUserType userType;
             string typeName = _typeNameTable[typeIndex];
             global::System.Type type = _typeTable[typeIndex];
 
@@ -217,26 +217,26 @@ namespace KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo
             {
 
             case 0:   //  Xamarin.Forms.Platform.UWP.WindowsPage
-                userType = new global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Xamarin.Forms.Platform.UWP.WindowsBasePage"));
+                userType = new global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Xamarin.Forms.Platform.UWP.WindowsBasePage"));
                 userType.Activator = Activate_0_WindowsPage;
                 xamlType = userType;
                 break;
 
             case 1:   //  Xamarin.Forms.Platform.UWP.WindowsBasePage
-                userType = new global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType = new global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 xamlType = userType;
                 break;
 
             case 2:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 3:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  KDRBusser.UWP.MainPage
-                userType = new global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Xamarin.Forms.Platform.UWP.WindowsPage"));
+            case 4:   //  StaffBusser.UWP.MainPage
+                userType = new global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Xamarin.Forms.Platform.UWP.WindowsPage"));
                 userType.Activator = Activate_4_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -303,7 +303,7 @@ namespace KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlMember xamlMember = null;
+            global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlMember xamlMember = null;
             // No Local Properties
             return xamlMember;
         }
@@ -358,9 +358,9 @@ namespace KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlSystemBaseType
     {
-        global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Windows.UI.Xaml.Markup.IXamlType _baseType;
         bool _isArray;
         bool _isMarkupExtension;
@@ -374,7 +374,7 @@ namespace KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -566,7 +566,7 @@ namespace KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
-        global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -575,7 +575,7 @@ namespace KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::KDRBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::StaffBusser.UWP.KDRBusser_UWP_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;

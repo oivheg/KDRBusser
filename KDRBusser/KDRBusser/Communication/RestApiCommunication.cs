@@ -1,4 +1,4 @@
-﻿using KDRBusser.SharedCode;
+﻿using StaffBusser.SharedCode;
 using Newtonsoft.Json;
 using System;
 using System.Net.Http;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace KDRBusser.Communication
+namespace StaffBusser.Communication
 {
     public class RestApiCommunication
     {

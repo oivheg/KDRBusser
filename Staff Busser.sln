@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KDRBusser.Android", "KDRBusser\KDRBusser.Android\KDRBusser.Android.csproj", "{F57286F9-0288-4CFA-B5FA-EDD1C989BAFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaffBusser.Android", "KDRBusser\KDRBusser.Android\StaffBusser.Android.csproj", "{F57286F9-0288-4CFA-B5FA-EDD1C989BAFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KDRBusser", "KDRBusser\KDRBusser\KDRBusser.csproj", "{CA49E251-2AED-47B0-BF04-A9756133C2D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaffBusser", "KDRBusser\KDRBusser\StaffBusser.csproj", "{CA49E251-2AED-47B0-BF04-A9756133C2D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KDRBusser.UWP", "KDRBusser\KDRBusser.UWP\KDRBusser.UWP.csproj", "{780AA74A-7FD3-41DF-B67B-C3D68F948273}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaffBusser.UWP", "KDRBusser\KDRBusser.UWP\StaffBusser.UWP.csproj", "{780AA74A-7FD3-41DF-B67B-C3D68F948273}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KDRBusser.iOS", "KDRBusser\KDRBusser.iOS\KDRBusser.iOS.csproj", "{5F5F0233-1B64-494A-8188-B0250DB9E5ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaffBusser.iOS", "KDRBusser\KDRBusser.iOS\StaffBusser.iOS.csproj", "{5F5F0233-1B64-494A-8188-B0250DB9E5ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

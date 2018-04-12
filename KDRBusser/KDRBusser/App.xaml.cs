@@ -1,4 +1,4 @@
-﻿using KDRBusser.SharedCode;
+﻿using StaffBusser.SharedCode;
 using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
 using System;
@@ -7,7 +7,7 @@ using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
-namespace KDRBusser
+namespace StaffBusser
 {
     public partial class App : Application
     {

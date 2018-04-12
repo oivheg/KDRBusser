@@ -1,11 +1,11 @@
 ﻿using Acr.UserDialogs;
 using Android.Support.V7.App;
-using KDRBusser.Droid.HelperClass;
-using KDRBusser.SharedCode;
+using StaffBusser.Droid.HelperClass;
+using StaffBusser.SharedCode;
 
 [assembly: Xamarin.Forms.Dependency(typeof(DroidHelperClass))]
 
-namespace KDRBusser.Droid.HelperClass
+namespace StaffBusser.Droid.HelperClass
 {
     public class DroidHelperClass : IHelperClass
     {

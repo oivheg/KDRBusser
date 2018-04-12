@@ -4,17 +4,17 @@ using Android.OS;
 using Firebase.Auth;
 using Firebase.Iid;
 using Firebase.Messaging;
-using KDRBusser.Classes;
-using KDRBusser.Communication;
-using KDRBusser.Droid.HelperClass;
-using KDRBusser.SharedCode;
+using StaffBusser.Classes;
+using StaffBusser.Communication;
+using StaffBusser.Droid.HelperClass;
+using StaffBusser.SharedCode;
 using Plugin.Toasts;
 using System;
 using System.Threading.Tasks;
 using System.Timers;
 using Xamarin.Forms;
 
-namespace KDRBusser.Droid
+namespace StaffBusser.Droid
 {
     [Service]
 
@@ -115,7 +115,7 @@ namespace KDRBusser.Droid
 
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            if (count < 10)
+            if (count < 5)
             {
                 count++;
             }
@@ -245,7 +245,7 @@ namespace KDRBusser.Droid
         //    var options = new NotificationOptions()
         //    {
         //        Title = title,
-        //        Description = "KDRBusser",
+        //        Description = "StaffBusser",
         //        IsClickable = false // Set to true if you want the result Clicked to come back (if the user clicks it)
         //    };
 

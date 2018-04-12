@@ -8692,6 +8692,14 @@ Debug.WriteLine (Object.ReferenceEquals (modalPage, poppedPage)); //prints "true
             <summary>For internal use by platform renderers.</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="M:Xamarin.Forms.INavigationPageController.RemoveAsyncInner(Xamarin.Forms.Page,System.Boolean,System.Boolean)">
+            <param name="page">To be added.</param>
+            <param name="animated">To be added.</param>
+            <param name="fast">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="E:Xamarin.Forms.INavigationPageController.RemovePageRequested">
             <summary>For internal use by platform renderers.</summary>
             <remarks>To be added.</remarks>
@@ -12144,6 +12152,14 @@ public class MyPage : NavigationPage
         </member>
         <member name="F:Xamarin.Forms.NavigationPage.TitleIconProperty">
             <summary>Indicates the <see cref="M:Xamarin.Forms.NavigationPage.SetTitleIcon" />/<see cref="M:Xamarin.Forms.NavigationPage.GetTitleIcon" /> property.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.NavigationPage.Xamarin#Forms#INavigationPageController#RemoveAsyncInner(Xamarin.Forms.Page,System.Boolean,System.Boolean)">
+            <param name="page">To be added.</param>
+            <param name="animated">To be added.</param>
+            <param name="fast">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.On">
@@ -20069,6 +20085,14 @@ namespace FormsGallery
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
+        <member name="M:Xamarin.Forms.Internals.Registrar`1.GetHandlerForObject``1(System.Object,System.Object[])">
+            <typeparam name="TOut">To be added.</typeparam>
+            <param name="obj">To be added.</param>
+            <param name="args">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="M:Xamarin.Forms.Internals.Registrar`1.GetHandlerType(System.Type)">
             <param name="viewType">To be added.</param>
             <summary>To be added.</summary>
@@ -20698,6 +20722,68 @@ namespace FormsGallery
         </member>
         <member name="F:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Application.WindowSoftInputModeAdjustProperty">
             <summary>The backing store for the attached property that controls whether the soft input mode pans or resizes content to allow the display of the on-screen input UI.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.GetUseDefaultPadding(Xamarin.Forms.BindableObject)">
+            <param name="element">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.GetUseDefaultShadow(Xamarin.Forms.BindableObject)">
+            <param name="element">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.SetUseDefaultPadding(Xamarin.Forms.BindableObject,System.Boolean)">
+            <param name="element">To be added.</param>
+            <param name="value">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.SetUseDefaultPadding(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Button},System.Boolean)">
+            <param name="config">To be added.</param>
+            <param name="value">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.SetUseDefaultShadow(Xamarin.Forms.BindableObject,System.Boolean)">
+            <param name="element">To be added.</param>
+            <param name="value">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.SetUseDefaultShadow(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Button},System.Boolean)">
+            <param name="config">To be added.</param>
+            <param name="value">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.UseDefaultPadding(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Button})">
+            <param name="config">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.UseDefaultPaddingProperty">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.UseDefaultShadow(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Button})">
+            <param name="config">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.UseDefaultShadowProperty">
+            <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Elevation">

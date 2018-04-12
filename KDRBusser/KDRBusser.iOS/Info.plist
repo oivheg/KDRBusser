@@ -17,9 +17,9 @@
 	<key>MinimumOSVersion</key>
 	<string>9.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>KDRBusser</string>
+	<string>Staff Busser</string>
 	<key>CFBundleIdentifier</key>
-	<string>KDRBusser.iOS</string>
+	<string>StaffBusser.iOS</string>
 	<key>CFBundleVersion</key>
 	<string>1.02</string>
 	<key>CFBundleIconFiles</key>
