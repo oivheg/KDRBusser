@@ -69,9 +69,9 @@ namespace StaffBusser.iOS.FCM
             return _IsVibrating;
         }
 
-        public void CreateTimedNotification()
+        public void CreateTimedNotification(String title, string body)
         {
-            CreateNotification();
+            CreateNotification(title, body);
         }
 
         public void CheckPayload(NSDictionary notific)
@@ -86,7 +86,7 @@ namespace StaffBusser.iOS.FCM
 
                 //tests if vibrations works in background
                 SystemSound.Vibrate.PlaySystemSound();
-
+                CreateNotification("Background", "Denne kjøres i bakgrunnen ");
                 //the original ivbrations with timer, works in foregound.
 
                 Vibration();
@@ -182,13 +182,13 @@ namespace StaffBusser.iOS.FCM
             count++;
         }
 
-        private static void CreateNotification()
+        private static void CreateNotification(String title, String body)
         {
             var content = new UNMutableNotificationContent
             {
-                Title = "Remember Dinner",
+                Title = title,
                 //content.Subtitle = "Notification Subtitle";
-                Body = "Dinner is Ready",
+                Body = body,
                 Badge = 0,
                 Sound = UNNotificationSound.Default
             };
@@ -208,7 +208,8 @@ namespace StaffBusser.iOS.FCM
 
         private void Vibrate()
         {
-            SystemSound.Vibrate.PlaySystemSound();
+            //  SystemSound.Vibrate.PlaySystemSound();
+            SystemSound.Vibrate.PlayAlertSound();
         }
 
         public void ApplicationReceivedRemoteMessage(RemoteMessage remoteMessage)

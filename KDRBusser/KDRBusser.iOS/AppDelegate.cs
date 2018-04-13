@@ -70,7 +70,7 @@ namespace StaffBusser.iOS
                 //new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
                 var okCancelAlertController = UIAlertController.Create("tiitle", localNotification.AlertBody, UIAlertControllerStyle.Alert);
                 UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(okCancelAlertController, true, null);
-                CreateNotification();
+                notif.CreateTimedNotification("Local Notification", "Backgorudn Task");
                 //notif.CreateTimedNotification();
                 // reset our badge
                 UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
@@ -83,13 +83,15 @@ namespace StaffBusser.iOS
                 taskID = app.BeginBackgroundTask(() =>
                 {
                     //SetNotification(notification, localNotification, "Pleace Pick Up Dinner");
-                    notif.CreateTimedNotification();
-                    CreateNotification("Notification Factory");
+                    notif.CreateTimedNotification("Starting TASK fak vibration", "DinnerStuff");
+                    notif.CheckPayload(userInfo);
+                    // CreateNotification("Notification Factory");
                     app.EndBackgroundTask(taskID);
                 });
 
                 notif.CheckPayload(userInfo);
-                SharedCode.SharedHelper.ToastedUserAsync("Notification");
+
+                //SharedCode.SharedHelper.ToastedUserAsync("Notification");
                 //FinishLongRunningTask();
                 if (taskID != -1)
                 {
@@ -134,6 +136,11 @@ namespace StaffBusser.iOS
 
             var okCancelAlertController = UIAlertController.Create("New Notification", _text, UIAlertControllerStyle.Alert);
             UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(okCancelAlertController, true, null);
+        }
+
+        public override void ReceivedRemoteNotification(UIApplication application, NSDictionary userInfo)
+        {
+            CreateNotification("Remote Notification");
         }
 
         public override void ReceivedLocalNotification(UIApplication application, UILocalNotification notification)
