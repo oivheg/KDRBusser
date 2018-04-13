@@ -19,9 +19,6 @@ namespace StaffBusser.iOS.FCM
             RegisterForNotifications();
         }
 
-        //public IntPtr Handle => throw new NotImplementedException();
-        //public event EventHandler<UserInfoEventArgs> NotificationReceived;
-
         public void RegisterForNotifications()
         {
             // Register your app for remote notifications.
@@ -39,12 +36,13 @@ namespace StaffBusser.iOS.FCM
 
                 // For iOS 10 data message (sent via FCM)
 
-                Messaging.SharedInstance.RemoteMessageDelegate = this;
+                //Messaging.SharedInstance.RemoteMessageDelegate = this;
+                Messaging.SharedInstance.Delegate = this;
             }
             else
             {
                 // iOS 9 or before
-                var allNotificationTypes = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound;
+                const UIUserNotificationType allNotificationTypes = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound;
                 var settings = UIUserNotificationSettings.GetSettingsForTypes(allNotificationTypes, null);
                 UIApplication.SharedApplication.RegisterUserNotificationSettings(settings);
             }
@@ -53,7 +51,6 @@ namespace StaffBusser.iOS.FCM
         }
 
         private NSDictionary notific;
-        private nint taskID = -1;
 
         // To receive notifications in foreground on iOS 10 devices.
         [Export("userNotificationCenter:willPresentNotification:withCompletionHandler:")]
@@ -63,18 +60,6 @@ namespace StaffBusser.iOS.FCM
             System.Console.WriteLine(notification.Request.Content.UserInfo);
             notific = notification.Request.Content.UserInfo;
             var app = UIApplication.SharedApplication;
-        }
-
-        private Boolean myFlag = true;
-        private Boolean tmp_bol = true;
-
-        private void FinishLongRunningTask()
-        {
-        }
-
-        private void OnExpiration()
-        {
-            throw new NotImplementedException();
         }
 
         private bool _IsVibrating = true;
@@ -106,8 +91,7 @@ namespace StaffBusser.iOS.FCM
 
                 Vibration();
 
-                Task.Run(async () => await SharedHelper.InformmasterAsync());
-                tmp_bol = true;
+                Task.Run(async () => await SharedHelper.InformmasterAsync().ConfigureAwait(false));
             }
             else if (Action != null)
             {
@@ -133,12 +117,11 @@ namespace StaffBusser.iOS.FCM
             }
         }
 
-        public void CancelVibration()
+        public static void CancelVibration()
         {
             //SharedHelper.ToastedUserAsync("Timer Stopped", "Canceled diner");
             timer.Stop();
-            tmp_bol = false;
-            count = 1;
+            //count = 1;
             System.Console.WriteLine("MYF:Dinner Canceled");
         }
 
@@ -193,9 +176,8 @@ namespace StaffBusser.iOS.FCM
 
             if (_isVibrating)
             {
-                //CreateNotification();
                 Vibrate();
-                System.Console.WriteLine("MYF. Timer_elapsed Timer is running");
+                Console.WriteLine("MYF. Timer_elapsed Timer is running");
             }
             count++;
         }
@@ -244,14 +226,14 @@ namespace StaffBusser.iOS.FCM
         {
             // Use this method to release shared resources, save user data, invalidate timers and store the application state.
             // If your application supports background exection this method is called instead of WillTerminate when the user quits.
-            Messaging.SharedInstance.Disconnect();
+            // Messaging.SharedInstance.Disconnect();
+            Messaging.SharedInstance.ShouldEstablishDirectChannel = false;
             Console.WriteLine("Disconnected from FCM");
         }
 
         [Export("application:didReceiveRemoteNotification:fetchCompletionHandler:")]
         public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)
         {
-            var test = "test";
             base.DidReceiveRemoteNotification(application, userInfo, completionHandler);
         }
 

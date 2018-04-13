@@ -3,10 +3,10 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Firebase;
-using StaffBusser.Communication;
-using StaffBusser.Droid.HelperClass;
 using Newtonsoft.Json;
 using Plugin.Toasts;
+using StaffBusser.Communication;
+using StaffBusser.Droid.HelperClass;
 using Xamarin.Forms;
 
 namespace StaffBusser.Droid

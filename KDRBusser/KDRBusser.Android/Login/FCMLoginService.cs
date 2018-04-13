@@ -1,11 +1,7 @@
-﻿using Android;
-using Android.App;
-using Android.Content;
-using Android.Gms.Auth.Api;
+﻿using Android.App;
 using Android.Gms.Auth.Api.SignIn;
 using Android.Gms.Common;
 using Android.Gms.Common.Apis;
-using Android.Gms.Tasks;
 using Android.OS;
 using Android.Support.V7.App;
 using Firebase;
@@ -41,16 +37,14 @@ namespace StaffBusser.Droid
             mAuth.AuthState += AuthStateChangedAsync;
         }
 
-        public async void UpdateTokenAsync(String Token)
+        public async void UpdateTokenAsync(bool logout)
         {
-            FCMToken = Token;
             if (mAuth.CurrentUser != null)
             {
-                await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
+                await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken()).ConfigureAwait(false);
             }
         }
 
-        private String FCMToken;
         //private GoogleApiClient mGoogleApiClient;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -95,18 +89,18 @@ namespace StaffBusser.Droid
                 MasterKey = masterid.Trim()
             };
             Boolean response;
-            response = await RestApiCommunication.PostMasterKey(Mstr, "ChckKey");
+            response = await RestApiCommunication.PostMasterKey(Mstr, "ChckKey").ConfigureAwait(false);
 
             if (!response)
             {
                 DependencyService.Get<IHelperClass>().IsLoading(false, "Creating User");
-                await App.Current.MainPage.DisplayAlert("Feil i MasterID", "Sjekk tegn og prøv på nytt", "OK");
+                await App.Current.MainPage.DisplayAlert("Feil i MasterID", "Sjekk tegn og prøv på nytt", "OK").ConfigureAwait(false);
             }
             else
             {
                 try
                 {
-                    IAuthResult FResults = await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
+                    IAuthResult FResults = await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password).ConfigureAwait(false);
                     User newUser = new User
                     {
                         Email = email,
@@ -116,7 +110,7 @@ namespace StaffBusser.Droid
                         Active = false
                     };
 
-                    await RestApiCommunication.Post(newUser, "CreateUser");
+                    await RestApiCommunication.Post(newUser, "CreateUser").ConfigureAwait(false);
 
                     //ToastedUserAsync("FCM User Created");
                 }
@@ -126,7 +120,7 @@ namespace StaffBusser.Droid
                     // If sign in succeeds, the AuthState event handler will
                     //  be notified and logic to handle the signed in user can happen there
                     DependencyService.Get<IHelperClass>().IsLoading(false);
-                    await App.Current.MainPage.DisplayAlert("Bruker eksisterer", "Vennligst gå tilbake og logg inn", "OK");
+                    await App.Current.MainPage.DisplayAlert("Bruker eksisterer", "Vennligst gå tilbake og logg inn", "OK").ConfigureAwait(false);
                     //DependencyService.Get<IHelperClass>().isAlert();
 
                     //SharedHelper.ToastedUserAsync("Create user failed" + ex);
@@ -144,7 +138,7 @@ namespace StaffBusser.Droid
         {
             try
             {
-                await mAuth.SignInWithEmailAndPasswordAsync(email, password);
+                await mAuth.SignInWithEmailAndPasswordAsync(email, password).ConfigureAwait(false);
                 // sign in sucess message
                 //ToastedUserAsync("Sign In Success ");
 
@@ -161,7 +155,7 @@ namespace StaffBusser.Droid
                 // If sign in succeeds, the AuthState event handler will
                 //  be notified and logic to handle the signed in user can happen there
                 //SharedHelper.ToastedUserAsync("Sign In failed" + ex);
-                await App.Current.MainPage.DisplayAlert("Feil", "Vennligst sjekk epost og passord", "OK");
+                await App.Current.MainPage.DisplayAlert("Feil", "Vennligst sjekk epost og passord", "OK").ConfigureAwait(false);
             }
         }
 
@@ -206,7 +200,7 @@ namespace StaffBusser.Droid
                 // User is signed in
                 //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
                 App.IsUserLoggedIn = true;
-                await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
+                await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken()).ConfigureAwait(false);
                 ChangeActivity();
             }
             else
@@ -245,7 +239,7 @@ namespace StaffBusser.Droid
 
         public async void LogOut()
         {
-            await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken(), true);
+            await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken(), true).ConfigureAwait(false);
             FirebaseAuth.Instance.SignOut();
         }
 

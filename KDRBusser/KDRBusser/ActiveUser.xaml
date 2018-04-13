@@ -31,6 +31,5 @@
         <Label HorizontalOptions="Center" VerticalOptions="Center" x:Name="lblemploy"  Grid.Row="0" Grid.Column="1" Text="AnsattNavn"></Label>
         <Label  HorizontalOptions="Center" VerticalOptions="Center" x:Name="lblMstr" Grid.Row="2" Grid.Column="1" Text="MasterID"></Label>
         <Button  HorizontalOptions="CenterAndExpand"  Grid.Row="1" Grid.Column="1" x:Name="btnActiveUser" Text="Logg in to work" ></Button>
-      
     </Grid>
 </ContentPage>

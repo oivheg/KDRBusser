@@ -1,18 +1,15 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.OS;
-using Firebase.Auth;
 using Firebase.Iid;
 using Firebase.Messaging;
+using Plugin.Toasts;
 using StaffBusser.Classes;
 using StaffBusser.Communication;
 using StaffBusser.Droid.HelperClass;
 using StaffBusser.SharedCode;
-using Plugin.Toasts;
 using System;
-using System.Threading.Tasks;
 using System.Timers;
-using Xamarin.Forms;
 
 namespace StaffBusser.Droid
 {
@@ -231,7 +228,7 @@ namespace StaffBusser.Droid
             //user.Appid = DependencyService.Get<IFCMLoginService>().GetToken();
 
             SendNotification("Started: HTTP Post");
-            await RestApiCommunication.Post(user, "Msgreceived");
+            await RestApiCommunication.Post(user, "Msgreceived").ConfigureAwait(false);
             SendNotification("FINISHED");
         }
 

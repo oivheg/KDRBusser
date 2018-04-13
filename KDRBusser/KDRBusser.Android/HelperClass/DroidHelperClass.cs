@@ -1,5 +1,4 @@
 ﻿using Acr.UserDialogs;
-using Android.Support.V7.App;
 using StaffBusser.Droid.HelperClass;
 using StaffBusser.SharedCode;
 

@@ -20,29 +20,18 @@ namespace StaffBusser.iOS.FCM
         //}
         public async void CreateuserAsync(string email, string password, string masterid, string UserName)
         {
-            try
+            Classes.User newUser = new Classes.User
             {
-                Classes.User newUser = new Classes.User
-                {
-                    Email = email,
-                    UserName = UserName.Trim(),
-                    MasterKey = masterid.Trim(),
-                    Appid = "not initialised".Trim(),
-                    Active = false
-                };
-                await RestApiCommunication.Post(newUser, "CreateUser");
-                auth.CreateUser(email, password, CreateOnCompletionAsync);
+                Email = email,
+                UserName = UserName.Trim(),
+                MasterKey = masterid.Trim(),
+                Appid = "not initialised".Trim(),
+                Active = false
+            };
+            await RestApiCommunication.Post(newUser, "CreateUser").ConfigureAwait(false);
+            auth.CreateUser(email, password, CreateOnCompletionAsync);
 
-                SharedHelper.ToastedUserAsync("FCM User Created");
-            }
-            catch (Exception ex)
-            {
-                // Sign-up failed, display a message to the user
-                // If sign in succeeds, the AuthState event handler will
-                //  be notified and logic to handle the signed in user can happen there
-                SharedHelper.ToastedUserAsync("user Creation Failed", ex.ToString());
-                //ToastedUserAsync("Create user failed" + ex);
-            }
+            SharedHelper.ToastedUserAsync("FCM User Created");
         }
 
         public string GetEmail()
@@ -77,7 +66,8 @@ namespace StaffBusser.iOS.FCM
                     // User is signed in
                     //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
                     App.IsUserLoggedIn = true;
-                    await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
+                    // await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
+                    UpdateTokenAsync();
                     ChangeActivity();
                 }
                 else
@@ -107,7 +97,7 @@ namespace StaffBusser.iOS.FCM
         {
             //throw new NotImplementedException();
 
-            auth.SignIn(email, password, SignInOnCompletionAsync);
+            auth.SignIn(email, password, SignInOnCompletion);
         }
 
         private async void CreateOnCompletionAsync(Firebase.Auth.User user, NSError error)
@@ -138,13 +128,13 @@ namespace StaffBusser.iOS.FCM
             }
             else
             {
-                await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
+                // await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
                 //ChangeActivity();
                 // Do your magic to handle authentication result
             }
         }
 
-        private async void SignInOnCompletionAsync(Firebase.Auth.User user, NSError error)
+        private void SignInOnCompletion(Firebase.Auth.User user, NSError error)
         {
             // stop animation
             //indicatorView.StopAnimating();
@@ -178,7 +168,8 @@ namespace StaffBusser.iOS.FCM
             }
             // start ActiveUser Activity
             //NavigationController.PushViewController(new UserViewController("Firebase"), true);
-            await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
+
+            //await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
             ChangeActivity();
         }
 
@@ -187,33 +178,23 @@ namespace StaffBusser.iOS.FCM
             Xamarin.Forms.Application.Current.MainPage = new NavigationPage(new ActiveUser());
         }
 
-        public async void LogOut()
+        public void LogOut()
         {
-            await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken(), true);
-            auth.SignOut(out NSError error);
-            //Xamarin.Forms.Application.Current.MainPage = new NavigationPage(new FCmLogin()); not used, done in authstate listener.
-        }
-
-        public void LogoutFirebase()
-        {
+            UpdateTokenAsync(true);
             auth.SignOut(out NSError error);
         }
 
-        public async void UpdateTokenAsync(string Token) // chaged this to asyc, if there is errrs
+        public async void LogoutFirebase()
         {
-            FCMToken = Token;
-            await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken());
+            await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken(), true).ConfigureAwait(false);
+            auth.SignOut(out NSError error);
         }
 
-        //private async System.Threading.Tasks.Task UpdateUserToken()
-        //{
-        //    Classes.User user = new Classes.User
-        //    {
-        //        Email = auth.CurrentUser.Email,
-        //        Appid = GetToken()
-        //    };
-        //    await RestApiCommunication.Post(user, "UpdatUser");
-        //}
+        public async void UpdateTokenAsync(Boolean logout = false) // chaged this to asyc, if there is errrs
+        {
+            //FCMToken = Token;
+            await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken(), logout).ConfigureAwait(false);
+        }
 
         public void Createuser(string email, string password, string masterid, string UserName)
         {
@@ -223,9 +204,10 @@ namespace StaffBusser.iOS.FCM
 
         public void CancelVIbrations()
         {
+            IOS_MyFirebaseMessagingService.CancelVibration();
             // throw new NotImplementedException();
         }
 
-        private String FCMToken;
+        // private String FCMToken;
     }
 }

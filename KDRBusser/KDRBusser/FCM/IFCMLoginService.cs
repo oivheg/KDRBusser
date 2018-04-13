@@ -8,7 +8,7 @@ namespace StaffBusser
 
         void Init();
 
-        void UpdateTokenAsync(String Token);
+        void UpdateTokenAsync(Boolean logout);
 
         String GetEmail();
 

@@ -22,17 +22,15 @@ namespace StaffBusser.Droid
             {
                 if (!refreshedToken.Equals(null))
                 {
- SendRegistrationToServer(refreshedToken);
+                    SendRegistrationToServer(refreshedToken);
                 }
-               
             }
-            catch (Exception e) 
+            catch (Exception e)
             {
                 string tmp = "refreshedToken was empty" + refreshedToken + "  ERROR  :" + e;
-                 App.Current.MainPage.DisplayAlert("Token Error",tmp, "OK");
+                App.Current.MainPage.DisplayAlert("Token Error", tmp, "OK");
                 throw;
             }
-           
         }
 
         public void ToastUser(String title)
@@ -54,7 +52,7 @@ namespace StaffBusser.Droid
                 IsClickable = false // Set to true if you want the result Clicked to come back (if the user clicks it)
             };
             var notification = DependencyService.Get<IToastNotificator>();
-            var result = await notification.Notify(options);
+            var result = await notification.Notify(options).ConfigureAwait(false);
         }
 
         private void SendRegistrationToServer(string token)

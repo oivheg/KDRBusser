@@ -1,6 +1,6 @@
-﻿using StaffBusser.SharedCode;
-using Plugin.Connectivity;
+﻿using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
+using StaffBusser.SharedCode;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -26,12 +26,6 @@ namespace StaffBusser
 
             while (!HavNetwork)
             {
-                //if (!IsLoading)
-                //{
-                //    DependencyService.Get<IFCMLoginService>().IsLoading(true, "None/Bad network conenction");
-                //    IsLoading = true;
-                //}
-
                 HavNetwork = CrossConnectivity.Current.IsConnected;
             }
         }

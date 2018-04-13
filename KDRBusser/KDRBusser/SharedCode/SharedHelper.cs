@@ -1,13 +1,13 @@
-﻿using StaffBusser.Classes;
+﻿using Plugin.Toasts;
+using StaffBusser.Classes;
 using StaffBusser.Communication;
-using Plugin.Toasts;
 using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace StaffBusser.SharedCode
 {
-    public class SharedHelper
+    public static class SharedHelper
     {
         public static async Task InformmasterAsync()
         {
@@ -15,7 +15,7 @@ namespace StaffBusser.SharedCode
             {
                 Appid = DependencyService.Get<IFCMLoginService>().GetToken()
             };
-            await RestApiCommunication.Post(user, "Msgreceived");
+            await RestApiCommunication.Post(user, "Msgreceived").ConfigureAwait(false);
         }
 
         public static async void ToastedUserAsync(String title, String content = "Default Content")
@@ -27,21 +27,8 @@ namespace StaffBusser.SharedCode
                 IsClickable = false // Set to true if you want the result Clicked to come back (if the user clicks it)
             };
             var notification = DependencyService.Get<IToastNotificator>();
-            var result = await notification.Notify(options);
+            var result = await notification.Notify(options).ConfigureAwait(false);
         }
-
-        //public void IsLoading(bool isLoading, string text = "")
-        //{
-        //    if (!isLoading)
-        //    {
-        //        UserDialogs.Instance.HideLoading();
-        //    }
-        //    else
-        //    {
-        //        UserDialogs.Instance.ShowLoading(text, MaskType.Black);
-
-        //    }
-        //}
 
         public static async Task UpdateUserTokenAsync(String _email, String _appid, Boolean logout = false)
         {
@@ -54,7 +41,7 @@ namespace StaffBusser.SharedCode
             {
                 user.Appid = "logged Out";
             }
-            await RestApiCommunication.Post(user, "UpdatUser");
+            await RestApiCommunication.Post(user, "UpdatUser").ConfigureAwait(false);
         }
     }
 }

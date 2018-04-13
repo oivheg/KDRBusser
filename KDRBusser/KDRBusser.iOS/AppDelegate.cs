@@ -1,6 +1,6 @@
 ﻿using Foundation;
-using StaffBusser.iOS.FCM;
 using Plugin.Toasts;
+using StaffBusser.iOS.FCM;
 using System;
 using System.Threading.Tasks;
 using UIKit;
@@ -17,7 +17,7 @@ namespace StaffBusser.iOS
     {
         private IOS_MyFirebaseMessagingService notif;
 
-        public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+        public override bool FinishedLaunching(UIApplication uiApplication, NSDictionary launchOptions)
         {
             Forms.Init();
             Firebase.Core.App.Configure();
@@ -35,12 +35,9 @@ namespace StaffBusser.iOS
             LoadApplication(application: new App());
 
             // Request notification permissions from the user
-            UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert, (approved, err) =>
-            {
-                // Handle approval
-            });
+            UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert, (approved, err) => {/* Handle approval*/});
 
-            return base.FinishedLaunching(app, options);
+            return base.FinishedLaunching(uiApplication, launchOptions);
         }
 
         [Export("application:didReceiveRemoteNotification:fetchCompletionHandler:")]
@@ -65,8 +62,6 @@ namespace StaffBusser.iOS
             {
                 notification.AlertBody = "Dinner is Ready";
             }
-
-            // UIApplication.SharedApplication.ScheduleLocalNotification(notification);
 
             var app = UIApplication.SharedApplication;
             UILocalNotification localNotification = userInfo[UIApplication.LaunchOptionsLocalNotificationKey] as UILocalNotification;
@@ -149,7 +144,7 @@ namespace StaffBusser.iOS
 
             //Window.RootViewController.PresentViewController(okayAlertController, true, null);
             System.Console.WriteLine("APPDEL:  Notification was swiped");
-            notif.CancelVibration();
+            IOS_MyFirebaseMessagingService.CancelVibration();
             // reset our badge
             UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
         }

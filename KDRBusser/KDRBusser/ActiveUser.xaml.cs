@@ -1,7 +1,7 @@
-﻿using StaffBusser.Classes;
+﻿using Newtonsoft.Json;
+using StaffBusser.Classes;
 using StaffBusser.Communication;
 using StaffBusser.SharedCode;
-using Newtonsoft.Json;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -41,7 +41,7 @@ namespace StaffBusser
             base.OnAppearing();
 
             DependencyService.Get<IHelperClass>().IsLoading(true, "None/Bad network conenction");
-            DependencyService.Get<IHelperClass>().IsLoading(true);
+            // DependencyService.Get<IHelperClass>().IsLoading(true);
             CommunicateDbAsync(mUser, false, false, false);
         }
 
@@ -79,13 +79,14 @@ namespace StaffBusser
             isActive = UserActive;
         }
 
-        private void BtnLogout_Clicked(object sender, EventArgs e)
-        {
-            // here code for loging user out should rund.
-            // this wil also run firebase logout command on each Platfrom. probably use the exsisitng itnerface wiht logout method etc.
-            CommunicateDbAsync(mUser, false, true, true);
-            DependencyService.Get<IFCMLoginService>().LogOut();
-        }
+        // NO longer in use, Se " ToolbarITem"
+        //private void BtnLogout_Clicked(object sender, EventArgs e)
+        //{
+        //    // here code for loging user out should rund.
+        //    // this wil also run firebase logout command on each Platfrom. probably use the exsisitng itnerface wiht logout method etc.
+        //    CommunicateDbAsync(mUser, false, true, true);
+        //    DependencyService.Get<IFCMLoginService>().LogOut();
+        //}
 
         private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
@@ -134,37 +135,36 @@ namespace StaffBusser
                     user.Active = false;
                 }
 
-                await RestApiCommunication.Post(user, "UserisActive/" + logout);
+                await RestApiCommunication.Post(user, "UserisActive/" + logout).ConfigureAwait(false);
             }
-            else
+
+            //send request to REST API
+            // with "FindUser" as adress string
+
+            String parameters = "Appid=" + tkn;
+            if (tkn == null)
             {
-                //send request to REST API
-                // with "FindUser" as adress string
+                return;
+            }
+            //Boolean FoundUser = await RestApiCommunication.Get("FindUser?" + parameters);
 
-                String parameters = "Appid=" + tkn;
-                if (tkn == null)
-                {
-                    return;
-                }
-                //Boolean FoundUser = await RestApiCommunication.Get("FindUser?" + parameters);
-
-                try
-                {
-                    //if (FoundUser)
-                    //{
-                    //    user = JsonConvert.DeserializeObject<User>(RestApiCommunication.Jsonresponse);
-                    //}
-                    user = JsonConvert.DeserializeObject<User>(await RestApiCommunication.Get("FindUser?" + parameters));
-                    isActive = user.Active;
-                    lblemploy.Text = user.UserName;
-                    lblMstr.Text = user.MasterKey;
-                    IsUserActive();
-                    DependencyService.Get<IHelperClass>().IsLoading(false);
-                }
-                catch (Exception e)
-                {
-                    DependencyService.Get<IFCMLoginService>().LogOut();
-                }
+            try
+            {
+                //if (FoundUser)
+                //{
+                //    user = JsonConvert.DeserializeObject<User>(RestApiCommunication.Jsonresponse);
+                //}
+                user = JsonConvert.DeserializeObject<User>(await RestApiCommunication.Get("FindUser?" + parameters));
+                isActive = user.Active;
+                lblemploy.Text = user.UserName;
+                lblMstr.Text = user.MasterKey;
+                IsUserActive();
+                DependencyService.Get<IHelperClass>().IsLoading(false);
+            }
+            catch (Exception e)
+            {
+                // Here might should send error log to FIREBASE
+                DependencyService.Get<IFCMLoginService>().LogOut();
             }
         }
     }
