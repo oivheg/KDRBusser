@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StaffBusser.Communication
 {
-    public static class RestApiCommunication
+    public class RestApiCommunication
     {
         private static String Base_URL = "http://91.189.171.231/restbusserv/api/UserAPI/";
         private static HttpResponseMessage Response { get; set; }

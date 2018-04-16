@@ -82,9 +82,10 @@ namespace StaffBusser.iOS
                 // this also does work while app is in background, but are not allowed to vibrate / use timer.
                 taskID = app.BeginBackgroundTask(() =>
                 {
-                    //SetNotification(notification, localNotification, "Pleace Pick Up Dinner");
-                    notif.CreateTimedNotification("Starting TASK fak vibration", "DinnerStuff");
-                    notif.CheckPayload(userInfo);
+                    // SetNotification(notification, localNotification, "APPD: Pleace Pick Up Dinner");
+                    notif.CreateTimedNotification("APPD: BackgroundTime EXPIRED", "DinnerStuff2");
+                    CreateNotification("APPD: Ending BackgTask Notification");
+                    //notif.CheckPayload(userInfo);
                     // CreateNotification("Notification Factory");
                     app.EndBackgroundTask(taskID);
                 });
@@ -95,7 +96,7 @@ namespace StaffBusser.iOS
                 //FinishLongRunningTask();
                 if (taskID != -1)
                 {
-                    SetNotification(notification, localNotification, "Backgorudn task Finishing stuff");
+                    notif.CreateTimedNotification("APPD: SBackgroudntask STARTED", "DinnerStuff1");
 
                     app.EndBackgroundTask(taskID);
                 }
@@ -112,7 +113,7 @@ namespace StaffBusser.iOS
                 Badge = 0,
                 Sound = UNNotificationSound.Default
             };
-            var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(30, true);
+            var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(5, true);
 
             var requestID = "Dinner";
             var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);

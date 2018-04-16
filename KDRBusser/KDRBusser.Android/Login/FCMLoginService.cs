@@ -1,4 +1,6 @@
 ﻿using Android.App;
+using Android.Content;
+using Android.Gms.Auth.Api;
 using Android.Gms.Auth.Api.SignIn;
 using Android.Gms.Common;
 using Android.Gms.Common.Apis;
@@ -12,6 +14,7 @@ using StaffBusser.Communication;
 using StaffBusser.Droid;
 using StaffBusser.SharedCode;
 using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(FCMLoginService))]
@@ -19,12 +22,15 @@ using Xamarin.Forms;
 namespace StaffBusser.Droid
 {
     [Activity(Label = "FCM Login")]
-    internal class FCMLoginService : AppCompatActivity, IFCMLoginService
+    internal class FCMLoginService : AppCompatActivity, IFCMLoginService, GoogleApiClient.IOnConnectionFailedListener
     {
         private const string TAG = "FCMActivity";
 
         //[START declare_auth]
         private FirebaseAuth mAuth;
+
+        private object mGoogleSignInClient;
+        private GoogleApiClient mGoogleApiClient;
 
         public string GetEmail()
         {
@@ -33,11 +39,28 @@ namespace StaffBusser.Droid
 
         public void Init()
         {
+            // [START config_signin]
+            // Configure Google Sign In
+            //var gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DefaultSignIn)
+            //        .RequestIdToken("1084249644121-cv7dvgf3tmpcoh5gbiqatamfuceurejn.apps.googleusercontent.com")
+            //        .RequestEmail()
+            //        .Build();
+            //// [END config_signin]
+
+            //Device.BeginInvokeOnMainThread(() =>
+            //{
+            //    Context ct = Xamarin.Forms.Forms.Context;
+            //    mGoogleApiClient = new GoogleApiClient.Builder(ct)
+            //       .EnableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
+            //       .AddApi(Android.Gms.Auth.Api.Auth.GOOGLE_SIGN_IN_API, gso)
+            //       .Build();
+            //});
+
             mAuth = FirebaseAuth.Instance;
             mAuth.AuthState += AuthStateChangedAsync;
         }
 
-        public async void UpdateTokenAsync(bool logout)
+        public async void UpdateTokenAsync()
         {
             if (mAuth.CurrentUser != null)
             {
@@ -51,19 +74,69 @@ namespace StaffBusser.Droid
         {
             base.OnCreate(savedInstanceState);
 
-            //  GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DefaultSignIn)
-            //.RequestIdToken("810661396254-d05a62hlbilehtl9ld5neonh64n40sq8.apps.googleusercontent.com")
-            //.RequestEmail()
-            //.Build();
-            //  mGoogleApiClient = new GoogleApiClient.Builder(this)
-            //      .EnableAutoManage(this, this)
-            //      .AddApi(Auth.GOOGLE_SIGN_IN_API, gso)
-            //      .AddConnectionCallbacks(this)
-            //      .AddOnConnectionFailedListener(this)
+            // [START config_signin]
+            // Configure Google Sign In
+            var gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DefaultSignIn)
+                    .RequestIdToken("1084249644121-cv7dvgf3tmpcoh5gbiqatamfuceurejn.apps.googleusercontent.com")
+                    .RequestEmail()
+                    .Build();
+            // [END config_signin]
 
-            //      .Build();
+            mGoogleApiClient = new GoogleApiClient.Builder(this)
+                    .EnableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
+                    .AddApi(Android.Gms.Auth.Api.Auth.GOOGLE_SIGN_IN_API, gso)
+                    .Build();
         }
 
+        private const int RC_SIGN_IN = 9001;
+
+        protected override async void OnActivityResult(int requestCode, Android.App.Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+
+            // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
+            if (requestCode == RC_SIGN_IN)
+            {
+                var result = Android.Gms.Auth.Api.Auth.GoogleSignInApi.GetSignInResultFromIntent(data);
+                if (result.IsSuccess)
+                {
+                    // Google Sign In was successful, authenticate with Firebase
+                    await FirebaseAuthWithGoogle(result.SignInAccount);
+                }
+                else
+                {
+                    // Google Sign In failed, update UI appropriately
+                    // [START_EXCLUDE]
+                    // UpdateUI(null);
+                    // [END_EXCLUDE]
+                }
+            }
+        }
+
+        // [START auth_with_google]
+        private async Task FirebaseAuthWithGoogle(GoogleSignInAccount acct)
+        {
+            Android.Util.Log.Debug(TAG, "firebaseAuthWithGoogle:" + acct.Id);
+            // [START_EXCLUDE silent]
+            //   ShowProgressDialog();
+            // [END_EXCLUDE]
+
+            AuthCredential credential = GoogleAuthProvider.GetCredential(acct.IdToken, null);
+
+            try
+            {
+                await mAuth.SignInWithCredentialAsync(credential);
+            }
+            catch
+            {
+                //   Toast.MakeText(this, "Authentication failed.", ToastLength.Short).Show();
+            }
+            // [START_EXCLUDE]
+            // HideProgressDialog();
+            // [END_EXCLUDE]
+        }
+
+        // [END onactivityresult]
         protected override void OnStart()
         {
             base.OnStart();
@@ -200,7 +273,7 @@ namespace StaffBusser.Droid
                 // User is signed in
                 //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
                 App.IsUserLoggedIn = true;
-                await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken()).ConfigureAwait(false);
+                await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
                 ChangeActivity();
             }
             else
@@ -247,15 +320,8 @@ namespace StaffBusser.Droid
 
         public void LogInGoogle()
         {
-            //var signInIntent = Auth.GoogleSignInApi.GetSignInIntent(mGoogleApiClient);
-            //mGoogleApiClient.Connect();
-        }
-
-        private void FirebaseAuthWithGoogle(GoogleSignInAccount acct)
-        {
-            // Log.Debug(Tag, "FirebaseAuthWithGoogle:" + acct.Id);
-            //AuthCredential credential = GoogleAuthProvider.GetCredential(acct.IdToken, null);
-            //mAuth.SignInWithCredential(credential).AddOnCompleteListener(this, this);
+            Intent signInIntent = Android.Gms.Auth.Api.Auth.GoogleSignInApi.GetSignInIntent(mGoogleApiClient);
+            StartActivityForResult(signInIntent, RC_SIGN_IN);
         }
 
         public void CancelVIbrations()

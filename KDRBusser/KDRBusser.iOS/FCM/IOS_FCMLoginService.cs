@@ -180,7 +180,7 @@ namespace StaffBusser.iOS.FCM
 
         public void LogOut()
         {
-            UpdateTokenAsync(true);
+            UpdateTokenAsync();
             auth.SignOut(out NSError error);
         }
 
@@ -190,10 +190,10 @@ namespace StaffBusser.iOS.FCM
             auth.SignOut(out NSError error);
         }
 
-        public async void UpdateTokenAsync(Boolean logout = false) // chaged this to asyc, if there is errrs
+        public async void UpdateTokenAsync() // chaged this to asyc, if there is errrs
         {
             //FCMToken = Token;
-            await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken(), logout).ConfigureAwait(false);
+            await SharedHelper.UpdateUserTokenAsync(auth.CurrentUser.Email, GetToken()).ConfigureAwait(false);
         }
 
         public void Createuser(string email, string password, string masterid, string UserName)

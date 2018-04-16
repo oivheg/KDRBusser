@@ -58,7 +58,7 @@ namespace StaffBusser.Droid
         private void SendRegistrationToServer(string token)
         {
             String tkn = token;
-            DependencyService.Get<IFCMLoginService>().UpdateTokenAsync(tkn);
+            DependencyService.Get<IFCMLoginService>().UpdateTokenAsync();
         }
     }
 }

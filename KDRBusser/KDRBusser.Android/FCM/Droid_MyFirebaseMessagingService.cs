@@ -80,13 +80,6 @@ namespace StaffBusser.Droid
                     }
                 }
             }
-            // Check if message contains a notification payload.
-            //if (message.GetNotification() != null)
-            //{
-            //    SendNotification("Dinner is Ready");
-            //    Vibration();
-            //    Task.Run(async () => await InformmasterAsync());
-            //}
         }
 
         public static void CancelTimerVibration()
@@ -165,7 +158,7 @@ namespace StaffBusser.Droid
             int long_gap = 1000;    // Length of Gap Between Words
 
             int _vibtype = ActiveUser.VibType;
-            long[] pattern = new long[] { dot, dot, dash, short_gap, dot, dot, dash };
+            long[] pattern = new long[] { dot, dash, dot, dot, dash, long_gap, dot, dot, dash, dash };
             switch (_vibtype)
             {
                 case 1:

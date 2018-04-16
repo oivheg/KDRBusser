@@ -133,53 +133,65 @@ namespace StaffBusser.iOS.FCM
         }
 
         public static System.Timers.Timer timer = new System.Timers.Timer();
+        private int count = 1;
 
         public void Vibration()
         {
             if (!timer.Enabled)
             {
-                timer.Interval = 500; // runs every second
+                timer.Interval = 1000; // runs every second
                 timer.Elapsed += Timer_Elapsed;
 
                 timer.Start();
                 System.Console.WriteLine("MYF. Vibration() Timer is started ");
+                if (count == 20)
+                {
+                    timer.Interval = 10000;
+                    timer.Elapsed += Timer_Elapsed;
+                    timer.Start();
+                }
+                else
+                {
+                    count++;
+                }
             }
         }
 
-        private int count = 1;
         private bool _isVibrating = false;
         public nint BackgroundTaskId { get; private set; }
 
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            if (count <= 5)
-            {
-                _isVibrating = true;
-            }
-            switch (count)
-            {
-                case 30:
-                    timer.Interval = 5000;
-                    count = 1;
-                    break;
+            Vibrate();
+            Console.WriteLine("MYF. Timer_elapsed Timer is running");
+            //if (count <= 5)
+            //{
+            //    _isVibrating = true;
+            //}
+            //switch (count)
+            //{
+            //    case 30:
+            //        timer.Interval = 5000;
+            //        count = 1;
+            //        break;
 
-                case 15:
-                    _isVibrating = false;
+            //    case 15:
+            //        _isVibrating = false;
 
-                    break;
+            //        break;
 
-                case 10:
-                    _isVibrating = true;
+            //    case 10:
+            //        _isVibrating = true;
+            //        timer.Interval = 100;
+            //        break;
+            //}
 
-                    break;
-            }
-
-            if (_isVibrating)
-            {
-                Vibrate();
-                Console.WriteLine("MYF. Timer_elapsed Timer is running");
-            }
-            count++;
+            //if (_isVibrating)
+            //{
+            //    Vibrate();
+            //    Console.WriteLine("MYF. Timer_elapsed Timer is running");
+            //}
+            //count++;
         }
 
         private static void CreateNotification(String title, String body)

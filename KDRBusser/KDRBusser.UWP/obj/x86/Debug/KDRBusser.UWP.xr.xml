@@ -12,6 +12,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
     </RootType>
-    <RootType FullName="KDRBusser.UWP.MainPage" />
+    <RootType FullName="StaffBusser.UWP.MainPage" />
   </Roots.RootTypes>
 </Roots>

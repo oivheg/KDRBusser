@@ -19,7 +19,7 @@
         </Entry>
 
         <Button x:Name="btnLogin" Text="Logg in" />
-        <!--<Button x:Name="btnGoogle" Text="Logg in With Google Acctount" />-->
+        <Button x:Name="btnGoogle" Text="Logg in With Google Acctount" />
 
         <Button x:Name="btncreateUser" Text="Create User" />
     </StackLayout>
