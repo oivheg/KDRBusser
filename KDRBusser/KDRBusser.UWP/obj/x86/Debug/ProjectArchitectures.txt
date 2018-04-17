@@ -1,2 +1,0 @@
-C:\source\KDRBusser\KDRBusser\KDRBusser.UWP\StaffBusser.UWP.csproj;x86
-C:\source\KDRBusser\KDRBusser\KDRBusser\StaffBusser.csproj;neutral

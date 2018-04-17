@@ -1,5 +1,6 @@
 ﻿using Acr.UserDialogs;
 using Android.App;
+using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Firebase;
@@ -47,6 +48,30 @@ namespace StaffBusser.Droid
         {
             //Include the code here
             return;
+        }
+
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+
+            // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
+            if (requestCode == 9001)
+            {
+                var result = Android.Gms.Auth.Api.Auth.GoogleSignInApi.GetSignInResultFromIntent(data);
+                if (result.IsSuccess)
+                {
+                    // Google Sign In was successful, authenticate with Firebase
+                    // FirebaseAuthWithGoogle(result.SignInAccount);
+                    DependencyService.Get<FCMLoginService>().FirebaseAuthWithGoogle(result.SignInAccount);
+                }
+                else
+                {
+                    // Google Sign In failed, update UI appropriately
+                    // [START_EXCLUDE]
+                    // UpdateUI(null);
+                    // [END_EXCLUDE]
+                }
+            }
         }
 
         protected override void OnResume()
