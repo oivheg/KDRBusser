@@ -15,14 +15,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "1084249644121-664rsffnvluuvuigj03eeaolshsr608h.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.NbData.Staff_Busser",
-            "certificate_hash": "d612f62bd3810aa319c7390ea946a765d839c140"
-          }
-        },
-        {
           "client_id": "1084249644121-mfgama61fpthe4e6r68cv6bs4872e7sm.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -47,13 +39,6 @@
         "appinvite_service": {
           "status": 2,
           "other_platform_oauth_client": [
-            {
-              "client_id": "1084249644121-hpaighld85ppk1sscpl5g0fuan0o54lf.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "StaffBusser.iOS"
-              }
-            },
             {
               "client_id": "1084249644121-cv7dvgf3tmpcoh5gbiqatamfuceurejn.apps.googleusercontent.com",
               "client_type": 3

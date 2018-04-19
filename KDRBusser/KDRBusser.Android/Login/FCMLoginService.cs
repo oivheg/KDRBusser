@@ -120,6 +120,8 @@ namespace StaffBusser.Droid
             // [START_EXCLUDE silent]
             //   ShowProgressDialog();
             // [END_EXCLUDE]
+            mAuth = FirebaseAuth.Instance;
+            //    mAuth.AuthState += AuthStateChangedAsync;
 
             AuthCredential credential = GoogleAuthProvider.GetCredential(acct.IdToken, null);
 
@@ -127,9 +129,11 @@ namespace StaffBusser.Droid
             {
                 await mAuth.SignInWithCredentialAsync(credential);
             }
-            catch
+            catch (Exception e)
             {
                 //   Toast.MakeText(this, "Authentication failed.", ToastLength.Short).Show();
+
+                var ctch = e;
             }
             // [START_EXCLUDE]
             // HideProgressDialog();
