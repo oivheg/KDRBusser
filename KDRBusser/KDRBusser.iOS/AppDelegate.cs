@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using UIKit;
 using UserNotifications;
 using Xamarin.Forms;
+using Google.SignIn;
 
 namespace StaffBusser.iOS
 {
@@ -37,7 +38,25 @@ namespace StaffBusser.iOS
             // Request notification permissions from the user
             UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert, (approved, err) => {/* Handle approval*/});
 
+            //GoogleSIngin CODE
+            // You can get the GoogleService-Info.plist file at https://developers.google.com/mobile/add
+            var googleServiceDictionary = NSDictionary.FromFile("GoogleService-Info.plist");
+            SignIn.SharedInstance.ClientID = googleServiceDictionary["CLIENT_ID"].ToString();
+
             return base.FinishedLaunching(uiApplication, launchOptions);
+        }
+
+        // For iOS 9 or newer
+        public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
+        {
+            var openUrlOptions = new UIApplicationOpenUrlOptions(options);
+            return SignIn.SharedInstance.HandleUrl(url, openUrlOptions.SourceApplication, openUrlOptions.Annotation);
+        }
+
+        // For iOS 8 and older
+        public override bool OpenUrl(UIApplication application, NSUrl url, string sourceApplication, NSObject annotation)
+        {
+            return SignIn.SharedInstance.HandleUrl(url, sourceApplication, annotation);
         }
 
         [Export("application:didReceiveRemoteNotification:fetchCompletionHandler:")]

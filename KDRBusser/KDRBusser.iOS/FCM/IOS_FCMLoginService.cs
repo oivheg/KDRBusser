@@ -1,8 +1,11 @@
-﻿using Firebase.Auth;
+﻿using CoreGraphics;
+using Firebase.Auth;
 using Firebase.InstanceID;
 using Foundation;
+using Google.SignIn;
 using StaffBusser.Communication;
 using StaffBusser.iOS.FCM;
+using StaffBusser.iOS.Login;
 using StaffBusser.SharedCode;
 using System;
 using Xamarin.Forms;
@@ -83,14 +86,33 @@ namespace StaffBusser.iOS.FCM
             //throw new NotImplementedException();
         }
 
+        //public void ConfigureGoogle()
+        //{
+        //    NSError configureError;
+
+        //    SignIn.SharedInstance.Delegate = this;
+        //    SignIn.SharedInstance.UIDelegate = new GoogleSignInUIDelegate();
+        //}
+
         public void IsLoading(bool IsLoading, string text = "")
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void LogInGoogle()
         {
-            throw new NotImplementedException();
+            SignIn.SharedInstance.UIDelegate = new GoogleSignInUIDelegate(); //moved this here from Configure
+
+            //SignIn.SharedInstance.UIDelegate = this;
+            //SignIn.SharedInstance.SignInUser();
+            SignIn.SharedInstance.SignedIn += (sender, e) =>
+            {
+                // Perform any operations on signed in user here.
+                if (e.User != null && e.Error == null)
+                {
+                    SignIn.SharedInstance.SignInUserSilently();
+                }
+            };
         }
 
         public void LogInnUser(string email, string password)
@@ -206,6 +228,11 @@ namespace StaffBusser.iOS.FCM
         {
             IOS_MyFirebaseMessagingService.CancelVibration();
             // throw new NotImplementedException();
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
         }
 
         // private String FCMToken;

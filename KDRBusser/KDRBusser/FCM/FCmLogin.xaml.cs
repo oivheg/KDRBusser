@@ -30,10 +30,6 @@ namespace StaffBusser
             DependencyService.Get<IFCMLoginService>().LogInGoogle();
         }
 
-        public void Notifyuser(String text)
-        {
-        }
-
         private Boolean IsCreating = false;
 
         private void BtncreateUser_clicked(object sender, EventArgs e)

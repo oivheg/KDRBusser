@@ -54,5 +54,16 @@
 	<string>Resources/Media.xcassets/AppIcons.appiconset</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.2</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>GoogleLogin</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.1084249644121-hpaighld85ppk1sscpl5g0fuan0o54lf</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

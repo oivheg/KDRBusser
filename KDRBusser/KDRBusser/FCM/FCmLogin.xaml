@@ -9,6 +9,18 @@
         <Label Text="         Login To Staff Busser         "
            VerticalOptions="Center"
            HorizontalOptions="Center" />
+        <Button x:Name="btnGoogle" Text="Logg in With Google Acctount" />
+
+        <!--<Image Source="drawable/google.jpg" Aspect="AspectFit">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="BtnGoogle_Clicked" />
+            </Image.GestureRecognizers>
+        </Image>-->
+        <Label Text="        ELLER        "
+           VerticalOptions="Center"
+           HorizontalOptions="Center" />
+
         <Entry x:Name="emailEntry" Placeholder="Email"></Entry>
         <Entry  x:Name="passwordEntry" Placeholder="Password" IsPassword="true" ></Entry>
         <Entry  IsVisible="False" x:Name="masterEntry" Placeholder="MasterId" ></Entry>
@@ -17,9 +29,7 @@
                 <behavior:MaxLengthCheckValidator MaxLength="10" IsValid="{Binding Source={x:Reference this}}" />
             </Entry.Behaviors>-->
         </Entry>
-
         <Button x:Name="btnLogin" Text="Logg in" />
-        <Button x:Name="btnGoogle" Text="Logg in With Google Acctount" />
 
         <Button x:Name="btncreateUser" Text="Create User" />
     </StackLayout>
