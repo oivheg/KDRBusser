@@ -102,17 +102,32 @@ namespace StaffBusser.iOS.FCM
         public void LogInGoogle()
         {
             SignIn.SharedInstance.UIDelegate = new GoogleSignInUIDelegate(); //moved this here from Configure
-
-            //SignIn.SharedInstance.UIDelegate = this;
-            //SignIn.SharedInstance.SignInUser();
             SignIn.SharedInstance.SignedIn += (sender, e) =>
             {
                 // Perform any operations on signed in user here.
                 if (e.User != null && e.Error == null)
                 {
-                    SignIn.SharedInstance.SignInUserSilently();
+                    LoginGoogle();
                 }
             };
+            //SignIn.SharedInstance.UIDelegate = this;
+            if (SignIn.SharedInstance.CurrentUser != null)
+            {
+                SignIn.SharedInstance.SignInUserSilently();
+                LoginGoogle();
+            }
+            else
+            {
+                SignIn.SharedInstance.SignInUser();
+                //LoginGoogle();
+            }
+        }
+
+        private void LoginGoogle()
+        {
+            var authentication = SignIn.SharedInstance.CurrentUser.Authentication;
+            var credential = GoogleAuthProvider.GetCredential(authentication.IdToken, authentication.AccessToken);
+            Auth.DefaultInstance.SignIn(credential, SignInOnCompletion);
         }
 
         public void LogInnUser(string email, string password)

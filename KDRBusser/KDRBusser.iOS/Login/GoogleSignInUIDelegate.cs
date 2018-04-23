@@ -7,7 +7,7 @@ using UIKit;
 
 namespace StaffBusser.iOS.Login
 {
-    internal class GoogleSignInUIDelegate : SignInUIDelegate, ISignInDelegate
+    internal class GoogleSignInUIDelegate : SignInUIDelegate
     {
         public override void WillDispatch(SignIn signIn, NSError error)
         {
@@ -23,11 +23,6 @@ namespace StaffBusser.iOS.Login
         public override void DismissViewController(SignIn signIn, UIViewController viewController)
         {
             UIApplication.SharedApplication.KeyWindow.RootViewController.DismissViewController(true, null);
-        }
-
-        public void DidSignIn(SignIn signIn, GoogleUser user, NSError error)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -27,6 +27,7 @@ namespace StaffBusser
 
         private void BtnGoogle_Clicked(object sender, EventArgs e)
         {
+            DependencyService.Get<IHelperClass>().IsLoading(true, "Loading");
             DependencyService.Get<IFCMLoginService>().LogInGoogle();
         }
 
