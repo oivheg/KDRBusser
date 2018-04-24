@@ -2,6 +2,7 @@
 using Plugin.Connectivity.Abstractions;
 using StaffBusser.SharedCode;
 using System;
+using System.Diagnostics;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -60,6 +61,7 @@ namespace StaffBusser
         protected override void OnSleep()
         {
             // Handle when your app sleeps
+            //Debug.WriteLine("OnSleep");
         }
 
         protected override void OnResume()

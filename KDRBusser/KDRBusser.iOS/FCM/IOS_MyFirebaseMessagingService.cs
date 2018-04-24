@@ -162,12 +162,22 @@ namespace StaffBusser.iOS.FCM
 
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            Vibrate();
             Console.WriteLine("MYF. Timer_elapsed Timer is running");
-            //if (count <= 5)
-            //{
-            //    _isVibrating = true;
-            //}
+            if (count <= 10)
+            {
+                //_isVibrating = true;
+                Vibrate();
+            }
+            switch (count)
+            {
+                case 20:
+                    count = 0;
+                    break;
+
+                default:
+                    count++;
+                    break;
+            }
             //switch (count)
             //{
             //    case 30:
@@ -204,7 +214,7 @@ namespace StaffBusser.iOS.FCM
                 Badge = 0,
                 Sound = UNNotificationSound.Default
             };
-            var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(1, false);
+            var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(15, false);
 
             var requestID = "Dinner";
             var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);

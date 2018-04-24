@@ -22,7 +22,7 @@ namespace StaffBusser
             this.Title = "StaffBusser";
             btnLogin.Clicked += BtnLogin_Clicked;
             btncreateUser.Clicked += BtncreateUser_clicked;
-            btnGoogle.Clicked += BtnGoogle_Clicked;
+            //btnGoogle.Clicked += BtnGoogle_Clicked;
         }
 
         private void BtnGoogle_Clicked(object sender, EventArgs e)

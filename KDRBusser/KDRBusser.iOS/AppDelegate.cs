@@ -7,6 +7,10 @@ using UIKit;
 using UserNotifications;
 using Xamarin.Forms;
 using Google.SignIn;
+using System.Threading;
+using AudioToolbox;
+using System.Timers;
+using StaffBusser.SharedCode;
 
 namespace StaffBusser.iOS
 {
@@ -59,10 +63,12 @@ namespace StaffBusser.iOS
             return SignIn.SharedInstance.HandleUrl(url, sourceApplication, annotation);
         }
 
+        private nint taskID = -1;
+
         [Export("application:didReceiveRemoteNotification:fetchCompletionHandler:")]
         public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)
         {
-            nint taskID = -1;
+            var app = UIApplication.SharedApplication;
             //This code works without using thte "notification parameter" which is awsome, as the same call can be sendt to both ios and android wuthout any device verifications inbetween.
             // this code unfortinaly only runs when app is in "foreground"
             //background might not work.  VoIP Might work ( by hacking it to fucntion as a "notification" call instead of calling for real.
@@ -76,50 +82,137 @@ namespace StaffBusser.iOS
             if (Action != null)
             {
                 notification.AlertBody = "Dinner Canceled";
+                timer.Stop();
+                app.EndBackgroundTask(taskID);
+                _isCanseled = true;
             }
             else if (body != null)
             {
+                taskID = UIApplication.SharedApplication.BeginBackgroundTask(() =>
+                {
+                    Console.WriteLine("Running out of time to complete you background task!");
+                    UIApplication.SharedApplication.EndBackgroundTask(taskID);
+                });
+                Task.Factory.StartNew(() => FinishLongRunningTask(taskID, userInfo));
                 notification.AlertBody = "Dinner is Ready";
             }
+            Task.Run(async () => await SharedHelper.InformmasterAsync().ConfigureAwait(false));
+            //UILocalNotification localNotification = userInfo[UIApplication.LaunchOptionsLocalNotificationKey] as UILocalNotification;
+            //if (localNotification != null)
+            //{
+            //    //new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
+            //    var okCancelAlertController = UIAlertController.Create("tiitle", localNotification.AlertBody, UIAlertControllerStyle.Alert);
+            //    UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(okCancelAlertController, true, null);
+            //    notif.CreateTimedNotification("Local Notification", "Backgorudn Task");
+            //    //notif.CreateTimedNotification();
+            //    // reset our badge
+            //    UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
+            //}
 
-            var app = UIApplication.SharedApplication;
-            UILocalNotification localNotification = userInfo[UIApplication.LaunchOptionsLocalNotificationKey] as UILocalNotification;
-            if (localNotification != null)
+            //nint taskID = 0;
+            // if you're creating a VOIP application, this is how you set the keep alive
+            //UIApplication.SharedApplication.SetKeepAliveTimout(600, () => { /* keep alive handler code*/ });
+
+            // register a long running task, and then start it on a new thread so that this method can return
+
+            //Task.Factory.StartNew(() =>
+            //{
+            //    //    // this only works fora limited time,, should restart or continue somhow.
+            //    // this also does work while app is in background, but are not allowed to vibrate / use timer.
+            //    taskID = app.BeginBackgroundTask("Long-Running Task", () =>
+            //     {
+            //         // SetNotification(notification, localNotification, "APPD: Pleace Pick Up Dinner");
+            //         notif.CreateTimedNotification("APPD: BackgroundTime EXPIRED", "DinnerStuff2");
+            //         //CreateNotification("APPD: Ending BackgTask Notification");
+            //         //notif.CheckPayload(userInfo);
+            //         // CreateNotification("Notification Factory");
+            //     });
+
+            //     notif.CheckPayload(userInfo);
+
+            //    //SharedCode.SharedHelper.ToastedUserAsync("Notification");
+            //    //FinishLongRunningTask();
+            //    if (taskID != -1)
+            //    {
+            //        //notif.CreateTimedNotification("APPD: SBackgroudntask STARTED", "DinnerStuff1");
+
+            //        app.EndBackgroundTask(taskID);
+            //    }
+            //});
+        }
+
+        private bool _isCanseled = false;
+
+        private void FinishLongRunningTask(nint taskID, NSDictionary userInfo)
+        {
+            Console.WriteLine("Starting task {0}", taskID);
+            Console.WriteLine("Background time remaining: {0}", UIApplication.SharedApplication.BackgroundTimeRemaining);
+            // notif.CheckPayload(userInfo);
+            // sleep for 15 seconds to simulate a long running task
+            //Vibration();
+
+            _isCanseled = false;
+
+            while (!_isCanseled)
             {
-                //new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
-                var okCancelAlertController = UIAlertController.Create("tiitle", localNotification.AlertBody, UIAlertControllerStyle.Alert);
-                UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(okCancelAlertController, true, null);
-                notif.CreateTimedNotification("Local Notification", "Backgorudn Task");
-                //notif.CreateTimedNotification();
-                // reset our badge
-                UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
+                SystemSound.Vibrate.PlayAlertSound();
+                //if (count <= 10)
+                //{
+                //    SystemSound.Vibrate.PlayAlertSound();
+                //}
+                //else if (count == 30)
+                //{
+                //    count = 0;
+                //}
+                Thread.Sleep(100);
+                //  count++;
             }
+            //Thread.Sleep(300000);
 
-            Task.Factory.StartNew(() =>
+            Console.WriteLine("Task {0} finished", taskID);
+            Console.WriteLine("Background time remaining: {0}", UIApplication.SharedApplication.BackgroundTimeRemaining);
+
+            // call our end task
+            //UIApplication.SharedApplication.EndBackgroundTask(taskID);
+        }
+
+        public static System.Timers.Timer timer = new System.Timers.Timer();
+        private int count = 1;
+
+        public void Vibration()
+        {
+            if (!timer.Enabled)
             {
-                //    // this only works fora limited time,, should restart or continue somhow.
-                // this also does work while app is in background, but are not allowed to vibrate / use timer.
-                taskID = app.BeginBackgroundTask(() =>
-                {
-                    // SetNotification(notification, localNotification, "APPD: Pleace Pick Up Dinner");
-                    notif.CreateTimedNotification("APPD: BackgroundTime EXPIRED", "DinnerStuff2");
-                    CreateNotification("APPD: Ending BackgTask Notification");
-                    //notif.CheckPayload(userInfo);
-                    // CreateNotification("Notification Factory");
-                    app.EndBackgroundTask(taskID);
-                });
+                timer.Interval = 1000; // runs every second
+                timer.Elapsed += Timer_Elapsed;
 
-                notif.CheckPayload(userInfo);
+                timer.Start();
+                System.Console.WriteLine("MYF. Vibration() Timer is started ");
 
-                //SharedCode.SharedHelper.ToastedUserAsync("Notification");
-                //FinishLongRunningTask();
-                if (taskID != -1)
-                {
-                    notif.CreateTimedNotification("APPD: SBackgroudntask STARTED", "DinnerStuff1");
+                count++;
+            }
+        }
 
-                    app.EndBackgroundTask(taskID);
-                }
-            });
+        public nint BackgroundTaskId { get; private set; }
+
+        private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            Console.WriteLine("MYF. Timer_elapsed Timer is running");
+            if (count <= 10)
+            {
+                //_isVibrating = true;
+                SystemSound.Vibrate.PlayAlertSound();
+            }
+            switch (count)
+            {
+                case 20:
+                    count = 0;
+                    break;
+
+                default:
+                    count++;
+                    break;
+            }
         }
 
         private static void CreateNotification(String title = "")

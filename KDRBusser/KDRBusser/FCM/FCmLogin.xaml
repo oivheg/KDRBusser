@@ -9,14 +9,14 @@
         <Label Text="         Login To Staff Busser         "
            VerticalOptions="Center"
            HorizontalOptions="Center" />
-        <Button x:Name="btnGoogle" Text="Logg in With Google Acctount" />
+        <!--<Button x:Name="btnGoogle" Text="Logg in With Google Acctount"   Image="google.jpg" HeightRequest="20" WidthRequest="20" />-->
 
-        <!--<Image Source="drawable/google.jpg" Aspect="AspectFit">
+        <Image Source="google.jpg" Aspect="AspectFit" HeightRequest="50" WidthRequest="50">
             <Image.GestureRecognizers>
                 <TapGestureRecognizer
                 Tapped="BtnGoogle_Clicked" />
             </Image.GestureRecognizers>
-        </Image>-->
+        </Image>
         <Label Text="        ELLER        "
            VerticalOptions="Center"
            HorizontalOptions="Center" />
