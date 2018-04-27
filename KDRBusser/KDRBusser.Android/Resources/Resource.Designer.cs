@@ -7296,11 +7296,17 @@ namespace Staff_Busser.Droid
 			// aapt resource value: 0x7f0b009b
 			public const int detail = 2131427483;
 			
+			// aapt resource value: 0x7f0b00e8
+			public const int dialogTitle = 2131427560;
+			
 			// aapt resource value: 0x7f0b003c
 			public const int disableHome = 2131427388;
 			
 			// aapt resource value: 0x7f0b009f
 			public const int disconnect_button = 2131427487;
+			
+			// aapt resource value: 0x7f0b00e9
+			public const int editText = 2131427561;
 			
 			// aapt resource value: 0x7f0b008a
 			public const int edit_query = 2131427466;
@@ -7419,8 +7425,8 @@ namespace Staff_Busser.Droid
 			// aapt resource value: 0x7f0b0097
 			public const int main_layout = 2131427479;
 			
-			// aapt resource value: 0x7f0b00e9
-			public const int masked = 2131427561;
+			// aapt resource value: 0x7f0b00eb
+			public const int masked = 2131427563;
 			
 			// aapt resource value: 0x7f0b00d2
 			public const int media_actions = 2131427538;
@@ -7791,8 +7797,8 @@ namespace Staff_Busser.Droid
 			// aapt resource value: 0x7f0b0017
 			public const int view_offset_helper = 2131427351;
 			
-			// aapt resource value: 0x7f0b00e8
-			public const int visible = 2131427560;
+			// aapt resource value: 0x7f0b00ea
+			public const int visible = 2131427562;
 			
 			// aapt resource value: 0x7f0b00c4
 			public const int volume_item_container = 2131427524;
@@ -8138,6 +8144,9 @@ namespace Staff_Busser.Droid
 			
 			// aapt resource value: 0x7f040051
 			public const int tooltip = 2130968657;
+			
+			// aapt resource value: 0x7f040052
+			public const int User_input_dialog = 2130968658;
 			
 			static Layout()
 			{

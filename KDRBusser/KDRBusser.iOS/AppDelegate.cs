@@ -75,6 +75,7 @@ namespace StaffBusser.iOS
             UILocalNotification notification = new UILocalNotification();
             NSDate.FromTimeIntervalSinceNow(1);
             //notification.AlertTitle = "Alert Title"; // required for Apple Watch notifications
+            Task.Run(async () => await SharedHelper.InformmasterAsync().ConfigureAwait(false));
             notification.AlertAction = "View Alert";
             var body = userInfo["body"];
             var Action = userInfo["Action"];
@@ -83,65 +84,77 @@ namespace StaffBusser.iOS
             {
                 notification.AlertBody = "Dinner Canceled";
                 timer.Stop();
-                app.EndBackgroundTask(taskID);
                 _isCanseled = true;
+                UIApplication.SharedApplication.EndBackgroundTask(taskID);
             }
             else if (body != null)
             {
-                taskID = UIApplication.SharedApplication.BeginBackgroundTask(() =>
-                {
-                    Console.WriteLine("Running out of time to complete you background task!");
-                    UIApplication.SharedApplication.EndBackgroundTask(taskID);
-                });
-                Task.Factory.StartNew(() => FinishLongRunningTask(taskID, userInfo));
-                notification.AlertBody = "Dinner is Ready";
+                Start();
+                //taskID = UIApplication.SharedApplication.BeginBackgroundTask(() =>
+                //{
+                //    Console.WriteLine("Running out of time to complete you background task!");
+                //    UIApplication.SharedApplication.EndBackgroundTask(taskID);
+                //});
+                //Task.Factory.StartNew(() => FinishLongRunningTask(taskID, userInfo));
+
+                //UIApplication.SharedApplication.EndBackgroundTask(taskID);
             }
-            Task.Run(async () => await SharedHelper.InformmasterAsync().ConfigureAwait(false));
-            //UILocalNotification localNotification = userInfo[UIApplication.LaunchOptionsLocalNotificationKey] as UILocalNotification;
-            //if (localNotification != null)
-            //{
-            //    //new UIAlertView(localNotification.AlertAction, localNotification.AlertBody, null, "OK", null).Show();
-            //    var okCancelAlertController = UIAlertController.Create("tiitle", localNotification.AlertBody, UIAlertControllerStyle.Alert);
-            //    UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(okCancelAlertController, true, null);
-            //    notif.CreateTimedNotification("Local Notification", "Backgorudn Task");
-            //    //notif.CreateTimedNotification();
-            //    // reset our badge
-            //    UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
-            //}
-
-            //nint taskID = 0;
-            // if you're creating a VOIP application, this is how you set the keep alive
-            //UIApplication.SharedApplication.SetKeepAliveTimout(600, () => { /* keep alive handler code*/ });
-
-            // register a long running task, and then start it on a new thread so that this method can return
-
-            //Task.Factory.StartNew(() =>
-            //{
-            //    //    // this only works fora limited time,, should restart or continue somhow.
-            //    // this also does work while app is in background, but are not allowed to vibrate / use timer.
-            //    taskID = app.BeginBackgroundTask("Long-Running Task", () =>
-            //     {
-            //         // SetNotification(notification, localNotification, "APPD: Pleace Pick Up Dinner");
-            //         notif.CreateTimedNotification("APPD: BackgroundTime EXPIRED", "DinnerStuff2");
-            //         //CreateNotification("APPD: Ending BackgTask Notification");
-            //         //notif.CheckPayload(userInfo);
-            //         // CreateNotification("Notification Factory");
-            //     });
-
-            //     notif.CheckPayload(userInfo);
-
-            //    //SharedCode.SharedHelper.ToastedUserAsync("Notification");
-            //    //FinishLongRunningTask();
-            //    if (taskID != -1)
-            //    {
-            //        //notif.CreateTimedNotification("APPD: SBackgroudntask STARTED", "DinnerStuff1");
-
-            //        app.EndBackgroundTask(taskID);
-            //    }
-            //});
         }
 
         private bool _isCanseled = false;
+        private CancellationTokenSource _cts;
+
+        public async Task Start()
+        {
+            _cts = new CancellationTokenSource();
+
+            taskID = UIApplication.SharedApplication.BeginBackgroundTask("LongRunningTask", OnExpiration);
+
+            try
+            {
+                //INVOKE THE SHARED CODE
+                Vibration();
+
+                //_isCanseled = false;
+
+                //while (!_isCanseled)
+                //{
+                //    SystemSound.Vibrate.PlayAlertSound();
+                //    //if (count <= 10)
+                //    //{
+                //    //    SystemSound.Vibrate.PlayAlertSound();
+                //    //}
+                //    //else if (count == 30)
+                //    //{
+                //    //    count = 0;
+                //    //}
+                //    Thread.Sleep(500);
+                //    //  count++;
+                //}
+            }
+            catch (OperationCanceledException)
+            {
+            }
+            finally
+            {
+                if (_cts.IsCancellationRequested)
+                {
+                    // var message = new CancelledMessage();
+                }
+            }
+
+            UIApplication.SharedApplication.EndBackgroundTask(taskID);
+        }
+
+        public void Stop()
+        {
+            _cts.Cancel();
+        }
+
+        private void OnExpiration()
+        {
+            _cts.Cancel();
+        }
 
         private void FinishLongRunningTask(nint taskID, NSDictionary userInfo)
         {
@@ -164,7 +177,7 @@ namespace StaffBusser.iOS
                 //{
                 //    count = 0;
                 //}
-                Thread.Sleep(100);
+                Thread.Sleep(500);
                 //  count++;
             }
             //Thread.Sleep(300000);

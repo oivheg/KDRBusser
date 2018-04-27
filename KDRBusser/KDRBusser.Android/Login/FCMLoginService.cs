@@ -9,9 +9,11 @@ using Android.Support.V7.App;
 using Firebase;
 using Firebase.Auth;
 using Firebase.Iid;
+
 using StaffBusser.Classes;
 using StaffBusser.Communication;
 using StaffBusser.Droid;
+using StaffBusser.Droid.HelperClass;
 using StaffBusser.SharedCode;
 using System;
 using System.Threading.Tasks;
@@ -25,11 +27,12 @@ namespace StaffBusser.Droid
     public class FCMLoginService : AppCompatActivity, IFCMLoginService, GoogleApiClient.IOnConnectionFailedListener, GoogleApiClient.IConnectionCallbacks
     {
         private const string TAG = "FCMActivity";
+        public static FCMLoginService Instance;
 
         //[START declare_auth]
         private FirebaseAuth mAuth;
 
-        private object mGoogleSignInClient;
+        // private object mGoogleSignInClient;
         private GoogleApiClient mGoogleApiClient;
 
         public string GetEmail()
@@ -39,6 +42,7 @@ namespace StaffBusser.Droid
 
         public void Init()
         {
+            Instance = this;
             // [START config_signin]
             // Configure Google Sign In
             var gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DefaultSignIn)
@@ -114,7 +118,7 @@ namespace StaffBusser.Droid
         //}
 
         // [START auth_with_google]
-        public async void FirebaseAuthWithGoogle(GoogleSignInAccount acct)
+        public async Task FirebaseAuthWithGoogleAsync(GoogleSignInAccount acct)
         {
             Android.Util.Log.Debug(TAG, "firebaseAuthWithGoogle:" + acct.Id);
             // [START_EXCLUDE silent]
@@ -128,8 +132,9 @@ namespace StaffBusser.Droid
             try
             {
                 await mAuth.SignInWithCredentialAsync(credential);
+                string _TMPtOKEN = GetToken();
             }
-            catch (Exception e)
+            catch (System.Exception e)
             {
                 //   Toast.MakeText(this, "Authentication failed.", ToastLength.Short).Show();
 
@@ -141,10 +146,6 @@ namespace StaffBusser.Droid
         }
 
         // [END onactivityresult]
-        protected override void OnStart()
-        {
-            base.OnStart();
-        }
 
         protected override void OnStop()
         {
@@ -165,8 +166,7 @@ namespace StaffBusser.Droid
             {
                 MasterKey = masterid.Trim()
             };
-            Boolean response;
-            response = await RestApiCommunication.PostMasterKey(Mstr, "ChckKey").ConfigureAwait(false);
+            Boolean response = await RestApiCommunication.PostMasterKey(Mstr, "ChckKey").ConfigureAwait(false);
 
             if (!response)
             {
@@ -205,13 +205,13 @@ namespace StaffBusser.Droid
             }
         }
 
-        public void LogInnUser(String email, String password)
+        public void LogInnUser2(String email, String password)
         {
             //ShowProgressDialog(this);
-            LogInUserAsync(email, password);
+            LogInnUser(email, password);
         }
 
-        public async void LogInUserAsync(String email, string password)
+        public async void LogInnUser(System.String email, string password)
         {
             try
             {
@@ -280,6 +280,7 @@ namespace StaffBusser.Droid
                 LogOut();
                 //mAuth.SignOut();
             }
+            DroidHelperClass.Default.GetToken = refreshedToken;
             return refreshedToken;
         }
 
@@ -290,7 +291,7 @@ namespace StaffBusser.Droid
         }
 
         //Gogle is stil in test phase, migt not needed at all ?
-        private Activity activity = (MainActivity)Forms.Context;
+        private readonly Activity activity = (MainActivity)Forms.Context;
 
         public void LogInGoogle()
         {
@@ -305,17 +306,17 @@ namespace StaffBusser.Droid
 
         public void OnConnected(Bundle connectionHint)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void OnConnectionSuspended(int cause)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void OnConnectionFailed(ConnectionResult result)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }

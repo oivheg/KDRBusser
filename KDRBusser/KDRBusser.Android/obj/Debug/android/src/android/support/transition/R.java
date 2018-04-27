@@ -4115,8 +4115,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static int design_menu_item_text=0x7f0b00aa;
         public static int design_navigation_view=0x7f0b00a9;
         public static int detail=0x7f0b009b;
+        public static int dialogTitle=0x7f0b00e8;
         public static int disableHome=0x7f0b003c;
         public static int disconnect_button=0x7f0b009f;
+        public static int editText=0x7f0b00e9;
         public static int edit_query=0x7f0b008a;
         public static int end=0x7f0b0031;
         public static int end_padder=0x7f0b00de;
@@ -4156,7 +4158,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static int loadingProgressBar=0x7f0b00ae;
         public static int loadingProgressWheel=0x7f0b00b1;
         public static int main_layout=0x7f0b0097;
-        public static int masked=0x7f0b00e9;
+        public static int masked=0x7f0b00eb;
         public static int media_actions=0x7f0b00d2;
         public static int message=0x7f0b00e7;
         public static int middle=0x7f0b004b;
@@ -4280,7 +4282,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static int useLogo=0x7f0b0041;
         public static int vertical=0x7f0b0028;
         public static int view_offset_helper=0x7f0b0017;
-        public static int visible=0x7f0b00e8;
+        public static int visible=0x7f0b00ea;
         public static int volume_item_container=0x7f0b00c4;
         public static int wide=0x7f0b0023;
         public static int withText=0x7f0b0056;
@@ -4389,6 +4391,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static int tabbar=0x7f04004f;
         public static int toolbar=0x7f040050;
         public static int tooltip=0x7f040051;
+        public static int user_input_dialog=0x7f040052;
     }
     public static final class mipmap {
         public static int ic_launcher=0x7f030000;

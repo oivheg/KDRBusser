@@ -152,6 +152,8 @@ class MonoPackageManager_Resources {
 		"Xamarin.Firebase.Crash.dll",
 		"Xamarin.Firebase.Iid.dll",
 		"Xamarin.Firebase.Messaging.dll",
+		"Xamarin.Firebase.Storage.Common.dll",
+		"Xamarin.Firebase.Storage.dll",
 		"Xamarin.Forms.Core.dll",
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",

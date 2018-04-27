@@ -47,6 +47,8 @@ Xamarin.Firebase.Common
 Xamarin.Firebase.Crash
 Xamarin.Firebase.Iid
 Xamarin.Firebase.Messaging
+Xamarin.Firebase.Storage.Common
+Xamarin.Firebase.Storage
 Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
@@ -59,4 +61,3 @@ Xamarin.GooglePlayServices.Basement
 Xamarin.GooglePlayServices.Tasks
 System.Resources.ResourceManager
 System.Diagnostics.Tools
-System.Text.Encoding

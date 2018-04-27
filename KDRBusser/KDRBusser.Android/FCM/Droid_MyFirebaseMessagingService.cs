@@ -19,7 +19,6 @@ namespace StaffBusser.Droid
     [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
     public class Droid_MyFirebaseMessagingService : FirebaseMessagingService
     {
-        private const string TAG = "Droid_MyFirebaseMessagingService";
         public static Droid_MyFirebaseMessagingService Instance;
         private int count = 1;
         public static Timer timer = new Timer();
@@ -36,7 +35,7 @@ namespace StaffBusser.Droid
         {
             //ToastUser("From: " + message.From);
             System.Console.WriteLine("MYF: Message recieved"); //Console is not found in system
-            var name = string.Empty; ;
+            var name = string.Empty;
             if (message.Data.Count > 0)
             {
                 if (message.Data.ContainsKey("title"))
@@ -63,8 +62,7 @@ namespace StaffBusser.Droid
                             //SendNotification("CANCELED");
                             CancelTimerVibration();
                             //SharedHelper.CancelAllNotificationsAsync();
-                            NotificationManager mNotificationManager;
-                            mNotificationManager = (NotificationManager)this.GetSystemService(NotificationService);
+                            NotificationManager mNotificationManager = (NotificationManager)this.GetSystemService(NotificationService);
                             mNotificationManager.CancelAll();
                             break;
 
@@ -147,15 +145,15 @@ namespace StaffBusser.Droid
 
         private static long[] GetVibPatterns()
         {
-            int dot = 200;      // Length of a Morse Code "dot" in milliseconds
+            const int dot = 200;      // Length of a Morse Code "dot" in milliseconds
 
-            int dash = 500;     // Length of a Morse Code "dash" in milliseconds
+            const int dash = 500;     // Length of a Morse Code "dash" in milliseconds
 
-            int short_gap = 200;    // Length of Gap Between dots/dashes
+            const int short_gap = 200;    // Length of Gap Between dots/dashes
 
-            int medium_gap = 700;   // Length of Gap Between Letters
+            const int medium_gap = 700;   // Length of Gap Between Letters
 
-            int long_gap = 1000;    // Length of Gap Between Words
+            const int long_gap = 1000;    // Length of Gap Between Words
 
             int _vibtype = ActiveUser.VibType;
             long[] pattern = new long[] { dot, dash, dot, dot, dash, long_gap, dot, dot, dash, dash };
@@ -184,7 +182,7 @@ namespace StaffBusser.Droid
         }
 
         private MyBroadcastReceiver deleteReceiver;
-        private static readonly int REQUEST_CODE = 2323;
+        private const int REQUEST_CODE = 2323;
         public readonly string ACTION_NOTIFICATION_DELETE = "com.xamarin.Droid_MyFirebaseMesagingService.delete";
 
         private void SendNotification(string messageBody)
@@ -205,19 +203,15 @@ namespace StaffBusser.Droid
             notificationManager.Notify(0, notificationBuilder.Build());
         }
 
-        private object CancelDinner()
-        {
-            throw new NotImplementedException();
-        }
-
         // NOT in USE, SharedHelper now perform this action.
         public async void InformmasterAsync()
         {
             SendNotification("Started: token infomr");
 
-            User user = new User();
-
-            user.Appid = FirebaseInstanceId.Instance.Token;
+            User user = new User
+            {
+                Appid = FirebaseInstanceId.Instance.Token
+            };
             //user.Appid = DependencyService.Get<IFCMLoginService>().GetToken();
 
             SendNotification("Started: HTTP Post");

@@ -60,6 +60,8 @@ C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamar
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Firebase.Crash.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Firebase.Iid.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Firebase.Messaging.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Firebase.Storage.Common.dll
+C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Firebase.Storage.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Forms.Core.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll
 C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Release\android\assets\Xamarin.Forms.Platform.dll

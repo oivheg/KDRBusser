@@ -6,6 +6,8 @@ namespace StaffBusser.SharedCode
     {
         void IsLoading(bool isLoading, String text = "");
 
-        void isAlert();
+        void IsAlert();
+
+        void UploadImage();
     }
 }

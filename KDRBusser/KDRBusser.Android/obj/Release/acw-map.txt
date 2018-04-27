@@ -386,6 +386,14 @@ Firebase.Auth.FirebaseAuth/IIdTokenListenerImplementor, Xamarin.Firebase.Auth;mo
 Firebase.Auth.FirebaseAuth+IIdTokenListenerImplementor, Xamarin.Firebase.Auth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.firebase.auth.FirebaseAuth_IdTokenListenerImplementor
 Firebase.Auth.FirebaseAuth.IIdTokenListenerImplementor;mono.com.google.firebase.auth.FirebaseAuth_IdTokenListenerImplementor
 mono.com.google.firebase.auth.FirebaseAuth_IdTokenListenerImplementor;mono.com.google.firebase.auth.FirebaseAuth_IdTokenListenerImplementor
+Firebase.Storage.IOnPausedListenerImplementor, Xamarin.Firebase.Storage;mono.com.google.firebase.storage.OnPausedListenerImplementor
+Firebase.Storage.IOnPausedListenerImplementor, Xamarin.Firebase.Storage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.firebase.storage.OnPausedListenerImplementor
+Firebase.Storage.IOnPausedListenerImplementor;mono.com.google.firebase.storage.OnPausedListenerImplementor
+mono.com.google.firebase.storage.OnPausedListenerImplementor;mono.com.google.firebase.storage.OnPausedListenerImplementor
+Firebase.Storage.IOnProgressListenerImplementor, Xamarin.Firebase.Storage;mono.com.google.firebase.storage.OnProgressListenerImplementor
+Firebase.Storage.IOnProgressListenerImplementor, Xamarin.Firebase.Storage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.firebase.storage.OnProgressListenerImplementor
+Firebase.Storage.IOnProgressListenerImplementor;mono.com.google.firebase.storage.OnProgressListenerImplementor
+mono.com.google.firebase.storage.OnProgressListenerImplementor;mono.com.google.firebase.storage.OnProgressListenerImplementor
 Xamarin.Forms.Platform.Android.PageExtensions/EmbeddedFragment, Xamarin.Forms.Platform.Android;md5b60ffeb829f638581ab2bb9b1a7f4f3f.PageExtensions_EmbeddedFragment
 Xamarin.Forms.Platform.Android.PageExtensions+EmbeddedFragment, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null;md5b60ffeb829f638581ab2bb9b1a7f4f3f.PageExtensions_EmbeddedFragment
 Xamarin.Forms.Platform.Android.PageExtensions.EmbeddedFragment;md5b60ffeb829f638581ab2bb9b1a7f4f3f.PageExtensions_EmbeddedFragment

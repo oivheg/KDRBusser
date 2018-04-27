@@ -12,12 +12,13 @@ namespace StaffBusser
     public partial class ActiveUser : ContentPage
     {
         private bool isActive = false;
-        private String mUser = "FromFCMLogin", tkn = "Fromm FCM APPID";
+        private readonly String mUser = "FromFCMLogin", tkn = "Fromm FCM APPID";
+        public static ActiveUser Instance;
 
         public ActiveUser()
         {
             BackgroundColor = Color.LightGray;
-
+            Instance = this;
             InitializeComponent();
             btnActiveUser.Clicked += BtnActiveUser_clicked;
             tkn = DependencyService.Get<IFCMLoginService>().GetToken();
@@ -115,9 +116,18 @@ namespace StaffBusser
                     VibType = 3;
                     break;
 
+                case "Profil bilde":
+                    DependencyService.Get<IHelperClass>().UploadImage();
+                    break;
+
                 default:
                     break;
             }
+        }
+
+        public Image GetImage()
+        {
+            return IMG_profile;
         }
 
         public async void CommunicateDbAsync(String _user, bool _isActive, bool update, bool rmvAppId)
@@ -158,6 +168,7 @@ namespace StaffBusser
                 isActive = user.Active;
                 lblemploy.Text = user.UserName;
                 lblMstr.Text = user.MasterKey;
+
                 IsUserActive();
                 DependencyService.Get<IHelperClass>().IsLoading(false);
             }
