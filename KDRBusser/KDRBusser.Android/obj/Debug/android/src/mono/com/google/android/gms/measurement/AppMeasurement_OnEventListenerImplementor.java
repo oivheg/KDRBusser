@@ -13,7 +13,7 @@ public class AppMeasurement_OnEventListenerImplementor
 		__md_methods = 
 			"n_onEvent:(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;J)V:GetOnEvent_Ljava_lang_String_Ljava_lang_String_Landroid_os_Bundle_JHandler:Android.Gms.Measurement.AppMeasurement/IOnEventListenerInvoker, Xamarin.Firebase.Analytics.Impl\n" +
 			"";
-		mono.android.Runtime.register ("Android.Gms.Measurement.AppMeasurement+IOnEventListenerImplementor, Xamarin.Firebase.Analytics.Impl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", AppMeasurement_OnEventListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Android.Gms.Measurement.AppMeasurement+IOnEventListenerImplementor, Xamarin.Firebase.Analytics.Impl", AppMeasurement_OnEventListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class AppMeasurement_OnEventListenerImplementor
 	{
 		super ();
 		if (getClass () == AppMeasurement_OnEventListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Android.Gms.Measurement.AppMeasurement+IOnEventListenerImplementor, Xamarin.Firebase.Analytics.Impl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Android.Gms.Measurement.AppMeasurement+IOnEventListenerImplementor, Xamarin.Firebase.Analytics.Impl", "", this, new java.lang.Object[] {  });
 	}
 
 

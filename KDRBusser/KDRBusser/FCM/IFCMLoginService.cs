@@ -25,5 +25,7 @@ namespace StaffBusser
         String GetToken();
 
         void LogInGoogle();
+
+        void LoginFB(Action<FacebookUser, string> onLoginComplete);
     }
 }

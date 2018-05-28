@@ -24,5 +24,15 @@ namespace StaffBusser.iOS.HelperClass
         {
             // UserDialogs.Instance.AlertAsync("User Already Excist", "Thankyou");
         }
+
+        public void IsAlert()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void UploadImage()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

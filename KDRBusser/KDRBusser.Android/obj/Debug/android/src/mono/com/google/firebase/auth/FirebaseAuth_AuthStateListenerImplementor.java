@@ -13,7 +13,7 @@ public class FirebaseAuth_AuthStateListenerImplementor
 		__md_methods = 
 			"n_onAuthStateChanged:(Lcom/google/firebase/auth/FirebaseAuth;)V:GetOnAuthStateChanged_Lcom_google_firebase_auth_FirebaseAuth_Handler:Firebase.Auth.FirebaseAuth/IAuthStateListenerInvoker, Xamarin.Firebase.Auth\n" +
 			"";
-		mono.android.Runtime.register ("Firebase.Auth.FirebaseAuth+IAuthStateListenerImplementor, Xamarin.Firebase.Auth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", FirebaseAuth_AuthStateListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Firebase.Auth.FirebaseAuth+IAuthStateListenerImplementor, Xamarin.Firebase.Auth", FirebaseAuth_AuthStateListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class FirebaseAuth_AuthStateListenerImplementor
 	{
 		super ();
 		if (getClass () == FirebaseAuth_AuthStateListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Firebase.Auth.FirebaseAuth+IAuthStateListenerImplementor, Xamarin.Firebase.Auth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Firebase.Auth.FirebaseAuth+IAuthStateListenerImplementor, Xamarin.Firebase.Auth", "", this, new java.lang.Object[] {  });
 	}
 
 

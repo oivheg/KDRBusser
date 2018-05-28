@@ -17,6 +17,13 @@
                 Tapped="BtnGoogle_Clicked" />
             </Image.GestureRecognizers>
         </Image>
+
+        <Image Source="google.jpg" Aspect="AspectFit" HeightRequest="50" WidthRequest="50">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="BtnFacebook_Clicked" />
+            </Image.GestureRecognizers>
+        </Image>
         <Label Text="        ELLER        "
            VerticalOptions="Center"
            HorizontalOptions="Center" />

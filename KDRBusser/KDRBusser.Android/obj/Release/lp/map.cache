@@ -61,3 +61,7 @@ Xamarin.GooglePlayServices.Basement
 Xamarin.GooglePlayServices.Tasks
 System.Resources.ResourceManager
 System.Diagnostics.Tools
+Bolts.AppLinks
+Bolts.Tasks
+Google.ZXing.Core
+Xamarin.Android.Support.CustomTabs

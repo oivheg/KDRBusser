@@ -13,7 +13,7 @@ public class ImageManager_OnImageLoadedListenerImplementor
 		__md_methods = 
 			"n_onImageLoaded:(Landroid/net/Uri;Landroid/graphics/drawable/Drawable;Z)V:GetOnImageLoaded_Landroid_net_Uri_Landroid_graphics_drawable_Drawable_ZHandler:Android.Gms.Common.Images.ImageManager/IOnImageLoadedListenerInvoker, Xamarin.GooglePlayServices.Base\n" +
 			"";
-		mono.android.Runtime.register ("Android.Gms.Common.Images.ImageManager+IOnImageLoadedListenerImplementor, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", ImageManager_OnImageLoadedListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Android.Gms.Common.Images.ImageManager+IOnImageLoadedListenerImplementor, Xamarin.GooglePlayServices.Base", ImageManager_OnImageLoadedListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class ImageManager_OnImageLoadedListenerImplementor
 	{
 		super ();
 		if (getClass () == ImageManager_OnImageLoadedListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Android.Gms.Common.Images.ImageManager+IOnImageLoadedListenerImplementor, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Android.Gms.Common.Images.ImageManager+IOnImageLoadedListenerImplementor, Xamarin.GooglePlayServices.Base", "", this, new java.lang.Object[] {  });
 	}
 
 

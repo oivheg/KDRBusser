@@ -25,10 +25,18 @@ namespace StaffBusser
             //btnGoogle.Clicked += BtnGoogle_Clicked;
         }
 
+        private FacebookUser _facebookUser;
+
         private void BtnGoogle_Clicked(object sender, EventArgs e)
         {
             DependencyService.Get<IHelperClass>().IsLoading(true, "Loading");
             DependencyService.Get<IFCMLoginService>().LogInGoogle();
+        }
+
+        private void BtnFacebook_Clicked(Object sender, EventArgs e)
+        {
+            DependencyService.Get<IHelperClass>().IsLoading(true, "Loading");
+            DependencyService.Get<IFCMLoginService>().LoginFB(OnLoginComplete);
         }
 
         private Boolean IsCreating = false;
@@ -89,6 +97,19 @@ namespace StaffBusser
                 Email = emailEntry;
                 Password = passwordEntry;
                 DependencyService.Get<IFCMLoginService>().LogInnUser(Email.Text.Trim(), Password.Text);
+            }
+        }
+
+        private void OnLoginComplete(FacebookUser facebookUser, string message)
+        {
+            if (facebookUser != null)
+            {
+                _facebookUser = facebookUser;
+                //IsLogedIn = true;
+            }
+            else
+            {
+                // _dialogService.DisplayAlertAsync("Error", message, "Ok");
             }
         }
     }

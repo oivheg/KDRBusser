@@ -13,7 +13,7 @@ public class OnCompleteListenerImplementor
 		__md_methods = 
 			"n_onComplete:(Lcom/google/android/gms/tasks/Task;)V:GetOnComplete_Lcom_google_android_gms_tasks_Task_Handler:Android.Gms.Tasks.IOnCompleteListenerInvoker, Xamarin.GooglePlayServices.Tasks\n" +
 			"";
-		mono.android.Runtime.register ("Android.Gms.Tasks.IOnCompleteListenerImplementor, Xamarin.GooglePlayServices.Tasks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", OnCompleteListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Android.Gms.Tasks.IOnCompleteListenerImplementor, Xamarin.GooglePlayServices.Tasks", OnCompleteListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class OnCompleteListenerImplementor
 	{
 		super ();
 		if (getClass () == OnCompleteListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Android.Gms.Tasks.IOnCompleteListenerImplementor, Xamarin.GooglePlayServices.Tasks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Android.Gms.Tasks.IOnCompleteListenerImplementor, Xamarin.GooglePlayServices.Tasks", "", this, new java.lang.Object[] {  });
 	}
 
 

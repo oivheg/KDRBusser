@@ -2,7 +2,10 @@ Acr.Support.Android
 Acr.UserDialogs
 Acr.UserDialogs.Interface
 AndHUD
+Bolts.AppLinks
+Bolts.Tasks
 FormsViewGroup
+Google.ZXing.Core
 Newtonsoft.Json
 Plugin.Connectivity.Abstractions
 Plugin.Connectivity
@@ -26,6 +29,7 @@ Xamarin.Android.Support.Annotations
 Xamarin.Android.Support.Compat
 Xamarin.Android.Support.Core.UI
 Xamarin.Android.Support.Core.Utils
+Xamarin.Android.Support.CustomTabs
 Xamarin.Android.Support.Design
 Xamarin.Android.Support.Fragment
 Xamarin.Android.Support.Media.Compat
@@ -40,6 +44,7 @@ Xamarin.Android.Support.v7.Palette
 Xamarin.Android.Support.v7.Preference
 Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
+Xamarin.Facebook
 Xamarin.Firebase.Analytics
 Xamarin.Firebase.Analytics.Impl
 Xamarin.Firebase.Auth

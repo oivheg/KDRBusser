@@ -9,14 +9,17 @@ using Android.Support.V7.App;
 using Firebase;
 using Firebase.Auth;
 using Firebase.Iid;
-
+using Java.Lang;
 using StaffBusser.Classes;
 using StaffBusser.Communication;
 using StaffBusser.Droid;
 using StaffBusser.Droid.HelperClass;
 using StaffBusser.SharedCode;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using Xamarin.Facebook;
+using Xamarin.Facebook.Login;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(FCMLoginService))]
@@ -24,13 +27,18 @@ using Xamarin.Forms;
 namespace StaffBusser.Droid
 {
     [Activity(Label = "FCM Login")]
-    public class FCMLoginService : AppCompatActivity, IFCMLoginService, GoogleApiClient.IOnConnectionFailedListener, GoogleApiClient.IConnectionCallbacks
+    public class FCMLoginService : AppCompatActivity, IFCMLoginService, IFacebookCallback, GoogleApiClient.IOnConnectionFailedListener, GoogleApiClient.IConnectionCallbacks
     {
         private const string TAG = "FCMActivity";
         public static FCMLoginService Instance;
 
         //[START declare_auth]
         private FirebaseAuth mAuth;
+
+        //Facebook code
+        public Action<FacebookUser, string> _onLoginComplete;
+
+        public ICallbackManager _callbackManager;
 
         // private object mGoogleSignInClient;
         private GoogleApiClient mGoogleApiClient;
@@ -51,9 +59,14 @@ namespace StaffBusser.Droid
                     .Build();
             // [END config_signin]
 
+            //Configuring Facebook Signin  IS deprecated is autoinitialized
+            //FacebookSdk.SdkInitialize(ApplicationContext);
+            _callbackManager = CallbackManagerFactory.Create();
+            LoginManager.Instance.RegisterCallback(_callbackManager, this);
+
             Device.BeginInvokeOnMainThread(() =>
             {
-                Context ct = Xamarin.Forms.Forms.Context;
+                Context ct = Forms.Context;
                 mGoogleApiClient = new GoogleApiClient.Builder(ct)
                    .EnableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
                    .AddApi(Android.Gms.Auth.Api.Auth.GOOGLE_SIGN_IN_API, gso)
@@ -153,20 +166,20 @@ namespace StaffBusser.Droid
             mAuth.AuthState -= AuthStateChangedAsync;
         }
 
-        public void Createuser(String email, String password, String masterid, String UserName)
+        public void Createuser(System.String email, System.String password, System.String masterid, System.String UserName)
         {
             //ShowProgressDialog(this);
             DependencyService.Get<IHelperClass>().IsLoading(true, "Creating User");
             CreateUserAsync(email, password, masterid, UserName);
         }
 
-        public async void CreateUserAsync(String email, String password, String masterid, String UserName)
+        public async void CreateUserAsync(System.String email, System.String password, System.String masterid, System.String UserName)
         {
             User Mstr = new User
             {
                 MasterKey = masterid.Trim()
             };
-            Boolean response = await RestApiCommunication.PostMasterKey(Mstr, "ChckKey").ConfigureAwait(false);
+            System.Boolean response = await RestApiCommunication.PostMasterKey(Mstr, "ChckKey").ConfigureAwait(false);
 
             if (!response)
             {
@@ -191,7 +204,7 @@ namespace StaffBusser.Droid
 
                     //ToastedUserAsync("FCM User Created");
                 }
-                catch (Exception ex)
+                catch (System.Exception ex)
                 {
                     // Sign-up failed, display a message to the user
                     // If sign in succeeds, the AuthState event handler will
@@ -205,7 +218,7 @@ namespace StaffBusser.Droid
             }
         }
 
-        public void LogInnUser2(String email, String password)
+        public void LogInnUser2(System.String email, System.String password)
         {
             //ShowProgressDialog(this);
             LogInnUser(email, password);
@@ -224,7 +237,7 @@ namespace StaffBusser.Droid
 
                 //ChangeActivity();
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
                 DependencyService.Get<IHelperClass>().IsLoading(false);
                 Console.WriteLine(ex);
@@ -270,7 +283,7 @@ namespace StaffBusser.Droid
 
         public string GetToken()
         {
-            String tkn = FirebaseInstanceId.Instance.Id;
+            System.String tkn = FirebaseInstanceId.Instance.Id;
             var mauttoken = mAuth.CurrentUser.Uid;
 
             var refreshedToken = FirebaseInstanceId.Instance.Token;
@@ -317,6 +330,33 @@ namespace StaffBusser.Droid
         public void OnConnectionFailed(ConnectionResult result)
         {
             //throw new NotImplementedException();
+        }
+
+        public void LoginFB(Action<FacebookUser, string> onLoginComplete)
+        {
+            _onLoginComplete = onLoginComplete;
+            LoginManager.Instance.SetLoginBehavior(LoginBehavior.NativeWithFallback);
+            LoginManager.Instance.LogInWithReadPermissions(Xamarin.Forms.Forms.Context as Activity, new List<string> { "public_profile", "email" });
+        }
+
+        public void OnCancel()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnError(FacebookException error)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnSuccess(Java.Lang.Object result)
+        {
+            var n = result as LoginResult;
+            if (n != null)
+            {
+                AuthCredential credential = FacebookAuthProvider.GetCredential(n.AccessToken.Token);
+                mAuth.SignInWithCredential(credential);
+            }
         }
     }
 }

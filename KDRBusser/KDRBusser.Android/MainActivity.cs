@@ -16,6 +16,7 @@ using StaffBusser.Droid.HelperClass;
 using StaffBusser.SharedCode;
 using System;
 using System.Threading.Tasks;
+using Xamarin.Facebook;
 using Xamarin.Forms;
 
 namespace StaffBusser.Droid
@@ -39,6 +40,7 @@ namespace StaffBusser.Droid
             ToastNotification.Init(this);
             FirebaseApp.InitializeApp(this);
             UserDialogs.Init(this);
+            // FacebookSdk.SdkInitialize(this);
 
             //seems to be no longer needed, prorably som bug fix update in teh xamarin.forms nuget.
             //make sure the libaries are added to anroid
@@ -49,6 +51,7 @@ namespace StaffBusser.Droid
             DependencyService.Register<ToastNotification>(); // Register your dependency
             DependencyService.Register<Droid_MyFirebaseMessagingService>();
             DependencyService.Register<MyBroadcastReceiver>();
+
             LoadApplication(new App());
         }
 
@@ -63,7 +66,13 @@ namespace StaffBusser.Droid
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
+            //facebook login
 
+            var manager = FCMLoginService.Instance;
+            if (manager != null)
+            {
+                (manager)._callbackManager.OnActivityResult(requestCode, (int)resultCode, data);
+            }
             // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
             if (requestCode == 9001)
             {

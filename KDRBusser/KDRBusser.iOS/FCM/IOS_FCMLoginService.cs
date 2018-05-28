@@ -250,6 +250,11 @@ namespace StaffBusser.iOS.FCM
             throw new NotImplementedException();
         }
 
+        public void LoginFB(Action<FacebookUser, string> onLoginComplete)
+        {
+            throw new NotImplementedException();
+        }
+
         // private String FCMToken;
     }
 }

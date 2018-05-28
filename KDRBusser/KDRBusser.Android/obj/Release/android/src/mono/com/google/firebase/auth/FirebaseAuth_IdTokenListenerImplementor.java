@@ -13,7 +13,7 @@ public class FirebaseAuth_IdTokenListenerImplementor
 		__md_methods = 
 			"n_onIdTokenChanged:(Lcom/google/firebase/auth/FirebaseAuth;)V:GetOnIdTokenChanged_Lcom_google_firebase_auth_FirebaseAuth_Handler:Firebase.Auth.FirebaseAuth/IIdTokenListenerInvoker, Xamarin.Firebase.Auth\n" +
 			"";
-		mono.android.Runtime.register ("Firebase.Auth.FirebaseAuth+IIdTokenListenerImplementor, Xamarin.Firebase.Auth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", FirebaseAuth_IdTokenListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Firebase.Auth.FirebaseAuth+IIdTokenListenerImplementor, Xamarin.Firebase.Auth", FirebaseAuth_IdTokenListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class FirebaseAuth_IdTokenListenerImplementor
 	{
 		super ();
 		if (getClass () == FirebaseAuth_IdTokenListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Firebase.Auth.FirebaseAuth+IIdTokenListenerImplementor, Xamarin.Firebase.Auth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Firebase.Auth.FirebaseAuth+IIdTokenListenerImplementor, Xamarin.Firebase.Auth", "", this, new java.lang.Object[] {  });
 	}
 
 
