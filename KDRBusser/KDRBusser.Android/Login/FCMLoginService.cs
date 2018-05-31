@@ -137,7 +137,7 @@ namespace StaffBusser.Droid
             // [START_EXCLUDE silent]
             //   ShowProgressDialog();
             // [END_EXCLUDE]
-            mAuth = FirebaseAuth.Instance;
+
             //    mAuth.AuthState += AuthStateChangedAsync;
 
             AuthCredential credential = GoogleAuthProvider.GetCredential(acct.IdToken, null);
@@ -218,11 +218,11 @@ namespace StaffBusser.Droid
             }
         }
 
-        public void LogInnUser2(System.String email, System.String password)
-        {
-            //ShowProgressDialog(this);
-            LogInnUser(email, password);
-        }
+        //public void LogInnUser2(System.String email, System.String password)
+        //{
+        //    //ShowProgressDialog(this);
+        //    LogInnUser(email, password);
+        //}
 
         public async void LogInnUser(System.String email, string password)
         {
@@ -256,6 +256,8 @@ namespace StaffBusser.Droid
             {
                 DependencyService.Get<IHelperClass>().IsLoading(true, "Logger INN");
                 FirebaseApp.InitializeApp(this);
+
+                var FbData = user.ProviderData;
                 // User is signed in
                 //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
                 App.IsUserLoggedIn = true;
@@ -336,7 +338,7 @@ namespace StaffBusser.Droid
         {
             _onLoginComplete = onLoginComplete;
             LoginManager.Instance.SetLoginBehavior(LoginBehavior.NativeWithFallback);
-            LoginManager.Instance.LogInWithReadPermissions(Xamarin.Forms.Forms.Context as Activity, new List<string> { "public_profile", "email" });
+            LoginManager.Instance.LogInWithReadPermissions(Xamarin.Forms.Forms.Context as Activity, new List<string> { "email", "public_profile" });
         }
 
         public void OnCancel()
@@ -351,10 +353,12 @@ namespace StaffBusser.Droid
 
         public void OnSuccess(Java.Lang.Object result)
         {
+            mAuth = FirebaseAuth.Instance;
             var n = result as LoginResult;
             if (n != null)
             {
                 AuthCredential credential = FacebookAuthProvider.GetCredential(n.AccessToken.Token);
+
                 mAuth.SignInWithCredential(credential);
             }
         }

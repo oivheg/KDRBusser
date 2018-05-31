@@ -6,39 +6,41 @@
 
     <!--<AbsoluteLayout HorizontalOptions="Center" VerticalOptions="Center">-->
     <StackLayout   HorizontalOptions="Center" VerticalOptions="Center ">
-        <Label Text="         Login To Staff Busser         "
+        <Label Text="         Login To Staff Buszzer         "
            VerticalOptions="Center"
            HorizontalOptions="Center" />
         <!--<Button x:Name="btnGoogle" Text="Logg in With Google Acctount"   Image="google.jpg" HeightRequest="20" WidthRequest="20" />-->
-
-        <Image Source="google.jpg" Aspect="AspectFit" HeightRequest="50" WidthRequest="50">
-            <Image.GestureRecognizers>
-                <TapGestureRecognizer
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center " Orientation="Horizontal">
+            <Image Source="google.jpg" Aspect="AspectFit" HeightRequest="50" WidthRequest="50">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
                 Tapped="BtnGoogle_Clicked" />
-            </Image.GestureRecognizers>
-        </Image>
+                </Image.GestureRecognizers>
+            </Image>
 
-        <Image Source="google.jpg" Aspect="AspectFit" HeightRequest="50" WidthRequest="50">
-            <Image.GestureRecognizers>
-                <TapGestureRecognizer
+            <Image Source="face.jpg" Aspect="AspectFit" HeightRequest="50" WidthRequest="50">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
                 Tapped="BtnFacebook_Clicked" />
-            </Image.GestureRecognizers>
-        </Image>
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
         <Label Text="        ELLER        "
            VerticalOptions="Center"
            HorizontalOptions="Center" />
 
-        <Entry x:Name="emailEntry" Placeholder="Email"></Entry>
-        <Entry  x:Name="passwordEntry" Placeholder="Password" IsPassword="true" ></Entry>
+        <Entry  IsVisible="False" x:Name="emailEntry" Placeholder="Email"></Entry>
+        <Entry   IsVisible="False" x:Name="passwordEntry" Placeholder="Password" IsPassword="true" ></Entry>
         <Entry  IsVisible="False" x:Name="masterEntry" Placeholder="MasterId" ></Entry>
         <Entry  IsVisible="False" x:Name="userNameEntry" Placeholder="UserName">
             <!--<Entry.Behaviors>
                 <behavior:MaxLengthCheckValidator MaxLength="10" IsValid="{Binding Source={x:Reference this}}" />
             </Entry.Behaviors>-->
         </Entry>
-        <Button x:Name="btnLogin" Text="Logg in" />
+        <Button x:Name="btnEmAPW" Text="Bruk Epost" />
+        <Button IsVisible="False" x:Name="btnLogin" Text="Logg in" />
 
-        <Button x:Name="btncreateUser" Text="Create User" />
+        <Button IsVisible="False" x:Name="btncreateUser" Text="Create User" />
     </StackLayout>
     <!--<StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional" BackgroundColor="Black" Opacity="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
             <ActivityIndicator IsRunning="true" IsVisible="true" />

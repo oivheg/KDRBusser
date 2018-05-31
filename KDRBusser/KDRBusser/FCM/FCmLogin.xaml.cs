@@ -22,6 +22,7 @@ namespace StaffBusser
             this.Title = "StaffBusser";
             btnLogin.Clicked += BtnLogin_Clicked;
             btncreateUser.Clicked += BtncreateUser_clicked;
+            btnEmAPW.Clicked += BtnEmAPW_Clicked;
             //btnGoogle.Clicked += BtnGoogle_Clicked;
         }
 
@@ -40,6 +41,15 @@ namespace StaffBusser
         }
 
         private Boolean IsCreating = false;
+
+        private void BtnEmAPW_Clicked(object sender, EventArgs e)
+        {
+            emailEntry.IsVisible = true;
+            passwordEntry.IsVisible = true;
+            btnLogin.IsVisible = true;
+            btncreateUser.IsVisible = true;
+            btnEmAPW.IsVisible = false;
+        }
 
         private void BtncreateUser_clicked(object sender, EventArgs e)
         {

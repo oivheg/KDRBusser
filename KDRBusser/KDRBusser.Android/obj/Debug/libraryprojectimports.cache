@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
+    <Jar>obj\Debug\lp\5\jl\bolts-tasks.jar</Jar>
+    <Jar>obj\Debug\lp\6\jl\formsviewgroup.jar</Jar>
+    <Jar>obj\Debug\lp\7\jl\zxing.core.jar</Jar>
+    <Jar>obj\Debug\lp\23\jl\arch-core-common.jar</Jar>
+    <Jar>obj\Debug\lp\24\jl\arch-lifecycle-common.jar</Jar>
+    <Jar>obj\Debug\lp\27\jl\support-annotations.jar</Jar>
     <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\23\jl\arch-core-common.jar</Jar>
     <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\24\jl\arch-lifecycle-common.jar</Jar>
     <Jar>C:\source\KDRBusser\KDRBusser\KDRBusser.Android\obj\Debug\lp\25\jl\bin\classes.jar</Jar>
