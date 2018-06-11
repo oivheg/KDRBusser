@@ -2,6 +2,10 @@
 {
     public class FacebookUser
     {
+        public FacebookUser()
+        {
+        }
+
         public FacebookUser(string id, string token, string firstName, string lastName, string email, string imageUrl)
         {
             Id = id;

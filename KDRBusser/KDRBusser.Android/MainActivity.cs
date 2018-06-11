@@ -110,7 +110,7 @@ namespace StaffBusser.Droid
                 // Google Sign In was successful, authenticate with Firebase
                 // FirebaseAuthWithGoogle(result.SignInAccount);
 
-                Boolean response = Convert.ToBoolean(await FindUser("oivheg@gmail.com"));
+                Boolean response = Convert.ToBoolean(await FindUser(result.SignInAccount.Email));
                 //bool response = Convert.ToBoolean(   RestApiCommunication.PostMasterKey(Mstr, "ChckKey"));
 
                 if (response)

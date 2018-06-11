@@ -10,6 +10,7 @@ using Firebase;
 using Firebase.Auth;
 using Firebase.Iid;
 using Java.Lang;
+using Org.Json;
 using StaffBusser.Classes;
 using StaffBusser.Communication;
 using StaffBusser.Droid;
@@ -17,6 +18,7 @@ using StaffBusser.Droid.HelperClass;
 using StaffBusser.SharedCode;
 using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Xamarin.Facebook;
 using Xamarin.Facebook.Login;
@@ -27,7 +29,7 @@ using Xamarin.Forms;
 namespace StaffBusser.Droid
 {
     [Activity(Label = "FCM Login")]
-    public class FCMLoginService : AppCompatActivity, IFCMLoginService, IFacebookCallback, GoogleApiClient.IOnConnectionFailedListener, GoogleApiClient.IConnectionCallbacks
+    public class FCMLoginService : AppCompatActivity, IFCMLoginService, IFacebookCallback, GoogleApiClient.IOnConnectionFailedListener, GoogleApiClient.IConnectionCallbacks, GraphRequest.IGraphJSONObjectCallback
     {
         private const string TAG = "FCMActivity";
         public static FCMLoginService Instance;
@@ -36,7 +38,8 @@ namespace StaffBusser.Droid
         private FirebaseAuth mAuth;
 
         //Facebook code
-        public Action<FacebookUser, string> _onLoginComplete;
+        //public Action<FacebookUser, string> _onLoginComplete;
+        public FacebookUser FbDetails;
 
         public ICallbackManager _callbackManager;
 
@@ -144,12 +147,17 @@ namespace StaffBusser.Droid
 
             try
             {
+                mAuth = FirebaseAuth.Instance;
+
                 await mAuth.SignInWithCredentialAsync(credential);
+                mAuth.CurrentUser.UpdateEmail(acct.Email);
                 string _TMPtOKEN = GetToken();
             }
             catch (System.Exception e)
             {
-                //   Toast.MakeText(this, "Authentication failed.", ToastLength.Short).Show();
+                // Toast.MakeText(this, "Authentication failed.", ToastLength.Short).Show();
+                await App.Current.MainPage.DisplayAlert("Feil", "Authentication failed", "OK").ConfigureAwait(false);
+                DependencyService.Get<IHelperClass>().IsLoading(false, "Loading");
 
                 var ctch = e;
             }
@@ -261,7 +269,18 @@ namespace StaffBusser.Droid
                 // User is signed in
                 //ToastedUserAsync("onAuthStateChanged:signed_in:" + user.Uid);
                 App.IsUserLoggedIn = true;
-                await SharedHelper.UpdateUserTokenAsync(mAuth.CurrentUser.Email, GetToken());
+
+                System.String _Email = "";
+
+                if (mAuth.CurrentUser.Email == null)
+                {
+                    _Email = FbDetails.Email;
+                }
+                else
+                {
+                    _Email = mAuth.CurrentUser.Email;
+                }
+                await SharedHelper.UpdateUserTokenAsync(_Email, GetToken());
                 ChangeActivity();
             }
             else
@@ -336,7 +355,8 @@ namespace StaffBusser.Droid
 
         public void LoginFB(Action<FacebookUser, string> onLoginComplete)
         {
-            _onLoginComplete = onLoginComplete;
+            //_onLoginComplete = onLoginComplete;
+
             LoginManager.Instance.SetLoginBehavior(LoginBehavior.NativeWithFallback);
             LoginManager.Instance.LogInWithReadPermissions(Xamarin.Forms.Forms.Context as Activity, new List<string> { "email", "public_profile" });
         }
@@ -351,16 +371,64 @@ namespace StaffBusser.Droid
             throw new NotImplementedException();
         }
 
+        private AuthCredential credential;
+
         public void OnSuccess(Java.Lang.Object result)
         {
             mAuth = FirebaseAuth.Instance;
             var n = result as LoginResult;
             if (n != null)
             {
-                AuthCredential credential = FacebookAuthProvider.GetCredential(n.AccessToken.Token);
+                credential = FacebookAuthProvider.GetCredential(n.AccessToken.Token);
 
-                mAuth.SignInWithCredential(credential);
+                //getteing fb profile info.
+                var request = GraphRequest.NewMeRequest(n.AccessToken, this);
+                var bundle = new Android.OS.Bundle();
+                bundle.PutString("fields", "id, first_name, email, last_name, picture.width(500).height(500)");
+                request.Parameters = bundle;
+                request.ExecuteAsync();
             }
+        }
+
+        private bool hasData = false;
+
+        public void OnCompleted(JSONObject p0, GraphResponse p1)
+        {
+            var id = string.Empty;
+            var first_name = string.Empty;
+            var email = string.Empty;
+            var last_name = string.Empty;
+            var pictureUrl = string.Empty;
+
+            if (p0.Has("id"))
+                id = p0.GetString("id");
+
+            if (p0.Has("first_name"))
+                first_name = p0.GetString("first_name");
+
+            if (p0.Has("email"))
+                email = p0.GetString("email");
+
+            if (p0.Has("last_name"))
+                last_name = p0.GetString("last_name");
+
+            if (p0.Has("picture"))
+            {
+                var p2 = p0.GetJSONObject("picture");
+                if (p2.Has("data"))
+                {
+                    var p3 = p2.GetJSONObject("data");
+                    if (p3.Has("url"))
+                    {
+                        pictureUrl = p3.GetString("url");
+                    }
+                }
+            }
+
+            //_onLoginComplete?.Invoke(new FacebookUser(id, AccessToken.CurrentAccessToken.Token, first_name, first_name, email, pictureUrl), string.Empty);
+            FbDetails = new FacebookUser(id, AccessToken.CurrentAccessToken.Token, first_name, first_name, email, pictureUrl);
+            mAuth.SignInWithCredential(credential);
+            //    mAuth.CurrentUser.UpdateEmail(FbDetails.Email);
         }
     }
 }
