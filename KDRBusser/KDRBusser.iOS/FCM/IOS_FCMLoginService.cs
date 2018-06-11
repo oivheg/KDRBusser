@@ -1,5 +1,4 @@
-﻿using CoreGraphics;
-using Firebase.Auth;
+﻿using Firebase.Auth;
 using Firebase.InstanceID;
 using Foundation;
 using Google.SignIn;
@@ -128,6 +127,7 @@ namespace StaffBusser.iOS.FCM
             var authentication = SignIn.SharedInstance.CurrentUser.Authentication;
             var credential = GoogleAuthProvider.GetCredential(authentication.IdToken, authentication.AccessToken);
             Auth.DefaultInstance.SignIn(credential, SignInOnCompletion);
+            //Auth.DefaultInstance.CurrentUser.UpdateEmail(SignIn.SharedInstance.CurrentUser.Profile.Email, completion);
         }
 
         public void LogInnUser(string email, string password)
@@ -252,7 +252,7 @@ namespace StaffBusser.iOS.FCM
 
         public void LoginFB(Action<FacebookUser, string> onLoginComplete)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         // private String FCMToken;

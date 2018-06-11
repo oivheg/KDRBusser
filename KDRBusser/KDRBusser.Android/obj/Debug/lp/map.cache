@@ -66,3 +66,8 @@ Xamarin.GooglePlayServices.Basement
 Xamarin.GooglePlayServices.Tasks
 System.Resources.ResourceManager
 System.Diagnostics.Tools
+Xamarin.Facebook.AppLinks.Android
+Xamarin.Facebook.Common.Android
+Xamarin.Facebook.Core.Android
+Xamarin.Facebook.Messenger.Android
+Xamarin.Facebook.Places.Android
